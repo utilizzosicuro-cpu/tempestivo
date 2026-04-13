@@ -295,7 +295,7 @@
             <!-- STEP 2 -->
             <div class="step">
                 <div class="step-number">2</div>
-                <div class="step-icon"></div>
+                <div class="step-icon">
 				<img src="img/sopralluogo-tempestivo.png" alt="Sopralluogo">
                 <h3>Sopralluogo (T+24/48h)</h3>
                 <p>Il nostro tecnico o architetto visiona il cantiere.</p>
@@ -304,7 +304,7 @@
             <!-- STEP 3 -->
             <div class="step">
                 <div class="step-number">3</div>
-                <div class="step-icon"></div>
+                <div class="step-icon">
 				<img src="img/preventivo-rapido-tempestivo.png" alt="Preventivo rapido">
                 <h3>Preventivo Rapido</h3>
                 <p>Ricevi la quotazione dettagliata senza lunghe attese.</p>
@@ -313,7 +313,7 @@
             <!-- STEP 4 -->
             <div class="step">
                 <div class="step-number">4</div>
-                <div class="step-icon"></div>
+                <div class="step-icon">
 				<img src="img/opere-ristrutturazione-cantiere-coordinato-tempestivo.png" alt="Cantiere coordinato">
                 <h3>Cantiere Coordinato</h3>
                 <p>Iniziamo i lavori con team sincronizzati dal Project Manager.</p>
@@ -772,6 +772,24 @@
             font-size: 1rem;
         }
     }
+
+	.icona img,
+.step-icon img {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 15px auto;
+}
+
+@media (max-width: 768px) {
+    .icona img,
+    .step-icon img {
+        width: 48px;
+        height: 48px;
+    }
+}
+
 </style>
 
 <footer class="footer">
