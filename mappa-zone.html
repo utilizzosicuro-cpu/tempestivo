@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Mappa delle Zone – Tempestivo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Tempestivo opera in un’ampia area tra Palermo e Trapani. Scopri tutte le zone coperte: Partinico, Carini, Terrasini, Cinisi, Alcamo, Castellammare del Golfo, Monreale, Isola delle Femmine e altre.">
+
+    <style>
+        :root {
+            --rosso: #E32626;
+            --blu-notte: #0B1B3B;
+            --giallo: #FFC857;
+            --grigio-chiaro: #F5F5F5;
+            --grigio-scuro: #444444;
+            --bianco: #FFFFFF;
+            --font-titoli: "Montserrat", Arial, sans-serif;
+            --font-testi: "Roboto", Arial, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            font-family: var(--font-testi);
+            background-color: var(--bianco);
+            color: var(--grigio-scuro);
+        }
+
+        header {
+            background-color: var(--blu-notte);
+            padding: 20px;
+            text-align: center;
+            color: var(--bianco);
+        }
+
+        header h1 {
+            font-family: var(--font-titoli);
+            font-size: 2.2rem;
+            margin: 0;
+        }
+
+        .intro {
+            padding: 40px 20px;
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .intro p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .zone-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .zone-card {
+            background: var(--grigio-chiaro);
+            padding: 25px;
+            border-radius: 14px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .zone-card:hover {
+            transform: translateY(-6px);
+        }
+
+        .zone-card h3 {
+            font-family: var(--font-titoli);
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+            color: var(--blu-notte);
+        }
+
+        .zone-card a {
+            color: var(--rosso);
+            font-weight: 700;
+        }
+
+        .cta-final {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: var(--blu-notte);
+            color: var(--bianco);
+        }
+
+        .cta-final h2 {
+            font-family: var(--font-titoli);
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .btn-cta {
+            background-color: var(--rosso);
+            color: var(--bianco);
+            padding: 14px 28px;
+            border-radius: 999px;
+            font-weight: 700;
+            font-size: 1rem;
+            text-transform: uppercase;
+            display: inline-block;
+            margin-top: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        @media (max-width: 900px) {
+            .zone-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Mappa delle Zone Coperte</h1>
+</header>
+
+<section class="intro">
+    <p>
+        Tempestivo opera in un’area estesa tra Palermo e Trapani, garantendo interventi rapidi e coordinati
+        in tutte le principali città della costa e dell’entroterra.  
+        Seleziona la tua zona per accedere alla pagina dedicata.
+    </p>
+</section>
+
+<section class="zone-grid">
+
+    <div class="zone-card">
+        <h3>Partinico</h3>
+        <a href="servizi-partinico.html">Vai alla pagina</a>
+    </div>
+
+    <div class="zone-card">
+        <h3>Carini</h3>
+        <a href="servizi-carini.html">Vai alla pagina</a>
+    </div>
+
+    <div class="zone-card">
+        <h3>Terrasini</h3>
+        <a href="servizi-terrasini.html">Vai alla pagina</a>
+    </div>
+
+    <div class="zone-card">
+        <h3>Cinisi</h3>
+        <a href="servizi-cinisi.html">Vai alla pagina</a>
+    </div>
+
+    <div class="zone-card">
+        <h3>Trappeto</h3>
+        <a href="servizi-trappeto.html">Vai alla pagina</a>
+    </div>
+
+    <div class="zone-card">
+        <h3>Balestrate</h3>
+        <a href="servizi-balestrate.html">Vai alla pagina</a>
+    </div>
+
+    <div class="zone-card">
+        <h3>Alcamo</h3>
+        <a href="servizi-alcamo.html">Vai alla pagina</a>
+    </div>
+
+    <div class="zone-card">
+        <h3>Castellammare del Golfo</h3>
+        <a href="servizi-castellammare-del-golfo.html">Vai alla pagina</a>
+    </div>
+
+    <div class="zone-card">
+        <h3>Monreale</h3>
+        <a href="servizi-monreale.html">Vai alla pagina</a>
+    </div>
+
+    <div class="zone-card">
+        <h3>Isola delle Femmine</h3>
+        <a href="servizi-isola-delle-femmine.html">Vai alla pagina</a>
+    </div>
+
+</section>
+
+<section class="cta-final">
+    <h2>Non trovi la tua zona?</h2>
+    <p>Contattaci: operiamo anche in aree limitrofe non elencate.</p>
+    <a href="index.html#contatto" class="btn-cta">Richiedi un intervento</a>
+</section>
+
+</body>
+</html>

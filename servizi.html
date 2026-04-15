@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Servizi Tempestivo – Ristrutturazioni, Impianti e Pronto Intervento</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Scopri tutti i servizi Tempestivo: ristrutturazioni, impianti elettrici, impianti idraulici, pronto intervento H24 e manutenzione programmata. Operiamo tra Palermo e Trapani.">
+
+    <style>
+        :root {
+            --rosso: #E32626;
+            --blu-notte: #0B1B3B;
+            --giallo: #FFC857;
+            --grigio-chiaro: #F5F5F5;
+            --grigio-scuro: #444444;
+            --bianco: #FFFFFF;
+            --font-titoli: "Montserrat", Arial, sans-serif;
+            --font-testi: "Roboto", Arial, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            font-family: var(--font-testi);
+            background-color: var(--bianco);
+            color: var(--grigio-scuro);
+        }
+
+        header {
+            background-color: var(--blu-notte);
+            padding: 20px;
+            text-align: center;
+            color: var(--bianco);
+        }
+
+        header h1 {
+            font-family: var(--font-titoli);
+            font-size: 2.4rem;
+            margin: 0;
+        }
+
+        .intro {
+            padding: 40px 20px;
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .intro p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .servizi-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .servizio-box {
+            background: var(--grigio-chiaro);
+            padding: 30px;
+            border-radius: 14px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+        }
+
+        .servizio-box:hover {
+            transform: translateY(-6px);
+        }
+
+        .servizio-box h3 {
+            font-family: var(--font-titoli);
+            font-size: 1.6rem;
+            margin-bottom: 15px;
+            color: var(--blu-notte);
+        }
+
+        .servizio-box ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .servizio-box ul li {
+            margin-bottom: 10px;
+            padding-left: 18px;
+            position: relative;
+        }
+
+        .servizio-box ul li::before {
+            content: "✔";
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: var(--rosso);
+            font-weight: 700;
+        }
+
+        .cta-final {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: var(--blu-notte);
+            color: var(--bianco);
+        }
+
+        .cta-final h2 {
+            font-family: var(--font-titoli);
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .btn-cta {
+            background-color: var(--rosso);
+            color: var(--bianco);
+            padding: 14px 28px;
+            border-radius: 999px;
+            font-weight: 700;
+            font-size: 1rem;
+            text-transform: uppercase;
+            display: inline-block;
+            margin-top: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        @media (max-width: 900px) {
+            .servizi-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>I Servizi Tempestivo</h1>
+</header>
+
+<section class="intro">
+    <p>
+        Tempestivo è il tuo hub unico per ristrutturazioni, impianti e pronto intervento.
+        Coordinamento tecnico, rapidità e qualità certificata: scopri tutti i servizi disponibili
+        nelle principali città tra Palermo e Trapani.
+    </p>
+</section>
+
+<section class="servizi-grid">
+
+    <div class="servizio-box">
+        <h3>Ristrutturazioni</h3>
+        <ul>
+            <li>Bagni e cucine</li>
+            <li>Appartamenti e ville</li>
+            <li>Locali commerciali</li>
+            <li>Coordinamento impianti e finiture</li>
+        </ul>
+        <p style="margin-top:10px;">
+            Operiamo in tutta la zona: 
+            <a href="servizi-partinico.html">Partinico</a>, 
+            <a href="servizi-carini.html">Carini</a>, 
+            <a href="servizi-alcamo.html">Alcamo</a>.
+        </p>
+    </div>
+
+    <div class="servizio-box">
+        <h3>Impianti Elettrici</h3>
+        <ul>
+            <li>Nuovi impianti e adeguamenti</li>
+            <li>Quadri elettrici e automazioni</li>
+            <li>Diagnosi e riparazione guasti</li>
+            <li>Certificazioni DM 37/08</li>
+        </ul>
+    </div>
+
+    <div class="servizio-box">
+        <h3>Impianti Idraulici</h3>
+        <ul>
+            <li>Riparazione perdite</li>
+            <li>Impianti idrici completi</li>
+            <li>Autoclavi e pompe</li>
+            <li>Scarichi e tubazioni</li>
+        </ul>
+    </div>
+
+    <div class="servizio-box">
+        <h3>Pronto Intervento H24</h3>
+        <ul>
+            <li>Emergenze elettriche</li>
+            <li>Emergenze idrauliche</li>
+            <li>Allagamenti</li>
+            <li>Corto circuiti</li>
+        </ul>
+        <p style="margin-top:10px;">
+            Interventi rapidi a 
+            <a href="servizi-terrasini.html">Terrasini</a>, 
+            <a href="servizi-cinisi.html">Cinisi</a>, 
+            <a href="servizi-isola-delle-femmine.html">Isola delle Femmine</a>.
+        </p>
+    </div>
+
+    <div class="servizio-box">
+        <h3>Manutenzione Programmata</h3>
+        <ul>
+            <li>Aziende agricole</li>
+            <li>Condomini</li>
+            <li>Impianti industriali</li>
+            <li>Supporto tecnico all’amministratore</li>
+        </ul>
+    </div>
+
+</section>
+
+<section class="cta-final">
+    <h2>Hai bisogno di un intervento?</h2>
+    <p>Contattaci: rispondiamo rapidamente e organizziamo l’uscita del tecnico.</p>
+    <a href="index.html#contatto" class="btn-cta">Richiedi un intervento</a>
+</section>
+
+</body>
+</html>

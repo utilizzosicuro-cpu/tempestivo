@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Pronto Intervento H24 a Palermo e Trapani – Elettrico, Idraulico, Impianti</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Pronto intervento elettrico, idraulico e impianti a Palermo, Trapani e provincia. Tecnici certificati, interventi urgenti H24, diagnosi immediata e ripristino rapido. Chiama ora.">
+
+    <link rel="canonical" href="https://utilizzosicuro-cpu.github.io/tempestivo/pronto-intervento-palermo-trapani.html">
+
+    <style>
+        :root {
+            --rosso: #E32626;
+            --blu-notte: #0B1B3B;
+            --giallo: #FFC857;
+            --grigio-chiaro: #F5F5F5;
+            --grigio-scuro: #444444;
+            --bianco: #FFFFFF;
+            --font-titoli: "Montserrat", Arial, sans-serif;
+            --font-testi: "Roboto", Arial, sans-serif;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: var(--font-testi); color: var(--grigio-scuro); background: var(--bianco); line-height: 1.6; }
+        a { text-decoration: none; color: inherit; }
+
+        /* HEADER */
+        header {
+            width: 100%;
+            position: fixed;
+            top: 0; left: 0;
+            z-index: 1000;
+            background-color: rgba(11, 27, 59, 0.96);
+            color: var(--bianco);
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+        }
+        .header-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 12px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo { display: flex; align-items: center; gap: 10px; }
+        .logo-img { height: 34px; width: auto; }
+        .logo-text { display: flex; flex-direction: column; }
+        .logo-text span:first-child { font-family: var(--font-titoli); font-weight: 800; font-size: 18px; }
+        .logo-text span:last-child { font-size: 11px; opacity: 0.8; }
+
+        .btn-emergenza {
+            background-color: var(--rosso);
+            color: var(--bianco);
+            padding: 8px 16px;
+            border-radius: 999px;
+            font-weight: 700;
+            font-size: 13px;
+            border: none;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            white-space: nowrap;
+        }
+
+        .page-offset { height: 70px; }
+
+        /* HERO */
+        .hero {
+            padding: 80px 20px 60px 20px;
+            background: linear-gradient(135deg, #8B0000, #E32626);
+            color: var(--bianco);
+            text-align: left;
+        }
+        .hero-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 3fr 2fr;
+            gap: 40px;
+            align-items: center;
+        }
+        .hero-text h1 {
+            font-family: var(--font-titoli);
+            font-size: 2.4rem;
+            font-weight: 800;
+            margin-bottom: 18px;
+        }
+        .hero-text h1 span { color: var(--giallo); }
+        .hero-text p { font-size: 1.05rem; margin-bottom: 20px; }
+
+        .hero-list { list-style: none; padding: 0; margin: 15px 0; }
+        .hero-list li {
+            padding-left: 20px;
+            margin-bottom: 8px;
+            position: relative;
+        }
+        .hero-list li::before {
+            content: "✔";
+            position: absolute;
+            left: 0; top: 0;
+            color: var(--giallo);
+            font-weight: 700;
+        }
+
+        .btn-cta {
+            display: inline-block;
+            background-color: var(--blu-notte);
+            color: var(--bianco);
+            padding: 12px 24px;
+            border-radius: 999px;
+            font-weight: 700;
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        /* SEZIONI */
+        .section { padding: 70px 20px; }
+        .section-alt { background: var(--grigio-chiaro); }
+        .section-inner { max-width: 1100px; margin: 0 auto; }
+
+        .section h2 {
+            font-family: var(--font-titoli);
+            font-size: 2rem;
+            font-weight: 800;
+            margin-bottom: 25px;
+            color: var(--blu-notte);
+        }
+        .section h2 span { color: var(--rosso); }
+
+        .three-cols {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .box {
+            background: var(--bianco);
+            padding: 20px;
+            border-radius: 14px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+        }
+
+        .box h3 {
+            font-family: var(--font-titoli);
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: var(--blu-notte);
+        }
+
+        .check-list { list-style: none; padding: 0; }
+        .check-list li {
+            padding-left: 20px;
+            margin-bottom: 8px;
+            position: relative;
+        }
+        .check-list li::before {
+            content: "✔";
+            position: absolute;
+            left: 0; top: 0;
+            color: var(--rosso);
+            font-weight: 700;
+        }
+
+        /* ZONE */
+        .zone-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
+        .zone-pill {
+            background: var(--bianco);
+            padding: 10px 16px;
+            border-radius: 999px;
+            text-align: center;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+        }
+
+        /* FAQ */
+        .faq-item { margin-bottom: 18px; }
+        .faq-item h3 {
+            font-family: var(--font-titoli);
+            font-size: 1.05rem;
+            margin-bottom: 6px;
+            color: var(--blu-notte);
+        }
+
+        /* CTA FINALE */
+        .cta-final { text-align: center; }
+
+        /* FOOTER */
+        footer {
+            background: var(--grigio-scuro);
+            color: var(--bianco);
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 900px) {
+            .hero-inner { grid-template-columns: 1fr; }
+            .three-cols { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 768px) {
+            .hero-text h1 { font-size: 1.9rem; }
+            .section { padding: 55px 15px; }
+            .zone-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="header-inner">
+        <div class="logo">
+            <img src="img/logo.png" class="logo-img" alt="Tempestivo">
+            <div class="logo-text">
+                <span>TEMPESTIVO</span>
+                <span>RAPIDI & AFFIDABILI</span>
+            </div>
+        </div>
+        <a href="tel:800123456">
+            <button class="btn-emergenza">
+                <span>⚠️</span> EMERGENZA H24: 800 123 456
+            </button>
+        </a>
+    </div>
+</header>
+
+<div class="page-offset"></div>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-inner">
+        <div class="hero-text">
+            <h1>Pronto Intervento <span>H24</span> a Palermo e Trapani – Elettrico, Idraulico, Impianti</h1>
+            <p>
+                Tecnici certificati disponibili 24 ore su 24 per emergenze elettriche, idrauliche e impiantistiche.
+                Diagnosi immediata, ripristino rapido e interventi garantiti.
+            </p>
+
+            <ul class="hero-list">
+                <li>Interventi urgenti H24</li>
+                <li>Elettricista e idraulico immediati</li>
+                <li>Ripristino guasti e perdite</li>
+                <li>Zone: Palermo, Trapani e province</li>
+            </ul>
+
+            <a href="tel:800123456" class="btn-cta">Chiama ora</a>
+        </div>
+
+        <div class="box">
+            <h3>Emergenze più comuni</h3>
+            <ul class="check-list">
+                <li>Corto circuito</li>
+                <li>Blackout domestici</li>
+                <li>Perdite idriche</li>
+                <li>Allagamenti</li>
+                <li>Guasti impianti</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- SERVIZI -->
+<section class="section section-alt">
+    <div class="section-inner">
+        <h2>Servizi di <span>pronto intervento</span></h2>
+
+        <div class="three-cols">
+            <div class="box">
+                <h3>Elettrico</h3>
+                <ul class="check-list">
+                    <li>Ripristino corto circuito</li>
+                    <li>Quadri elettrici</li>
+                    <li>Blackout improvvisi</li>
+                    <li>Certificazioni DM 37/08</li>
+                </ul>
+            </div>
+
+            <div class="box">
+                <h3>Idraulico</h3>
+                <ul class="check-list">
+                    <li>Perdite e allagamenti</li>
+                    <li>Scarichi otturati</li>
+                    <li>Riparazioni urgenti</li>
+                    <li>Sostituzione tubazioni</li>
+                </ul>
+            </div>
+
+            <div class="box">
+                <h3>Impianti</h3>
+                <ul class="check-list">
+                    <li>Impianti domestici e commerciali</li>
+                    <li>Diagnosi guasti</li>
+                    <li>Ripristino funzionalità</li>
+                    <li>Manutenzione programmata</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ZONE -->
+<section class="section">
+    <div class="section-inner">
+        <h2>Zone in cui interveniamo</h2>
+
+        <p>Copriamo Palermo, Trapani e gran parte delle rispettive province.</p>
+
+        <div class="zone-grid">
+            <div class="zone-pill">Palermo</div>
+            <div class="zone-pill">Bagheria</div>
+            <div class="zone-pill">Monreale</div>
+            <div class="zone-pill">Carini</div>
+            <div class="zone-pill">Trapani</div>
+            <div class="zone-pill">Erice</div>
+            <div class="zone-pill">Marsala</div>
+            <div class="zone-pill">Mazara del Vallo</div>
+            <div class="zone-pill">Alcamo</div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section class="section section-alt">
+    <div class="section-inner">
+        <h2>Domande frequenti</h2>
+
+        <div class="faq-item">
+            <h3>Intervenite davvero H24?</h3>
+            <p>Sì, 7 giorni su 7, anche festivi.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Quanto tempo impiegate ad arrivare?</h3>
+            <p>In media 30–60 minuti in città, 60–90 minuti in provincia.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Quanto costa un intervento urgente?</h3>
+            <p>Dipende dal tipo di guasto. Forniamo sempre un’indicazione immediata al telefono.</p>
+        </div>
+    </div>
+</section>
+
+<!-- CTA FINALE -->
+<section class="section">
+    <div class="section-inner cta-final">
+        <h2>Hai un’emergenza?</h2>
+        <p>Chiama subito: un tecnico è disponibile ora.</p>
+        <a href="tel:800123456" class="btn-cta">Chiama ora</a>
+    </div>
+</section>
+
+<footer>
+    <p>Tempestivo – Pronto intervento elettrico, idraulico e impianti a Palermo e Trapani.</p>
+    <p><a href="index.html">Torna alla homepage</a></p>
+</footer>
+
+</body>
+</html>
