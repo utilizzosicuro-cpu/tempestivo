@@ -112,6 +112,31 @@
             min-width: 0; 
         }
 
+		.main-nav {
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.nav-link {
+    color: var(--bianco);
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 5px 10px;
+}
+
+.nav-link:hover {
+    color: var(--giallo);
+}
+
+/* Nascondi il link nel menu su smartphone molto piccoli se lo spazio manca */
+@media (max-width: 600px) {
+    .main-nav {
+        display: none; 
+    }
+}
+
         .btn-emergenza {
     background-color: var(--rosso);
     color: var(--bianco);
