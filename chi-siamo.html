@@ -32,14 +32,7 @@
         a { text-decoration: none; color: inherit; transition: 0.3s; }
         h1, h2, h3 { font-family: var(--font-titoli); }
 
-     Capisco perfettamente cosa sta succedendo: il contenuto dell'header è ancora leggermente più largo dello schermo del telefono, e questo crea uno "spazio vuoto" sulla destra (overflow) che ti permette di scorrere lateralmente.
-
-Per risolvere definitivamente, dobbiamo assicurarci che l'header non possa mai superare il 100% della larghezza della finestra e che gli elementi al suo interno si rimpiccioliscano correttamente.
-
-Sostituisci il blocco CSS dell'header e del logo con questo, che include i fix per l'overflow:
-
-CSS Definitivo (Anti-scorrimento laterale)
-CSS
+  CSS
 /* --- FIX HEADER E OVERFLOW MOBILE --- */
 header {
     width: 100%;
