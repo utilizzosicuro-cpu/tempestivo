@@ -33,71 +33,83 @@
         h1, h2, h3 { font-family: var(--font-titoli); }
 
   CSS
-/* --- FIX HEADER E OVERFLOW MOBILE --- */
+Questo è successo perché aggiungendo overflow: hidden all'interno dell'elemento header, abbiamo inavvertitamente nascosto lo sfondo o creato un conflitto con il posizionamento fixed. Su alcuni browser, se non viene specificata l'altezza o se il contenuto interno è "compresso", la barra sembra sparire.
+
+Ripristiniamo la visibilità della barra blu e assicuriamoci che sia solida e fissa in alto con questa configurazione pulita:
+
+CSS Header (Versione Corretta e Visibile)
+CSS
+/* --- FIX FINALE HEADER: VISIBILE E BLOCCATO --- */
 header {
     width: 100%;
+    height: 70px; /* Altezza fissa per sicurezza */
     position: fixed;
-    top: 0; left: 0;
-    z-index: 1000;
-    background-color: var(--blu-notte);
-    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
-    /* Impedisce all'header di allargare la pagina */
-    overflow: hidden; 
+    top: 0;
+    left: 0;
+    z-index: 9999; /* Sempre sopra a tutto */
+    background-color: var(--blu-notte) !important; /* Forza il colore blu */
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
 }
 
 .header-inner {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 10px 15px;
+    padding: 0 15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-sizing: border-box; /* Fondamentale: include il padding nel calcolo della larghezza */
+    box-sizing: border-box;
 }
 
 .logo { 
     display: flex; 
     align-items: center; 
-    gap: 8px; 
+    gap: 10px; 
     color: var(--bianco);
-    min-width: 0; /* Permette al logo di flettere */
-    flex: 1; /* Prende lo spazio disponibile senza spingere fuori il tasto */
+    text-decoration: none;
 }
 
 .logo-img { 
-    height: 30px; /* Ridotto leggermente per sicurezza */
-    width: auto; 
-    flex-shrink: 0;
-}
-
-.logo-text {
-    min-width: 0;
-    overflow: hidden;
+    height: 35px; 
+    width: auto;
 }
 
 .logo-text span:first-child { 
     font-weight: 800; 
-    font-size: 0.95rem; 
-    white-space: nowrap;
+    font-size: 1.1rem; 
+    line-height: 1;
+    display: block;
 }
 
-   /* FIX PULSANTE CHIAMATA */
+.logo-text span:last-child { 
+    font-size: 0.65rem; 
+    color: var(--giallo); 
+    text-transform: uppercase;
+}
+
 .btn-emergenza {
     background-color: var(--rosso);
-    color: var(--bianco);
-    padding: 8px 12px;
+    color: var(--bianco) !important;
+    padding: 8px 15px;
     border-radius: 5px;
     font-weight: 700;
     display: flex;
     align-items: center;
-    gap: 5px;
-    font-size: 0.8rem;
+    gap: 8px;
+    font-size: 0.9rem;
     white-space: nowrap;
-    flex-shrink: 0; /* Impedisce al tasto di deformarsi */
-    margin-left: 10px;
+    flex-shrink: 0; /* Impedisce al tasto di rimpicciolirsi */
 }
 
+/* --- FIX SPAZIATURA BODY --- */
+body {
+    padding-top: 70px; /* Lascia lo spazio per l'header fisso */
+    max-width: 100%;
+    overflow-x: hidden;
+}
         /* --- CONTENUTI PAGINA (Mantenuti) --- */
         .intro { padding: 50px 20px; max-width: 900px; margin: 0 auto; text-align: center; }
         .intro p { font-size: 1.15rem; line-height: 1.7; }
@@ -125,21 +137,14 @@ header {
         .footer-links a:hover { color: var(--giallo); }
         .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; text-align: center; font-size: 0.8rem; }
 
-     /* --- MEDIA QUERY AGGRESSIVA PER EVITARE SCORRIMENTO --- */
-@media (max-width: 400px) {
-    .header-inner {
-        padding: 8px 8px;
-    }
-    .logo-text span:first-child {
-        font-size: 0.85rem; /* Rimpicciolisce il testo su schermi mini */
-    }
-    .btn-emergenza {
-        font-size: 0.75rem;
-        padding: 6px 10px;
-    }
-    .logo-img {
-        height: 25px;
-    }
+    /* --- MOBILE OPTIMIZATION --- */
+@media (max-width: 480px) {
+    header { height: 60px; }
+    body { padding-top: 60px; }
+    .logo-img { height: 28px; }
+    .logo-text span:first-child { font-size: 0.9rem; }
+    .logo-text span:last-child { display: none; }
+    .btn-emergenza { font-size: 0.8rem; padding: 6px 10px; }
 }
 
 /* Fix globale per evitare scorrimenti indesiderati in tutta la pagina */
