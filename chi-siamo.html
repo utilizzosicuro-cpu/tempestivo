@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<meta property="og:title" content="Chi Siamo | Tempestivo - Esperti in Ristrutturazioni e Pronto Intervento.">
+<meta property="og:description" content="Scopri la realtà di Tempestivo: il tuo punto di riferimento per interventi tecnici e ristrutturazioni tra Palermo e Trapani. Qualità certificata e rapidità.">
     <meta charset="UTF-8">
     <title>Chi Siamo – Tempestivo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="description" content="Scopri chi è Tempestivo: la divisione di Officina Creativa dedicata a ristrutturazioni, impianti e pronto intervento rapido. Team coordinato, aziende certificate, tempi certi.">
+	<link rel="canonical" href="https://www.tempestivo.it/chi-siamo.html">
+
 
     <style>
         :root {
@@ -167,6 +173,61 @@
                 grid-template-columns: 1fr;
             }
         }
+		
+		/* Stile Footer */
+.footer {
+    background-color: var(--blu-notte);
+    color: var(--bianco);
+    padding: 50px 0 20px 0;
+    margin-top: 50px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-links a {
+    color: var(--bianco);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--giallo);
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 20px;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.footer-bottom a {
+    color: var(--giallo);
+    text-decoration: none;
+}
+
+/* Responsivo per cellulari */
+@media (max-width: 600px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .footer-links {
+        align-items: center;
+    }
+}
     </style>
 </head>
 
@@ -178,10 +239,7 @@
 
 <section class="intro">
     <p>
-        Tempestivo è la divisione operativa di Officina Creativa dedicata alle ristrutturazioni,
-        agli impianti e al pronto intervento rapido.  
-        Nasce per risolvere un problema reale: coordinare tecnici, imprese e professionisti in modo
-        efficiente, senza ritardi e senza rimbalzi di responsabilità.
+        Tempestivo nasce dall'esperienza di Officina Creativa con un obiettivo chiaro: semplificare la vita di chi deve ristrutturare casa o affrontare un'emergenza tecnica. Non siamo un semplice call center, ma un team coordinato di project manager e artigiani certificati che operano sul territorio di Palermo e Trapani. Abbiamo selezionato le migliori maestranze locali per garantire che ogni intervento, dalla riparazione di un rubinetto al rifacimento di una villa, segua standard qualitativi rigorosi e tempi certi.
     </p>
 </section>
 
@@ -215,7 +273,7 @@
 
 <section class="valori">
     <h2>I nostri valori</h2>
-
+<p>Preventivi dettagliati prima di iniziare e prezzi chiari comunicati già al telefono per il pronto intervento. Niente sorprese finali.</p>
     <div class="valori-grid">
 
         <div class="valore">
@@ -241,6 +299,26 @@
     <p>Contattaci per un sopralluogo o per richiedere un intervento rapido.</p>
     <a href="index.html#contatto" class="btn-cta">Richiedi un intervento</a>
 </section>
-
+<footer class="footer">
+    <div class="section-inner">
+        <div class="footer-grid">
+            <div class="footer-info">
+                <p><strong>Tempestivo</strong></p>
+                <p>Ristrutturazioni, Impianti e Pronto Intervento H24</p>
+                <p>Operativi nelle province di Palermo e Trapani</p>
+            </div>
+            <div class="footer-links">
+                <a href="ristrutturazioni-palermo-trapani.html">Ristrutturazioni</a>
+                <a href="pronto-intervento-palermo-trapani.html" style="color:var(--giallo); font-weight: bold;">🆘 Pronto Intervento H24</a>
+                <a href="mappa-zone.html">Mappa Zone</a>
+                <a href="chi-siamo.html">Chi Siamo</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>P.IVA: 0123456789 | <a href="privacy.html">Privacy Policy</a></p>
+            <p>&copy; 2024 Tempestivo. Tutti i diritti riservati.</p>
+        </div>
+    </div>
+</footer>
 </body>
 </html>

@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<meta property="og:title" content="Servizi di Ristrutturazione e Impianti Palermo e Trapani | Tempestivo">
+<meta property="og:description" content="Dalle ristrutturazioni chiavi in mano al pronto intervento h24. Scopri tutti i servizi professionali di Tempestivo per la tua casa o azienda.">
     <meta charset="UTF-8">
     <title>Servizi Tempestivo – Ristrutturazioni, Impianti e Pronto Intervento</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="description" content="Scopri tutti i servizi Tempestivo: ristrutturazioni, impianti elettrici, impianti idraulici, pronto intervento H24 e manutenzione programmata. Operiamo tra Palermo e Trapani.">
+	<link rel="canonical" href="https://www.tempestivo.it/servizi.html">
+
 
     <style>
         :root {
@@ -124,6 +130,93 @@
             margin-top: 20px;
             box-shadow: 0 4px 10px rgba(0,0,0,0.3);
         }
+		
+		.btn-more {
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: var(--rosso);
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-bottom: 2px solid var(--giallo);
+    transition: all 0.3s ease;
+}
+.btn-more:hover {
+    color: var(--blu-notte);
+    border-color: var(--blu-notte);
+}
+
+/* Stile Footer */
+.footer {
+    background-color: var(--blu-notte);
+    color: var(--bianco);
+    padding: 50px 0 20px 0;
+    margin-top: 50px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-links a {
+    color: var(--bianco);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--giallo);
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 20px;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.footer-bottom a {
+    color: var(--giallo);
+    text-decoration: none;
+}
+
+/* Responsivo per cellulari */
+@media (max-width: 600px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .footer-links {
+        align-items: center;
+    
+}
+.btn-pronto-intervento {
+    display: block;
+    background-color: var(--rosso);
+    color: var(--bianco);
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: transform 0.2s ease;
+}
+.btn-pronto-intervento:hover {
+    transform: scale(1.02);
+    background-color: var(--blu-notte);
+}
 
         @media (max-width: 900px) {
             .servizi-grid {
@@ -131,39 +224,65 @@
             }
         }
     </style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Edilizia e Impiantistica",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "Tempestivo",
+    "url": "https://www.tempestivo.it"
+  },
+  "areaServed": ["Palermo", "Trapani"],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Catalogo Servizi Tempestivo",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ristrutturazioni Edili" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Impianti Elettrici e Idraulici" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Pronto Intervento H24" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Manutenzione Condominiale e Aziendale" } }
+    ]
+  }
+}
+</script>
 </head>
 
 <body>
-
+<a href="tel:800123456" class="sticky-cta-mobile">CHIAMA ORA H24: 800 123 456</a>
 <header>
     <h1>I Servizi Tempestivo</h1>
 </header>
 
 <section class="intro">
     <p>
-        Tempestivo è il tuo hub unico per ristrutturazioni, impianti e pronto intervento.
-        Coordinamento tecnico, rapidità e qualità certificata: scopri tutti i servizi disponibili
-        nelle principali città tra Palermo e Trapani.
+        Tempestivo offre un servizio integrato per la gestione della tua casa o della tua azienda nelle province di Palermo e Trapani. Dalla piccola emergenza idraulica alla ristrutturazione completa, coordiniamo tecnici certificati e imprese specializzate per offrirti un lavoro a regola d'arte con tempi di intervento certi e preventivi trasparenti.
     </p>
 </section>
 
 <section class="servizi-grid">
 
     <div class="servizio-box">
-        <h3>Ristrutturazioni</h3>
-        <ul>
-            <li>Bagni e cucine</li>
-            <li>Appartamenti e ville</li>
-            <li>Locali commerciali</li>
-            <li>Coordinamento impianti e finiture</li>
-        </ul>
-        <p style="margin-top:10px;">
-            Operiamo in tutta la zona: 
-            <a href="servizi-partinico.html">Partinico</a>, 
-            <a href="servizi-carini.html">Carini</a>, 
-            <a href="servizi-alcamo.html">Alcamo</a>.
-        </p>
-    </div>
+    <h3><a href="ristrutturazioni-palermo-trapani.html" style="text-decoration:none; color:inherit;">Ristrutturazioni Edili</a></h3>
+    <ul>
+        <li>Rifacimento bagno veloce</li>
+        <li>Opere murarie e cartongesso</li>
+        <li>Pavimentazioni e rivestimenti</li>
+        <li>Soluzioni chiavi in mano</li>
+    </ul>
+    <a href="ristrutturazioni-palermo-trapani.html" class="btn-more">Scopri di più</a>
+</div>
+
+<div class="servizio-box">
+    <h3><a href="impianti-elettrici-palermo-trapani.html" style="text-decoration:none; color:inherit;">Impianti Elettrici</a></h3>
+    <ul>
+        <li>Certificazioni DM 37/08</li>
+        <li>Quadri elettrici e domotica</li>
+        <li>Rilevazione guasti e messa a terra</li>
+    </ul>
+    <a href="impianti-elettrici-palermo-trapani.html" class="btn-more">Dettagli servizio</a>
+</div>
 
     <div class="servizio-box">
         <h3>Impianti Elettrici</h3>
@@ -185,21 +304,23 @@
         </ul>
     </div>
 
-    <div class="servizio-box">
-        <h3>Pronto Intervento H24</h3>
-        <ul>
-            <li>Emergenze elettriche</li>
-            <li>Emergenze idrauliche</li>
-            <li>Allagamenti</li>
-            <li>Corto circuiti</li>
-        </ul>
-        <p style="margin-top:10px;">
-            Interventi rapidi a 
-            <a href="servizi-terrasini.html">Terrasini</a>, 
-            <a href="servizi-cinisi.html">Cinisi</a>, 
-            <a href="servizi-isola-delle-femmine.html">Isola delle Femmine</a>.
-        </p>
-    </div>
+<div class="servizio-box" style="border: 2px solid var(--rosso);"> 
+    <h3>Pronto Intervento H24</h3>
+    <ul>
+        <li>Emergenze elettriche e blackout</li>
+        <li>Perdite idriche e allagamenti</li>
+        <li>Riparazione autoclavi urgente</li>
+    </ul>
+    
+    <a href="tel:+39800123456" class="btn-pronto-intervento">
+        📞 CHIAMA ORA H24
+    </a>
+    
+    <p style="margin-top:10px; font-size: 0.85rem;">
+        Tecnico sul posto a <a href="servizi-terrasini.html">Terrasini</a>, 
+        <a href="servizi-cinisi.html">Cinisi</a> e <a href="servizi-carini.html">Carini</a>.
+    </p>
+</div>
 
     <div class="servizio-box">
         <h3>Manutenzione Programmata</h3>
@@ -218,6 +339,26 @@
     <p>Contattaci: rispondiamo rapidamente e organizziamo l’uscita del tecnico.</p>
     <a href="index.html#contatto" class="btn-cta">Richiedi un intervento</a>
 </section>
-
+<footer class="footer">
+    <div class="section-inner">
+        <div class="footer-grid">
+            <div class="footer-info">
+                <p><strong>Tempestivo</strong></p>
+                <p>Ristrutturazioni, Impianti e Pronto Intervento H24</p>
+                <p>Operativi nelle province di Palermo e Trapani</p>
+            </div>
+            <div class="footer-links">
+                <a href="ristrutturazioni-palermo-trapani.html">Ristrutturazioni</a>
+                <a href="pronto-intervento-palermo-trapani.html" style="color:var(--giallo); font-weight: bold;">🆘 Pronto Intervento H24</a>
+                <a href="mappa-zone.html">Mappa Zone</a>
+                <a href="chi-siamo.html">Chi Siamo</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>P.IVA: 0123456789 | <a href="privacy.html">Privacy Policy</a></p>
+            <p>&copy; 2024 Tempestivo. Tutti i diritti riservati.</p>
+        </div>
+    </div>
+</footer>
 </body>
 </html>

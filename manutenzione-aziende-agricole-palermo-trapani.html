@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<meta property="og:title" content="Manutenzione Impianti Aziende Agricole Palermo e Trapani | Tempestivo">
+<meta property="og:description" content="Assistenza tecnica specializzata per il settore agricolo. Riparazione pompe, quadri elettrici e impianti idrici con reperibilità stagionale h24.">
     <meta charset="UTF-8">
     <title>Manutenzione Aziende Agricole a Palermo e Trapani – Tempestivo</title>
 
@@ -8,7 +12,8 @@
 
     <meta name="description" content="Manutenzione programmata per aziende agricole a Palermo, Trapani e provincia. Impianti elettrici, idraulici, pompe, quadri, automazioni, reperibilità in vendemmia e molitura.">
 
-    <link rel="canonical" href="https://utilizzosicuro-cpu.github.io/tempestivo/manutenzione-aziende-agricole-palermo-trapani.html">
+   
+    <link rel="canonical" href="https://www.tempestivo.it/manutenzione-aziende-agricole-palermo-trapani.html">
 
     <style>
         :root {
@@ -200,11 +205,153 @@
             .section { padding: 55px 15px; }
             .zone-grid { grid-template-columns: repeat(2, 1fr); }
         }
+		
+			/* Inserisci subito dopo la regola .box esistente */
+.box {
+    background: var(--bianco);
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+
+    /* Correzione: testo scuro per garantire contrasto */
+    color: var(--grigio-scuro);        /* testo principale */
+}
+
+/* Titoli dentro il box più scuri e distinti */
+.box h3 {
+    color: var(--blu-notte);
+    font-weight: 700;
+}
+
+/* Paragrafi, liste e link dentro il box */
+.box p,
+.box ul,
+.box li,
+.box .check-list li {
+    color: var(--grigio-scuro);
+}
+
+/* Se i "baffetti" (::before) sono colorati, mantienili visibili */
+.box .check-list li::before {
+    color: var(--rosso);
+}
+
+/* Se vuoi un bordo sottile per evidenziare il box (opzionale) */
+.box {
+    border: 1px solid rgba(11,27,59,0.04);
+}
+
+        .box h3 {
+            font-family: var(--font-titoli);
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: var(--blu-notte);
+        }
+
+        .check-list { list-style: none; padding: 0; }
+        .check-list li {
+            padding-left: 20px;
+            margin-bottom: 8px;
+            position: relative;
+        }
+        .check-list li::before {
+            content: "✔";
+            position: absolute;
+            left: 0; top: 0;
+            color: var(--rosso);
+            font-weight: 700;
+        }
+
+        .zone-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
+       .zone-pill {
+    display: inline-block;
+    background: var(--grigio-chiaro);
+    color: var(--blu-notte);
+    padding: 8px 15px;
+    border-radius: 20px;
+    margin: 5px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-decoration: none; /* Rimuove la sottolineatura */
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+/* Effetto al passaggio del mouse per i link */
+a.zone-pill:hover {
+    background: var(--blu-notte);
+    color: var(--bianco);
+    border-color: var(--giallo);
+    transform: translateY(-2px);
+}
+
+        .faq-item { margin-bottom: 18px; }
+        .faq-item h3 {
+            font-family: var(--font-titoli);
+            font-size: 1.05rem;
+            margin-bottom: 6px;
+            color: var(--blu-notte);
+        }
+
+        .cta-final { text-align: center; }
+
+        footer {
+            background: var(--grigio-scuro);
+            color: var(--bianco);
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        @media (max-width: 900px) {
+            .hero-inner, .three-cols { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 768px) {
+            .hero-text h1 { font-size: 1.9rem; }
+            .section { padding: 55px 15px; }
+            .zone-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+		/* Mobile Sticky CTA */
+.sticky-cta-mobile {
+    display: none;
+    position: fixed;
+    bottom: 0; left: 0; width: 100%;
+    background: var(--rosso);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-weight: 800;
+    z-index: 9999;
+    font-size: 1.1rem;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.3);
+}
+@media (max-width: 768px) {
+    .sticky-cta-mobile { display: block; }
+    body { padding-bottom: 60px; } /* Evita che il tasto copra il footer */
+}
     </style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Tempestivo - Manutenzione Aziende Agricole",
+  "description": "Servizi di manutenzione impianti elettrici e idraulici per aziende agricole a Palermo e Trapani. Specializzati in pompe, pozzi e quadri di automazione con reperibilità stagionale.",
+  "url": "https://www.tempestivo.it/manutenzione-aziende-agricole-palermo-trapani.html",
+  "telephone": "+39800123456",
+  "areaServed": [
+    {"@type": "AdministrativeArea", "name": "Palermo"},
+    {"@type": "AdministrativeArea", "name": "Trapani"}
+  ],
+  "openingHours": "Mo-Su 00:00-23:59"
+}
+</script>
 </head>
 
 <body>
-
+<a href="tel:800123456" class="sticky-cta-mobile">CHIAMA ORA H24: 800 123 456</a>
 <header>
     <div class="header-inner">
         <div class="logo">
@@ -230,8 +377,7 @@
         <div class="hero-text">
             <h1>Manutenzione Programmata per <span>Aziende Agricole</span> a Palermo e Trapani</h1>
             <p>
-                Interventi programmati e reperibilità tecnica per aziende agricole, cantine, frantoi e attività rurali.
-                Impianti elettrici, idraulici, pompe, quadri, automazioni e manutenzioni stagionali.
+               Tempestivo supporta il settore agricolo delle province di Palermo e Trapani con servizi di manutenzione programmata e riparazioni d'urgenza. Comprendiamo l'importanza della continuità operativa, specialmente durante i periodi critici di vendemmia e molitura. I nostri tecnici intervengono su quadri elettrici di potenza, impianti di irrigazione, elettropompe e sistemi di automazione, garantendo una reperibilità dedicata per ridurre al minimo i tempi di fermo produzione.
             </p>
 
             <ul class="hero-list">
@@ -291,20 +437,22 @@
 <!-- ZONE -->
 <section class="section">
     <div class="section-inner">
-        <h2>Zone servite</h2>
-
-        <p>Copriamo Palermo, Trapani e gran parte delle rispettive province.</p>
-
+        <h2>Zone servite tra Palermo e Trapani</h2>
         <div class="zone-grid">
-            <div class="zone-pill">Palermo</div>
-            <div class="zone-pill">Bagheria</div>
-            <div class="zone-pill">Monreale</div>
-            <div class="zone-pill">Carini</div>
-            <div class="zone-pill">Trapani</div>
-            <div class="zone-pill">Erice</div>
-            <div class="zone-pill">Marsala</div>
-            <div class="zone-pill">Mazara del Vallo</div>
-            <div class="zone-pill">Alcamo</div>
+            <a href="servizi-carini.html" class="zone-pill">Carini</a>
+            <a href="servizi-terrasini.html" class="zone-pill">Terrasini</a>
+            <a href="servizi-cinisi.html" class="zone-pill">Cinisi</a>
+            <a href="servizi-partinico.html" class="zone-pill">Partinico</a>
+            <a href="servizi-alcamo.html" class="zone-pill">Alcamo</a>
+            <a href="servizi-castellammare-del-golfo.html" class="zone-pill">Castellammare</a>
+            <a href="servizi-monreale.html" class="zone-pill">Monreale</a>
+            <a href="servizi-isola-delle-femmine.html" class="zone-pill">Isola delle Femmine</a>
+            <a href="servizi-balestrate.html" class="zone-pill">Balestrate</a>
+            <a href="servizi-trappeto.html" class="zone-pill">Trappeto</a>
+			<a href="mappa-zone.html" class="zone-pill">Palermo</a>
+            <a href="mappa-zone.html" class="zone-pill">Marsala</a>
+            <a href="mappa-zone.html" class="zone-pill">Mazara</a>
+            <a href="mappa-zone.html" class="zone-pill">Trapani</a>
         </div>
     </div>
 </section>
