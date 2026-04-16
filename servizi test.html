@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<meta property="og:title" content="Servizi di Ristrutturazione e Impianti Palermo e Trapani | Tempestivo">
+<meta property="og:description" content="Dalle ristrutturazioni chiavi in mano al pronto intervento h24. Scopri tutti i servizi professionali di Tempestivo per la tua casa o azienda.">
+    <meta charset="UTF-8">
+    <title>Servizi Tempestivo – Ristrutturazioni, Impianti e Pronto Intervento</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Scopri tutti i servizi Tempestivo: ristrutturazioni, impianti elettrici, impianti idraulici, pronto intervento H24 e manutenzione programmata. Operiamo tra Palermo e Trapani.">
+	<link rel="canonical" href="https://www.tempestivo.it/servizi.html">
+
+    <style>
+        :root {
+            --rosso: #E32626;
+            --blu-notte: #0B1B3B;
+            --giallo: #FFC857;
+            --grigio-chiaro: #F5F5F5;
+            --grigio-scuro: #444444;
+            --bianco: #FFFFFF;
+            --font-titoli: "Montserrat", Arial, sans-serif;
+            --font-testi: "Roboto", Arial, sans-serif;
+        }
+
+        /* RESET E BASE */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            margin: 0;
+            font-family: var(--font-testi);
+            background-color: var(--bianco);
+            color: var(--grigio-scuro);
+            line-height: 1.6;
+            padding-top: 80px; /* Spazio per l'header fisso */
+        }
+
+        /* --- INTEGRAZIONE HEADER COMUNE --- */
+        header {
+            width: 100%;
+            position: fixed;
+            top: 0; left: 0;
+            z-index: 1000;
+            background-color: var(--blu-notte);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            box-sizing: border-box;
+        }
+        .header-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-sizing: border-box;
+        }
+        .logo { display: flex; align-items: center; gap: 10px; color: var(--bianco); text-decoration: none; flex-shrink: 0; }
+        .logo-img { height: 40px; width: auto; }
+        .logo-text { white-space: nowrap; }
+        .logo-text span:first-child { font-weight: 800; font-size: 1.2rem; display: block; line-height: 1.2; }
+        .logo-text span:last-child { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1px; color: var(--giallo); }
+
+        .btn-emergenza {
+            background-color: var(--rosso);
+            color: var(--bianco);
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            white-space: nowrap;
+            font-size: 0.9rem;
+        }
+
+        /* --- FINE INTEGRAZIONE HEADER --- */
+
+        .intro {
+            padding: 40px 20px;
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .intro p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .servizi-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .servizio-box {
+            background: var(--grigio-chiaro);
+            padding: 30px;
+            border-radius: 14px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+        }
+
+        .servizio-box:hover {
+            transform: translateY(-6px);
+        }
+
+        .servizio-box h3 {
+            font-family: var(--font-titoli);
+            font-size: 1.6rem;
+            margin-bottom: 15px;
+            color: var(--blu-notte);
+        }
+
+        .servizio-box ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .servizio-box ul li {
+            margin-bottom: 10px;
+            padding-left: 18px;
+            position: relative;
+        }
+
+        .servizio-box ul li::before {
+            content: "✔";
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: var(--rosso);
+            font-weight: 700;
+        }
+
+        .cta-final {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: var(--blu-notte);
+            color: var(--bianco);
+        }
+
+        .cta-final h2 {
+            font-family: var(--font-titoli);
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .btn-cta {
+            background-color: var(--rosso);
+            color: var(--bianco);
+            padding: 14px 28px;
+            border-radius: 999px;
+            font-weight: 700;
+            font-size: 1rem;
+            text-transform: uppercase;
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+		
+		.btn-more {
+            display: inline-block;
+            margin-top: 15px;
+            font-size: 0.9rem;
+            color: var(--rosso);
+            font-weight: 700;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-bottom: 2px solid var(--giallo);
+            transition: all 0.3s ease;
+        }
+        .btn-more:hover {
+            color: var(--blu-notte);
+            border-color: var(--blu-notte);
+        }
+
+        /* --- FOOTER (RIPRISTINATO E CORRETTO) --- */
+        .footer {
+            background-color: var(--grigio-scuro);
+            color: var(--bianco);
+            padding: 40px 20px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .footer-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .footer-logo .logo-img {
+            height: 40px;
+            width: auto;
+        }
+
+        .footer .logo-text {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+        }
+
+        .footer .logo-text span:first-child {
+            font-family: var(--font-titoli);
+            font-weight: 800;
+            letter-spacing: 1px;
+            font-size: 18px;
+        }
+
+        .footer .logo-text span:last-child {
+            font-size: 11px;
+            text-transform: uppercase;
+            opacity: 0.8;
+        }
+
+        .footer-description {
+            max-width: 700px;
+            margin: 0 auto 20px auto;
+            line-height: 1.5;
+            font-size: 0.95rem;
+        }
+
+        .footer-links {
+            margin-top: 20px;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .footer-links a {
+            color: var(--giallo);
+            text-decoration: underline;
+            font-size: 0.9rem;
+        }
+
+        .footer-bottom {
+            margin-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 20px;
+            width: 100%;
+            font-size: 0.8rem;
+            opacity: 0.7;
+        }
+
+        .btn-pronto-intervento {
+            display: block;
+            background-color: var(--rosso);
+            color: var(--bianco);
+            text-align: center;
+            padding: 12px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-top: 15px;
+            transition: transform 0.2s ease;
+        }
+
+        /* --- OTTIMIZZAZIONE RESPONSIVE --- */
+        @media (max-width: 900px) {
+            .servizi-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-inner { padding: 10px 12px; }
+            .logo-text span:last-child { display: none; }
+            .logo-text span:first-child { font-size: 1rem; }
+            .btn-emergenza { padding: 8px 12px; font-size: 0.8rem; gap: 5px; }
+            .intro h1 { font-size: 2rem; }
+        }
+    </style>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Edilizia e Impiantistica",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Tempestivo",
+        "url": "https://www.tempestivo.it"
+      },
+      "areaServed": ["Palermo", "Trapani"],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Catalogo Servizi Tempestivo",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ristrutturazioni Edili" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Impianti Elettrici e Idraulici" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Pronto Intervento H24" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Manutenzione Condominiale e Aziendale" } }
+        ]
+      }
+    }
+    </script>
+</head>
+
+<body>
+
+<header>
+    <div class="header-inner">
+        <a href="index.html" class="logo">
+            <img src="img/logo.png" alt="Tempestivo" class="logo-img">
+            <div class="logo-text">
+                <span>TEMPESTIVO</span>
+                <span>RAPIDI & AFFIDABILI</span>
+            </div>
+        </a>
+        <a href="tel:800123456" class="btn-emergenza">
+            <span>📞</span> 800 123 456
+        </a>
+    </div>
+</header>
+
+<section class="intro">
+    <h1>I Servizi Tempestivo</h1>
+    <p>
+        Tempestivo offre un servizio integrato per la gestione della tua casa o della tua azienda nelle province di Palermo e Trapani. Dalla piccola emergenza idraulica alla ristrutturazione completa, coordiniamo tecnici certificati e imprese specializzate per offrirti un lavoro a regola d'arte con tempi di intervento certi e preventivi trasparenti.
+    </p>
+</section>
+
+<section class="servizi-grid">
+
+    <div class="servizio-box">
+        <h3><a href="ristrutturazioni-palermo-trapani.html" style="text-decoration:none; color:inherit;">Ristrutturazioni Edili</a></h3>
+        <ul>
+            <li>Rifacimento bagno veloce</li>
+            <li>Opere murarie e cartongesso</li>
+            <li>Pavimentazioni e rivestimenti</li>
+            <li>Soluzioni chiavi in mano</li>
+        </ul>
+        <a href="ristrutturazioni-palermo-trapani.html" class="btn-more">Scopri di più</a>
+    </div>
+
+    <div class="servizio-box">
+        <h3><a href="impianti-elettrici-palermo-trapani.html" style="text-decoration:none; color:inherit;">Impianti Elettrici</a></h3>
+        <ul>
+            <li>Certificazioni DM 37/08</li>
+            <li>Quadri elettrici e domotica</li>
+            <li>Rilevazione guasti e messa a terra</li>
+            <li>Nuovi impianti e adeguamenti</li>
+        </ul>
+        <a href="impianti-elettrici-palermo-trapani.html" class="btn-more">Dettagli servizio</a>
+    </div>
+
+    <div class="servizio-box">
+        <h3>Impianti Idraulici</h3>
+        <ul>
+            <li>Riparazione perdite</li>
+            <li>Impianti idrici completi</li>
+            <li>Autoclavi e pompe</li>
+            <li>Scarichi e tubazioni</li>
+        </ul>
+    </div>
+
+    <div class="servizio-box" style="border: 2px solid var(--rosso);"> 
+        <h3>Pronto Intervento H24</h3>
+        <ul>
+            <li>Emergenze elettriche e blackout</li>
+            <li>Perdite idriche e allagamenti</li>
+            <li>Riparazione autoclavi urgente</li>
+        </ul>
+        <a href="tel:800123456" class="btn-pronto-intervento">📞 CHIAMA ORA H24</a>
+        <p style="margin-top:10px; font-size: 0.85rem;">
+            Tecnico sul posto a <a href="servizi-terrasini.html">Terrasini</a>, 
+            <a href="servizi-cinisi.html">Cinisi</a> e <a href="servizi-carini.html">Carini</a>.
+        </p>
+    </div>
+
+    <div class="servizio-box">
+        <h3>Manutenzione Programmata</h3>
+        <ul>
+            <li>Aziende agricole</li>
+            <li>Condomini</li>
+            <li>Impianti industriali</li>
+            <li>Supporto tecnico all’amministratore</li>
+        </ul>
+    </div>
+
+</section>
+
+<section class="cta-final">
+    <h2>Hai bisogno di un intervento?</h2>
+    <p>Contattaci: rispondiamo rapidamente e organizziamo l’uscita del tecnico.</p>
+    <a href="index.html#contatto" class="btn-cta">Richiedi un intervento</a>
+</section>
+
+<footer class="footer">
+    <div class="footer-inner">
+        <div class="footer-logo">
+            <img src="img/logo.png" alt="Tempestivo" class="logo-img">
+            <div class="logo-text">
+                <span>TEMPESTIVO</span>
+                <span>RAPIDI & AFFIDABILI</span>
+            </div>
+        </div>
+
+        <p class="footer-description">
+            Tempestivo è una divisione di <strong>Officina Creativa</strong> dedicata al General Contracting e alle manutenzioni rapide.
+            Il team Tempestivo è composto da professionisti selezionati e aziende certificate, coordinati da una centrale operativa
+            che garantisce tempi certi e interventi rapidi.
+        </p>
+
+        <div class="footer-links">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="cookie.html">Cookie Policy</a>
+            <a href="termini.html">Termini e Condizioni</a>
+        </div>
+
+        <div style="margin-top:25px;">
+            <a href="mappa-zone.html" style="color:var(--giallo);text-decoration:underline;">Mappa delle Zone</a> ·
+            <a href="servizi-partinico.html" style="color:var(--giallo);text-decoration:underline;">Partinico</a> ·
+            <a href="servizi-carini.html" style="color:var(--giallo);text-decoration:underline;">Carini</a> ·
+            <a href="servizi-alcamo.html" style="color:var(--giallo);text-decoration:underline;">Alcamo</a>
+        </div>
+
+        <div class="footer-bottom">
+            <p>P.IVA: 06772720824 | Divisione di Officina Creativa</p>
+            <p>Operativi a Palermo, Trapani e provincia.</p>
+            <p>&copy; 2024 Tempestivo. Tutti i diritti riservati.</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
