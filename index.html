@@ -508,87 +508,108 @@
 </section>
 
 <style>
-    /* SEZIONE CONTATTO */
+    /* SEZIONE CONTATTO - OTTIMIZZATA MOBILE */
+.contatto {
+    padding: 80px 20px;
+    background-color: var(--blu-notte);
+    color: var(--bianco);
+    text-align: center;
+    width: 100%; /* Garantisce che la sezione occupi tutto lo spazio */
+    box-sizing: border-box;
+    overflow: hidden; /* Blocca elementi interni ribelli */
+}
+
+.contatto h2 {
+    font-family: var(--font-titoli);
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-bottom: 40px;
+}
+
+.contact-form {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    width: 100%;
+    box-sizing: border-box; /* Include padding e bordi nella larghezza */
+}
+
+.form-group {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group.full {
+    grid-column: span 2;
+}
+
+.form-group label {
+    font-size: 0.9rem;
+    margin-bottom: 6px;
+    opacity: 0.9;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+    font-family: var(--font-testi);
+    width: 100%; /* Forza gli input a non superare il contenitore */
+    box-sizing: border-box; /* ESSENZIALE per non far mozzare l'input */
+}
+
+.form-group textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.btn-submit {
+    grid-column: span 2;
+    background-color: var(--rosso);
+    color: var(--bianco);
+    padding: 16px;
+    border-radius: 999px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%; /* Adattabilità totale */
+    box-sizing: border-box;
+}
+
+.btn-submit:hover {
+    background-color: #c51f1f;
+    transform: scale(1.04);
+}
+
+/* FIX RESPONSIVE */
+@media (max-width: 768px) {
     .contatto {
-        padding: 80px 20px;
-        background-color: var(--blu-notte);
-        color: var(--bianco);
-        text-align: center;
+        padding: 60px 15px; /* Spazio ridotto per schermi piccoli */
     }
-
-    .contatto h2 {
-        font-family: var(--font-titoli);
-        font-size: 2.2rem;
-        font-weight: 800;
-        margin-bottom: 40px;
-    }
-
+    
     .contact-form {
-        max-width: 900px;
-        margin: 0 auto;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 25px;
+        grid-template-columns: 1fr;
+        gap: 18px; /* Gap leggermente ridotto su mobile */
     }
-
-    .form-group {
-        text-align: left;
-        display: flex;
-        flex-direction: column;
-    }
-
+    
     .form-group.full {
-        grid-column: span 2;
+        grid-column: span 1;
     }
-
-    .form-group label {
-        font-size: 0.9rem;
-        margin-bottom: 6px;
-        opacity: 0.9;
-    }
-
-    .form-group input,
-    .form-group select,
-    .form-group textarea {
-        padding: 12px;
-        border-radius: 8px;
-        border: none;
-        font-size: 1rem;
-        font-family: var(--font-testi);
-    }
-
-    .form-group textarea {
-        height: 120px;
-        resize: vertical;
-    }
-
+    
     .btn-submit {
-        grid-column: span 2;
-        background-color: var(--rosso);
-        color: var(--bianco);
-        padding: 16px;
-        border-radius: 999px;
-        font-size: 1.1rem;
-        font-weight: 700;
-        border: none;
-        cursor: pointer;
-        margin-top: 10px;
-        transition: background-color 0.3s ease, transform 0.2s ease;
+        grid-column: span 1;
+        font-size: 1rem;
     }
-
-    .btn-submit:hover {
-        background-color: #c51f1f;
-        transform: scale(1.04);
-    }
-
-    @media (max-width: 768px) {
-        .contact-form {
-            grid-template-columns: 1fr;
-        }
-        .btn-submit {
-            grid-column: span 1;
-        }
-    }
+}
 </style>
 
 
