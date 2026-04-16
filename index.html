@@ -38,7 +38,7 @@
             text-decoration: none;
         }
 
-        /* HEADER */
+       /* HEADER - FIX RESPONSIVE */
         header {
             width: 100%;
             position: fixed;
@@ -48,6 +48,8 @@
             background-color: rgba(11, 27, 59, 0.96);
             color: var(--bianco);
             box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+            /* Importante: previene lo scroll orizzontale */
+            box-sizing: border-box; 
         }
 
         .header-inner {
@@ -57,12 +59,15 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+            box-sizing: border-box;
         }
 
         .logo {
             display: flex;
             align-items: center;
             gap: 10px;
+            /* Impedisce al logo di rimpicciolirsi troppo */
+            flex-shrink: 0; 
         }
 
         .logo-mark {
@@ -77,11 +82,13 @@
             font-weight: 800;
             font-size: 18px;
             font-family: var(--font-titoli);
+            flex-shrink: 0;
         }
 
         .logo-text {
             display: flex;
             flex-direction: column;
+            white-space: nowrap; /* Evita che il testo vada a capo male */
         }
 
         .logo-text span:first-child {
@@ -101,6 +108,9 @@
             display: flex;
             align-items: center;
             gap: 10px;
+            /* Permette al contenitore del bottone di adattarsi */
+            flex-shrink: 1; 
+            min-width: 0; 
         }
 
         .btn-emergenza {
@@ -116,11 +126,9 @@
             display: inline-flex;
             align-items: center;
             gap: 8px;
-            white-space: nowrap;
-        }
-
-        .btn-emergenza span.icon {
-            font-size: 16px;
+            /* Fondamentale: gestisce il testo lungo nel bottone */
+            white-space: nowrap; 
+            transition: all 0.3s ease;
         }
 
         .btn-emergenza:hover {
@@ -132,19 +140,43 @@
             height: 70px;
         }
 
+        /* MEDIA QUERY SPECIFICA PER MOBILE */
         @media (max-width: 768px) {
             .header-inner {
-                flex-direction: row;
-                gap: 10px;
+                padding: 10px 12px; /* Ridotto per guadagnare spazio laterale */
+                gap: 5px;
+            }
+
+            .logo-mark {
+                width: 30px;
+                height: 30px;
+                font-size: 16px;
             }
 
             .logo-text span:first-child {
-                font-size: 16px;
+                font-size: 15px; /* Logo leggermente più piccolo */
+            }
+
+            .logo-text span:last-child {
+                display: none; /* Nascondiamo il sottotitolo su mobile per salvare spazio */
             }
 
             .btn-emergenza {
                 padding: 8px 12px;
-                font-size: 12px;
+                font-size: 11px;
+                gap: 4px;
+            }
+            
+            .btn-emergenza span.text {
+                /* Se il testo nel bottone è ancora troppo lungo, 
+                   possiamo lasciare solo l'icona e "SOS" */
+            }
+        }
+
+        /* Fix extra per telefoni molto piccoli (iPhone SE e simili) */
+        @media (max-width: 360px) {
+            .logo-text {
+                display: none; /* Rimane solo l'icona tonda del logo */
             }
         }
     </style>
