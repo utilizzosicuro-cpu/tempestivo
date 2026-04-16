@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://www.tempestivo.it/</loc>
+    <lastmod>2024-05-22</lastmod>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>https://www.tempestivo.it/mappa-zone.html</loc>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://www.tempestivo.it/pronto-intervento-palermo-trapani.html</loc>
+    <priority>0.90</priority>
+  </url>
+
+  <url><loc>https://www.tempestivo.it/servizi-partinico.html</loc><priority>0.80</priority></url>
+  <url><loc>https://www.tempestivo.it/servizi-carini.html</loc><priority>0.80</priority></url>
+  <url><loc>https://www.tempestivo.it/servizi-terrasini.html</loc><priority>0.80</priority></url>
+  <url><loc>https://www.tempestivo.it/servizi-cinisi.html</loc><priority>0.80</priority></url>
+  <url><loc>https://www.tempestivo.it/servizi-trappeto.html</loc><priority>0.80</priority></url>
+  <url><loc>https://www.tempestivo.it/servizi-balestrate.html</loc><priority>0.80</priority></url>
+  <url><loc>https://www.tempestivo.it/servizi-alcamo.html</loc><priority>0.80</priority></url>
+  <url><loc>https://www.tempestivo.it/servizi-castellammare-del-golfo.html</loc><priority>0.80</priority></url>
+  <url><loc>https://www.tempestivo.it/servizi-monreale.html</loc><priority>0.80</priority></url>
+  <url><loc>https://www.tempestivo.it/servizi-isola-delle-femmine.html</loc><priority>0.80</priority></url>
+
+  <url><loc>https://www.tempestivo.it/privacy.html</loc><priority>0.30</priority></url>
+  <url><loc>https://www.tempestivo.it/cookie.html</loc><priority>0.30</priority></url>
+  <url><loc>https://www.tempestivo.it/termini.html</loc><priority>0.30</priority></url>
+</urlset>
