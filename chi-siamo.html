@@ -32,7 +32,15 @@
         a { text-decoration: none; color: inherit; transition: 0.3s; }
         h1, h2, h3 { font-family: var(--font-titoli); }
 
-       /* --- HEADER OTTIMIZZATO (FIX MOBILE) --- */
+     Capisco perfettamente cosa sta succedendo: il contenuto dell'header è ancora leggermente più largo dello schermo del telefono, e questo crea uno "spazio vuoto" sulla destra (overflow) che ti permette di scorrere lateralmente.
+
+Per risolvere definitivamente, dobbiamo assicurarci che l'header non possa mai superare il 100% della larghezza della finestra e che gli elementi al suo interno si rimpiccioliscano correttamente.
+
+Sostituisci il blocco CSS dell'header e del logo con questo, che include i fix per l'overflow:
+
+CSS Definitivo (Anti-scorrimento laterale)
+CSS
+/* --- FIX HEADER E OVERFLOW MOBILE --- */
 header {
     width: 100%;
     position: fixed;
@@ -40,57 +48,61 @@ header {
     z-index: 1000;
     background-color: var(--blu-notte);
     box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    /* Impedisce all'header di allargare la pagina */
+    overflow: hidden; 
 }
 
 .header-inner {
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 10px 15px;
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Spinge logo a sinistra e tasto a destra */
-    gap: 10px; /* Spazio minimo tra logo e tasto */
+    justify-content: space-between;
+    box-sizing: border-box; /* Fondamentale: include il padding nel calcolo della larghezza */
 }
-      .logo { 
+
+.logo { 
     display: flex; 
     align-items: center; 
     gap: 8px; 
     color: var(--bianco);
-    flex-shrink: 1; /* Permette al logo di rimpicciolirsi se necessario */
+    min-width: 0; /* Permette al logo di flettere */
+    flex: 1; /* Prende lo spazio disponibile senza spingere fuori il tasto */
 }
 
 .logo-img { 
-    height: 35px; 
+    height: 30px; /* Ridotto leggermente per sicurezza */
     width: auto; 
+    flex-shrink: 0;
+}
+
+.logo-text {
+    min-width: 0;
+    overflow: hidden;
 }
 
 .logo-text span:first-child { 
     font-weight: 800; 
-    font-size: 1rem; /* Ridotto leggermente per mobile */
-    display: block; 
+    font-size: 0.95rem; 
+    white-space: nowrap;
 }
 
-.logo-text span:last-child { 
-    font-size: 0.6rem; 
-    text-transform: uppercase; 
-    color: var(--giallo); 
-}
-
-     /* FIX TASTO CHIAMATA */
+   /* FIX PULSANTE CHIAMATA */
 .btn-emergenza {
     background-color: var(--rosso);
     color: var(--bianco);
-    padding: 10px 15px; /* Padding equilibrato */
+    padding: 8px 12px;
     border-radius: 5px;
     font-weight: 700;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 8px;
-    font-size: 0.85rem;
-    white-space: nowrap; /* Impedisce al testo di andare a capo */
-    flex-shrink: 0; /* Impedisce al tasto di schiacciarsi/diventare stretto */
-    min-height: 44px; /* Altezza minima standard per il tocco mobile */
+    gap: 5px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    flex-shrink: 0; /* Impedisce al tasto di deformarsi */
+    margin-left: 10px;
 }
 
         /* --- CONTENUTI PAGINA (Mantenuti) --- */
@@ -120,18 +132,27 @@ header {
         .footer-links a:hover { color: var(--giallo); }
         .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; text-align: center; font-size: 0.8rem; }
 
-       /* --- RESPONSIVE SPECIFICO --- */
-@media (max-width: 480px) {
-    .logo-text span:last-child { 
-        display: none; /* Nasconde il sottotitolo sui telefoni piccoli per dare spazio al tasto */
-    }
+     /* --- MEDIA QUERY AGGRESSIVA PER EVITARE SCORRIMENTO --- */
+@media (max-width: 400px) {
     .header-inner {
-        padding: 8px 10px;
+        padding: 8px 8px;
+    }
+    .logo-text span:first-child {
+        font-size: 0.85rem; /* Rimpicciolisce il testo su schermi mini */
     }
     .btn-emergenza {
-        font-size: 0.8rem;
-        padding: 8px 12px;
+        font-size: 0.75rem;
+        padding: 6px 10px;
     }
+    .logo-img {
+        height: 25px;
+    }
+}
+
+/* Fix globale per evitare scorrimenti indesiderati in tutta la pagina */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
 }
     </style>
 </head>
