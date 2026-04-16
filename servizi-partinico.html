@@ -41,35 +41,40 @@
             color: var(--bianco);
             box-shadow: 0 2px 6px rgba(0,0,0,0.2);
         }
-        .header-inner {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 12px 20px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
+       /* Ridotto il padding interno e ottimizzato lo spazio tra gli elementi */
+.header-inner {
+    max-width: 1100px; /* Ridotto da 1200px per stringere il contenitore generale */
+    margin: 0 auto;
+    padding: 8px 15px; /* Padding più sottile */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
         .logo { display: flex; align-items: center; gap: 10px; }
         .logo-img { height: 34px; width: auto; }
         .logo-text { display: flex; flex-direction: column; }
-        .logo-text span:first-child { font-family: var(--font-titoli); font-weight: 800; font-size: 18px; }
+       /* Correzione per il logo: evita che i testi si allarghino troppo */
+.logo-text span:first-child {
+    font-weight: 800;
+    font-size: 1.1rem; /* Ridotto leggermente */
+    line-height: 1;
+}
         .logo-text span:last-child { font-size: 11px; opacity: 0.8; }
 
-        .btn-emergenza {
-            background-color: var(--rosso);
-            color: var(--bianco);
-            padding: 8px 16px;
-            border-radius: 999px;
-            font-weight: 700;
-            font-size: 13px;
-            border: none;
-            cursor: pointer;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            white-space: nowrap;
-        }
-
+       /* Ottimizzazione del bottone telefono per occupare meno spazio orizzontale */
+.btn-emergenza {
+    background-color: var(--rosso);
+    color: var(--bianco);
+    padding: 8px 16px; /* Ridotto il padding laterale */
+    border-radius: 5px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Spazio tra icona e numero ridotto */
+    text-decoration: none;
+    font-size: 0.85rem; /* Font leggermente più piccolo per contenere la larghezza */
+    flex-shrink: 0; /* Impedisce al bottone di deformarsi */
+}
         .page-offset { height: 70px; }
 
         /* HERO */
@@ -324,6 +329,20 @@
 @media (max-width: 768px) {
     .sticky-cta-mobile { display: block; }
     body { padding-bottom: 60px; } /* Evita che il tasto copra il footer */
+}
+
+		@media (max-width: 480px) {
+    .header-inner {
+        padding: 8px 10px;
+    }
+    .btn-emergenza {
+        padding: 6px 10px;
+        font-size: 0.8rem;
+        gap: 5px;
+    }
+    .logo-img {
+        height: 32px; /* Logo leggermente più piccolo su mobile stretto */
+    }
 }
     </style>
 	
