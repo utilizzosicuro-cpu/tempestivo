@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<meta property="og:title" content="Chi Siamo | Tempestivo - Esperti in Ristrutturazioni e Pronto Intervento.">
-<meta property="og:description" content="Scopri la realtà di Tempestivo: il tuo punto di riferimento per interventi tecnici e ristrutturazioni tra Palermo e Trapani. Qualità certificata e rapidità.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <meta property="og:title" content="Chi Siamo | Tempestivo - Esperti in Ristrutturazioni e Pronto Intervento.">
+    <meta property="og:description" content="Scopri la realtà di Tempestivo: il tuo punto di riferimento per interventi tecnici e ristrutturazioni tra Palermo e Trapani. Qualità certificata e rapidità.">
     <meta charset="UTF-8">
     <title>Chi Siamo – Tempestivo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="description" content="Scopri chi è Tempestivo: la divisione di Officina Creativa dedicata a ristrutturazioni, impianti e pronto intervento rapido. Team coordinato, aziende certificate, tempi certi.">
-	<link rel="canonical" href="https://www.tempestivo.it/chi-siamo.html">
-
+    <link rel="canonical" href="https://www.tempestivo.it/chi-siamo.html">
 
     <style>
         :root {
@@ -25,65 +26,13 @@
             --font-testi: "Roboto", Arial, sans-serif;
         }
 
-        body {
-            margin: 0;
-            font-family: var(--font-testi);
-            background-color: var(--bianco);
-            color: var(--grigio-scuro);
-        }
-
-        header {
-            background-color: var(--blu-notte);
-            padding: 20px;
-            text-align: center;
-            color: var(--bianco);
-        }
-
-        header h1 {
-            font-family: var(--font-titoli);
-            font-size: 2.4rem;
-            margin: 0;
-        }
-
-        .intro {
-            padding: 50px 20px;
-            max-width: 900px;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .intro p {
-            font-size: 1.15rem;
-            line-height: 1.7;
-        }
-
-        .mission {
-            background-color: var(--grigio-chiaro);
-            padding: 60px 20px;
-            text-align: center;
-        }
-
-        .mission h2 {
-            font-family: var(--font-titoli);
-            font-size: 2rem;
-            margin-bottom: 20px;
-            color: var(--blu-notte);
-        }
-
-        .mission p {
-            max-width: 900px;
-            margin: 0 auto;
-            font-size: 1.1rem;
-            line-height: 1.7;
-        }
-/* --- PARTI LASCIATE INTATTE: CONFIGURAZIONE GENERALE --- */
+        /* --- CONFIGURAZIONE GENERALE --- */
         * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: 'Roboto', sans-serif; color: var(--grigio-scuro); line-height: 1.6; background-color: var(--bianco); }
+        body { font-family: var(--font-testi); color: var(--grigio-scuro); line-height: 1.6; background-color: var(--bianco); padding-top: 70px; }
         a { text-decoration: none; color: inherit; transition: 0.3s; }
-        
-        h1, h2, h3 { font-family: 'Montserrat', sans-serif; }
-        
-        /* --- INTEGRAZIONE: HEADER OTTIMIZZATO --- */
+        h1, h2, h3 { font-family: var(--font-titoli); }
+
+        /* --- HEADER INTEGRATO --- */
         header {
             width: 100%;
             position: fixed;
@@ -91,33 +40,19 @@
             z-index: 1000;
             background-color: var(--blu-notte);
             box-shadow: 0 2px 10px rgba(0,0,0,0.2);
-            box-sizing: border-box; /* Previene il mozzamento laterale */
         }
         .header-inner {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 10px 15px; /* Leggermente ridotto per mobile */
+            padding: 10px 15px;
             display: flex;
             align-items: center;
             justify-content: space-between;
-            box-sizing: border-box;
         }
-        .logo { 
-            display: flex; 
-            align-items: center; 
-            gap: 10px; 
-            color: var(--bianco); 
-            flex-shrink: 0; /* Impedisce al logo di collassare */
-        }
-        .logo-img { height: 35px; width: auto; } /* Altezza ottimizzata */
-        .logo-text { white-space: nowrap; }
+        .logo { display: flex; align-items: center; gap: 10px; color: var(--bianco); }
+        .logo-img { height: 35px; width: auto; }
         .logo-text span:first-child { font-weight: 800; font-size: 1.1rem; display: block; }
-        .logo-text span:last-child { 
-            font-size: 0.65rem; 
-            text-transform: uppercase; 
-            letter-spacing: 1px; 
-            color: var(--giallo); 
-        }
+        .logo-text span:last-child { font-size: 0.65rem; text-transform: uppercase; letter-spacing: 1px; color: var(--giallo); }
 
         .btn-emergenza {
             background-color: var(--rosso);
@@ -128,244 +63,64 @@
             display: flex;
             align-items: center;
             gap: 8px;
-            border: none;
-            cursor: pointer;
-            white-space: nowrap; /* Impedisce al testo di andare a capo */
             font-size: 0.9rem;
-            flex-shrink: 1;
         }
 
-        /* --- PARTI LASCIATE INTATTE: DESIGN E LAYOUT --- */
-        .sticky-mobile-cta {
-            display: none;
-            position: fixed;
-            bottom: 0; left: 0; width: 100%;
-            background: var(--rosso);
-            color: white;
-            text-align: center;
-            padding: 15px;
-            font-weight: 800;
-            z-index: 2000;
-            font-size: 1.2rem;
-            box-shadow: 0 -2px 10px rgba(0,0,0,0.3);
-        }
+        /* --- CONTENUTI PAGINA (Mantenuti) --- */
+        .intro { padding: 50px 20px; max-width: 900px; margin: 0 auto; text-align: center; }
+        .intro p { font-size: 1.15rem; line-height: 1.7; }
 
-        .hero {
-            padding: 140px 20px 80px;
-            background: linear-gradient(135deg, var(--blu-notte) 0%, #1a3a7a 100%);
-            color: var(--bianco);
-        }
-        .hero-inner {
-            max-width: 1100px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: 1.2fr 0.8fr;
-            gap: 40px;
-            align-items: center;
-        }
-        .hero h1 { font-size: 2.6rem; line-height: 1.2; margin-bottom: 20px; }
-        .hero h1 span { color: var(--giallo); }
-        .hero p { font-size: 1.15rem; margin-bottom: 30px; opacity: 0.9; }
+        .mission { background-color: var(--grigio-chiaro); padding: 60px 20px; text-align: center; }
+        .mission h2 { font-size: 2rem; margin-bottom: 20px; color: var(--blu-notte); }
+        .mission p { max-width: 900px; margin: 0 auto; font-size: 1.1rem; line-height: 1.7; }
 
-        .btn-cta-large {
-            display: inline-block;
-            background: var(--rosso);
-            color: white;
-            padding: 18px 35px;
-            border-radius: 50px;
-            font-weight: 800;
-            text-transform: uppercase;
-            box-shadow: 0 4px 15px rgba(227, 38, 38, 0.4);
-        }
+        .team-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; max-width: 1100px; margin: 60px auto; padding: 0 20px; }
+        .team-box { background: var(--grigio-chiaro); padding: 25px; border-radius: 14px; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+        .team-box h3 { font-size: 1.4rem; margin-bottom: 10px; color: var(--blu-notte); }
 
-        .section { padding: 70px 20px; }
-        .section-inner { max-width: 1100px; margin: 0 auto; }
-        .section-alt { background: var(--grigio-chiaro); }
-        h2 { font-size: 2.2rem; margin-bottom: 25px; color: var(--blu-notte); }
-        h2 span { color: var(--rosso); }
+        .valori { padding: 60px 20px; text-align: center; }
+        .valori h2 { font-size: 2rem; margin-bottom: 30px; color: var(--blu-notte); }
+        .valori-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; max-width: 1100px; margin: 0 auto; }
+        .valore { background: var(--grigio-chiaro); padding: 25px; border-radius: 14px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
 
-        .box {
-            background: white;
-            padding: 25px;
-            border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-            border: 1px solid rgba(11,27,59,0.05);
-            color: var(--grigio-scuro);
-        }
-        .box h3 { color: var(--blu-notte); margin-bottom: 15px; }
+        .cta-final { text-align: center; padding: 60px 20px; background-color: var(--blu-notte); color: var(--bianco); }
+        .btn-cta { background-color: var(--rosso); color: var(--bianco); padding: 14px 28px; border-radius: 999px; font-weight: 700; text-transform: uppercase; display: inline-block; margin-top: 20px; }
 
-        .three-cols { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; margin-top: 30px; }
-        
-        .check-list { list-style: none; }
-        .check-list li { position: relative; padding-left: 30px; margin-bottom: 12px; }
-        .check-list li::before {
-            content: "✔";
-            position: absolute;
-            left: 0; color: var(--rosso);
-            font-weight: 900;
-        }
-        .team-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
-            max-width: 1100px;
-            margin: 60px auto;
-            padding: 0 20px;
-        }
+        /* --- FOOTER INTEGRATO --- */
+        .footer { background-color: var(--blu-notte); color: var(--bianco); padding: 50px 20px 20px; margin-top: 50px; border-top: 1px solid rgba(255,255,255,0.1); }
+        .footer-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; max-width: 1100px; margin: 0 auto 30px; }
+        .footer-links { display: flex; flex-direction: column; gap: 12px; }
+        .footer-links a:hover { color: var(--giallo); }
+        .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; text-align: center; font-size: 0.8rem; }
 
-        .team-box {
-            background: var(--grigio-chiaro);
-            padding: 25px;
-            border-radius: 14px;
-            text-align: center;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-        }
-
-        .team-box h3 {
-            font-family: var(--font-titoli);
-            font-size: 1.4rem;
-            margin-bottom: 10px;
-            color: var(--blu-notte);
-        }
-
-        .team-box p {
-            font-size: 1rem;
-            line-height: 1.5;
-        }
-
-        .valori {
-            padding: 60px 20px;
-            background-color: var(--bianco);
-            text-align: center;
-        }
-
-        .valori h2 {
-            font-family: var(--font-titoli);
-            font-size: 2rem;
-            margin-bottom: 30px;
-            color: var(--blu-notte);
-        }
-
-        .valori-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
-            max-width: 1100px;
-            margin: 0 auto;
-        }
-
-        .valore {
-            background: var(--grigio-chiaro);
-            padding: 25px;
-            border-radius: 14px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-        }
-
-        .valore h3 {
-            font-family: var(--font-titoli);
-            font-size: 1.3rem;
-            margin-bottom: 10px;
-            color: var(--blu-notte);
-        }
-
-        .cta-final {
-            text-align: center;
-            padding: 60px 20px;
-            background-color: var(--blu-notte);
-            color: var(--bianco);
-        }
-
-        .cta-final h2 {
-            font-family: var(--font-titoli);
-            font-size: 2rem;
-            margin-bottom: 20px;
-        }
-
-        .btn-cta {
-            background-color: var(--rosso);
-            color: var(--bianco);
-            padding: 14px 28px;
-            border-radius: 999px;
-            font-weight: 700;
-            font-size: 1rem;
-            text-transform: uppercase;
-            display: inline-block;
-            margin-top: 20px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-        }
-
+        /* --- RESPONSIVE --- */
         @media (max-width: 900px) {
-            .team-grid,
-            .valori-grid {
-                grid-template-columns: 1fr;
-            }
+            .team-grid, .valori-grid, .footer-grid { grid-template-columns: 1fr; }
+            .logo-text span:last-child { display: none; }
         }
-		
-		/* Stile Footer */
-.footer {
-    background-color: var(--blu-notte);
-    color: var(--bianco);
-    padding: 50px 0 20px 0;
-    margin-top: 50px;
-}
-
-.footer-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-    margin-bottom: 30px;
-}
-
-.footer-links {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-.footer-links a {
-    color: var(--bianco);
-    text-decoration: none;
-    font-size: 0.9rem;
-    transition: color 0.3s ease;
-}
-
-.footer-links a:hover {
-    color: var(--giallo);
-}
-
-.footer-bottom {
-    border-top: 1px solid rgba(255,255,255,0.1);
-    padding-top: 20px;
-    text-align: center;
-    font-size: 0.8rem;
-}
-
-.footer-bottom a {
-    color: var(--giallo);
-    text-decoration: none;
-}
-
-/* Responsivo per cellulari */
-@media (max-width: 600px) {
-    .footer-grid {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-    .footer-links {
-        align-items: center;
-    }
-}
     </style>
 </head>
 
 <body>
 
 <header>
-    <h1>Chi è Tempestivo</h1>
+    <div class="header-inner">
+        <a href="index.html" class="logo">
+            <img src="img/logo.png" alt="Tempestivo Logo" class="logo-img">
+            <div class="logo-text">
+                <span>TEMPESTIVO</span>
+                <span>H24 Pronto Intervento</span>
+            </div>
+        </a>
+        <a href="tel:800123456" class="btn-emergenza">
+            <span>📞</span> 800 123 456
+        </a>
+    </div>
 </header>
 
-<section class="intro">
-    <p>
+<section class="intro" style="margin-top: 40px;">
+    <h1>Chi è Tempestivo</h1>
+    <p style="margin-top: 20px;">
         Tempestivo nasce dall'esperienza di Officina Creativa con un obiettivo chiaro: semplificare la vita di chi deve ristrutturare casa o affrontare un'emergenza tecnica. Non siamo un semplice call center, ma un team coordinato di project manager e artigiani certificati che operano sul territorio di Palermo e Trapani. Abbiamo selezionato le migliori maestranze locali per garantire che ogni intervento, dalla riparazione di un rubinetto al rifacimento di una villa, segua standard qualitativi rigorosi e tempi certi.
     </p>
 </section>
@@ -380,44 +135,36 @@
 </section>
 
 <section class="team-grid">
-
     <div class="team-box">
         <h3>Project Management</h3>
         <p>Coordinamento tecnico, pianificazione dei lavori, gestione delle squadre e controllo qualità.</p>
     </div>
-
     <div class="team-box">
         <h3>Imprese Certificate</h3>
         <p>Partner selezionati per ristrutturazioni, impianti elettrici, idraulici e opere specialistiche.</p>
     </div>
-
     <div class="team-box">
         <h3>Professionisti Tecnici</h3>
         <p>Architetti, ingegneri e tecnici abilitati per pratiche edilizie, sicurezza e direzione lavori.</p>
     </div>
-
 </section>
 
 <section class="valori">
     <h2>I nostri valori</h2>
-<p>Preventivi dettagliati prima di iniziare e prezzi chiari comunicati già al telefono per il pronto intervento. Niente sorprese finali.</p>
+    <p style="margin-bottom: 30px;">Preventivi dettagliati prima di iniziare e prezzi chiari comunicati già al telefono per il pronto intervento. Niente sorprese finali.</p>
     <div class="valori-grid">
-
         <div class="valore">
             <h3>Rapidità</h3>
             <p>Sopralluoghi entro 24/48h e interventi programmati con tempi certi.</p>
         </div>
-
         <div class="valore">
             <h3>Affidabilità</h3>
             <p>Squadre selezionate, imprese certificate e processi chiari.</p>
         </div>
-
         <div class="valore">
             <h3>Coordinamento</h3>
             <p>Un unico referente per ristrutturazioni, impianti e manutenzioni.</p>
         </div>
-
     </div>
 </section>
 
@@ -426,36 +173,26 @@
     <p>Contattaci per un sopralluogo o per richiedere un intervento rapido.</p>
     <a href="index.html#contatto" class="btn-cta">Richiedi un intervento</a>
 </section>
-<footer class="footer">
-    <div class="section-inner">
-        <div class="footer-grid">
-            <div class="footer-info">
-                <p><strong>Tempestivo</strong></p>
-                <p>Ristrutturazioni, Impianti e Pronto Intervento H24</p>
-                <p>Operativi nelle province di Palermo e Trapani</p>
-            </div>
-            <div class="footer-links">
-                <a href="ristrutturazioni-palermo-trapani.html">Ristrutturazioni</a>
-                <a href="pronto-intervento-palermo-trapani.html" style="color:var(--giallo); font-weight: bold;">🆘 Pronto Intervento H24</a>
-                <a href="mappa-zone.html">Mappa Zone</a>
-                <a href="chi-siamo.html">Chi Siamo</a>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>P.IVA: 0123456789 | <a href="privacy.html">Privacy Policy</a></p>
-            <p>&copy; 2024 Tempestivo. Tutti i diritti riservati.</p>
-        </div>
-    </div>
+
 <footer class="footer">
     <div class="footer-grid">
         <div class="footer-info">
-                       <p>P.IVA: 06772720824 | Divisione di Officina Creativa</p>
-            <p>Operativi a Palermo, Trapani e provincia.</p>
+            <p><strong>Tempestivo</strong></p>
+            <p>Ristrutturazioni, Impianti e Pronto Intervento H24</p>
+            <p>P.IVA: 06772720824 | Divisione di Officina Creativa</p>
+            <p>Operativi nelle province di Palermo e Trapani</p>
         </div>
-       
+        <div class="footer-links">
+            <a href="ristrutturazioni-palermo-trapani.html">Ristrutturazioni</a>
+            <a href="pronto-intervento-palermo-trapani.html" style="color:var(--giallo); font-weight: bold;">🆘 Pronto Intervento H24</a>
+            <a href="mappa-zone.html">Mappa Zone</a>
+            <a href="chi-siamo.html">Chi Siamo</a>
+        </div>
+    </div>
     <div class="footer-bottom">
-        <p>&copy; 2024 Tempestivo. Tutti i diritti riservati.</p>
+        <p>&copy; 2024 Tempestivo. Tutti i diritti riservati. | <a href="privacy.html" style="color:var(--giallo);">Privacy Policy</a></p>
     </div>
 </footer>
+
 </body>
 </html>
