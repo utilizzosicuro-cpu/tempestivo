@@ -24,16 +24,24 @@
             --font-testi: "Roboto", Arial, sans-serif;
         }
 
-        /* RESET E BASE */
+       /* --- CONFIGURAZIONE GENERALE --- */
         * { box-sizing: border-box; margin: 0; padding: 0; }
-        body {
-            margin: 0;
-            font-family: var(--font-testi);
-            background-color: var(--bianco);
-            color: var(--grigio-scuro);
-            line-height: 1.6;
+        
+        html, body {
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+
+        body { 
+            font-family: var(--font-testi); 
+            color: var(--grigio-scuro); 
+            line-height: 1.6; 
+            background-color: var(--bianco); 
             padding-top: 80px; /* Spazio per l'header fisso */
         }
+
+        a { text-decoration: none; color: inherit; transition: 0.3s; }
+        h1, h2, h3 { font-family: var(--font-titoli); }
 
        /* --- HEADER (DA COPIARE) --- */
 header {
