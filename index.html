@@ -167,10 +167,17 @@
                 gap: 5px;
             }
 
-			@media (max-width: 480px) {
-    .header-inner {
-        padding: 8px 10px;
-    }
+			 /* --- MOBILE OPTIMIZATION --- */
+        @media (max-width: 480px) {
+            header { height: 65px; }
+            body { padding-top: 75px; }
+            .logo-img { height: 30px; }
+            .logo-text span:first-child { font-size: 0.95rem; }
+            .logo-text span:last-child { display: none; }
+            .btn-emergenza { font-size: 0.8rem; padding: 8px 10px; }
+            .footer-grid { grid-template-columns: 1fr; }
+            .team-grid, .valori-grid { grid-template-columns: 1fr; }
+        }
     .btn-emergenza {
         padding: 6px 10px;
         font-size: 0.8rem;
