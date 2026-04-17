@@ -24,24 +24,37 @@
             --font-testi: "Roboto", Arial, sans-serif;
         }
 
-       /* --- CONFIGURAZIONE GENERALE --- */
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        
-        html, body {
-            max-width: 100%;
-            overflow-x: hidden;
-        }
+      /* --- FIX PER EVITARE IL TAGLIO DEI CONTENUTI --- */
 
-        body { 
-            font-family: var(--font-testi); 
-            color: var(--grigio-scuro); 
-            line-height: 1.6; 
-            background-color: var(--bianco); 
-            padding-top: 80px; /* Spazio per l'header fisso */
-        }
+section, div {
+    max-width: 100%; /* Impedisce a qualsiasi blocco di uscire dai bordi */
+    box-sizing: border-box; /* Include padding e bordi nel calcolo della larghezza */
+}
 
-        a { text-decoration: none; color: inherit; transition: 0.3s; }
-        h1, h2, h3 { font-family: var(--font-titoli); }
+img {
+    max-width: 100%; /* Le immagini non supereranno mai la larghezza del telefono */
+    height: auto;
+}
+
+/* Se hai griglie (grid) o contenitori con larghezza fissa, rendili flessibili */
+.container, .grid, .inner-section {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+/* Forza le colonne a mettersi una sotto l'altra sui piccoli schermi */
+@media (max-width: 768px) {
+    .team-grid, .valori-grid, .footer-grid, .features-grid {
+        display: block !important; /* Trasforma la griglia in una colonna singola */
+    }
+    
+    .team-box, .valore, .feature-card {
+        width: 100% !important;
+        margin-bottom: 20px; /* Spazio tra i blocchi ora incolonnati */
+    }
+}
 
        /* --- HEADER (DA COPIARE) --- */
 header {
