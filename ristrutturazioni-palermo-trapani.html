@@ -345,13 +345,16 @@ a.zone-pill:hover {
             text-align: center;
         }
 
-        @media (max-width: 900px) {
-            .hero-inner, .three-cols { grid-template-columns: 1fr; }
-        }
-        @media (max-width: 768px) {
-            .hero-text h1 { font-size: 1.9rem; }
-            .section { padding: 55px 15px; }
-            .zone-grid { grid-template-columns: repeat(2, 1fr); }
+        /* --- MOBILE OPTIMIZATION --- */
+        @media (max-width: 480px) {
+            header { height: 65px; }
+            body { padding-top: 75px; }
+            .logo-img { height: 30px; }
+            .logo-text span:first-child { font-size: 0.95rem; }
+            .logo-text span:last-child { display: none; }
+            .btn-emergenza { font-size: 0.8rem; padding: 8px 10px; }
+            .footer-grid { grid-template-columns: 1fr; }
+            .team-grid, .valori-grid { grid-template-columns: 1fr; }
         }
 		/* Mobile Sticky CTA */
 .sticky-cta-mobile {
