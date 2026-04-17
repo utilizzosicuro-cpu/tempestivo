@@ -182,86 +182,23 @@ header {
             border-color: var(--blu-notte);
         }
 
-        /* --- FOOTER (RIPRISTINATO E CORRETTO) --- */
-        .footer {
-            background-color: var(--grigio-scuro);
-            color: var(--bianco);
-            padding: 40px 20px;
-            text-align: center;
-            margin-top: 50px;
-        }
+       /* --- FOOTER (DA COPIARE) --- */
+.footer { background-color: var(--blu-notte); color: var(--bianco); padding: 50px 20px 20px; margin-top: 50px; border-top: 1px solid rgba(255,255,255,0.1); }
+.footer-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; max-width: 1100px; margin: 0 auto 30px; }
+.footer-links { display: flex; flex-direction: column; gap: 12px; }
+.footer-links a:hover { color: var(--giallo); }
+.footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; text-align: center; font-size: 0.8rem; }
 
-        .footer-inner {
-            max-width: 1200px;
-            margin: 0 auto;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .footer-logo {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 12px;
-            margin-bottom: 20px;
-        }
-
-        .footer-logo .logo-img {
-            height: 40px;
-            width: auto;
-        }
-
-        .footer .logo-text {
-            display: flex;
-            flex-direction: column;
-            text-align: left;
-        }
-
-        .footer .logo-text span:first-child {
-            font-family: var(--font-titoli);
-            font-weight: 800;
-            letter-spacing: 1px;
-            font-size: 18px;
-        }
-
-        .footer .logo-text span:last-child {
-            font-size: 11px;
-            text-transform: uppercase;
-            opacity: 0.8;
-        }
-
-        .footer-description {
-            max-width: 700px;
-            margin: 0 auto 20px auto;
-            line-height: 1.5;
-            font-size: 0.95rem;
-        }
-
-        .footer-links {
-            margin-top: 20px;
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .footer-links a {
-            color: var(--giallo);
-            text-decoration: underline;
-            font-size: 0.9rem;
-        }
-
-        .footer-bottom {
-            margin-top: 30px;
-            border-top: 1px solid rgba(255,255,255,0.1);
-            padding-top: 20px;
-            width: 100%;
-            font-size: 0.8rem;
-            opacity: 0.7;
-        }
-
+/* --- MOBILE OPTIMIZATION (DA COPIARE) --- */
+@media (max-width: 480px) {
+    header { height: 65px; }
+    body { padding-top: 75px; }
+    .logo-img { height: 30px; }
+    .logo-text span:first-child { font-size: 0.95rem; }
+    .logo-text span:last-child { display: none; }
+    .btn-emergenza { font-size: 0.8rem; padding: 8px 10px; }
+    .footer-grid { grid-template-columns: 1fr; }
+}
         .btn-pronto-intervento {
             display: block;
             background-color: var(--rosso);
@@ -275,20 +212,7 @@ header {
             transition: transform 0.2s ease;
         }
 
-        /* --- OTTIMIZZAZIONE RESPONSIVE --- */
-        @media (max-width: 900px) {
-            .servizi-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .header-inner { padding: 10px 12px; }
-            .logo-text span:last-child { display: none; }
-            .logo-text span:first-child { font-size: 1rem; }
-            .btn-emergenza { padding: 8px 12px; font-size: 0.8rem; gap: 5px; }
-            .intro h1 { font-size: 2rem; }
-        }
+    
     </style>
 
     <script type="application/ld+json">
@@ -321,10 +245,10 @@ header {
 <header>
     <div class="header-inner">
         <a href="index.html" class="logo">
-            <img src="img/logo.png" alt="Tempestivo" class="logo-img">
+            <img src="img/logo.png" alt="Tempestivo Logo" class="logo-img">
             <div class="logo-text">
                 <span>TEMPESTIVO</span>
-                <span>RAPIDI & AFFIDABILI</span>
+                <span>H24 Pronto Intervento</span>
             </div>
         </a>
         <a href="tel:800123456" class="btn-emergenza">
@@ -407,43 +331,22 @@ header {
 </section>
 
 <footer class="footer">
-    <div class="footer-inner">
-        <div class="footer-logo">
-            <img src="img/logo.png" alt="Tempestivo" class="logo-img">
-            <div class="logo-text">
-                <span>TEMPESTIVO</span>
-                <span>RAPIDI & AFFIDABILI</span>
-            </div>
-        </div>
-
-        <p class="footer-description">
-            Tempestivo è una divisione di <strong>Officina Creativa</strong> dedicata al General Contracting e alle manutenzioni rapide.
-            Il team Tempestivo è composto da professionisti selezionati e aziende certificate, coordinati da una centrale operativa
-            che garantisce tempi certi e interventi rapidi.
-        </p>
-
-        <div class="footer-links">
-			<a href="index.html">Home</a>
-    <a href="chi-siamo.html">Chi Siamo</a> <a href="ristrutturazioni-palermo-trapani.html">Ristrutturazioni</a>
-    <a href="pronto-intervento-palermo-trapani.html" style="color:var(--giallo); font-weight: bold;">🆘 Pronto Intervento H24</a>
-    <a href="mappa-zone.html">Mappa Zone</a>
-            <a href="privacy.html">Privacy Policy</a>
-            <a href="cookie.html">Cookie Policy</a>
-            <a href="termini.html">Termini e Condizioni</a>
-        </div>
-
-        <div style="margin-top:25px;">
-            <a href="mappa-zone.html" style="color:var(--giallo);text-decoration:underline;">Mappa delle Zone</a> ·
-            <a href="servizi-partinico.html" style="color:var(--giallo);text-decoration:underline;">Partinico</a> ·
-            <a href="servizi-carini.html" style="color:var(--giallo);text-decoration:underline;">Carini</a> ·
-            <a href="servizi-alcamo.html" style="color:var(--giallo);text-decoration:underline;">Alcamo</a>
-        </div>
-
-        <div class="footer-bottom">
+    <div class="footer-grid">
+        <div class="footer-info">
+            <p><strong>Tempestivo</strong></p>
+            <p>Ristrutturazioni, Impianti e Pronto Intervento H24</p>
             <p>P.IVA: 06772720824 | Divisione di Officina Creativa</p>
-            <p>Operativi a Palermo, Trapani e provincia.</p>
-            <p>&copy; 2024 Tempestivo. Tutti i diritti riservati.</p>
+            <p>Operativi nelle province di Palermo e Trapani</p>
         </div>
+        <div class="footer-links">
+            <a href="ristrutturazioni-palermo-trapani.html">Ristrutturazioni</a>
+            <a href="pronto-intervento-palermo-trapani.html" style="color:var(--giallo); font-weight: bold;">🆘 Pronto Intervento H24</a>
+            <a href="mappa-zone.html">Mappa Zone</a>
+            <a href="chi-siamo.html">Chi Siamo</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Tempestivo. Tutti i diritti riservati. | <a href="privacy.html" style="color:var(--giallo);">Privacy Policy</a></p>
     </div>
 </footer>
 
