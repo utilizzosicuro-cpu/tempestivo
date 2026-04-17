@@ -235,16 +235,6 @@
             text-align: center;
         }
 
-        /* RESPONSIVE */
-        @media (max-width: 900px) {
-            .hero-inner, .two-cols { grid-template-columns: 1fr; }
-        }
-        @media (max-width: 768px) {
-            .hero-text h1 { font-size: 1.9rem; }
-            .section { padding: 55px 15px; }
-            .zone-grid { grid-template-columns: repeat(2, 1fr); }
-        }
-		
 		/* Inserisci subito dopo la regola .box esistente */
 .box {
     background: var(--bianco);
@@ -356,24 +346,7 @@ a.zone-pill:hover {
             .footer-grid { grid-template-columns: 1fr; }
             .team-grid, .valori-grid { grid-template-columns: 1fr; }
         }
-		/* Mobile Sticky CTA */
-.sticky-cta-mobile {
-    display: none;
-    position: fixed;
-    bottom: 0; left: 0; width: 100%;
-    background: var(--rosso);
-    color: white;
-    text-align: center;
-    padding: 15px;
-    font-weight: 800;
-    z-index: 9999;
-    font-size: 1.1rem;
-    box-shadow: 0 -2px 10px rgba(0,0,0,0.3);
-}
-@media (max-width: 768px) {
-    .sticky-cta-mobile { display: block; }
-    body { padding-bottom: 60px; } /* Evita che il tasto copra il footer */
-}
+	
     </style>
 	<script type="application/ld+json">
 {
