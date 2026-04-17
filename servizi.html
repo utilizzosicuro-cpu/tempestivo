@@ -219,29 +219,24 @@
 .footer-links a:hover { color: var(--giallo); }
 .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; text-align: center; font-size: 0.8rem; }
 
-/* --- MOBILE OPTIMIZATION (DA COPIARE) --- */
-@media (max-width: 480px) {
+/* --- MOBILE OPTIMIZATION AGGIORNATO --- */
+@media (max-width: 768px) { /* Usiamo 768px per coprire anche i tablet verticali */
     header { height: 65px; }
     body { padding-top: 75px; }
+    
+    .servizi-grid {
+        grid-template-columns: 1fr; /* Forza una sola colonna */
+        gap: 20px;
+        padding: 0 15px;
+    }
+
     .logo-img { height: 30px; }
     .logo-text span:first-child { font-size: 0.95rem; }
     .logo-text span:last-child { display: none; }
     .btn-emergenza { font-size: 0.8rem; padding: 8px 10px; }
+    
     .footer-grid { grid-template-columns: 1fr; }
 }
-        .btn-pronto-intervento {
-            display: block;
-            background-color: var(--rosso);
-            color: var(--bianco);
-            text-align: center;
-            padding: 12px;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 5px;
-            margin-top: 15px;
-            transition: transform 0.2s ease;
-        }
-
     
     </style>
 
