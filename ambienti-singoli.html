@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <title>Ristrutturazione Ambienti Singoli e Business | Tempestivo</title>
+    <meta name="description" content="Ristrutturazione mirata per case, uffici e attività commerciali a Palermo e Trapani. Cucine, living, uffici e negozi con Tempestivo.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="https://www.tempestivo.it/ambienti-singoli.html">
+    
+    <style>
+        :root {
+            --rosso: #E32626;
+            --blu-notte: #0B1B3B;
+            --giallo: #FFC857;
+            --grigio-chiaro: #F5F5F5;
+            --grigio-scuro: #444444;
+            --bianco: #FFFFFF;
+            --font-titoli: "Montserrat", Arial, sans-serif;
+            --font-testi: "Roboto", Arial, sans-serif;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: var(--font-testi); color: var(--grigio-scuro); background-color: var(--bianco); line-height: 1.5; }
+        a { text-decoration: none; }
+
+        /* HEADER - FIX TESTO BIANCO */
+        header { 
+            width: 100%; 
+            position: fixed; 
+            top: 0; 
+            left: 0; 
+            z-index: 1000; 
+            background-color: rgba(11, 27, 59, 0.98); 
+            color: var(--bianco); 
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2); 
+        }
+        .header-inner { 
+            max-width: 1100px; 
+            margin: 0 auto; 
+            padding: 10px 15px; 
+            display: flex; 
+            align-items: center; 
+            justify-content: space-between; 
+        }
+        .logo { display: flex; align-items: center; gap: 10px; color: var(--bianco); }
+        .logo-img { height: 34px; width: auto; }
+        .logo-text { display: flex; flex-direction: column; }
+        .logo-text span:first-child { 
+            font-family: var(--font-titoli); 
+            font-weight: 800; 
+            font-size: 18px; 
+            color: var(--bianco); /* Forza colore bianco */
+            line-height: 1;
+        }
+        .logo-text span:last-child { font-size: 11px; text-transform: uppercase; color: var(--giallo); }
+
+        /* MENU COMPLETO */
+        .main-nav { margin-left: auto; margin-right: 20px; display: flex; gap: 15px; }
+        .nav-link { 
+            color: var(--bianco); 
+            font-weight: 700; 
+            font-size: 0.85rem; 
+            text-transform: uppercase; 
+        }
+        .nav-link:hover { color: var(--giallo); }
+
+        .btn-emergenza { 
+            background-color: var(--rosso); 
+            color: var(--bianco); 
+            padding: 8px 14px; 
+            border-radius: 5px; 
+            font-weight: 700; 
+            font-size: 0.8rem; 
+            display: flex; 
+            align-items: center; 
+            gap: 5px; 
+        }
+
+        .page-offset { height: 70px; }
+
+        /* HERO */
+        .hero { 
+            position: relative; 
+            padding: 100px 20px; 
+            background-color: var(--blu-notte); 
+            color: var(--bianco); 
+            text-align: center; 
+        }
+        .hero h1 { font-family: var(--font-titoli); font-size: 2.5rem; margin-bottom: 20px; }
+        .hero h1 span { color: var(--giallo); }
+
+        /* GRID SERVIZI AGGIORNATA */
+        section { padding: 60px 20px; }
+        .container { max-width: 1100px; margin: 0 auto; }
+        .grid-ambienti { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+            gap: 25px; 
+            margin-top: 40px; 
+        }
+        .card { 
+            background: var(--grigio-chiaro); 
+            padding: 30px; 
+            border-radius: 12px; 
+            text-align: left; 
+            border-bottom: 4px solid transparent;
+            transition: 0.3s;
+        }
+        .card:hover { border-color: var(--rosso); transform: translateY(-5px); }
+        .card h3 { color: var(--blu-notte); margin-bottom: 15px; font-family: var(--font-titoli); }
+
+        /* FORM */
+        .contatto { background: var(--blu-notte); color: #fff; text-align: center; }
+        .contact-form { 
+            display: grid; 
+            grid-template-columns: 1fr 1fr; 
+            gap: 20px; 
+            max-width: 800px; 
+            margin: 30px auto; 
+        }
+        .full { grid-column: span 2; }
+        input, select, textarea { padding: 12px; border-radius: 5px; border: none; width: 100%; }
+        .btn-submit { 
+            background: var(--rosso); 
+            color: #fff; 
+            padding: 15px; 
+            border: none; 
+            border-radius: 50px; 
+            font-weight: 700; 
+            cursor: pointer; 
+        }
+
+        /* FOOTER COMPLETO (Dalla Index) */
+        .footer { background: var(--grigio-scuro); color: #fff; padding: 50px 20px; text-align: center; }
+        .footer-links { margin: 20px 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; }
+        .footer-links a { color: var(--giallo); font-size: 0.9rem; text-decoration: underline; }
+        .zone-links { margin-top: 20px; font-size: 0.85rem; opacity: 0.8; }
+
+        @media (max-width: 768px) {
+            .main-nav { display: none; }
+            .contact-form { grid-template-columns: 1fr; }
+            .full { grid-column: span 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-inner">
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="Tempestivo" class="logo-img">
+                <div class="logo-text">
+                    <span>TEMPESTIVO</span>
+                    <span>RAPIDI & AFFIDABILI</span>
+                </div>
+            </a>
+            
+            <nav class="main-nav">
+                <a href="chi-siamo.html" class="nav-link">Chi Siamo</a>
+                <a href="index.html#servizi" class="nav-link">Servizi</a>
+                <a href="mappa-zone.html" class="nav-link">Zone Coperte</a>
+            </nav>
+
+            <a href="tel:3520258583" class="btn-emergenza">
+                <span>📞</span> 3520258583
+            </a>
+        </div>
+    </header>
+
+    <div class="page-offset"></div>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Ristrutturazione <span>Ambienti Singoli & Business</span></h1>
+            <p>Interventi rapidi e certificati per abitazioni, uffici e negozi a Palermo e Trapani.</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2 style="text-align:center; color: var(--blu-notte); font-family: var(--font-titoli);">Cosa possiamo trasformare</h2>
+            
+            <div class="grid-ambienti">
+                <div class="card">
+                    <h3>🍳 Cucine</h3>
+                    <p>Rifacimento impianti e posa rivestimenti. La tua nuova cucina pronta in tempi record.</p>
+                </div>
+                <div class="card">
+                    <h3>🛋️ Living</h3>
+                    <p>Open space, cartongesso e illuminazione moderna per il tuo soggiorno.</p>
+                </div>
+                <div class="card">
+                    <h3>🏢 Uffici e Studi</h3>
+                    <p>Restyling spazi professionali, cablaggio dati e pareti divisorie per il tuo business.</p>
+                </div>
+                <div class="card">
+                    <h3>🛍️ Attività Commerciali</h3>
+                    <p>Ristrutturazione negozi e locali food con squadre h24 per minimizzare la chiusura.</p>
+                </div>
+                <div class="card">
+                    <h3>🏡 Depandance</h3>
+                    <p>Trasformazione locali esterni e loft in ambienti eleganti e funzionali.</p>
+                </div>
+                <div class="card">
+                    <h3>🧸 Camerette</h3>
+                    <p>Riorganizzazione spazi e finiture sicure per la zona notte dei più piccoli.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contatto">
+        <div class="container">
+            <h2>Richiedi Sopralluogo Gratuito</h2>
+            <form class="contact-form" action="send.php" method="POST">
+                <input type="text" name="nome" placeholder="Nome" required>
+                <input type="tel" name="telefono" placeholder="Telefono" required>
+                <select name="tipo" class="full">
+                    <option value="privato">Ambiente Casa</option>
+                    <option value="business">Ufficio / Attività Commerciale</option>
+                </select>
+                <textarea name="messaggio" placeholder="Descrivi il tuo progetto" class="full"></textarea>
+                <button type="submit" class="btn-submit full">ATTIVA TEMPESTIVO</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <img src="img/logo.png" alt="Tempestivo" style="height: 40px; margin-bottom: 15px;">
+            <p><strong>TEMPESTIVO</strong> - Rapidi & Affidabili</p>
+            <p style="font-size: 0.9rem; margin-top: 10px; opacity: 0.8;">
+                Divisione di Officina Creativa dedicata al General Contracting e manutenzioni rapide.
+            </p>
+
+            <div class="footer-links">
+                <a href="mappa-zone.html">Mappa delle Zone</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="cookie.html">Cookie Policy</a>
+                <a href="termini.html">Termini e Condizioni</a>
+            </div>
+
+            <div class="zone-links">
+                <strong>Operativi a:</strong> 
+                Partinico · Carini · Alcamo · Castellammare del Golfo · Monreale · Terrasini · Cinisi · Balestrate
+            </div>
+
+            <p style="margin-top: 30px; font-weight: bold;">P.IVA: 06772720824</p>
+        </div>
+    </footer>
+
+</body>
+</html>
