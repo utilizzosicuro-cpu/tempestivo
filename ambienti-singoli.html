@@ -25,7 +25,7 @@
         body { font-family: var(--font-testi); color: var(--grigio-scuro); background-color: var(--bianco); line-height: 1.5; }
         a { text-decoration: none; }
 
-        /* HEADER & NAV - ALLINEATO ALLA INDEX */
+        /* HEADER - STRUTTURA INDEX */
         header { 
             width: 100%; 
             position: fixed; 
@@ -43,25 +43,24 @@
             display: flex; 
             align-items: center; 
             justify-content: space-between; 
-            flex-wrap: wrap; /* Permette al menu di andare sotto su mobile */
         }
-        .logo { display: flex; align-items: center; gap: 10px; color: var(--bianco); }
-        .logo-img { height: 34px; width: auto; }
+        .logo { display: flex; align-items: center; gap: 8px; color: var(--bianco); }
+        .logo-img { height: 32px; width: auto; }
         .logo-text { display: flex; flex-direction: column; }
         .logo-text span:first-child { 
             font-family: var(--font-titoli); 
             font-weight: 800; 
             font-size: 18px; 
-            color: var(--bianco) !important; /* Forza visibilità */
+            color: var(--bianco) !important;
             line-height: 1;
         }
-        .logo-text span:last-child { font-size: 10px; text-transform: uppercase; color: var(--giallo); }
+        .logo-text span:last-child { font-size: 9px; text-transform: uppercase; color: var(--giallo); }
 
-        .main-nav { display: flex; gap: 12px; margin: 0 10px; }
+        .main-nav { display: flex; gap: 15px; margin: 0 10px; }
         .nav-link { 
             color: var(--bianco); 
             font-weight: 700; 
-            font-size: 0.8rem; 
+            font-size: 0.85rem; 
             text-transform: uppercase; 
         }
         .nav-link:hover { color: var(--giallo); }
@@ -69,17 +68,17 @@
         .btn-emergenza { 
             background-color: var(--rosso); 
             color: var(--bianco); 
-            padding: 6px 12px; 
+            padding: 8px 14px; 
             border-radius: 5px; 
             font-weight: 700; 
-            font-size: 0.75rem; 
+            font-size: 0.8rem; 
             display: flex; 
             align-items: center; 
             gap: 5px; 
+            white-space: nowrap;
         }
 
-        /* Spacer per non far finire il contenuto sotto l'header */
-        .page-offset { height: 75px; }
+        .page-offset { height: 65px; }
 
         /* HERO */
         .hero { 
@@ -112,7 +111,7 @@
         .card:hover { border-color: var(--rosso); transform: translateY(-5px); }
         .card h3 { color: var(--blu-notte); margin-bottom: 15px; font-family: var(--font-titoli); }
 
-        /* FORM */
+        /* FORM CONTATTO */
         .contatto { background: var(--blu-notte); color: #fff; text-align: center; }
         .contact-form { 
             display: grid; 
@@ -140,11 +139,16 @@
         .footer-links a { color: var(--giallo); font-size: 0.9rem; text-decoration: underline; }
         .zone-links { margin-top: 20px; font-size: 0.85rem; opacity: 0.8; line-height: 1.8; }
 
-        /* MOBILE FIXES */
+        /* MOBILE FIXES - HEADER UNICO RIGO */
         @media (max-width: 768px) {
-            .header-inner { justify-content: center; gap: 10px; }
-            .main-nav { order: 3; width: 100%; justify-content: center; margin-top: 10px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 10px; }
-            .page-offset { height: 120px; } /* Più alto perché il menu va a capo */
+            .header-inner { padding: 8px 10px; flex-wrap: nowrap; justify-content: space-between; }
+            .main-nav { display: none; } /* Come nella index, il menu testuale sparisce su mobile per lasciar posto a logo e numero */
+            .logo-img { height: 28px; }
+            .logo-text span:first-child { font-size: 15px; }
+            .logo-text span:last-child { font-size: 8px; }
+            .btn-emergenza { padding: 6px 10px; font-size: 0.7rem; }
+            .page-offset { height: 60px; }
+            
             .hero h1 { font-size: 1.8rem; }
             .contact-form { grid-template-columns: 1fr; }
             .full { grid-column: span 1; }
