@@ -7,6 +7,11 @@
   </url>
 
   <url>
+    <loc>https://www.tempestivo.it/ambienti-singoli.html/</loc>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
   <loc>https://www.tempestivo.it/chi-siamo.html</loc>
   <lastmod>2024-05-22</lastmod>
   <changefreq>monthly</changefreq>
@@ -17,11 +22,53 @@
     <loc>https://www.tempestivo.it/mappa-zone.html</loc>
     <priority>0.90</priority>
   </url>
+  
   <url>
     <loc>https://www.tempestivo.it/pronto-intervento-palermo-trapani.html</loc>
     <priority>0.90</priority>
   </url>
 
+  <url>
+    <loc>https://www.tempestivo.it/impianti-elettrici-palermo-trapani.html</loc>
+    <priority>0.90</priority>
+  </url>
+
+   <url>
+    <loc>https://www.tempestivo.it/servizi.html</loc>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://www.tempestivo.it/manutenzione-aziende-agricole-palermo-trapani.html</loc>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://www.tempestivo.it/manutenzione-aziende-attivita-palermo-trapani.html</loc>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://www.tempestivo.it/manutenzione-condomini-palermo-trapani.html</loc>
+    <priority>0.90</priority>
+  </url>
+
+   <url>
+    <loc>https://www.tempestivo.it/rifacimento-bagno-palermo.html</loc>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://www.tempestivo.it/ristrutturazioni-palermo-trapani.html</loc>
+    <priority>0.90</priority>
+  </url>
+
+   <url>
+    <loc>https://www.tempestivo.it/ristrutturazioni-palermo-trapani.html</loc>
+    <priority>0.90</priority>
+  </url>
+  
+  <url><loc>https://www.tempestivo.it/servizi-partinico-carini-terrasini-alcamo.html</loc><priority>0.80</priority></url> 
   <url><loc>https://www.tempestivo.it/servizi-partinico.html</loc><priority>0.80</priority></url>
   <url><loc>https://www.tempestivo.it/servizi-carini.html</loc><priority>0.80</priority></url>
   <url><loc>https://www.tempestivo.it/servizi-terrasini.html</loc><priority>0.80</priority></url>
