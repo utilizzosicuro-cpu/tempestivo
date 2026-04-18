@@ -25,14 +25,14 @@
         body { font-family: var(--font-testi); color: var(--grigio-scuro); background-color: var(--bianco); line-height: 1.5; }
         a { text-decoration: none; }
 
-        /* HEADER - FIX TESTO BIANCO */
+        /* HEADER & NAV - ALLINEATO ALLA INDEX */
         header { 
             width: 100%; 
             position: fixed; 
             top: 0; 
             left: 0; 
             z-index: 1000; 
-            background-color: rgba(11, 27, 59, 0.98); 
+            background-color: var(--blu-notte); 
             color: var(--bianco); 
             box-shadow: 0 2px 6px rgba(0,0,0,0.2); 
         }
@@ -43,6 +43,7 @@
             display: flex; 
             align-items: center; 
             justify-content: space-between; 
+            flex-wrap: wrap; /* Permette al menu di andare sotto su mobile */
         }
         .logo { display: flex; align-items: center; gap: 10px; color: var(--bianco); }
         .logo-img { height: 34px; width: auto; }
@@ -51,17 +52,16 @@
             font-family: var(--font-titoli); 
             font-weight: 800; 
             font-size: 18px; 
-            color: var(--bianco); /* Forza colore bianco */
+            color: var(--bianco) !important; /* Forza visibilità */
             line-height: 1;
         }
-        .logo-text span:last-child { font-size: 11px; text-transform: uppercase; color: var(--giallo); }
+        .logo-text span:last-child { font-size: 10px; text-transform: uppercase; color: var(--giallo); }
 
-        /* MENU COMPLETO */
-        .main-nav { margin-left: auto; margin-right: 20px; display: flex; gap: 15px; }
+        .main-nav { display: flex; gap: 12px; margin: 0 10px; }
         .nav-link { 
             color: var(--bianco); 
             font-weight: 700; 
-            font-size: 0.85rem; 
+            font-size: 0.8rem; 
             text-transform: uppercase; 
         }
         .nav-link:hover { color: var(--giallo); }
@@ -69,29 +69,30 @@
         .btn-emergenza { 
             background-color: var(--rosso); 
             color: var(--bianco); 
-            padding: 8px 14px; 
+            padding: 6px 12px; 
             border-radius: 5px; 
             font-weight: 700; 
-            font-size: 0.8rem; 
+            font-size: 0.75rem; 
             display: flex; 
             align-items: center; 
             gap: 5px; 
         }
 
-        .page-offset { height: 70px; }
+        /* Spacer per non far finire il contenuto sotto l'header */
+        .page-offset { height: 75px; }
 
         /* HERO */
         .hero { 
             position: relative; 
-            padding: 100px 20px; 
+            padding: 80px 20px; 
             background-color: var(--blu-notte); 
             color: var(--bianco); 
             text-align: center; 
         }
-        .hero h1 { font-family: var(--font-titoli); font-size: 2.5rem; margin-bottom: 20px; }
+        .hero h1 { font-family: var(--font-titoli); font-size: 2.2rem; margin-bottom: 20px; }
         .hero h1 span { color: var(--giallo); }
 
-        /* GRID SERVIZI AGGIORNATA */
+        /* SEZIONI CONTENUTO */
         section { padding: 60px 20px; }
         .container { max-width: 1100px; margin: 0 auto; }
         .grid-ambienti { 
@@ -105,8 +106,8 @@
             padding: 30px; 
             border-radius: 12px; 
             text-align: left; 
-            border-bottom: 4px solid transparent;
             transition: 0.3s;
+            border-bottom: 4px solid var(--blu-notte);
         }
         .card:hover { border-color: var(--rosso); transform: translateY(-5px); }
         .card h3 { color: var(--blu-notte); margin-bottom: 15px; font-family: var(--font-titoli); }
@@ -121,7 +122,7 @@
             margin: 30px auto; 
         }
         .full { grid-column: span 2; }
-        input, select, textarea { padding: 12px; border-radius: 5px; border: none; width: 100%; }
+        input, select, textarea { padding: 12px; border-radius: 5px; border: none; width: 100%; font-family: inherit; }
         .btn-submit { 
             background: var(--rosso); 
             color: #fff; 
@@ -130,16 +131,21 @@
             border-radius: 50px; 
             font-weight: 700; 
             cursor: pointer; 
+            font-size: 1rem;
         }
 
-        /* FOOTER COMPLETO (Dalla Index) */
+        /* FOOTER COMPLETO */
         .footer { background: var(--grigio-scuro); color: #fff; padding: 50px 20px; text-align: center; }
         .footer-links { margin: 20px 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; }
         .footer-links a { color: var(--giallo); font-size: 0.9rem; text-decoration: underline; }
-        .zone-links { margin-top: 20px; font-size: 0.85rem; opacity: 0.8; }
+        .zone-links { margin-top: 20px; font-size: 0.85rem; opacity: 0.8; line-height: 1.8; }
 
+        /* MOBILE FIXES */
         @media (max-width: 768px) {
-            .main-nav { display: none; }
+            .header-inner { justify-content: center; gap: 10px; }
+            .main-nav { order: 3; width: 100%; justify-content: center; margin-top: 10px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 10px; }
+            .page-offset { height: 120px; } /* Più alto perché il menu va a capo */
+            .hero h1 { font-size: 1.8rem; }
             .contact-form { grid-template-columns: 1fr; }
             .full { grid-column: span 1; }
         }
@@ -160,11 +166,11 @@
             <nav class="main-nav">
                 <a href="chi-siamo.html" class="nav-link">Chi Siamo</a>
                 <a href="index.html#servizi" class="nav-link">Servizi</a>
-                <a href="mappa-zone.html" class="nav-link">Zone Coperte</a>
+                <a href="mappa-zone.html" class="nav-link">Zone</a>
             </nav>
 
-            <a href="tel:3520258583" class="btn-emergenza">
-                <span>📞</span> 3520258583
+            <a href="tel:800123456" class="btn-emergenza">
+                <span>📞</span> 800 123 456
             </a>
         </div>
     </header>
@@ -173,39 +179,39 @@
 
     <section class="hero">
         <div class="container">
-            <h1>Ristrutturazione <span>Ambienti Singoli & Business</span></h1>
-            <p>Interventi rapidi e certificati per abitazioni, uffici e negozi a Palermo e Trapani.</p>
+            <h1>Ristrutturazione <span>Ambienti e Business</span></h1>
+            <p>Interventi rapidi, puliti e certificati per la casa o la tua attività commerciale.</p>
         </div>
     </section>
 
     <section>
         <div class="container">
-            <h2 style="text-align:center; color: var(--blu-notte); font-family: var(--font-titoli);">Cosa possiamo trasformare</h2>
+            <h2 style="text-align:center; color: var(--blu-notte); font-family: var(--font-titoli); margin-bottom: 40px;">Soluzioni su Misura</h2>
             
             <div class="grid-ambienti">
                 <div class="card">
                     <h3>🍳 Cucine</h3>
-                    <p>Rifacimento impianti e posa rivestimenti. La tua nuova cucina pronta in tempi record.</p>
+                    <p>Rifacimento impianti idrici e posa nuovi rivestimenti. Rinnoviamo il cuore della tua casa in tempi certi.</p>
                 </div>
                 <div class="card">
-                    <h3>🛋️ Living</h3>
-                    <p>Open space, cartongesso e illuminazione moderna per il tuo soggiorno.</p>
+                    <h3>🛋️ Living & Open Space</h3>
+                    <p>Rimozione tramezzi, controsoffitti moderni e nuova illuminazione per valorizzare il tuo soggiorno.</p>
                 </div>
                 <div class="card">
                     <h3>🏢 Uffici e Studi</h3>
-                    <p>Restyling spazi professionali, cablaggio dati e pareti divisorie per il tuo business.</p>
+                    <p>Restyling professionale: pareti divisorie, cablaggi e pavimentazioni resistenti per il tuo ambiente di lavoro.</p>
                 </div>
                 <div class="card">
                     <h3>🛍️ Attività Commerciali</h3>
-                    <p>Ristrutturazione negozi e locali food con squadre h24 per minimizzare la chiusura.</p>
+                    <p>Ristrutturazione negozi e locali food. Squadre dedicate per completare i lavori riducendo i giorni di chiusura.</p>
                 </div>
                 <div class="card">
-                    <h3>🏡 Depandance</h3>
-                    <p>Trasformazione locali esterni e loft in ambienti eleganti e funzionali.</p>
+                    <h3>🏡 Depandance e Loft</h3>
+                    <p>Recupero di locali esterni o rustici trasformandoli in ambienti vivibili, eleganti e coibentati.</p>
                 </div>
                 <div class="card">
                     <h3>🧸 Camerette</h3>
-                    <p>Riorganizzazione spazi e finiture sicure per la zona notte dei più piccoli.</p>
+                    <p>Pittura atossica, ottimizzazione degli spazi e finiture di sicurezza per la crescita dei più piccoli.</p>
                 </div>
             </div>
         </div>
@@ -213,16 +219,18 @@
 
     <section class="contatto">
         <div class="container">
-            <h2>Richiedi Sopralluogo Gratuito</h2>
+            <h2>Sopralluogo Gratuito in 24/48h</h2>
+            <p>Descrivici il tuo progetto e ricevi subito assistenza.</p>
             <form class="contact-form" action="send.php" method="POST">
-                <input type="text" name="nome" placeholder="Nome" required>
+                <input type="text" name="nome" placeholder="Il tuo nome" required>
                 <input type="tel" name="telefono" placeholder="Telefono" required>
-                <select name="tipo" class="full">
-                    <option value="privato">Ambiente Casa</option>
-                    <option value="business">Ufficio / Attività Commerciale</option>
+                <select name="tipo_intervento" class="full">
+                    <option value="abitazione">Ristrutturazione Casa</option>
+                    <option value="ufficio">Ufficio / Business</option>
+                    <option value="manutenzione">Piccoli Interventi</option>
                 </select>
-                <textarea name="messaggio" placeholder="Descrivi il tuo progetto" class="full"></textarea>
-                <button type="submit" class="btn-submit full">ATTIVA TEMPESTIVO</button>
+                <textarea name="messaggio" placeholder="Dettagli dell'intervento..." class="full" rows="4"></textarea>
+                <button type="submit" class="btn-submit full">RICHIEDI INFO ORA</button>
             </form>
         </div>
     </section>
@@ -232,22 +240,25 @@
             <img src="img/logo.png" alt="Tempestivo" style="height: 40px; margin-bottom: 15px;">
             <p><strong>TEMPESTIVO</strong> - Rapidi & Affidabili</p>
             <p style="font-size: 0.9rem; margin-top: 10px; opacity: 0.8;">
-                Divisione di Officina Creativa dedicata al General Contracting e manutenzioni rapide.
+                Una divisione di <strong>Officina Creativa</strong> dedicata a ristrutturazioni e pronto intervento a Palermo e Trapani.
             </p>
 
             <div class="footer-links">
-                <a href="mappa-zone.html">Mappa delle Zone</a>
-                <a href="privacy.html">Privacy Policy</a>
+                <a href="index.html">Home</a>
+                <a href="chi-siamo.html">Chi Siamo</a>
+                <a href="mappa-zone.html">Zone Coperte</a>
+                <a href="privacy.html">Privacy</a>
                 <a href="cookie.html">Cookie Policy</a>
-                <a href="termini.html">Termini e Condizioni</a>
             </div>
 
             <div class="zone-links">
-                <strong>Operativi a:</strong> 
-                Partinico · Carini · Alcamo · Castellammare del Golfo · Monreale · Terrasini · Cinisi · Balestrate
+                <strong>Principali Comuni Serviti:</strong><br>
+                Palermo · Trapani · Partinico · Carini · Alcamo · Castellammare del Golfo · Monreale · Terrasini · Cinisi · Balestrate
             </div>
 
-            <p style="margin-top: 30px; font-weight: bold;">P.IVA: 06772720824</p>
+            <p style="margin-top: 30px; font-weight: bold; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px;">
+                P.IVA: 06772720824
+            </p>
         </div>
     </footer>
 
