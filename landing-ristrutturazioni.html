@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Ristrutturazioni Complete e Veloci | Tempestivo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Ristrutturazioni complete chiavi in mano e ristrutturazioni veloci per bagni, B&B, piazzali e giardini. Sopralluogo gratuito entro 48h. Tempestivo.">
+  <link rel="canonical" href="https://www.tempestivo.it/landing-ristrutturazioni.html">
+
+  <style>
+    :root {
+      --rosso: #E32626;
+      --blu-notte: #0B1B3B;
+      --giallo: #FFC857;
+      --grigio-chiaro: #F5F5F5;
+      --grigio-scuro: #444444;
+      --bianco: #FFFFFF;
+      --font-titoli: "Montserrat", Arial, sans-serif;
+      --font-testi: "Roboto", Arial, sans-serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: var(--font-testi);
+      color: var(--grigio-scuro);
+      background: var(--bianco);
+      line-height: 1.6;
+    }
+    a { text-decoration: none; color: inherit; }
+
+    /* HEADER */
+    .lp-header {
+      background: linear-gradient(135deg, #0B1B3B, #E32626);
+      color: var(--bianco);
+      padding: 12px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .lp-logo {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .lp-logo span:first-child {
+      font-family: var(--font-titoli);
+      font-weight: 800;
+      font-size: 18px;
+    }
+    .lp-logo span:last-child {
+      font-size: 11px;
+      opacity: 0.85;
+    }
+    .lp-header-phone {
+      font-weight: 700;
+      font-size: 13px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* LAYOUT GENERALE */
+    .lp-section {
+      padding: 24px 16px;
+    }
+    .lp-section-alt {
+      background: var(--grigio-chiaro);
+    }
+    .lp-inner {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .lp-title {
+      font-family: var(--font-titoli);
+      font-size: 1.4rem;
+      font-weight: 800;
+      margin-bottom: 10px;
+      color: var(--blu-notte);
+    }
+    .lp-subtitle {
+      font-size: 0.95rem;
+      margin-bottom: 14px;
+    }
+
+    .lp-badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 10px 0 16px;
+    }
+    .lp-badge {
+      background: var(--bianco);
+      border-radius: 999px;
+      padding: 6px 12px;
+      font-size: 0.8rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .lp-cta-primary,
+    .lp-cta-secondary {
+      display: inline-block;
+      padding: 12px 20px;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      text-align: center;
+      margin-top: 8px;
+    }
+    .lp-cta-primary {
+      background: var(--rosso);
+      color: var(--bianco);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    .lp-cta-secondary {
+      background: var(--blu-notte);
+      color: var(--bianco);
+    }
+
+    /* LISTE */
+    .lp-list {
+      list-style: none;
+      margin: 10px 0;
+      padding: 0;
+    }
+    .lp-list li {
+      padding-left: 20px;
+      margin-bottom: 6px;
+      position: relative;
+      font-size: 0.92rem;
+    }
+    .lp-list li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: var(--rosso);
+      font-weight: 700;
+    }
+
+    /* GRID SERVIZI */
+    .lp-grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-top: 12px;
+    }
+    .lp-card {
+      background: var(--bianco);
+      border-radius: 12px;
+      padding: 12px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+      font-size: 0.9rem;
+    }
+    .lp-card h3 {
+      font-family: var(--font-titoli);
+      font-size: 1rem;
+      margin-bottom: 6px;
+      color: var(--blu-notte);
+    }
+
+    /* ZONE SERVITE */
+    .lp-zones-title {
+      font-family: var(--font-titoli);
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: var(--blu-notte);
+    }
+    .lp-zones-list {
+      list-style: none;
+      padding: 0;
+      margin: 6px 0 0;
+      font-size: 0.9rem;
+    }
+    .lp-zones-list li {
+      margin-bottom: 4px;
+    }
+
+    /* FORM */
+    .lp-form {
+      margin-top: 12px;
+      display: grid;
+      gap: 10px;
+    }
+    .lp-form label {
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+    .lp-form input,
+    .lp-form textarea {
+      width: 100%;
+      padding: 8px 10px;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+      font-family: var(--font-testi);
+      font-size: 0.9rem;
+    }
+    .lp-form textarea {
+      min-height: 80px;
+      resize: vertical;
+    }
+    .lp-form button {
+      border: none;
+      cursor: pointer;
+    }
+
+    /* FOOTER PHONE */
+    .lp-footer-phone {
+      margin-top: 18px;
+      padding: 12px;
+      background: var(--rosso);
+      color: var(--bianco);
+      border-radius: 12px;
+      text-align: center;
+      font-weight: 700;
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .lp-grid-2 {
+        grid-template-columns: 1fr;
+      }
+      .lp-title {
+        font-size: 1.25rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header class="lp-header">
+  <div class="lp-logo">
+    <span>TEMPESTIVO</span>
+    <span>RAPIDI & AFFIDABILI</span>
+  </div>
+  <div class="lp-header-phone">
+    <span>📞</span>
+    <a href="tel:+393520258583">+39.352.025.85.83</a>
+  </div>
+</header>
+
+<!-- SEZIONE 1: RISTRUTTURAZIONI COMPLETE -->
+<section class="lp-section lp-section-alt">
+  <div class="lp-inner">
+    <h1 class="lp-title">Ristrutturazioni complete chiavi in mano</h1>
+    <p class="lp-subtitle">
+      Progettazione, pratiche e lavori coordinati da un unico referente. Dalla prima idea alla consegna chiavi in mano, con tempi certi e comunicazione chiara.
+    </p>
+
+    <div class="lp-badge-row">
+      <div class="lp-badge">📄 Pratiche burocratiche incluse</div>
+      <div class="lp-badge">📐 Progetto architetto</div>
+      <div class="lp-badge">⏱ Tempi celerissimi</div>
+    </div>
+
+    <ul class="lp-list">
+      <li>Ristrutturazioni complete di appartamenti, ville e locali commerciali</li>
+      <li>Gestione pratiche edilizie e catastali</li>
+      <li>Coordinamento fornitori e materiali</li>
+      <li>Direzione lavori e controllo qualità</li>
+    </ul>
+
+    <a href="tel:+393520258583" class="lp-cta-primary">Richiedi un preventivo</a>
+    <p style="font-size:0.8rem;margin-top:6px;color:#666;">Sopralluogo gratuito entro 48h.</p>
+  </div>
+</section>
+
+<!-- SEZIONE 2: RISTRUTTURAZIONI VELOCI -->
+<section class="lp-section">
+  <div class="lp-inner">
+    <h2 class="lp-title">Ristrutturazioni veloci per bagni e ambienti civili</h2>
+    <p class="lp-subtitle">
+      Interventi rapidi per bagni, B&B, piazzali, giardini e spazi civili. Ideale per chi ha bisogno di risultati in tempi brevi, senza rinunciare alla qualità.
+    </p>
+
+    <div class="lp-grid-2">
+      <div class="lp-card">
+        <h3>Bagni moderni</h3>
+        <p>Rifacimento completo di bagni con sanitari, rivestimenti e impianti aggiornati.</p>
+      </div>
+      <div class="lp-card">
+        <h3>B&B e case vacanza</h3>
+        <p>Ristrutturazioni mirate per camere, corridoi e spazi comuni, con tempi ridotti.</p>
+      </div>
+      <div class="lp-card">
+        <h3>Piazzali e pavimentazioni</h3>
+        <p>Interventi su cortili, parcheggi e aree esterne con nuove pavimentazioni.</p>
+      </div>
+      <div class="lp-card">
+        <h3>Giardini e aree verdi</h3>
+        <p>Sistemazione giardini, vialetti e spazi esterni per un impatto visivo immediato.</p>
+      </div>
+    </div>
+
+    <a href="tel:+393520258583" class="lp-cta-secondary" style="margin-top:16px;">Prenota il tuo sopralluogo</a>
+    <p style="font-size:0.8rem;margin-top:6px;color:#666;">Interventi rapidi entro 7 giorni dalla conferma.</p>
+  </div>
+</section>
+
+<!-- SEZIONE 3: ZONE SERVITE -->
+<section class="lp-section lp-section-alt">
+  <div class="lp-inner">
+    <div class="lp-zones-title">Zone servite</div>
+    <p style="font-size:0.9rem;margin-bottom:8px;">
+      Operativi a Palermo e provincia, con particolare focus sui seguenti comuni e dintorni:
+    </p>
+    <ul class="lp-zones-list">
+      <li>• Partinico</li>
+      <li>• Carini</li>
+      <li>• Terrasini</li>
+      <li>• Cinisi</li>
+      <li>• Trappeto</li>
+      <li>• Balestrate</li>
+      <li>• Alcamo</li>
+      <li>• Castellammare del Golfo</li>
+      <li>• Monreale</li>
+      <li>• Isola delle Femmine</li>
+      <li>• e dintorni</li>
+    </ul>
+  </div>
+</section>
+
+<!-- SEZIONE 4: FORM CONTATTO -->
+<section class="lp-section">
+  <div class="lp-inner">
+    <h2 class="lp-title">Richiedi un preventivo gratuito</h2>
+    <p class="lp-subtitle">Compila il form: ti ricontattiamo in breve tempo per fissare un sopralluogo.</p>
+
+    <!-- QUI puoi collegare il form al tuo backend / servizio email -->
+    <form class="lp-form" method="post" action="#">
+      <div>
+        <label for="nome">Nome e cognome</label>
+        <input type="text" id="nome" name="nome" required>
+      </div>
+      <div>
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div>
+        <label for="telefono">Telefono</label>
+        <input type="tel" id="telefono" name="telefono">
+      </div>
+      <div>
+        <label for="messaggio">Descrivi la tua esigenza</label>
+        <textarea id="messaggio" name="messaggio" placeholder="Appartamento, bagno, B&B, piazzale, giardino..."></textarea>
+      </div>
+      <button type="submit" class="lp-cta-primary">Invia richiesta</button>
+    </form>
+
+    <a href="tel:+393520258583" class="lp-footer-phone">
+      <span>📞</span>
+      <span>Chiama ora: +39.352.025.85.83</span>
+    </a>
+  </div>
+</section>
+
+</body>
+</html>
