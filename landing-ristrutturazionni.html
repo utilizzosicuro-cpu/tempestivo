@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Ristrutturazioni Complete e Veloci | Tempestivo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ristrutturazioni complete chiavi in mano e ristrutturazioni veloci per bagni, B&B, piazzali e giardini. Sopralluogo gratuito entro 48h. Tempestivo.">
+    <link rel="canonical" href="https://www.tempestivo.it/landing-ristrutturazioni.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <style>
+        :root {
+            --rosso: #E32626;
+            --blu-notte: #0B1B3B;
+            --giallo: #FFC857;
+            --grigio-chiaro: #F5F5F5;
+            --grigio-scuro: #444444;
+            --bianco: #FFFFFF;
+            --font-titoli: "Montserrat", Arial, sans-serif;
+            --font-testi: "Roboto", Arial, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--font-testi);
+            color: var(--grigio-scuro);
+            background-color: var(--bianco);
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* --- STILI HEADER (DA INDEX.HTML) --- */
+        header {
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            background-color: rgba(11, 27, 59, 0.96);
+            color: var(--bianco);
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+            box-sizing: border-box; 
+        }
+
+        .header-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 8px 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-shrink: 0; 
+        }
+
+        .logo-img {
+            height: 34px;
+            width: auto;
+            display: block;
+        }
+
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+            white-space: nowrap;
+        }
+
+        .logo-text span:first-child {
+            font-family: var(--font-titoli);
+            font-weight: 800;
+            letter-spacing: 1px;
+            font-size: 18px;
+            color: #FFFFFF !important;
+        }
+
+        .logo-text span:last-child {
+            font-size: 11px;
+            text-transform: uppercase;
+            opacity: 0.8;
+            color: var(--giallo) !important;
+        }
+
+        .btn-emergenza {
+            background-color: var(--rosso);
+            color: var(--bianco);
+            padding: 8px 16px;
+            border-radius: 5px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.85rem;
+            flex-shrink: 0;
+        }
+
+        /* --- STILI SUB-NAV (DA INDEX.HTML) --- */
+        .sub-nav {
+            width: 100%;
+            background-color: var(--blu-notte);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            position: fixed;
+            top: 70px;
+            left: 0;
+            z-index: 998;
+            padding: 12px 0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .sub-nav-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 15px;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        .sub-nav-link {
+            color: var(--bianco) !important;
+            font-family: var(--font-titoli);
+            font-size: 0.9rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: 0.3s;
+        }
+
+        .sub-nav-link:hover {
+            color: var(--giallo) !important;
+        }
+
+        .page-offset {
+            height: 115px;
+        }
+
+        /* --- STILI SPECIFICI LANDING --- */
+        .lp-section { padding: 40px 16px; }
+        .lp-section-alt { background: var(--grigio-chiaro); }
+        .lp-inner { max-width: 900px; margin: 0 auto; }
+        .lp-title { font-family: var(--font-titoli); font-size: 1.8rem; font-weight: 800; margin-bottom: 15px; color: var(--blu-notte); }
+        .lp-subtitle { font-size: 1.1rem; margin-bottom: 20px; }
+        .lp-badge-row { display: flex; flex-wrap: wrap; gap: 10px; margin: 15px 0 20px; }
+        .lp-badge { background: var(--bianco); border-radius: 999px; padding: 8px 15px; font-size: 0.85rem; box-shadow: 0 2px 6px rgba(0,0,0,0.06); display: inline-flex; align-items: center; gap: 8px; font-weight: 600; }
+        .lp-cta-primary { display: inline-block; padding: 14px 28px; border-radius: 999px; font-weight: 700; font-size: 1rem; text-align: center; background: var(--rosso); color: var(--bianco); box-shadow: 0 4px 10px rgba(0,0,0,0.2); text-transform: uppercase; }
+        .lp-cta-secondary { display: inline-block; padding: 12px 24px; border-radius: 999px; font-weight: 700; font-size: 1rem; text-align: center; background: var(--blu-notte); color: var(--bianco); margin-top: 15px; }
+        .lp-list { list-style: none; margin: 20px 0; }
+        .lp-list li { padding-left: 25px; margin-bottom: 10px; position: relative; font-size: 1rem; }
+        .lp-list li::before { content: "✔"; position: absolute; left: 0; top: 0; color: var(--rosso); font-weight: 700; }
+        .lp-grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 20px; }
+        .lp-card { background: var(--bianco); border-radius: 12px; padding: 20px; box-shadow: 0 3px 10px rgba(0,0,0,0.06); }
+        .lp-card h3 { font-family: var(--font-titoli); font-size: 1.2rem; margin-bottom: 10px; color: var(--blu-notte); }
+        .lp-zones-list { list-style: none; padding: 0; margin-top: 15px; display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 10px; }
+        .lp-zones-list li { background: #fff; padding: 5px 10px; border-radius: 5px; font-size: 0.9rem; border-left: 3px solid var(--rosso); }
+        .lp-form { display: grid; gap: 15px; background: #fff; padding: 25px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        .lp-form input, .lp-form textarea { width: 100%; padding: 12px; border-radius: 8px; border: 1px solid #ddd; font-size: 1rem; }
+        .lp-footer-phone { margin-top: 25px; padding: 15px; background: var(--rosso); color: var(--bianco); border-radius: 12px; text-align: center; font-weight: 700; font-size: 1.2rem; display: flex; align-items: center; justify-content: center; gap: 10px; }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .sub-nav { top: 65px; padding: 10px 0; }
+            .sub-nav-inner { gap: 15px; }
+            .sub-nav-link { font-size: 0.75rem; }
+            .page-offset { height: 105px; }
+            .lp-grid-2 { grid-template-columns: 1fr; }
+            .lp-title { font-size: 1.5rem; }
+            .header-inner { padding: 10px 12px; }
+            .logo-text span:last-child { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="header-inner">
+        <a href="index.html" class="logo">
+            <img src="img/logo.png" alt="Tempestivo" class="logo-img">
+            <div class="logo-text">
+                <span>TEMPESTIVO</span>
+                <span>RAPIDI & AFFIDABILI</span>
+            </div>
+        </a>
+        <div class="header-cta">
+            <a href="tel:3520258583" class="btn-emergenza">
+                <span class="icon">⚠️</span>
+                <span>3520258583</span>
+            </a>
+        </div>
+    </div>
+</header>
+
+<nav class="sub-nav">
+    <div class="sub-nav-inner">
+        <a href="chi-siamo.html" class="sub-nav-link">Chi Siamo</a>
+        <a href="servizi.html" class="sub-nav-link">Servizi</a>
+        <a href="mappa-zone.html" class="sub-nav-link">Zone Coperte</a>
+    </div>
+</nav>
+
+<div class="page-offset"></div>
+
+<section class="lp-section lp-section-alt">
+    <div class="lp-inner">
+        <h1 class="lp-title">Ristrutturazioni complete chiavi in mano</h1>
+        <p class="lp-subtitle">
+            Progettazione, pratiche e lavori coordinati da un unico referente. Dalla prima idea alla consegna chiavi in mano.
+        </p>
+        <div class="lp-badge-row">
+            <div class="lp-badge">📄 Pratiche burocratiche incluse</div>
+            <div class="lp-badge">📐 Progetto architetto</div>
+            <div class="lp-badge">⏱ Tempi celerissimi</div>
+        </div>
+        <ul class="lp-list">
+            <li>Ristrutturazioni complete di appartamenti, ville e locali commerciali</li>
+            <li>Gestione pratiche edilizie e catastali (CILA, SCIA)</li>
+            <li>Coordinamento fornitori e materiali</li>
+            <li>Direzione lavori e controllo qualità certificata</li>
+        </ul>
+        <a href="tel:+393520258583" class="lp-cta-primary">Richiedi un preventivo</a>
+        <p style="font-size:0.85rem;margin-top:10px;color:#666; font-style: italic;">Sopralluogo gratuito entro 48 ore dalla chiamata.</p>
+    </div>
+</section>
+
+<section class="lp-section">
+    <div class="lp-inner">
+        <h2 class="lp-title">Ristrutturazioni veloci per bagni e ambienti civili</h2>
+        <p class="lp-subtitle">
+            Interventi rapidi per bagni, B&B, piazzali e giardini. Ideale per chi ha bisogno di risultati immediati.
+        </p>
+        <div class="lp-grid-2">
+            <div class="lp-card">
+                <h3>🚿 Bagni moderni</h3>
+                <p>Rifacimento completo con sanitari e rivestimenti in tempi record.</p>
+            </div>
+            <div class="lp-card">
+                <h3>🛏️ B&B e case vacanza</h3>
+                <p>Ristrutturazioni mirate per camere e spazi comuni senza fermare l'attività.</p>
+            </div>
+            <div class="lp-card">
+                <h3>🏗️ Piazzali e pavimentazioni</h3>
+                <p>Interventi su cortili e parcheggi con materiali resistenti e drenanti.</p>
+            </div>
+            <div class="lp-card">
+                <h3>🌿 Giardini e aree verdi</h3>
+                <p>Sistemazione vialetti e spazi esterni per un impatto visivo immediato.</p>
+            </div>
+        </div>
+        <a href="tel:+393520258583" class="lp-cta-secondary">Prenota il tuo sopralluogo</a>
+    </div>
+</section>
+
+<section class="lp-section lp-section-alt">
+    <div class="lp-inner">
+        <h2 class="lp-title" style="font-size: 1.3rem;">Zone servite (Palermo e Trapani)</h2>
+        <ul class="lp-zones-list">
+            <li>Partinico</li>
+            <li>Carini</li>
+            <li>Terrasini</li>
+            <li>Cinisi</li>
+            <li>Alcamo</li>
+            <li>Balestrate</li>
+            <li>Monreale</li>
+            <li>Castellammare</li>
+        </ul>
+    </div>
+</section>
+
+<section class="lp-section">
+    <div class="lp-inner">
+        <h2 class="lp-title">Richiedi un preventivo gratuito</h2>
+        <form class="lp-form" action="https://formspree.io/f/mykljgev" method="POST">
+            <input type="text" name="nome" placeholder="Nome e Cognome" required>
+            <input type="email" name="email" placeholder="La tua E-mail" required>
+            <input type="tel" name="telefono" placeholder="Telefono" required>
+            <textarea name="messaggio" placeholder="Descrivi il tuo progetto (Appartamento, Bagno, B&B...)"></textarea>
+            <button type="submit" class="lp-cta-primary" style="border:none; cursor:pointer;">Invia richiesta e attiva Tempestivo</button>
+        </form>
+        <a href="tel:+393520258583" class="lp-footer-phone">
+            <span>📞</span>
+            <span>Chiama ora: 352.025.85.83</span>
+        </a>
+    </div>
+</section>
+
+</body>
+</html>
