@@ -122,25 +122,7 @@ header, .header-inner, .sub-nav, .logo-text span {
     color: #FFFFFF !important;
 }
 
-		/* --- FIX COLORE NAV BAR INDEX --- */
-.sub-nav-link {
-    color: #FFFFFF !important; /* Forza il bianco */
-    text-decoration: none;
-    font-family: var(--font-titoli);
-    font-size: 0.9rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: 0.3s;
-}
-
-.sub-nav-link:hover {
-    color: var(--giallo) !important; /* Diventa giallo al passaggio del mouse */
-}
-
-.sub-nav-link:visited {
-    color: #FFFFFF !important; /* Impedisce che diventi blu dopo il click */
-}
+	
 
 /* BARRA DI NAVIGAZIONE SECONDARIA (SOTTO L'HEADER) */
 .sub-nav {
@@ -164,19 +146,24 @@ header, .header-inner, .sub-nav, .logo-text span {
     gap: 40px; /* Spazio tra i link */
 }
 
+	/* --- FIX COLORE NAV BAR INDEX --- */
 .sub-nav-link {
-    color: var(--bianco) !important; /* TESTO BIANCO PER DISTINGUERLO */
+    color: #FFFFFF !important; /* Forza il bianco */
+    text-decoration: none;
     font-family: var(--font-titoli);
     font-size: 0.9rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1px;
-    text-decoration: none;
     transition: 0.3s;
 }
 
 .sub-nav-link:hover {
-    color: var(--giallo) !important; /* DIVENTA GIALLO AL PASSAGGIO */
+    color: var(--giallo) !important; /* Diventa giallo al passaggio del mouse */
+}
+
+.sub-nav-link:visited {
+    color: #FFFFFF !important; /* Impedisce che diventi blu dopo il click */
 }
 
 /* Aggiorniamo lo spazio per la Hero per non coprire il testo */
