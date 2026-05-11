@@ -317,6 +317,44 @@
     .sticky-cta-mobile { display: block; }
     body { padding-bottom: 60px; } /* Evita che il tasto copra il footer */
 }
+		/* BANNER PROMO RESIDENZE ESTIVE */
+.banner-estivo {
+    background: var(--rosso);
+    background: linear-gradient(90deg, #E32626 0%, #b31d1d 100%);
+    color: var(--bianco);
+    padding: 30px 20px;
+    text-align: center;
+    border-top: 5px solid var(--giallo);
+    border-bottom: 5px solid var(--giallo);
+    margin: 0;
+}
+
+.banner-estivo h2 {
+    font-family: var(--font-titoli);
+    font-size: 2.2rem;
+    font-weight: 900;
+    margin-bottom: 10px;
+    color: var(--bianco) !important; /* Forza il bianco */
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+.banner-estivo p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.banner-estivo .highlight {
+    color: var(--giallo);
+    font-weight: 800;
+}
+
+@media (max-width: 768px) {
+    .banner-estivo h2 { font-size: 1.5rem; }
+    .banner-estivo p { font-size: 1rem; }
+}
     </style>
 	<script type="application/ld+json">
 {
@@ -364,6 +402,13 @@
 </header>
 
 <div class="page-offset"></div>
+
+	<section class="banner-estivo">
+    <div class="section-inner">
+        <h2>OPERATIVI H24 NELLE RESIDENZE ESTIVE DI TERRASINI</h2>
+        <p>Stai riaprendo la tua villa per la stagione? <span class="highlight">Sistemiamo impianti, scarichi e manutenzioni in tempi record.</span> Non farti trovare impreparato dall'estate!</p>
+    </div>
+</section>
 
 <section class="hero">
     <div class="hero-inner">
