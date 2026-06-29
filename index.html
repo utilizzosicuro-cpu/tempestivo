@@ -4,7 +4,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <meta property="og:title" content="Chi Siamo | Tempestivo - Esperti in Ristrutturazioni e Pronto Intervento.">
-<meta property="og:description" content="Tempestivo è il tuo partner per ristrutturazioni e pronto intervento impianti a Palermo e Trapani. Operativi h24, sopralluoghi gratuiti e tecnici certificati">
+<meta property="og:description" content="Tempestivo è il tuo partner per ristrutturazioni e pronto intervento impianti a Palermo e Trapani. Operativi h24, sopralluoghi gratuitos e tecnici certificati">
     <meta charset="UTF-8">
     <title>Ristrutturazioni e Pronto Intervento Impianti Palermo e Trapani | Tempestivo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -284,6 +284,141 @@ header, .header-inner, .logo-text span {
             display: block;
             height: 100%;
         }
+
+        /* --- STILI NUOVO BLOCCO LEAD MAGNET (PROGETTO AI + PREVENTIVO) --- */
+        .tempestivo-lead-section {
+            padding: 80px 20px;
+            background-color: var(--grigio-chiaro);
+            font-family: var(--font-testi);
+        }
+        .tempestivo-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            align-items: center;
+        }
+        .tempestivo-text-col, .tempestivo-form-col {
+            flex: 1;
+            min-width: 300px;
+        }
+        .tempestivo-text-col h2 {
+            color: var(--blu-notte);
+            font-family: var(--font-titoli);
+            font-size: 2.2rem;
+            font-weight: 800;
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+        .tempestivo-text-col .subtitle {
+            font-size: 1.3rem;
+            color: var(--rosso);
+            font-family: var(--font-titoli);
+            font-weight: bold;
+            margin-bottom: 25px;
+        }
+        .tempestivo-features {
+            list-style: none;
+            padding: 0;
+            margin: 25px 0;
+        }
+        .tempestivo-features li {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            font-size: 1.05rem;
+            line-height: 1.5;
+        }
+        .tempestivo-features li span {
+            font-size: 1.4rem;
+        }
+        .tempestivo-text-col .disclaimer {
+            font-style: italic;
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+        .tempestivo-form {
+            background: var(--bianco);
+            padding: 35px;
+            border-radius: 14px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            border-top: 5px solid var(--rosso);
+        }
+        .tempestivo-form .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+        }
+        .tempestivo-form .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #333;
+            font-size: 0.9rem;
+        }
+        .tempestivo-form .form-group input[type="text"],
+        .tempestivo-form .form-group input[type="tel"],
+        .tempestivo-form .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ced4da;
+            border-radius: 8px;
+            font-size: 1rem;
+            box-sizing: border-box;
+            background-color: var(--bianco);
+            color: var(--grigio-scuro);
+        }
+        .tempestivo-form .form-group input:focus, .tempestivo-form .form-group select:focus {
+            border-color: var(--blu-notte);
+            outline: none;
+        }
+        .file-label {
+            display: block;
+            background: #e9ecef;
+            border: 2px dashed #ced4da;
+            padding: 15px;
+            text-align: center;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.2s;
+            font-weight: 600;
+        }
+        .file-label:hover {
+            background: #dee2e6;
+        }
+        .file-group small {
+            display: block;
+            margin-top: 5px;
+            color: #6c757d;
+            font-size: 0.8rem;
+        }
+        .tempestivo-form .btn-submit-lead {
+            width: 100%;
+            background-color: var(--rosso);
+            color: var(--bianco);
+            border: none;
+            padding: 16px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            border-radius: 999px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 10px rgba(227, 38, 38, 0.2);
+        }
+        .tempestivo-form .btn-submit-lead:hover {
+            background-color: #c51f1f;
+            transform: scale(1.02);
+        }
+        @media (max-width: 768px) {
+            .tempestivo-lead-section { padding: 60px 15px; }
+            .tempestivo-container { flex-direction: column; gap: 30px; }
+            .tempestivo-text-col h2 { font-size: 1.8rem; }
+            .tempestivo-text-col .subtitle { font-size: 1.1rem; }
+            .tempestivo-form { padding: 25px; }
+        }
     </style>
 	<script type="application/ld+json">
     {
@@ -361,11 +496,78 @@ header, .header-inner, .logo-text span {
             La soluzione definitiva per la tua casa o azienda. Tecnici certificati, tempi certi e reperibilità h24 in tutta la Sicilia Occidentale.<br>
             Addio tempi morti.
         </p>
-        <a href="pronto-intervento-palermo-trapani.html" class="btn-cta">Richiedi Intervento Immediato</a>
+        <a href="#progetto-gratis" class="btn-cta">Richiedi Progetto AI e Preventivo Gratis</a>
 		<p style="margin-top: 15px; color: var(--giallo); font-weight: bold; font-size: 0.9rem;">
         Oltre 500 interventi eseguiti con successo tra Palermo e Trapani
     </p>
     </div>
+</section>
+
+<!-- =======================================================
+     NUOVA SEZIONE INTEGRATA: LEAD MAGNET (FOTO -> PROGETTO)
+     ======================================================= -->
+<section class="tempestivo-lead-section" id="progetto-gratis">
+  <div class="tempestivo-container">
+    
+    <!-- Colonna Testo Persuasivo -->
+    <div class="tempestivo-text-col">
+      <h2>Vuoi ristrutturare ma hai il terrore dei cantieri infiniti? ⏳</h2>
+      <p class="subtitle">Scopri il futuro di casa tua in meno di 24 ore. Gratis.</p>
+      
+      <p>Smetti di immaginare. Inviaci una foto della stanza che desideri rivoluzionare (il tuo vecchio bagno, una veranda inutilizzata o una camera da letto).</p>
+      
+      <ul class="tempestivo-features">
+        <li><span>📸</span> <strong>Immagine iper-realistica dello stato futuro:</strong> elaborata dai nostri tecnici (esattamente come i nostri "Prima e Dopo").</li>
+        <li><span>💰</span> <strong>Preventivo chiaro e trasparente:</strong> per una ristrutturazione a tempo di record, con Project Manager unico e zero tempi morti.</li>
+      </ul>
+      
+      <p class="disclaimer">Nessun obbligo di acquisto. Servizio attivo nelle province di Palermo e Trapani.</p>
+    </div>
+
+    <!-- Colonna Modulo di Contatto (Collegato al tuo Formspree attuale per funzionare subito!) -->
+    <div class="tempestivo-form-col">
+      <form action="https://formspree.io/f/mykljgev" method="POST" enctype="multipart/form-data" class="tempestivo-form">
+        
+        <div class="form-group">
+          <label for="nome">Nome e Cognome *</label>
+          <input type="text" id="nome" name="nome" placeholder="Es. Mario Rossi" required>
+        </div>
+
+        <div class="form-group">
+          <label for="citta">Città dell'immobile *</label>
+          <input type="text" id="citta" name="citta" placeholder="Es. Castellammare del Golfo" required>
+        </div>
+
+        <div class="form-group">
+          <label for="telefono">Numero di Telefono / WhatsApp *</label>
+          <input type="tel" id="telefono" name="telefono" placeholder="Es. 3520258583" required>
+        </div>
+
+        <div class="form-group">
+          <label for="ambiente">Cosa vuoi ristrutturare? *</label>
+          <select id="ambiente" name="ambiente" required>
+            <option value="" disabled selected>Seleziona un'opzione...</option>
+            <option value="Bagno">Bagno</option>
+            <option value="Camera">Camera da letto</option>
+            <option value="Veranda">Veranda / Esterno</option>
+            <option value="Cucina">Cucina</option>
+            <option value="Intero Immobile">Intero Immobile</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="foto">
+            <span class="file-label">📁 Carica la foto attuale della stanza *</span>
+          </label>
+          <input type="file" id="foto" name="foto" accept="image/*" required style="display: none;" onchange="this.previousElementSibling.innerText = '✅ Foto selezionata: ' + this.files[0].name">
+          <small>Accetta immagini (JPG, PNG) - Max 10MB</small>
+        </div>
+
+        <button type="submit" class="btn-submit-lead">VOGLIO IL MIO PROGETTO E PREVENTIVO GRATIS</button>
+      </form>
+    </div>
+
+  </div>
 </section>
 
 <section class="perche-tempestivo">
@@ -664,8 +866,6 @@ header, .header-inner, .logo-text span {
     </div>
 
     <button type="submit" class="btn-submit">Invia Richiesta e Attiva Tempestivo</button>
-	  <form class="form-group" action="https://formspree.io/f/mykljgev" method="POST">
-
 </form>
 
     </div>
@@ -1113,9 +1313,6 @@ header, .header-inner, .logo-text span {
             Il team Tempestivo è composto da professionisti selezionati e aziende certificate, coordinati da una centrale operativa
             che garantisce tempi certi e interventi rapidi.
         </p>
-
-        <!-- DATI LEGALI -->
-       
 
         <!-- LINK LEGALI -->
         <div class="footer-links">
