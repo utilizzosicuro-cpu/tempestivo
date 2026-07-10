@@ -1,86 +1,29 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://www.tempestivo.it/</loc>
-    <lastmod>2024-05-22</lastmod>
-    <priority>1.00</priority>
-  </url>
+import os
 
-  <url>
-    <loc>https://www.tempestivo.it/ambienti-singoli.html/</loc>
-    <priority>0.90</priority>
-  </url>
+def genera_sitemap():
+    base_url = "https://www.tempestivo.it/"
+    cartella_pagine = "pagine_generate"
+    
+    if not os.path.exists(cartella_pagine):
+        print("Cartella pagine non trovata.")
+        return
 
-  <url>
-  <loc>https://www.tempestivo.it/chi-siamo.html</loc>
-  <lastmod>2024-05-22</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.70</priority>
-</url>
+    xml_content = '<?xml version="1.0" encoding="UTF-8"?>\n'
+    xml_content += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+    
+    # Aggiungi la index principale
+    xml_content += f'  <url>\n    <loc>{base_url}index.html</loc>\n    <priority>1.0</priority>\n  </url>\n'
 
-  <url>
-    <loc>https://www.tempestivo.it/mappa-zone.html</loc>
-    <priority>0.90</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.tempestivo.it/pronto-intervento-palermo-trapani.html</loc>
-    <priority>0.90</priority>
-  </url>
+    # Trova tutti i file html generati
+    for file in os.listdir(cartella_pagine):
+        if file.endswith(".html"):
+            xml_content += f'  <url>\n    <loc>{base_url}{file}</loc>\n    <priority>0.8</priority>\n  </url>\n'
+            
+    xml_content += '</urlset>'
+    
+    with open("sitemap.xml", "w", encoding="utf-8") as f:
+        f.write(xml_content)
+    print("File sitemap.xml generato con successo!")
 
-  <url>
-    <loc>https://www.tempestivo.it/impianti-elettrici-palermo-trapani.html</loc>
-    <priority>0.90</priority>
-  </url>
-
-   <url>
-    <loc>https://www.tempestivo.it/servizi.html</loc>
-    <priority>0.90</priority>
-  </url>
-
-  <url>
-    <loc>https://www.tempestivo.it/manutenzione-aziende-agricole-palermo-trapani.html</loc>
-    <priority>0.90</priority>
-  </url>
-
-  <url>
-    <loc>https://www.tempestivo.it/manutenzione-aziende-attivita-palermo-trapani.html</loc>
-    <priority>0.90</priority>
-  </url>
-
-  <url>
-    <loc>https://www.tempestivo.it/manutenzione-condomini-palermo-trapani.html</loc>
-    <priority>0.90</priority>
-  </url>
-
-   <url>
-    <loc>https://www.tempestivo.it/rifacimento-bagno-palermo.html</loc>
-    <priority>0.90</priority>
-  </url>
-
-  <url>
-    <loc>https://www.tempestivo.it/ristrutturazioni-palermo-trapani.html</loc>
-    <priority>0.90</priority>
-  </url>
-
-   <url>
-    <loc>https://www.tempestivo.it/ristrutturazioni-palermo-trapani.html</loc>
-    <priority>0.90</priority>
-  </url>
-  
-  <url><loc>https://www.tempestivo.it/servizi-partinico-carini-terrasini-alcamo.html</loc><priority>0.80</priority></url> 
-  <url><loc>https://www.tempestivo.it/servizi-partinico.html</loc><priority>0.80</priority></url>
-  <url><loc>https://www.tempestivo.it/servizi-carini.html</loc><priority>0.80</priority></url>
-  <url><loc>https://www.tempestivo.it/servizi-terrasini.html</loc><priority>0.80</priority></url>
-  <url><loc>https://www.tempestivo.it/servizi-cinisi.html</loc><priority>0.80</priority></url>
-  <url><loc>https://www.tempestivo.it/servizi-trappeto.html</loc><priority>0.80</priority></url>
-  <url><loc>https://www.tempestivo.it/servizi-balestrate.html</loc><priority>0.80</priority></url>
-  <url><loc>https://www.tempestivo.it/servizi-alcamo.html</loc><priority>0.80</priority></url>
-  <url><loc>https://www.tempestivo.it/servizi-castellammare-del-golfo.html</loc><priority>0.80</priority></url>
-  <url><loc>https://www.tempestivo.it/servizi-monreale.html</loc><priority>0.80</priority></url>
-  <url><loc>https://www.tempestivo.it/servizi-isola-delle-femmine.html</loc><priority>0.80</priority></url>
-
-  <url><loc>https://www.tempestivo.it/privacy.html</loc><priority>0.30</priority></url>
-  <url><loc>https://www.tempestivo.it/cookie.html</loc><priority>0.30</priority></url>
-  <url><loc>https://www.tempestivo.it/termini.html</loc><priority>0.30</priority></url>
-</urlset>
+if __name__ == "__main__":
+    genera_sitemap()
