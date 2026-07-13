@@ -2,3 +2,5 @@ User-agent: *
 Allow: /
 
 Sitemap: https://www.tempestivo.it/sitemap.xml
+Sitemap: https://www.tempestivoimpresa.it/pagine_micro_locali/sitemap.xml
+Sitemap: https://www.tempestivoimpresa.it/pagine_micro_locali/sitemap.html
