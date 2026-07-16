@@ -558,26 +558,8 @@
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
-  <url>
-    <loc>https://tempestivo.it/landing-ristrutturazioi.html</loc>
-    <lastmod>2026-07-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://tempestivo.it/landing-ristrutturazioni.html</loc>
-    <lastmod>2026-07-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://tempestivo.it/landing-ristrutturazionni.html</loc>
-    <lastmod>2026-07-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://tempestivo.it/manutenzione-aziende-agricole-palermo-trapani.html</loc>
+    <url>
+        <loc>https://tempestivo.it/manutenzione-aziende-agricole-palermo-trapani.html</loc>
     <lastmod>2026-07-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -600,13 +582,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
-  <url>
-    <loc>https://tempestivo.it/pronto-intervento-palermo-trapani test.html</loc>
-    <lastmod>2026-07-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
+    <url>
     <loc>https://tempestivo.it/pronto-intervento-palermo-trapani.html</loc>
     <lastmod>2026-07-16</lastmod>
     <changefreq>monthly</changefreq>
