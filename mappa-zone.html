@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="description" content="Tempestivo opera in un’ampia area tra Palermo e Trapani. Scopri tutte le zone coperte: Partinico, Carini, Terrasini, Cinisi, Alcamo, Castellammare del Golfo, Monreale, Isola delle Femmine e altre.">
-	<link rel="canonical" href="https://www.tempestivo.it/mappa-zone.html">
+	<link rel="canonical" href="https://tempestivo.it/mappa-zone.html">
 
     <style>
         :root {
@@ -44,37 +44,30 @@
             box-shadow: 0 2px 10px rgba(0,0,0,0.2);
         }
         .header-inner {
-    max-width: 1100px; /* Ridotto da 1200px per stringere il contenitore generale */
-    margin: 0 auto;
-    padding: 8px 15px; /* Padding più sottile */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
         .logo { display: flex; align-items: center; gap: 10px; color: var(--bianco); text-decoration: none; }
         .logo-img { height: 40px; width: auto; }
-       /* Correzione per il logo: evita che i testi si allarghino troppo */
-.logo-text span:first-child {
-    font-weight: 800;
-    font-size: 1.1rem; /* Ridotto leggermente */
-    line-height: 1;
-}
+        .logo-text span:first-child { font-weight: 800; font-size: 1.2rem; display: block; line-height: 1.2; }
         .logo-text span:last-child { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1px; color: var(--giallo); }
 
-        /* Ottimizzazione del bottone telefono per occupare meno spazio orizzontale */
-.btn-emergenza {
-    background-color: var(--rosso);
-    color: var(--bianco);
-    padding: 8px 16px; /* Ridotto il padding laterale */
-    border-radius: 5px;
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    gap: 8px; /* Spazio tra icona e numero ridotto */
-    text-decoration: none;
-    font-size: 0.85rem; /* Font leggermente più piccolo per contenere la larghezza */
-    flex-shrink: 0; /* Impedisce al bottone di deformarsi */
-}
+        .btn-emergenza {
+            background-color: var(--rosso);
+            color: var(--bianco);
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
 
         /* --- CONTENUTO ORIGINALE --- */
         .intro {
@@ -140,12 +133,20 @@
             box-shadow: 0 4px 10px rgba(0,0,0,0.3);
         }
 
-        /* --- FOOTER --- */
-        .footer { background-color: var(--blu-notte); color: var(--bianco); padding: 50px 20px 20px; margin-top: 50px; border-top: 1px solid rgba(255,255,255,0.1); }
-        .footer-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; max-width: 1100px; margin: 0 auto 30px; }
-        .footer-links { display: flex; flex-direction: column; gap: 12px; }
-        .footer-links a:hover { color: var(--giallo); }
-        .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; text-align: center; font-size: 0.8rem; }
+        /* --- FOOTER COMUNE --- */
+        .footer {
+            background-color: var(--grigio-scuro);
+            color: var(--bianco);
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .footer-inner { max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; }
+        .footer-logo { display: flex; align-items: center; justify-content: center; gap: 12px; margin-bottom: 20px; }
+        .footer-logo .logo-img { height: 40px; }
+        .footer-description { max-width: 700px; margin-bottom: 20px; font-size: 0.95rem; opacity: 0.9; }
+        .footer-links { display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; margin-bottom: 20px; }
+        .footer-links a { color: var(--giallo); text-decoration: underline; font-size: 0.9rem; }
+        .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; width: 100%; font-size: 0.8rem; opacity: 0.7; }
 
         /* RESPONSIVE */
         @media (max-width: 900px) {
@@ -157,20 +158,6 @@
             .logo-text span:first-child { font-size: 1rem; }
             .btn-emergenza { padding: 8px 12px; font-size: 0.8rem; }
         }
-
-		@media (max-width: 480px) {
-    .header-inner {
-        padding: 8px 10px;
-    }
-    .btn-emergenza {
-        padding: 6px 10px;
-        font-size: 0.8rem;
-        gap: 5px;
-    }
-    .logo-img {
-        height: 32px; /* Logo leggermente più piccolo su mobile stretto */
-    }
-}
     </style>
 
 	<script type="application/ld+json">
@@ -178,9 +165,9 @@
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "name": "Tempestivo - Copertura Servizi Palermo e Trapani",
-      "image": "https://www.tempestivo.it/img/social-preview.jpg",
-      "telePhone": "+393520258583",
-      "url": "https://www.tempestivo.it/mappa-zone.html",
+      "image": "https://tempestivo.it/img/social-preview.jpg",
+      "telePhone": "+39800123456",
+      "url": "https://tempestivo.it/mappa-zone.html",
       "serviceArea": {
         "@type": "GeoCircle",
         "geoMidpoint": {
@@ -206,8 +193,8 @@
                 <span>RAPIDI & AFFIDABILI</span>
             </div>
         </a>
-        <a href="tel:352.025.85.83" class="btn-emergenza">
-            <span>📞</span> 352.025.85.83
+        <a href="tel:800123456" class="btn-emergenza">
+            <span>📞</span> 800 123 456
         </a>
     </div>
 </header>
@@ -225,121 +212,61 @@
     <div class="zone-card">
         <h3>Partinico</h3>
         <p>Ristrutturazioni e SOS Impianti</p>
-        <div class="sub-links-seo" style="margin: 15px 0; text-align: left; font-size: 0.9rem; line-height: 1.8; border-top: 1px solid #ddd; padding-top: 10px;">
-            📍 <a href="elettricista-partinico.html" style="color: var(--blu-notte); font-weight: 500;">Elettricista</a> | 
-            <a href="idraulico-partinico.html" style="color: var(--blu-notte); font-weight: 500;">Idraulico</a><br>
-            📍 <a href="climatizzazione-partinico.html" style="color: var(--blu-notte); font-weight: 500;">Climatizzazione</a> | 
-            <a href="antennista-partinico.html" style="color: var(--blu-notte); font-weight: 500;">Antennista</a>
-        </div>
-        <a href="servizi-partinico.html" style="display: block; margin-top: 5px;">Tutti i Servizi Partinico</a>
+        <a href="servizi-partinico.html">Vedi Servizi</a>
     </div>
 
     <div class="zone-card">
         <h3>Carini</h3>
-        <p>Rifacimento Bagni e Impianti a Norma</p>
-        <div class="sub-links-seo" style="margin: 15px 0; text-align: left; font-size: 0.9rem; line-height: 1.8; border-top: 1px solid #ddd; padding-top: 10px;">
-            📍 <a href="elettricista-carini.html" style="color: var(--blu-notte); font-weight: 500;">Elettricista</a> | 
-            <a href="idraulico-carini.html" style="color: var(--blu-notte); font-weight: 500;">Idraulico</a><br>
-            📍 <a href="climatizzazione-carini.html" style="color: var(--blu-notte); font-weight: 500;">Climatizzazione</a> | 
-            <a href="antennista-carini.html" style="color: var(--blu-notte); font-weight: 500;">Antennista</a>
-        </div>
-        <a href="servizi-carini.html" style="display: block; margin-top: 5px;">Vai alla pagina</a>
+		<p>Rifacimento Bagni e Impianti a Norma</p>
+        <a href="servizi-carini.html">Vai alla pagina</a>
     </div>
 
     <div class="zone-card">
         <h3>Terrasini</h3>
-        <p>Pronto Intervento Case Vacanze H24</p>
-        <div class="sub-links-seo" style="margin: 15px 0; text-align: left; font-size: 0.9rem; line-height: 1.8; border-top: 1px solid #ddd; padding-top: 10px;">
-            📍 <a href="elettricista-terrasini.html" style="color: var(--blu-notte); font-weight: 500;">Elettricista</a> | 
-            <a href="idraulico-terrasini.html" style="color: var(--blu-notte); font-weight: 500;">Idraulico</a><br>
-            📍 <a href="climatizzazione-terrasini.html" style="color: var(--blu-notte); font-weight: 500;">Climatizzazione</a> | 
-            <a href="antennista-terrasini.html" style="color: var(--blu-notte); font-weight: 500;">Antennista</a>
-        </div>
-        <a href="servizi-terrasini.html" style="display: block; margin-top: 5px;">Vai alla pagina</a>
+		<p>Pronto Intervento Case Vacanze H24</p>
+        <a href="servizi-terrasini.html">Vai alla pagina</a>
     </div>
 
     <div class="zone-card">
         <h3>Cinisi</h3>
-        <p>Elettricista e Idraulico Urgente</p>
-        <div class="sub-links-seo" style="margin: 15px 0; text-align: left; font-size: 0.9rem; line-height: 1.8; border-top: 1px solid #ddd; padding-top: 10px;">
-            📍 <a href="elettricista-cinisi.html" style="color: var(--blu-notte); font-weight: 500;">Elettricista</a> | 
-            <a href="idraulico-cinisi.html" style="color: var(--blu-notte); font-weight: 500;">Idraulico</a><br>
-            📍 <a href="climatizzazione-cinisi.html" style="color: var(--blu-notte); font-weight: 500;">Climatizzazione</a> | 
-            <a href="antennista-cinisi.html" style="color: var(--blu-notte); font-weight: 500;">Antennista</a>
-        </div>
-        <a href="servizi-cinisi.html" style="display: block; margin-top: 5px;">Vai alla pagina</a>
+		<p>Elettricista e Idraulico Urgente</p>
+        <a href="servizi-cinisi.html">Vai alla pagina</a>
     </div>
 
     <div class="zone-card">
         <h3>Trappeto</h3>
-        <p>Manutenzione Idrica e Opere Edili</p>
-        <div class="sub-links-seo" style="margin: 15px 0; text-align: left; font-size: 0.9rem; line-height: 1.8; border-top: 1px solid #ddd; padding-top: 10px;">
-            📍 <a href="elettricista-trappeto.html" style="color: var(--blu-notte); font-weight: 500;">Elettricista</a> | 
-            <a href="idraulico-trappeto.html" style="color: var(--blu-notte); font-weight: 500;">Idraulico</a><br>
-            📍 <a href="climatizzazione-trappeto.html" style="color: var(--blu-notte); font-weight: 500;">Climatizzazione</a> | 
-            <a href="antennista-trappeto.html" style="color: var(--blu-notte); font-weight: 500;">Antennista</a>
-        </div>
-        <a href="servizi-trappeto.html" style="display: block; margin-top: 5px;">Vai alla pagina</a>
+		<p>Manutenzione Idrica e Opere Edili</p>
+        <a href="servizi-trappeto.html">Vai alla pagina</a>
     </div>
 
     <div class="zone-card">
         <h3>Balestrate</h3>
-        <p>Ristrutturazioni e SOS Autoclavi e lidi</p>
-        <div class="sub-links-seo" style="margin: 15px 0; text-align: left; font-size: 0.9rem; line-height: 1.8; border-top: 1px solid #ddd; padding-top: 10px;">
-            📍 <a href="elettricista-balestrate.html" style="color: var(--blu-notte); font-weight: 500;">Elettricista</a> | 
-            <a href="idraulico-balestrate.html" style="color: var(--blu-notte); font-weight: 500;">Idraulico</a><br>
-            📍 <a href="climatizzazione-balestrate.html" style="color: var(--blu-notte); font-weight: 500;">Climatizzazione</a> | 
-            <a href="antennista-balestrate.html" style="color: var(--blu-notte); font-weight: 500;">Antennista</a>
-        </div>
-        <a href="servizi-balestrate.html" style="display: block; margin-top: 5px;">Vai alla pagina</a>
+		<p>Ristrutturazioni e SOS Autoclavi e lidi</p>
+        <a href="servizi-balestrate.html">Vai alla pagina</a>
     </div>
 
     <div class="zone-card">
         <h3>Alcamo</h3>
         <p>Elettricista e Idraulico H24</p>
-        <div class="sub-links-seo" style="margin: 15px 0; text-align: left; font-size: 0.9rem; line-height: 1.8; border-top: 1px solid #ddd; padding-top: 10px;">
-            📍 <a href="elettricista-alcamo.html" style="color: var(--blu-notte); font-weight: 500;">Elettricista</a> | 
-            <a href="idraulico-alcamo.html" style="color: var(--blu-notte); font-weight: 500;">Idraulico</a><br>
-            📍 <a href="climatizzazione-alcamo.html" style="color: var(--blu-notte); font-weight: 500;">Climatizzazione</a> | 
-            <a href="antennista-alcamo.html" style="color: var(--blu-notte); font-weight: 500;">Antennista</a>
-        </div>
-        <a href="servizi-alcamo.html" style="display: block; margin-top: 5px;">Vedi Servizi</a>
+        <a href="servizi-alcamo.html">Vedi Servizi</a>
     </div>
 
     <div class="zone-card">
         <h3>Castellammare</h3>
         <p>Manutenzione Case Vacanze</p>
-        <div class="sub-links-seo" style="margin: 15px 0; text-align: left; font-size: 0.9rem; line-height: 1.8; border-top: 1px solid #ddd; padding-top: 10px;">
-            📍 <a href="elettricista-castellammare-del-golfo.html" style="color: var(--blu-notte); font-weight: 500;">Elettricista</a> | 
-            <a href="idraulico-castellammare-del-golfo.html" style="color: var(--blu-notte); font-weight: 500;">Idraulico</a><br>
-            📍 <a href="climatizzazione-castellammare-del-golfo.html" style="color: var(--blu-notte); font-weight: 500;">Climatizzazione</a> | 
-            <a href="antennista-castellammare-del-golfo.html" style="color: var(--blu-notte); font-weight: 500;">Antennista</a>
-        </div>
-        <a href="servizi-castellammare-del-golfo.html" style="display: block; margin-top: 5px;">Vedi Servizi</a>
+        <a href="servizi-castellammare-del-golfo.html">Vedi Servizi</a>
     </div>
 
     <div class="zone-card">
         <h3>Monreale</h3>
-        <p>Restauro Edile e Pronto Intervento</p>
-        <div class="sub-links-seo" style="margin: 15px 0; text-align: left; font-size: 0.9rem; line-height: 1.8; border-top: 1px solid #ddd; padding-top: 10px;">
-            📍 <a href="elettricista-monreale.html" style="color: var(--blu-notte); font-weight: 500;">Elettricista</a> | 
-            <a href="idraulico-monreale.html" style="color: var(--blu-notte); font-weight: 500;">Idraulico</a><br>
-            📍 <a href="climatizzazione-monreale.html" style="color: var(--blu-notte); font-weight: 500;">Climatizzazione</a> | 
-            <a href="antennista-monreale.html" style="color: var(--blu-notte); font-weight: 500;">Antennista</a>
-        </div>
-        <a href="servizi-monreale.html" style="display: block; margin-top: 5px;">Vai alla pagina</a>
+		<p>Restauro Edile e Pronto Intervento</p>
+        <a href="servizi-monreale.html">Vai alla pagina</a>
     </div>
 
     <div class="zone-card">
         <h3>Isola delle Femmine</h3>
-        <p>Assistenza Impianti Zona Costiera</p>
-        <div class="sub-links-seo" style="margin: 15px 0; text-align: left; font-size: 0.9rem; line-height: 1.8; border-top: 1px solid #ddd; padding-top: 10px;">
-            📍 <a href="elettricista-isola-delle-femmine.html" style="color: var(--blu-notte); font-weight: 500;">Elettricista</a> | 
-            <a href="idraulico-isola-delle-femmine.html" style="color: var(--blu-notte); font-weight: 500;">Idraulico</a><br>
-            📍 <a href="climatizzazione-isola-delle-femmine.html" style="color: var(--blu-notte); font-weight: 500;">Climatizzazione</a> | 
-            <a href="antennista-isola-delle-femmine.html" style="color: var(--blu-notte); font-weight: 500;">Antennista</a>
-        </div>
-        <a href="servizi-isola-delle-femmine.html" style="display: block; margin-top: 5px;">Vai alla pagina</a>
+		<p>Assistenza Impianti Zona Costiera e stabilimenti balneari</p>
+        <a href="servizi-isola-delle-femmine.html">Vai alla pagina</a>
     </div>
 
 </section>
@@ -351,25 +278,38 @@
 </section>
 
 <footer class="footer">
-    <div class="footer-grid">
-        <div class="footer-info">
-            <p><strong>Tempestivo</strong></p>
-            <p>Ristrutturazioni, Impianti e Pronto Intervento H24</p>
-            <p>P.IVA: 06772720824 | Divisione di Officina Creativa</p>
-            <p>Operativi nelle province di Palermo e Trapani</p>
+    <div class="footer-inner">
+        <div class="footer-logo">
+            <img src="img/logo.png" alt="Tempestivo" class="logo-img">
+            <div class="logo-text">
+                <span>TEMPESTIVO</span>
+                <span>RAPIDI & AFFIDABILI</span>
+            </div>
         </div>
+
+        <p class="footer-description">
+            Tempestivo è una divisione di <strong>Officina Creativa</strong> dedicata al General Contracting e alle manutenzioni rapide.
+            Interventi garantiti con tecnici certificati tra Palermo e Trapani.
+        </p>
+
         <div class="footer-links">
-            <a href="ristrutturazioni-palermo-trapani.html" style="color:var(--giallo); font-weight: bold;">Ristrutturazioni</a>
-            <a href="pronto-intervento-palermo-trapani.html" style="color:var(--giallo); font-weight: bold;">🆘 Pronto Intervento H24</a>
-            <a href="mappa-zone.html" style="color:var(--giallo); font-weight: bold;">Mappa Zone</a>
-            <a href="chi-siamo.html" style="color:var(--giallo); font-weight: bold;">Chi Siamo</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="cookie.html">Cookie Policy</a>
+            <a href="termini.html">Termini e Condizioni</a>
         </div>
-    </div>
-    <div class="footer-bottom">
-        <p>&copy; 2024 Tempestivo. Tutti i diritti riservati. | <a href="privacy.html" style="color:var(--giallo);">Privacy Policy</a></p>
+
+        <div style="margin-top:15px; margin-bottom:15px;">
+            <a href="servizi-partinico.html" style="color:var(--giallo); margin: 0 5px;">Partinico</a> ·
+            <a href="servizi-carini.html" style="color:var(--giallo); margin: 0 5px;">Carini</a> ·
+            <a href="servizi-alcamo.html" style="color:var(--giallo); margin: 0 5px;">Alcamo</a>
+        </div>
+
+        <div class="footer-bottom">
+            <p>P.IVA: 06772720824 | Divisione di Officina Creativa</p>
+            <p>&copy; 2024 Tempestivo. Tutti i diritti riservati.</p>
+        </div>
     </div>
 </footer>
-
 
 </body>
 </html>

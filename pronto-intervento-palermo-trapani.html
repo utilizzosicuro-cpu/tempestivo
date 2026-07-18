@@ -11,7 +11,7 @@
     
     <title>Pronto Intervento H24 Palermo e Trapani | Elettricista e Idraulico</title>
     <meta name="description" content="SOS Pronto Intervento H24 a Palermo e Trapani. Elettricisti e idraulici certificati per guasti, blackout e perdite. Arrivo in 30-60 min. Chiama ora!">
-    <link rel="canonical" href="https://www.tempestivo.it/pronto-intervento-palermo-trapani.html">
+    <link rel="canonical" href="https://tempestivo.it/pronto-intervento-palermo-trapani.html">
 
     <style>
         :root {
@@ -24,14 +24,13 @@
             --bianco: #FFFFFF;
         }
 
-       /* --- PARTI LASCIATE INTATTE: CONFIGURAZIONE GENERALE --- */
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: 'Roboto', sans-serif; color: var(--grigio-scuro); line-height: 1.6; background-color: var(--bianco); }
         a { text-decoration: none; color: inherit; transition: 0.3s; }
         
         h1, h2, h3 { font-family: 'Montserrat', sans-serif; }
         
-        /* --- INTEGRAZIONE: HEADER OTTIMIZZATO --- */
+        /* Header */
         header {
             width: 100%;
             position: fixed;
@@ -39,51 +38,34 @@
             z-index: 1000;
             background-color: var(--blu-notte);
             box-shadow: 0 2px 10px rgba(0,0,0,0.2);
-            box-sizing: border-box; /* Previene il mozzamento laterale */
         }
         .header-inner {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 10px 15px; /* Leggermente ridotto per mobile */
+            padding: 10px 20px;
             display: flex;
             align-items: center;
             justify-content: space-between;
-            box-sizing: border-box;
         }
-        .logo { 
-            display: flex; 
-            align-items: center; 
-            gap: 10px; 
-            color: var(--bianco); 
-            flex-shrink: 0; /* Impedisce al logo di collassare */
-        }
-        .logo-img { height: 35px; width: auto; } /* Altezza ottimizzata */
-        .logo-text { white-space: nowrap; }
-        .logo-text span:first-child { font-weight: 800; font-size: 1.1rem; display: block; }
-        .logo-text span:last-child { 
-            font-size: 0.65rem; 
-            text-transform: uppercase; 
-            letter-spacing: 1px; 
-            color: var(--giallo); 
-        }
+        .logo { display: flex; align-items: center; gap: 10px; color: var(--bianco); }
+        .logo-img { height: 40px; width: auto; }
+        .logo-text span:first-child { font-weight: 800; font-size: 1.2rem; display: block; }
+        .logo-text span:last-child { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1px; color: var(--giallo); }
 
         .btn-emergenza {
             background-color: var(--rosso);
             color: var(--bianco);
-            padding: 8px 15px;
+            padding: 10px 20px;
             border-radius: 5px;
             font-weight: 700;
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: 10px;
             border: none;
             cursor: pointer;
-            white-space: nowrap; /* Impedisce al testo di andare a capo */
-            font-size: 0.9rem;
-            flex-shrink: 1;
         }
 
-        /* --- PARTI LASCIATE INTATTE: DESIGN E LAYOUT --- */
+        /* Mobile Sticky CTA */
         .sticky-mobile-cta {
             display: none;
             position: fixed;
@@ -98,6 +80,7 @@
             box-shadow: 0 -2px 10px rgba(0,0,0,0.3);
         }
 
+        /* Hero */
         .hero {
             padding: 140px 20px 80px;
             background: linear-gradient(135deg, var(--blu-notte) 0%, #1a3a7a 100%);
@@ -126,6 +109,7 @@
             box-shadow: 0 4px 15px rgba(227, 38, 38, 0.4);
         }
 
+        /* Content Sections */
         .section { padding: 70px 20px; }
         .section-inner { max-width: 1100px; margin: 0 auto; }
         .section-alt { background: var(--grigio-chiaro); }
@@ -153,33 +137,21 @@
             font-weight: 900;
         }
 
+        /* Zones & FAQ */
         .zone-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 15px; margin: 25px 0; }
         .zone-pill { background: white; padding: 12px; border-radius: 8px; text-align: center; font-weight: 700; border: 1px solid #ddd; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
-        
         .faq-item { margin-bottom: 20px; }
         .faq-item h3 { font-size: 1.1rem; margin-bottom: 5px; }
 
         footer { background: var(--blu-notte); color: white; padding: 40px 20px; text-align: center; }
         .footer-links a { color: var(--giallo); margin: 0 10px; font-size: 0.9rem; }
 
-        /* --- INTEGRAZIONE: RESPONSIVE OTTIMIZZATO --- */
+        /* Responsive */
         @media (max-width: 900px) {
             .hero-inner, .three-cols { grid-template-columns: 1fr; }
             .hero h1 { font-size: 2rem; }
             .sticky-mobile-cta { display: block; }
             body { padding-bottom: 60px; }
-
-            /* Fix per l'header sui cellulari */
-            .header-inner { padding: 8px 10px; }
-            .logo-text span:last-child { display: none; } /* Nascondo il sottotitolo giallo per far spazio */
-            .logo-img { height: 30px; }
-            .btn-emergenza { padding: 6px 12px; font-size: 0.85rem; }
-        }
-
-        /* Fix extra per telefoni molto piccoli (iPhone SE e simili) */
-        @media (max-width: 375px) {
-            .logo-text span:first-child { font-size: 0.9rem; }
-            .btn-emergenza { font-size: 0.75rem; padding: 5px 10px; }
         }
     </style>
 
@@ -188,9 +160,9 @@
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "name": "Tempestivo Pronto Intervento",
-      "image": "https://www.tempestivo.it/img/logo.png",
-      "url": "https://www.tempestivo.it/pronto-intervento-palermo-trapani.html",
-      "telephone": "+393520258583",
+      "image": "https://tempestivo.it/img/logo.png",
+      "url": "https://tempestivo.it/pronto-intervento-palermo-trapani.html",
+      "telephone": "+39800123456",
       "priceRange": "$$",
       "address": {
         "@type": "PostalAddress",
@@ -228,8 +200,8 @@
                 <span>RAPIDI & AFFIDABILI H24</span>
             </div>
         </div>
-        <a href="tel:352.025.85.83" class="btn-emergenza">
-            <span>⚠️</span> 352.025.85.83
+        <a href="tel:800123456" class="btn-emergenza">
+            <span>⚠️</span> 800 123 456
         </a>
     </div>
 </header>
@@ -241,7 +213,7 @@
         <div class="hero-text">
             <h1>Pronto Intervento <span>Elettricista e Idraulico</span> Palermo e Trapani</h1>
             <p>Guasti elettrici, blackout o perdite d'acqua? Tecnici certificati disponibili 24 ore su 24 per diagnosi immediata e ripristino rapido.</p>
-            <a href="tel:352.025.85.83" class="btn-cta-large">Intervento Urgente H24</a>
+            <a href="tel:800123456" class="btn-cta-large">Intervento Urgente H24</a>
         </div>
         <div class="box">
             <h3>🚨 Emergenze Comuni</h3>
@@ -321,36 +293,16 @@
 </section>
 
 <footer>
-  <p class="footer-description">
-            Tempestivo è una divisione di <strong>Officina Creativa</strong> dedicata al General Contracting e alle manutenzioni rapide.
-            Il team Tempestivo è composto da professionisti selezionati e aziende certificate, coordinati da una centrale operativa
-            che garantisce tempi certi e interventi rapidi.
-        </p>
-
-        <div class="footer-links">
-			<a href="index.html">Home</a>
-    <a href="chi-siamo.html">Chi Siamo</a> <a href="ristrutturazioni-palermo-trapani.html">Ristrutturazioni</a>
-    <a href="pronto-intervento-palermo-trapani.html" style="color:var(--giallo); font-weight: bold;">🆘 Pronto Intervento H24</a>
-               <a href="privacy.html">Privacy Policy</a>
-            <a href="cookie.html">Cookie Policy</a>
-            <a href="termini.html">Termini e Condizioni</a>
-        </div>
-
-        <div style="margin-top:25px;">
-            <a href="mappa-zone.html" style="color:var(--giallo);text-decoration:underline;">Mappa delle Zone</a> ·
-            <a href="servizi-partinico.html" style="color:var(--giallo);text-decoration:underline;">Partinico</a> ·
-            <a href="servizi-carini.html" style="color:var(--giallo);text-decoration:underline;">Carini</a> ·
-            <a href="servizi-alcamo.html" style="color:var(--giallo);text-decoration:underline;">Alcamo</a>
-        </div>
-
-        <div class="footer-bottom">
-            <p>P.IVA: 06772720824 | Divisione di Officina Creativa</p>
-            <p>Operativi a Palermo, Trapani e provincia.</p>
-            <p>&copy; 2024 Tempestivo. Tutti i diritti riservati.</p>
+    <div class="section-inner">
+        <p><strong>Tempestivo</strong> - Pronto intervento elettrico, idraulico e impianti.</p>
+        <p>P.IVA: 0123456789 | <a href="privacy.html" style="color:var(--giallo)">Privacy Policy</a></p>
+        <div class="footer-links" style="margin-top:20px;">
+            <a href="servizi-palermo.html">SOS Palermo</a>
+            <a href="servizi-trapani.html">SOS Trapani</a>
+            <a href="index.html">Home</a>
         </div>
     </div>
 </footer>
-
 
 </body>
 </html>

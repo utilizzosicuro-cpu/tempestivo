@@ -12,7 +12,7 @@
 
     <meta name="description" content="Tempestivo a Partinico: ristrutturazioni, elettricista, idraulico, pronto intervento H24 e manutenzione programmata. Interventi rapidi in appartamenti, ville, negozi e condomini.">
 
-    <link rel="canonical" href="https://www.tempestivo.it/servizi-partinico.html">
+    <link rel="canonical" href="https://tempestivo.it/servizi-partinico.html">
 
 
     <style>
@@ -41,40 +41,35 @@
             color: var(--bianco);
             box-shadow: 0 2px 6px rgba(0,0,0,0.2);
         }
-       /* Ridotto il padding interno e ottimizzato lo spazio tra gli elementi */
-.header-inner {
-    max-width: 1100px; /* Ridotto da 1200px per stringere il contenitore generale */
-    margin: 0 auto;
-    padding: 8px 15px; /* Padding più sottile */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+        .header-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 12px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
         .logo { display: flex; align-items: center; gap: 10px; }
         .logo-img { height: 34px; width: auto; }
         .logo-text { display: flex; flex-direction: column; }
-       /* Correzione per il logo: evita che i testi si allarghino troppo */
-.logo-text span:first-child {
-    font-weight: 800;
-    font-size: 1.1rem; /* Ridotto leggermente */
-    line-height: 1;
-}
+        .logo-text span:first-child { font-family: var(--font-titoli); font-weight: 800; font-size: 18px; }
         .logo-text span:last-child { font-size: 11px; opacity: 0.8; }
 
-       /* Ottimizzazione del bottone telefono per occupare meno spazio orizzontale */
-.btn-emergenza {
-    background-color: var(--rosso);
-    color: var(--bianco);
-    padding: 8px 16px; /* Ridotto il padding laterale */
-    border-radius: 5px;
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    gap: 8px; /* Spazio tra icona e numero ridotto */
-    text-decoration: none;
-    font-size: 0.85rem; /* Font leggermente più piccolo per contenere la larghezza */
-    flex-shrink: 0; /* Impedisce al bottone di deformarsi */
-}
+        .btn-emergenza {
+            background-color: var(--rosso);
+            color: var(--bianco);
+            padding: 8px 16px;
+            border-radius: 999px;
+            font-weight: 700;
+            font-size: 13px;
+            border: none;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            white-space: nowrap;
+        }
+
         .page-offset { height: 70px; }
 
         /* HERO */
@@ -330,20 +325,6 @@
     .sticky-cta-mobile { display: block; }
     body { padding-bottom: 60px; } /* Evita che il tasto copra il footer */
 }
-
-		@media (max-width: 480px) {
-    .header-inner {
-        padding: 8px 10px;
-    }
-    .btn-emergenza {
-        padding: 6px 10px;
-        font-size: 0.8rem;
-        gap: 5px;
-    }
-    .logo-img {
-        height: 32px; /* Logo leggermente più piccolo su mobile stretto */
-    }
-}
     </style>
 	
 <script type="application/ld+json">
@@ -352,8 +333,8 @@
   "@type": "HomeAndConstructionBusiness",
   "name": "Tempestivo - Pronto Intervento Partinico",
   "description": "Pronto intervento idraulico ed elettricista a Partinico. Specializzati in ristrutturazioni e manutenzioni urgenti H24.",
-  "url": "https://www.tempestivo.it/servizi-partinico.html",
-  "telephone": "+393520258583",
+  "url": "https://tempestivo.it/servizi-partinico.html",
+  "telephone": "+39800123456",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Partinico",
@@ -383,9 +364,9 @@
                 <span>RAPIDI & AFFIDABILI</span>
             </div>
         </div>
-        <a href="tel:3520258583">
+        <a href="tel:800123456">
             <button class="btn-emergenza">
-                <span>⚠️</span> EMERGENZA H24: 352.025.85.83
+                <span>⚠️</span> EMERGENZA H24: 800 123 456
             </button>
         </a>
     </div>
@@ -562,36 +543,9 @@
 </section>
 
 <footer>
-  <p class="footer-description">
-            Tempestivo è una divisione di <strong>Officina Creativa</strong> dedicata al General Contracting e alle manutenzioni rapide.
-            Il team Tempestivo è composto da professionisti selezionati e aziende certificate, coordinati da una centrale operativa
-            che garantisce tempi certi e interventi rapidi.
-        </p>
-
-        <div class="footer-links">
-			<a href="index.html">Home</a>
-    <a href="chi-siamo.html">Chi Siamo</a> <a href="ristrutturazioni-palermo-trapani.html">Ristrutturazioni</a>
-    <a href="pronto-intervento-palermo-trapani.html" style="color:var(--giallo); font-weight: bold;">🆘 Pronto Intervento H24</a>
-               <a href="privacy.html">Privacy Policy</a>
-            <a href="cookie.html">Cookie Policy</a>
-            <a href="termini.html">Termini e Condizioni</a>
-        </div>
-
-        <div style="margin-top:25px;">
-            <a href="mappa-zone.html" style="color:var(--giallo);text-decoration:underline;">Mappa delle Zone</a> ·
-            <a href="servizi-partinico.html" style="color:var(--giallo);text-decoration:underline;">Partinico</a> ·
-            <a href="servizi-carini.html" style="color:var(--giallo);text-decoration:underline;">Carini</a> ·
-            <a href="servizi-alcamo.html" style="color:var(--giallo);text-decoration:underline;">Alcamo</a>
-        </div>
-
-        <div class="footer-bottom">
-            <p>P.IVA: 06772720824 | Divisione di Officina Creativa</p>
-            <p>Operativi a Palermo, Trapani e provincia.</p>
-            <p>&copy; 2024 Tempestivo. Tutti i diritti riservati.</p>
-        </div>
-    </div>
+    <p>Tempestivo – Ristrutturazioni, impianti e pronto intervento a Partinico.</p>
+    <p><a href="index.html">Torna alla homepage</a></p>
 </footer>
-
 
 </body>
 </html>

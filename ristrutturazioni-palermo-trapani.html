@@ -13,127 +13,325 @@
     <meta name="description" content="Ristrutturazioni chiavi in mano a Palermo, Trapani e provincia. Bagni, cucine, appartamenti e locali commerciali. Sopralluogo entro 48h, preventivo rapido e team certificato.">
 
    
-    <link rel="canonical" href="https://www.tempestivo.it/ristrutturazioni-palermo-trapani.html">
+    <link rel="canonical" href="https://tempestivo.it/ristrutturazioni-palermo-trapani.html">
 
     <style>
-    :root {
-        --rosso: #E32626;
-        --blu-notte: #0B1B3B;
-        --giallo: #FFC857;
-        --grigio-chiaro: #F5F5F5;
-        --grigio-scuro: #444444;
-        --bianco: #FFFFFF;
-        --font-titoli: "Montserrat", Arial, sans-serif;
-        --font-testi: "Roboto", Arial, sans-serif;
-    }
+        :root {
+            --rosso: #E32626;
+            --blu-notte: #0B1B3B;
+            --giallo: #FFC857;
+            --grigio-chiaro: #F5F5F5;
+            --grigio-scuro: #444444;
+            --bianco: #FFFFFF;
+            --font-titoli: "Montserrat", Arial, sans-serif;
+            --font-testi: "Roboto", Arial, sans-serif;
+        }
 
-    /* --- CONFIGURAZIONE GENERALE --- */
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    
-    html, body {
-        max-width: 100%;
-        overflow-x: hidden;
-    }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: var(--font-testi); color: var(--grigio-scuro); background: var(--bianco); line-height: 1.6; }
+        a { text-decoration: none; color: inherit; }
 
-    body { 
-        font-family: var(--font-testi); 
-        color: var(--grigio-scuro); 
-        line-height: 1.6; 
-        background-color: var(--bianco); 
-        padding-top: 80px; /* Spazio per l'header fisso */
-    }
+        /* HEADER */
+        header {
+            width: 100%;
+            position: fixed;
+            top: 0; left: 0;
+            z-index: 1000;
+            background-color: rgba(11, 27, 59, 0.96);
+            color: var(--bianco);
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+        }
+        .header-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 12px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo { display: flex; align-items: center; gap: 10px; }
+        .logo-img { height: 34px; width: auto; }
+        .logo-text { display: flex; flex-direction: column; }
+        .logo-text span:first-child { font-family: var(--font-titoli); font-weight: 800; font-size: 18px; }
+        .logo-text span:last-child { font-size: 11px; opacity: 0.8; }
 
-    a { text-decoration: none; color: inherit; transition: 0.3s; }
-    h1, h2, h3 { font-family: var(--font-titoli); }
+        .btn-emergenza {
+            background-color: var(--rosso);
+            color: var(--bianco);
+            padding: 8px 16px;
+            border-radius: 999px;
+            font-weight: 700;
+            font-size: 13px;
+            border: none;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            white-space: nowrap;
+        }
 
-    /* --- HEADER (UNIFICATO E CORRETTO) --- */
-    header {
-        width: 100%;
-        height: 70px;
-        position: fixed;
-        top: 0; left: 0;
-        z-index: 9999;
-        background-color: var(--blu-notte) !important;
-        display: flex;
-        align-items: center;
-        box-shadow: 0 2px 10px rgba(0,0,0,0.3);
-    }
+        .page-offset { height: 70px; }
 
-    .header-inner {
-        width: 100%;
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 15px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
+        /* HERO */
+        .hero {
+            padding: 70px 20px 60px 20px;
+            background: linear-gradient(135deg, #0B1B3B, #122750);
+            color: var(--bianco);
+        }
+        .hero-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 3fr 2fr;
+            gap: 40px;
+            align-items: center;
+        }
+        .hero-text h1 {
+            font-family: var(--font-titoli);
+            font-size: 2.4rem;
+            font-weight: 800;
+            margin-bottom: 18px;
+        }
+        .hero-text h1 span { color: var(--giallo); }
+        .hero-text p { font-size: 1.05rem; margin-bottom: 20px; }
 
-    .logo { display: flex; align-items: center; gap: 10px; color: var(--bianco); }
-    .logo-img { height: 35px; width: auto; }
-    .logo-text { display: flex; flex-direction: column; }
-    .logo-text span:first-child { font-weight: 800; font-size: 1.1rem; line-height: 1; display: block; }
-    .logo-text span:last-child { font-size: 0.65rem; color: var(--giallo); text-transform: uppercase; }
+        .hero-list { list-style: none; padding: 0; margin: 15px 0; }
+        .hero-list li {
+            padding-left: 20px;
+            margin-bottom: 8px;
+            position: relative;
+        }
+        .hero-list li::before {
+            content: "✔";
+            position: absolute;
+            left: 0; top: 0;
+            color: var(--giallo);
+            font-weight: 700;
+        }
 
-    .btn-emergenza {
-        background-color: var(--rosso);
-        color: var(--bianco) !important;
-        padding: 8px 15px;
-        border-radius: 5px;
-        font-weight: 700;
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        font-size: 0.9rem;
-        white-space: nowrap;
-        flex-shrink: 0;
-    }
+        .btn-cta {
+            display: inline-block;
+            background-color: var(--rosso);
+            color: var(--bianco);
+            padding: 12px 24px;
+            border-radius: 999px;
+            font-weight: 700;
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
 
-    /* --- SEZIONI PAGINA --- */
-    .hero { padding: 70px 20px 60px 20px; background: linear-gradient(135deg, #0B1B3B, #122750); color: var(--bianco); }
-    .hero-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 3fr 2fr; gap: 40px; align-items: center; }
-    .hero-text h1 { font-size: 2.4rem; font-weight: 800; margin-bottom: 18px; }
-    .hero-text h1 span { color: var(--giallo); }
-    
-    .section { padding: 70px 20px; }
-    .section-alt { background: var(--grigio-chiaro); }
-    .section-inner { max-width: 1100px; margin: 0 auto; }
-    .two-cols { display: grid; grid-template-columns: 1.4fr 1fr; gap: 40px; }
+        /* SEZIONI */
+        .section { padding: 70px 20px; }
+        .section-alt { background: var(--grigio-chiaro); }
+        .section-inner { max-width: 1100px; margin: 0 auto; }
 
-    .box { background: var(--bianco); padding: 25px; border-radius: 14px; box-shadow: 0 4px 12px rgba(0,0,0,0.06); color: var(--grigio-scuro); border: 1px solid rgba(11,27,59,0.04); }
-    .box h3 { color: var(--blu-notte); font-weight: 700; margin-bottom: 10px; }
+        .section h2 {
+            font-family: var(--font-titoli);
+            font-size: 2rem;
+            font-weight: 800;
+            margin-bottom: 25px;
+            color: var(--blu-notte);
+        }
+        .section h2 span { color: var(--rosso); }
 
-    .zone-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
-    .zone-pill { display: inline-block; background: var(--grigio-chiaro); color: var(--blu-notte); padding: 8px 15px; border-radius: 20px; margin: 5px; font-size: 0.9rem; font-weight: 700; transition: 0.3s; }
-    a.zone-pill:hover { background: var(--blu-notte); color: var(--bianco); transform: translateY(-2px); }
+        .two-cols {
+            display: grid;
+            grid-template-columns: 1.4fr 1fr;
+            gap: 40px;
+        }
 
-    /* --- FOOTER --- */
-    footer { background: var(--blu-notte); color: var(--bianco); padding: 50px 20px 20px; text-align: center; border-top: 1px solid rgba(255,255,255,0.1); }
+        .check-list { list-style: none; padding: 0; }
+        .check-list li {
+            padding-left: 20px;
+            margin-bottom: 8px;
+            position: relative;
+        }
+        .check-list li::before {
+            content: "✔";
+            position: absolute;
+            left: 0; top: 0;
+            color: var(--rosso);
+            font-weight: 700;
+        }
 
-    /* --- STICKY CTA MOBILE --- */
-    .sticky-cta-mobile { display: none; position: fixed; bottom: 0; left: 0; width: 100%; background: var(--rosso); color: white; text-align: center; padding: 15px; font-weight: 800; z-index: 9999; font-size: 1.1rem; box-shadow: 0 -2px 10px rgba(0,0,0,0.3); }
+        .box {
+            background: var(--bianco);
+            padding: 20px;
+            border-radius: 14px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+        }
 
-    /* --- MOBILE OPTIMIZATION (RISOLUTIVO) --- */
-    @media (max-width: 768px) {
-        header { height: 65px; }
-        body { padding-top: 75px; }
-        .header-inner { padding: 0 10px; }
-        
-        /* Ridimensionamento logo per non troncare */
-        .logo-img { height: 28px; }
-        .logo-text span:first-child { font-size: 0.9rem; }
-        .logo-text span:last-child { display: none; } /* Nascondiamo il sottotitolo su schermi piccoli */
-        
-        .btn-emergenza { font-size: 0.75rem; padding: 6px 10px; gap: 4px; }
-        
-        /* Layout a colonna singola */
-        .hero-inner, .two-cols, .zone-grid { grid-template-columns: 1fr; }
-        .hero-text h1 { font-size: 1.8rem; }
-        
-        .sticky-cta-mobile { display: block; }
-        body { padding-bottom: 60px; }
-    }
-</style>
+        /* ZONE */
+        .zone-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
+        .zone-pill {
+            background: var(--bianco);
+            padding: 10px 16px;
+            border-radius: 999px;
+            text-align: center;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+        }
+
+        /* FAQ */
+        .faq-item { margin-bottom: 18px; }
+        .faq-item h3 {
+            font-family: var(--font-titoli);
+            font-size: 1.05rem;
+            margin-bottom: 6px;
+            color: var(--blu-notte);
+        }
+
+        /* CTA FINALE */
+        .cta-final { text-align: center; }
+
+        /* FOOTER */
+        footer {
+            background: var(--grigio-scuro);
+            color: var(--bianco);
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 900px) {
+            .hero-inner, .two-cols { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 768px) {
+            .hero-text h1 { font-size: 1.9rem; }
+            .section { padding: 55px 15px; }
+            .zone-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+		
+		/* Inserisci subito dopo la regola .box esistente */
+.box {
+    background: var(--bianco);
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+
+    /* Correzione: testo scuro per garantire contrasto */
+    color: var(--grigio-scuro);        /* testo principale */
+}
+
+/* Titoli dentro il box più scuri e distinti */
+.box h3 {
+    color: var(--blu-notte);
+    font-weight: 700;
+}
+
+/* Paragrafi, liste e link dentro il box */
+.box p,
+.box ul,
+.box li,
+.box .check-list li {
+    color: var(--grigio-scuro);
+}
+
+/* Se i "baffetti" (::before) sono colorati, mantienili visibili */
+.box .check-list li::before {
+    color: var(--rosso);
+}
+
+/* Se vuoi un bordo sottile per evidenziare il box (opzionale) */
+.box {
+    border: 1px solid rgba(11,27,59,0.04);
+}
+
+        .box h3 {
+            font-family: var(--font-titoli);
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: var(--blu-notte);
+        }
+
+        .check-list { list-style: none; padding: 0; }
+        .check-list li {
+            padding-left: 20px;
+            margin-bottom: 8px;
+            position: relative;
+        }
+        .check-list li::before {
+            content: "✔";
+            position: absolute;
+            left: 0; top: 0;
+            color: var(--rosso);
+            font-weight: 700;
+        }
+
+        .zone-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
+       .zone-pill {
+    display: inline-block;
+    background: var(--grigio-chiaro);
+    color: var(--blu-notte);
+    padding: 8px 15px;
+    border-radius: 20px;
+    margin: 5px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-decoration: none; /* Rimuove la sottolineatura */
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+/* Effetto al passaggio del mouse per i link */
+a.zone-pill:hover {
+    background: var(--blu-notte);
+    color: var(--bianco);
+    border-color: var(--giallo);
+    transform: translateY(-2px);
+}
+
+        .faq-item { margin-bottom: 18px; }
+        .faq-item h3 {
+            font-family: var(--font-titoli);
+            font-size: 1.05rem;
+            margin-bottom: 6px;
+            color: var(--blu-notte);
+        }
+
+        .cta-final { text-align: center; }
+
+        footer {
+            background: var(--grigio-scuro);
+            color: var(--bianco);
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        @media (max-width: 900px) {
+            .hero-inner, .three-cols { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 768px) {
+            .hero-text h1 { font-size: 1.9rem; }
+            .section { padding: 55px 15px; }
+            .zone-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+		/* Mobile Sticky CTA */
+.sticky-cta-mobile {
+    display: none;
+    position: fixed;
+    bottom: 0; left: 0; width: 100%;
+    background: var(--rosso);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-weight: 800;
+    z-index: 9999;
+    font-size: 1.1rem;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.3);
+}
+@media (max-width: 768px) {
+    .sticky-cta-mobile { display: block; }
+    body { padding-bottom: 60px; } /* Evita che il tasto copra il footer */
+}
     </style>
 	<script type="application/ld+json">
 {
@@ -141,8 +339,8 @@
   "@type": "HomeAndConstructionBusiness",
   "name": "Tempestivo - Ristrutturazioni Palermo e Trapani",
   "description": "Impresa specializzata in ristrutturazioni chiavi in mano, rifacimento bagni e opere edili nelle province di Palermo e Trapani. Team certificato e sopralluoghi rapidi.",
-  "url": "https://www.tempestivo.it/ristrutturazioni-palermo-trapani.html",
-  "telephone": "+393520258583",
+  "url": "https://tempestivo.it/ristrutturazioni-palermo-trapani.html",
+  "telephone": "+39800123456",
   "areaServed": [
     {"@type": "AdministrativeArea", "name": "Palermo"},
     {"@type": "AdministrativeArea", "name": "Trapani"}
@@ -159,7 +357,7 @@
 </head>
 
 <body>
-<a href="tel:3520258583" class="sticky-cta-mobile">CHIAMA ORA H24: 3520258583</a>
+<a href="tel:800123456" class="sticky-cta-mobile">CHIAMA ORA H24: 800 123 456</a>
 <header>
     <div class="header-inner">
         <div class="logo">
@@ -169,9 +367,9 @@
                 <span>RAPIDI & AFFIDABILI</span>
             </div>
         </div>
-        <a href="tel:+393520258583">
+        <a href="tel:800123456">
             <button class="btn-emergenza">
-                <span>⚠️</span> EMERGENZA H24: 3520258583
+                <span>⚠️</span> EMERGENZA H24: 800 123 456
             </button>
         </a>
     </div>
@@ -297,36 +495,9 @@
 </section>
 
 <footer>
-  <p class="footer-description">
-            Tempestivo è una divisione di <strong>Officina Creativa</strong> dedicata al General Contracting e alle manutenzioni rapide.
-            Il team Tempestivo è composto da professionisti selezionati e aziende certificate, coordinati da una centrale operativa
-            che garantisce tempi certi e interventi rapidi.
-        </p>
-
-        <div class="footer-links">
-			<a href="index.html">Home</a>
-    <a href="chi-siamo.html">Chi Siamo</a> <a href="ristrutturazioni-palermo-trapani.html">Ristrutturazioni</a>
-    <a href="pronto-intervento-palermo-trapani.html" style="color:var(--giallo); font-weight: bold;">🆘 Pronto Intervento H24</a>
-               <a href="privacy.html">Privacy Policy</a>
-            <a href="cookie.html">Cookie Policy</a>
-            <a href="termini.html">Termini e Condizioni</a>
-        </div>
-
-        <div style="margin-top:25px;">
-            <a href="mappa-zone.html" style="color:var(--giallo);text-decoration:underline;">Mappa delle Zone</a> ·
-            <a href="servizi-partinico.html" style="color:var(--giallo);text-decoration:underline;">Partinico</a> ·
-            <a href="servizi-carini.html" style="color:var(--giallo);text-decoration:underline;">Carini</a> ·
-            <a href="servizi-alcamo.html" style="color:var(--giallo);text-decoration:underline;">Alcamo</a>
-        </div>
-
-        <div class="footer-bottom">
-            <p>P.IVA: 06772720824 | Divisione di Officina Creativa</p>
-            <p>Operativi a Palermo, Trapani e provincia.</p>
-            <p>&copy; 2024 Tempestivo. Tutti i diritti riservati.</p>
-        </div>
-    </div>
+    <p>Tempestivo – Ristrutturazioni e impianti a Palermo e Trapani.</p>
+    <p><a href="index.html">Torna alla homepage</a></p>
 </footer>
-
 
 </body>
 </html>
