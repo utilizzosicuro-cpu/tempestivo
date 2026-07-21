@@ -1,15 +1,16 @@
 <!DOCTYPE html>
+
 <html lang="it">
 <head>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<meta property="og:title" content="Chi Siamo | Tempestivo - Esperti in Ristrutturazioni e Pronto Intervento.">
-<meta property="og:description" content="Tempestivo è il tuo partner per ristrutturazioni e pronto intervento impianti a Palermo e Trapani. Operativi h24, sopralluoghi gratuitos e tecnici certificati">
-    <meta charset="UTF-8">
-    <title>Ristrutturazioni e Pronto Intervento Impianti Palermo e Trapani | Tempestivo</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="canonical" href="https://tempestivo.it/index.html">
-    <style>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<title>Pronto Intervento H24 &amp; Ristrutturazioni Palermo e Trapani | Tempestivo</title>
+<meta content="Pronto Intervento H24 idraulico, elettricista e impianti a Palermo, Trapani e Golfo di Castellammare. Arrivo rapido, ristrutturazioni chiavi in mano. Chiama ora!" name="description"/>
+<meta content="Pronto Intervento H24 &amp; Ristrutturazioni Palermo e Trapani | Tempestivo" property="og:title"/>
+<meta content="Pronto Intervento H24 idraulico, elettricista e impianti a Palermo, Trapani e Golfo di Castellammare. Arrivo rapido, ristrutturazioni chiavi in mano. Chiama ora!" property="og:description"/> <meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://tempestivo.it/" rel="canonical"/>
+<style>
         :root {
             --rosso: #E32626;
             --blu-notte: #0B1B3B;
@@ -48,24 +49,22 @@
             background-color: rgba(11, 27, 59, 0.96);
             color: var(--bianco);
             box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-            /* Importante: previene lo scroll orizzontale */
             box-sizing: border-box; 
         }
 
        .header-inner {
-    max-width: 1100px; /* Ridotto da 1200px per stringere il contenitore generale */
-    margin: 0 auto;
-    padding: 8px 15px; /* Padding più sottile */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+            max-width: 1100px; 
+            margin: 0 auto;
+            padding: 8px 15px; 
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
 
         .logo {
             display: flex;
             align-items: center;
             gap: 10px;
-            /* Impedisce al logo di rimpicciolirsi troppo */
             flex-shrink: 0; 
         }
 
@@ -87,7 +86,7 @@
         .logo-text {
             display: flex;
             flex-direction: column;
-            white-space: nowrap; /* Evita che il testo vada a capo male */
+            white-space: nowrap; 
         }
 
         .logo-text span:first-child {
@@ -107,99 +106,96 @@
             display: flex;
             align-items: center;
             gap: 10px;
-            /* Permette al contenitore del bottone di adattarsi */
             flex-shrink: 1; 
             min-width: 0; 
         }
 
 		.main-nav {
-    margin-left: auto;
-    margin-right: 20px;
-}
+            margin-left: auto;
+            margin-right: 20px;
+        }
 
-/* Forza il colore bianco per tutto il testo dentro l'header */
-header, .header-inner, .logo-text span {
-    color: #FFFFFF !important;
-}
+        /* STILE LINK BUSINESS */
+        .business-nav-link {
+            color: var(--giallo) !important;
+            font-weight: 800;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            padding: 5px 10px;
+            border: 1px solid var(--giallo);
+            border-radius: 5px;
+            margin-right: 15px;
+        }
+        .business-nav-link:hover { background: var(--giallo); color: var(--blu-notte) !important; }
 
-	
+        header, .header-inner, .logo-text span {
+            color: #FFFFFF !important;
+        }
 
-/* BARRA DI NAVIGAZIONE SECONDARIA (SOTTO L'HEADER) */
-.sub-nav {
-    width: 100%;
-    background-color: var(--blu-notte); /* Blu come l'header */
-    border-top: 1px solid rgba(255, 255, 255, 0.1); /* Sottile linea di separazione */
-    position: fixed;
-    top: 70px; /* Si posiziona esattamente sotto l'header alto 70px */
-    left: 0;
-    z-index: 998;
-    padding: 12px 0;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
+        .sub-nav {
+            width: 100%;
+            background-color: var(--blu-notte); 
+            border-top: 1px solid rgba(255, 255, 255, 0.1); 
+            position: fixed;
+            top: 70px; 
+            left: 0;
+            z-index: 998;
+            padding: 12px 0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
 
-.sub-nav-inner {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 15px;
-    display: flex;
-    justify-content: center; /* Centra i link */
-    gap: 40px; /* Spazio tra i link */
-}
+        .sub-nav-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 15px;
+            display: flex;
+            justify-content: center; 
+            gap: 40px; 
+        }
 
-	/* --- FIX COLORE NAV BAR INDEX --- */
-.sub-nav-link {
-    color: #FFFFFF !important; /* Forza il bianco */
-    text-decoration: none;
-    font-family: var(--font-titoli);
-    font-size: 0.9rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: 0.3s;
-}
+        .sub-nav-link {
+            color: #FFFFFF !important; 
+            text-decoration: none;
+            font-family: var(--font-titoli);
+            font-size: 0.9rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: 0.3s;
+        }
 
-.sub-nav-link:hover {
-    color: var(--giallo) !important; /* Diventa giallo al passaggio del mouse */
-}
+        .sub-nav-link:hover {
+            color: var(--giallo) !important; 
+        }
 
-.sub-nav-link:visited {
-    color: #FFFFFF !important; /* Impedisce che diventi blu dopo il click */
-}
+        .page-offset {
+            height: 115px; 
+        }
 
-/* Aggiorniamo lo spazio per la Hero per non coprire il testo */
-.page-offset {
-    height: 115px; /* 70px (header) + 45px (sub-nav) */
-}
-
-@media (max-width: 768px) {
-    .sub-nav { top: 65px; padding: 10px 0; }
-    .sub-nav-inner { gap: 20px; }
-    .sub-nav-link { font-size: 0.75rem; }
-    .page-offset { height: 105px; }
-}
-
-.nav-link {
-    color: var(--bianco);
-    font-weight: 700;
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    padding: 5px 10px;
-}
-
-.nav-link:hover {
-    color: var(--giallo);
-}
-
-/* Nascondi il link nel menu su smartphone molto piccoli se lo spazio manca */
-@media (max-width: 600px) {
-    .main-nav {
-        display: none; 
-    }
-}
+        @media (max-width: 768px) {
+            .sub-nav { top: 65px; padding: 10px 0; }
+            .sub-nav-inner { gap: 20px; }
+            .sub-nav-link { font-size: 0.75rem; }
+            .page-offset { height: 105px; }
+        }
 
         .btn-emergenza {
-    background-color: var(--rosso);
+            background-color: var(--rosso);
+            color: var(--bianco);
+            padding: 8px 16px; 
+            border-radius: 5px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 8px; 
+            text-decoration: none;
+            font-size: 0.85rem; 
+            flex-shrink: 0; 
+        }
+
+        .btn-emergenza:hover {
+            background-color: #c51f1f;
+        }
     color: var(--bianco);
     padding: 8px 16px; /* Ridotto il padding laterale */
     border-radius: 5px;
@@ -420,355 +416,338 @@ header, .header-inner, .logo-text span {
             .tempestivo-form { padding: 25px; }
         }
     </style>
-	<script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "HomeAndConstructionBusiness",
-      "name": "Tempestivo",
-      "alternateName": "Tempestivo Ristrutturazioni e Impianti",
-      "description": "Leader nelle ristrutturazioni edilizie e pronto intervento impianti H24 a Palermo e Trapani.",
-      "url": "https://tempestivo.it",
-      "logo": "https://tempestivo.it/img/logo.png",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Palermo",
-        "addressRegion": "PA",
-        "addressCountry": "IT"
-      },
-      "geo": {
-        "@type": "GeoShape",
-        "addressCountry": "IT",
-        "postalCode": "90100"
-      },
-      "openingHours": "Mo-Su 00:00-23:59",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+393520258583",
-        "contactType": "customer service"
-      }
-    }
-    </script>
-	
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EmergencyService",
+  "name": "Tempestivo - Pronto Intervento H24 e Ristrutturazioni",
+  "alternateName": "Tempestivo Servizi Tecnici",
+  "description": "Servizio di pronto intervento h24 per impianti idrici, elettrici, climatizzazione e ristrutturazioni a Palermo, Trapani e Golfo di Castellammare.",
+  "url": "https://tempestivo.it/",
+  "logo": "https://tempestivo.it/img/logo.png",
+  "telephone": "+393520258583",
+  "priceRange": "€€",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Palermo",
+    "addressRegion": "PA",
+    "addressCountry": "IT"
+  },
+  "areaServed": [
+    "Palermo",
+    "Castellammare del Golfo",
+    "Alcamo",
+    "Partinico",
+    "Terrasini",
+    "Cinisi",
+    "Carini",
+    "Balestrate",
+    "Trappeto",
+    "Scopello",
+    "San Vito Lo Capo",
+    "Trapani"
+  ],
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
+    ],
+    "opens": "00:00",
+    "closes": "23:59"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+393520258583",
+    "contactType": "emergency",
+    "availableLanguage": "Italian"
+  }
+}
+</script>
 </head>
 <body>
 
-    <header>
-    <div class="header-inner">
-        <a href="index.html" class="logo">
-            <img src="img/logo.png" alt="Tempestivo" class="logo-img">
-            <div class="logo-text">
-                <span>TEMPESTIVO</span>
-                <span style="font-size: 11px; text-transform: uppercase; opacity: 0.8; color: var(--giallo);">RAPIDI & AFFIDABILI</span>
-            </div>
-        </a>
 
-        <div class="header-cta">
-            <a href="tel:3520258583" class="btn-emergenza">
-                <span class="icon">⚠️</span>
-                <span>3520258583</span>
-            </a>
-        </div>
-    </div>
-</header>
 
-<nav class="sub-nav">
-    <div class="sub-nav-inner">
-        <a href="chi-siamo.html" class="sub-nav-link">Chi Siamo</a>
-        <a href="servizi.html" class="sub-nav-link">Servizi</a>
-        <a href="mappa-zone.html" class="sub-nav-link">Zone Coperte</a>
-        <a href="landing-ristrutturazioni.html" class="sub-nav-link">Ristrutturazioni complete e veloci</a>
-    </div>
+
+<header>
+<div class="header-inner">
+<a class="logo" href="index.html">
+<img alt="Logo Tempestivo - Pronto Intervento e Ristrutturazioni a Palermo e Trapani" class="logo-img" src="img/logo.png" style="height:34px; width:auto;"/>
+<div class="logo-text">
+<span>TEMPESTIVO</span>
+<span style="font-size: 11px; text-transform: uppercase; opacity: 0.8; color: var(--giallo);">RAPIDI &amp; AFFIDABILI</span>
+</div>
+</a>
+<nav class="main-nav">
+<a class="business-nav-link" href="soluzioni-business-palermo-trapani.html">Area Business</a>
 </nav>
-
+<div class="header-cta">
+<a class="btn-emergenza" href="tel:3520258583">
+<span class="icon">⚠️</span>
+<span>3520258583</span>
+</a>
+</div>
+</div>
+</header>
+<nav class="sub-nav">
+<div class="sub-nav-inner">
+<a class="sub-nav-link" href="chi-siamo.html">Chi Siamo</a>
+<a class="sub-nav-link" href="servizi.html">Servizi</a>
+<a class="sub-nav-link" href="mappa-zone.html">Zone Coperte</a>
+<a class="sub-nav-link" href="landing-ristrutturazioni.html">Ristrutturazioni complete e veloci</a>
+</div>
+</nav>
 <div class="page-offset"></div>
-
-    <section class="hero">
-    <div class="hero-overlay"></div>
-
-    <video autoplay muted loop playsinline class="hero-video" poster="img/hero-tempestivo.jpg">
-        <source src="video/tempestivo-bg.mp4" type="video/mp4">
-        <img src="img/tecnico-impianti-elettrici-cantiere.png" alt="Tempestivo - Ristrutturazioni e Impianti">
-    </video>
-
-    <div class="hero-content">
-        <h1>Ristrutturazioni e Pronto Intervento Impianti a Palermo e Trapani. <span class="highlight">Subito.</span></h1>
-        <p class="subtitle">
-            La soluzione definitiva per la tua casa o azienda. Tecnici certificati, tempi certi e reperibilità h24 in tutta la Sicilia Occidentale.<br>
+<section class="hero">
+<div class="hero-overlay"></div>
+<video autoplay="" class="hero-video" loop="" muted="" playsinline="" poster="img/hero-tempestivo.jpg">
+<source src="video/tempestivo-bg.mp4" type="video/mp4"/>
+<img alt="Tempestivo - Ristrutturazioni e Impianti" src="img/tecnico-impianti-elettrici-cantiere.png"/>
+</video>
+<div class="hero-content">
+<h1>Pronto Intervento Impianti H24 e Ristrutturazioni tra Palermo e Trapani. <span class="highlight">Subito.</span></h1>
+<p class="subtitle">
+            La soluzione definitiva per la tua casa o azienda. Tecnici certificati, tempi certi e reperibilità h24 in tutta la Sicilia Occidentale.<br/>
             Addio tempi morti.
         </p>
-        <a href="#progetto-gratis" class="btn-cta">Richiedi Progetto AI e Preventivo Gratis</a>
-		<p style="margin-top: 15px; color: var(--giallo); font-weight: bold; font-size: 0.9rem;">
+<a class="btn-cta" href="#progetto-gratis">Richiedi Progetto AI e Preventivo Gratis</a>
+<p style="margin-top: 15px; color: var(--giallo); font-weight: bold; font-size: 0.9rem;">
         Oltre 500 interventi eseguiti con successo tra Palermo e Trapani
     </p>
-    </div>
+</div>
 </section>
-
+<section style="padding: 50px 20px; background: var(--blu-notte); color: white; text-align: center;">
+<div style="max-width: 900px; margin: 0 auto;">
+<h2 style="color: var(--giallo); margin-bottom: 15px; font-family: var(--font-titoli);">Gestisci un'Azienda o un Condominio?</h2>
+<p style="margin-bottom: 25px; font-size: 1.1rem;">Affidati alla nostra manutenzione programmata. Interventi H24 garantiti per imprese, cantine, aziende agricole e amministratori condominiali a Palermo e Trapani.</p>
+<a href="soluzioni-business-palermo-trapani.html" style="background: var(--rosso); color: white; padding: 12px 30px; border-radius: 999px; font-weight: 700; text-transform: uppercase; display: inline-block;">Scopri le Soluzioni Business</a>
+</div>
+</section>
 <!-- =======================================================
      NUOVA SEZIONE INTEGRATA: LEAD MAGNET (FOTO -> PROGETTO)
      ======================================================= -->
 <section class="tempestivo-lead-section" id="progetto-gratis">
-  <div class="tempestivo-container">
-    
-    <!-- Colonna Testo Persuasivo -->
-    <div class="tempestivo-text-col">
-      <h2>Vuoi ristrutturare ma hai il terrore dei cantieri infiniti? ⏳</h2>
-      <p class="subtitle">Scopri il futuro di casa tua in meno di 24 ore. Gratis.</p>
-      
-      <p>Smetti di immaginare. Inviaci una foto della stanza che desideri rivoluzionare (il tuo vecchio bagno, una veranda inutilizzata o una camera da letto).</p>
-      
-      <ul class="tempestivo-features">
-        <li><span>📸</span> <strong>Immagine iper-realistica dello stato futuro:</strong> elaborata dai nostri tecnici (esattamente come i nostri "Prima e Dopo").</li>
-        <li><span>💰</span> <strong>Preventivo chiaro e trasparente:</strong> per una ristrutturazione a tempo di record, con Project Manager unico e zero tempi morti.</li>
-      </ul>
-      
-      <p class="disclaimer">Nessun obbligo di acquisto. Servizio attivo nelle province di Palermo e Trapani.</p>
-    </div>
-
-    <!-- Colonna Modulo di Contatto (Collegato al tuo Formspree attuale per funzionare subito!) -->
-    <div class="tempestivo-form-col">
-      <form action="https://formspree.io/f/mykljgev" method="POST" enctype="multipart/form-data" class="tempestivo-form">
-        
-        <div class="form-group">
-          <label for="nome">Nome e Cognome *</label>
-          <input type="text" id="nome" name="nome" placeholder="Es. Mario Rossi" required>
-        </div>
-
-        <div class="form-group">
-          <label for="citta">Città dell'immobile *</label>
-          <input type="text" id="citta" name="citta" placeholder="Es. Castellammare del Golfo" required>
-        </div>
-
-        <div class="form-group">
-          <label for="telefono">Numero di Telefono / WhatsApp *</label>
-          <input type="tel" id="telefono" name="telefono" placeholder="Es. 3520258583" required>
-        </div>
-
-        <div class="form-group">
-          <label for="ambiente">Cosa vuoi ristrutturare? *</label>
-          <select id="ambiente" name="ambiente" required>
-            <option value="" disabled selected>Seleziona un'opzione...</option>
-            <option value="Bagno">Bagno</option>
-            <option value="Camera">Camera da letto</option>
-            <option value="Veranda">Veranda / Esterno</option>
-            <option value="Cucina">Cucina</option>
-            <option value="Intero Immobile">Intero Immobile</option>
-          </select>
-        </div>
-
-        <div class="form-group">
-          <label for="foto">
-            <span class="file-label">📁 Carica la foto attuale della stanza *</span>
-          </label>
-          <input type="file" id="foto" name="foto" accept="image/*" required style="display: none;" onchange="this.previousElementSibling.innerText = '✅ Foto selezionata: ' + this.files[0].name">
-          <small>Accetta immagini (JPG, PNG) - Max 10MB</small>
-        </div>
-
-        <button type="submit" class="btn-submit-lead">VOGLIO IL MIO PROGETTO E PREVENTIVO GRATIS</button>
-      </form>
-    </div>
-
-  </div>
+<div class="tempestivo-container">
+<!-- Colonna Testo Persuasivo -->
+<div class="tempestivo-text-col">
+<h2>Vuoi ristrutturare ma hai il terrore dei cantieri infiniti? ⏳</h2>
+<p class="subtitle">Scopri il futuro di casa tua in meno di 24 ore. Gratis.</p>
+<p>Smetti di immaginare. Inviaci una foto della stanza che desideri rivoluzionare (il tuo vecchio bagno, una veranda inutilizzata o una camera da letto).</p>
+<ul class="tempestivo-features">
+<li><span>📸</span> <strong>Immagine iper-realistica dello stato futuro:</strong> elaborata dai nostri tecnici (esattamente come i nostri "Prima e Dopo").</li>
+<li><span>💰</span> <strong>Preventivo chiaro e trasparente:</strong> per una ristrutturazione a tempo di record, con Project Manager unico e zero tempi morti.</li>
+</ul>
+<p class="disclaimer">Nessun obbligo di acquisto. Servizio attivo nelle province di Palermo e Trapani.</p>
+</div>
+<!-- Colonna Modulo di Contatto (Collegato al tuo Formspree attuale per funzionare subito!) -->
+<div class="tempestivo-form-col">
+<form action="https://formspree.io/f/mykljgev" class="tempestivo-form" enctype="multipart/form-data" method="POST">
+<div class="form-group">
+<label for="nome">Nome e Cognome *</label>
+<input id="nome" name="nome" placeholder="Es. Mario Rossi" required="" type="text"/>
+</div>
+<div class="form-group">
+<label for="citta">Città dell'immobile *</label>
+<input id="citta" name="citta" placeholder="Es. Castellammare del Golfo" required="" type="text"/>
+</div>
+<div class="form-group">
+<label for="telefono">Numero di Telefono / WhatsApp *</label>
+<input id="telefono" name="telefono" placeholder="Es. 3520258583" required="" type="tel"/>
+</div>
+<div class="form-group">
+<label for="ambiente">Cosa vuoi ristrutturare? *</label>
+<select id="ambiente" name="ambiente" required="">
+<option disabled="" selected="" value="">Seleziona un'opzione...</option>
+<option value="Bagno">Bagno</option>
+<option value="Camera">Camera da letto</option>
+<option value="Veranda">Veranda / Esterno</option>
+<option value="Cucina">Cucina</option>
+<option value="Intero Immobile">Intero Immobile</option>
+</select>
+</div>
+<div class="form-group">
+<label for="foto">
+<span class="file-label">📁 Carica la foto attuale della stanza *</span>
+</label>
+<input accept="image/*" id="foto" name="foto" onchange="this.previousElementSibling.innerText = '✅ Foto selezionata: ' + this.files[0].name" required="" style="display: none;" type="file"/>
+<small>Accetta immagini (JPG, PNG) - Max 10MB</small>
+</div>
+<button class="btn-submit-lead" type="submit">VOGLIO IL MIO PROGETTO E PREVENTIVO GRATIS</button>
+</form>
+</div>
+</div>
 </section>
-
 <section class="perche-tempestivo">
-    <div class="container">
-        <h2>Perché scegliere <span>Tempestivo?</span></h2>
-		<p style="max-width:700px;margin:0 auto 30px auto;">
+<div class="container">
+<h2>Perché scegliere <span>Tempestivo?</span></h2>
+<p style="max-width:700px;margin:0 auto 30px auto;">
     Scopri tutte le zone in cui operiamo visitando la nostra 
     <a href="mappa-zone.html">Mappa delle Zone</a>.
 </p>
-
-
-        <div class="vantaggi-grid">
-
-            <div class="vantaggio">
-			<div class="step-icon">
-        <img src="img/velocita-certificata-tempestivo.png" alt="Icona Chiamata Tempestivo" width="50" height="50">
-    </div>
-                <h3>Velocità Certificata</h3>
-                <p>
+<div class="vantaggi-grid">
+<div class="vantaggio">
+<div class="step-icon">
+<img alt="Tempestivo servizio rapido pronto intervento" height="50" src="img/velocita-certificata-tempestivo.png" width="50"/>
+</div>
+<h3>Velocità Certificata</h3>
+<p>
                     Non promettiamo solo rapidità, la contrattualizziamo.
                     Sopralluogo e preventivo in tempi record per non farti perdere tempo.
                 </p>
-            </div>
-
-            <div class="vantaggio">
-                <div class="step-icon">
-        <img src="img/hub-integrato-tempestivo.png" alt="Icona Chiamata Tempestivo" width="50" height="50">
-    </div>
-                <h3>Hub Integrato</h3>
-                <p>
+</div>
+<div class="vantaggio">
+<div class="step-icon">
+<img alt="Tempestivo servizi idrici, elettrici, tecnologici, manutenzioni, ristrutturazioni" height="50" src="img/hub-integrato-tempestivo.png" width="50"/>
+</div>
+<h3>Hub Integrato</h3>
+<p>
                     Dimentica di dover coordinare 5 ditte diverse.
                     Idraulici, elettricisti, edili, architetti e ingegneri lavorano sotto un'unica regia: la nostra.
                 </p>
-            </div>
-
-            <div class="vantaggio">
-              <div class="step-icon">
-        <img src="img/qualita-sicurezza-certificata-tempestivo.png" alt="Icona Chiamata Tempestivo" width="50" height="50">
-    </div>
-                <h3>Qualità e Sicurezza</h3>
-                <p>
+</div>
+<div class="vantaggio">
+<div class="step-icon">
+<img alt="Tempestivo certificazioni impiani" height="50" src="img/qualita-sicurezza-certificata-tempestivo.png" width="50"/>
+</div>
+<h3>Qualità e Sicurezza</h3>
+<p>
                     Tutte le nostre aziende partner sono certificate e le maestranze qualificate.
                     Gestiamo noi tutta la burocrazia (CILA, SCIA, Sicurezza) con i nostri ingegneri interni.
                 </p>
-            </div>
-
-        </div>
-    </div>
+</div>
+</div>
+</div>
 </section>
-
 <section class="fast-renovation" style="padding: 60px 20px; background-color: #fff;">
-    <div style="max-width: 1100px; margin: 0 auto; text-align: center;">
-        <h2 style="color: var(--blu-notte); font-family: var(--font-titoli); font-size: 2rem;">Ristrutturazioni Fast & Express</h2>
-        <p style="margin: 20px 0 40px; font-size: 1.1rem; color: var(--grigio-scuro);">
+<div style="max-width: 1100px; margin: 0 auto; text-align: center;">
+<h2 style="color: var(--blu-notte); font-family: var(--font-titoli); font-size: 2rem;">Ristrutturazioni Fast &amp; Express</h2>
+<p style="margin: 20px 0 40px; font-size: 1.1rem; color: var(--grigio-scuro);">
             Bagni, cucine o singoli ambienti: abbiamo squadre dedicate per interventi rapidi senza rinunciare alla qualità certificata.
         </p>
-        
-        <div class="fast-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px;">
-            
-            <a href="rifacimento-bagno-palermo.html" class="box-link-wrapper">
-                <div style="border: 2px solid var(--grigio-chiaro); padding: 30px; border-radius: 15px; transition: 0.3s; height: 100%;" onmouseover="this.style.borderColor='var(--rosso)'" onmouseout="this.style.borderColor='var(--grigio-chiaro)'">
-                    <div style="font-size: 3rem; margin-bottom: 15px;">🚿</div>
-                    <h3 style="color: var(--blu-notte); margin-bottom: 15px;">Rifacimento Bagno</h3>
-                    <p style="color: var(--grigio-scuro);">Sostituzione sanitari, box doccia o rifacimento completo in tempi record. Gestiamo tutto noi: dalle macerie all'impianto.</p>
-                </div>
-            </a>
-
-            <a href="ambienti-singoli.html" class="box-link-wrapper">
-                <div style="border: 2px solid var(--grigio-chiaro); padding: 30px; border-radius: 15px; transition: 0.3s; height: 100%;" onmouseover="this.style.borderColor='var(--rosso)'" onmouseout="this.style.borderColor='var(--grigio-chiaro)'">
-                    <div style="font-size: 3rem; margin-bottom: 15px;">🧱</div>
-                    <h3 style="color: var(--blu-notte); margin-bottom: 15px;">Ambienti Singoli</h3>
-                    <p style="color: var(--grigio-scuro);">Vuoi rinnovare solo la cucina o il living? Interveniamo in modo mirato minimizzando il disagio in casa.</p>
-                </div>
-            </a>
-
-            <div style="border: 2px solid var(--grigio-chiaro); padding: 30px; border-radius: 15px; background-color: var(--blu-notte); color: #fff;">
-                <div style="font-size: 3rem; margin-bottom: 15px;">⏱️</div>
-                <h3 style="color: var(--giallo); margin-bottom: 15px;">Formula Immediata</h3>
-                <p>Sopralluogo tecnico entro 24h e inizio lavori programmato per ridurre al minimo i giorni di cantiere.</p>
-            </div>
-        </div>
-   </section>
-
-   <section class="servizi">
-    <div class="container">
-        <h2>I nostri servizi</h2>
-		<p style="margin-top:10px;">
+<div class="fast-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px;">
+<a class="box-link-wrapper" href="rifacimento-bagno-palermo.html">
+<div onmouseout="this.style.borderColor='var(--grigio-chiaro)'" onmouseover="this.style.borderColor='var(--rosso)'" style="border: 2px solid var(--grigio-chiaro); padding: 30px; border-radius: 15px; transition: 0.3s; height: 100%;">
+<div style="font-size: 3rem; margin-bottom: 15px;">🚿</div>
+<h3 style="color: var(--blu-notte); margin-bottom: 15px;">Rifacimento Bagno</h3>
+<p style="color: var(--grigio-scuro);">Sostituzione sanitari, box doccia o rifacimento completo in tempi record. Gestiamo tutto noi: dalle macerie all'impianto.</p>
+</div>
+</a>
+<a class="box-link-wrapper" href="ambienti-singoli.html">
+<div onmouseout="this.style.borderColor='var(--grigio-chiaro)'" onmouseover="this.style.borderColor='var(--rosso)'" style="border: 2px solid var(--grigio-chiaro); padding: 30px; border-radius: 15px; transition: 0.3s; height: 100%;">
+<div style="font-size: 3rem; margin-bottom: 15px;">🧱</div>
+<h3 style="color: var(--blu-notte); margin-bottom: 15px;">Ambienti Singoli</h3>
+<p style="color: var(--grigio-scuro);">Vuoi rinnovare solo la cucina o il living? Interveniamo in modo mirato minimizzando il disagio in casa.</p>
+</div>
+</a>
+<div style="border: 2px solid var(--grigio-chiaro); padding: 30px; border-radius: 15px; background-color: var(--blu-notte); color: #fff;">
+<div style="font-size: 3rem; margin-bottom: 15px;">⏱️</div>
+<h3 style="color: var(--giallo); margin-bottom: 15px;">Formula Immediata</h3>
+<p>Sopralluogo tecnico entro 24h e inizio lavori programmato per ridurre al minimo i giorni di cantiere.</p>
+</div>
+</div>
+</div></section>
+<section class="servizi">
+<div class="container">
+<h2>I nostri servizi</h2>
+<p style="margin-top:10px;">
     Operiamo in tutta la zona: 
     <a href="servizi-partinico.html">Partinico</a>, 
     <a href="servizi-carini.html">Carini</a>, 
     <a href="servizi-alcamo.html">Alcamo</a>.
 </p>
-
-
-        <div class="servizi-grid">
-
-            <div class="card-servizio">
-                <div class="card-img">
-                    <img src="img/ristrutturazione-bagno-moderno-tempestivo.png" alt="Ristrutturazione bagno moderno">
-                </div>
-                <div class="card-content">
-                    <h3>Per la Casa e il Privato</h3>
-                    <ul>
-                        <li>Ristrutturazioni Chiavi in Mano</li>
-                        <li>Rifacimento Bagni & Cucine</li>
-                        <li>Pronto Intervento Impianti</li>
-                        <li>Pratiche Edilizie e Detrazioni fiscali</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="card-servizio">
-                <div class="card-img">
-                    <img src="img/manutenzione-impianti-industriali-cantina-frantoio-condominio.png" alt="Tecnico in azienda agricola o condominio">
-                </div>
-                <div class="card-content">
-                    <h3>Per Condomini e Aziende</h3>
-					<p style="margin-top:10px;">
+<div class="servizi-grid">
+<div class="card-servizio">
+<div class="card-img">
+<img alt="Tempestivo Ristrutturazione bagno, progettazione ambienti" src="img/ristrutturazione-bagno-moderno-tempestivo.png"/>
+</div>
+<div class="card-content">
+<h3>Per la Casa e il Privato</h3>
+<ul>
+<li>Ristrutturazioni Chiavi in Mano</li>
+<li>Rifacimento Bagni &amp; Cucine</li>
+<li>Pronto Intervento Impianti</li>
+<li>Pratiche Edilizie e Detrazioni fiscali</li>
+</ul>
+</div>
+</div>
+<div class="card-servizio">
+<div class="card-img">
+<img alt="Temepstivo impianti industriali, manutenzioni programmate, azienda agricola,condominio e strutture ricettive e commerciali" src="img/manutenzione-impianti-industriali-cantina-frantoio-condominio.png"/>
+</div>
+<div class="card-content">
+<h3>Per Condomini e Aziende</h3>
+<p style="margin-top:10px;">
     Interventi rapidi per aziende e condomini a 
     <a href="servizi-carini.html">Carini</a>, 
     <a href="servizi-monreale.html">Monreale</a>, 
     <a href="servizi-castellammare-del-golfo.html">Castellammare</a>.
 </p>
-
-                    <ul>
-                        <li>Contratti di Manutenzione Programmata (Aziende Agricole)</li>
-                        <li>Reperibilità in Vendemmia / Molitura</li>
-                        <li>Manutenzioni Condominiali Urgenti</li>
-                        <li>Grandi Opere Straordinarie</li>
-                        <li>Supporto Tecnico all'Amministratore</li>
-                    </ul>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<section class="processo">
-    <div class="container">
-        <h2>Il processo <span>Tempestivo</span></h2>
-
-        <div class="timeline">
-
-            <div class="step">
-    <div class="step-number">1</div>
-    <div class="step-icon">
-        <img src="img/chiamata-form-tempestivo.png" alt="Icona Chiamata Tempestivo" width="50" height="50">
-    </div>
-    <h3>Chiamata o Form</h3>
-    <p>Ci segnali il problema o il progetto.</p>
+<ul>
+<li>Contratti di Manutenzione Programmata (Aziende Agricole)</li>
+<li>Reperibilità in Vendemmia / Molitura</li>
+<li>Manutenzioni Condominiali Urgenti</li>
+<li>Grandi Opere Straordinarie</li>
+<li>Supporto Tecnico all'Amministratore</li>
+</ul>
 </div>
-
-            <div class="step">
-                <div class="step-number">2</div>
-                <div class="step-icon"></div>
-				<img src="img/sopralluogo-tempestivo.png" alt="Icona Chiamata Tempestivo" width="50" height="50">
-                <h3>Sopralluogo (T+24/48h)</h3>
-                <p>Il nostro tecnico o architetto visiona il cantiere.</p>
-            </div>
-
-            <div class="step">
-                <div class="step-number">3</div>
-                <div class="step-icon"></div>
-				<img src="img/preventivo-rapido-tempestivo.png" alt="Icona Chiamata Tempestivo" width="50" height="50">
-                <h3>Preventivo Rapido</h3>
-                <p>Ricevi la quotazione dettagliata senza lunghe attese.</p>
-            </div>
-
-            <div class="step">
-                <div class="step-number">4</div>
-                <div class="step-icon"></div>
-				<img src="img/opere-ristrutturazione-cantiere-coordinato-tempestivo.png" alt="Icona Chiamata Tempestivo" width="50" height="50">
-                <h3>Cantiere Coordinato</h3>
-                <p>Iniziamo i lavori con team sincronizzati dal Project Manager.</p>
-            </div>
-
-        </div>
-    </div>
+</div>
+</div>
+</div>
 </section>
-
+<section class="processo">
+<div class="container">
+<h2>Il processo <span>Tempestivo</span></h2>
+<div class="timeline">
+<div class="step">
+<div class="step-number">1</div>
+<div class="step-icon">
+<img alt="Tempestivo emergenza guasti" height="50" src="img/chiamata-form-tempestivo.png" width="50"/>
+</div>
+<h3>Chiamata o Form</h3>
+<p>Ci segnali il problema o il progetto.</p>
+</div>
+<div class="step">
+<div class="step-number">2</div>
+<div class="step-icon"></div>
+<img alt="Tempestivo sopralluogo impianti e manutenzioni" height="50" src="img/sopralluogo-tempestivo.png" width="50"/>
+<h3>Sopralluogo (T+24/48h)</h3>
+<p>Il nostro tecnico o architetto visiona il cantiere.</p>
+</div>
+<div class="step">
+<div class="step-number">3</div>
+<div class="step-icon"></div>
+<img alt="Tempestivo preventivi rapidi, cantiere immediato" height="50" src="img/preventivo-rapido-tempestivo.png" width="50"/>
+<h3>Preventivo Rapido</h3>
+<p>Ricevi la quotazione dettagliata senza lunghe attese.</p>
+</div>
+<div class="step">
+<div class="step-number">4</div>
+<div class="step-icon"></div>
+<img alt="Tempestivo ristrutturazioni express palermo e trapani" height="50" src="img/opere-ristrutturazione-cantiere-coordinato-tempestivo.png" width="50"/>
+<h3>Cantiere Coordinato</h3>
+<p>Iniziamo i lavori con team sincronizzati dal Project Manager.</p>
+</div>
+</div>
+</div>
+</section>
 <section class="zone-coperte section-alt">
-    <div class="container">
-        <h2>Zone <span>coperte</span></h2>
-        <p>Tempestivo opera in un’area ampia tra Palermo e Trapani, con interventi rapidi nelle principali città.</p>
-
-        <div class="zone-grid">
-            <div class="zone-pill"><a href="servizi-partinico.html">Partinico</a></div>
-            <div class="zone-pill"><a href="servizi-carini.html">Carini</a></div>
-            <div class="zone-pill"><a href="servizi-terrasini.html">Terrasini</a></div>
-            <div class="zone-pill"><a href="servizi-cinisi.html">Cinisi</a></div>
-            <div class="zone-pill"><a href="servizi-trappeto.html">Trappeto</a></div>
-            <div class="zone-pill"><a href="servizi-balestrate.html">Balestrate</a></div>
-            <div class="zone-pill"><a href="servizi-alcamo.html">Alcamo</a></div>
-            <div class="zone-pill"><a href="servizi-castellammare-del-golfo.html">Castellammare del Golfo</a></div>
-            <div class="zone-pill"><a href="servizi-monreale.html">Monreale</a></div>
-            <div class="zone-pill"><a href="servizi-isola-delle-femmine.html">Isola delle Femmine</a></div>
-        </div>
-    </div>
+<div class="container">
+<h2>Zone <span>coperte</span></h2>
+<p>Tempestivo opera in un’area ampia tra Palermo e Trapani, con interventi rapidi nelle principali città.</p>
+<div class="zone-grid">
+<div class="zone-pill"><a href="servizi-partinico.html">Partinico</a></div>
+<div class="zone-pill"><a href="servizi-carini.html">Carini</a></div>
+<div class="zone-pill"><a href="servizi-terrasini.html">Terrasini</a></div>
+<div class="zone-pill"><a href="servizi-cinisi.html">Cinisi</a></div>
+<div class="zone-pill"><a href="servizi-trappeto.html">Trappeto</a></div>
+<div class="zone-pill"><a href="servizi-balestrate.html">Balestrate</a></div>
+<div class="zone-pill"><a href="servizi-alcamo.html">Alcamo</a></div>
+<div class="zone-pill"><a href="servizi-castellammare-del-golfo.html">Castellammare del Golfo</a></div>
+<div class="zone-pill"><a href="servizi-monreale.html">Monreale</a></div>
+<div class="zone-pill"><a href="servizi-isola-delle-femmine.html">Isola delle Femmine</a></div>
+</div>
+</div>
 </section>
-
 <style>
 .zone-coperte {
     padding: 80px 20px;
@@ -815,62 +794,50 @@ header, .header-inner, .logo-text span {
     }
 }
 </style>
-
 <section class="cta-pre-form section">
-    <div class="container" style="text-align:center;">
-        <h2>Hai bisogno di un intervento rapido?</h2>
-        <p>Descrivi il problema e la zona: ti ricontattiamo rapidamente per organizzare l’uscita.</p>
-        <a href="#contatto" class="btn-cta">Richiedi un intervento</a>
-    </div>
+<div class="container" style="text-align:center;">
+<h2>Hai bisogno di un intervento rapido?</h2>
+<p>Descrivi il problema e la zona: ti ricontattiamo rapidamente per organizzare l’uscita.</p>
+<a class="btn-cta" href="#contatto">Richiedi un intervento</a>
+</div>
 </section>
-
 <section class="contatto" id="contatto">
-    <div class="container">
-        <h2>Mettici alla prova sulla tua prossima urgenza.</h2>
-
- <form class="contact-form" action="https://formspree.io/f/mykljgev" method="POST">
-
-    <div class="form-group">
-        <label>Nome *</label>
-        <input type="text" name="nome" placeholder="Il tuo nome" required>
-    </div>
-
-    <div class="form-group">
-        <label>Azienda (opzionale)</label>
-        <input type="text" name="azienda" placeholder="Nome azienda">
-    </div>
-
-    <div class="form-group">
-        <label>Telefono *</label>
-        <input type="tel" name="telefono" placeholder="Numero di telefono" required>
-    </div>
-
-    <div class="form-group">
-        <label>Email</label>
-        <input type="email" name="email" placeholder="La tua email">
-    </div>
-
-    <div class="form-group">
-        <label>Area di Intervento *</label>
-        <select name="area" required>
-            <option value="">Seleziona...</option>
-            <option value="Casa">Casa</option>
-            <option value="Condominio">Condominio</option>
-            <option value="Azienda">Azienda</option>
-        </select>
-    </div>
-
-    <div class="form-group full">
-        <label>Messaggio</label>
-        <textarea name="messaggio" placeholder="Descrivi il problema o il progetto"></textarea>
-    </div>
-
-    <button type="submit" class="btn-submit">Invia Richiesta e Attiva Tempestivo</button>
+<div class="container">
+<h2>Mettici alla prova sulla tua prossima urgenza.</h2>
+<form action="https://formspree.io/f/mykljgev" class="contact-form" method="POST">
+<div class="form-group">
+<label>Nome *</label>
+<input name="nome" placeholder="Il tuo nome" required="" type="text"/>
+</div>
+<div class="form-group">
+<label>Azienda (opzionale)</label>
+<input name="azienda" placeholder="Nome azienda" type="text"/>
+</div>
+<div class="form-group">
+<label>Telefono *</label>
+<input name="telefono" placeholder="Numero di telefono" required="" type="tel"/>
+</div>
+<div class="form-group">
+<label>Email</label>
+<input name="email" placeholder="La tua email" type="email"/>
+</div>
+<div class="form-group">
+<label>Area di Intervento *</label>
+<select name="area" required="">
+<option value="">Seleziona...</option>
+<option value="Casa">Casa</option>
+<option value="Condominio">Condominio</option>
+<option value="Azienda">Azienda</option>
+</select>
+</div>
+<div class="form-group full">
+<label>Messaggio</label>
+<textarea name="messaggio" placeholder="Descrivi il problema o il progetto"></textarea>
+</div>
+<button class="btn-submit" type="submit">Invia Richiesta e Attiva Tempestivo</button>
 </form>
-
-    </div>
+</div>
 </section>
-
 <style>
     /* SEZIONE CONTATTO - OTTIMIZZATA MOBILE */
 .contatto {
@@ -975,8 +942,6 @@ header, .header-inner, .logo-text span {
     }
 }
 </style>
-
-
 <style>
     /* SEZIONE PROCESSO */
     .processo {
@@ -1055,8 +1020,6 @@ header, .header-inner, .logo-text span {
         }
     }
 </style>
-
-
 <style>
     /* SEZIONE SERVIZI */
     .servizi {
@@ -1139,8 +1102,6 @@ header, .header-inner, .logo-text span {
         }
     }
 </style>
-
-
 <style>
     /* SEZIONE PERCHÉ TEMPESTIVO */
     .perche-tempestivo {
@@ -1206,8 +1167,6 @@ header, .header-inner, .logo-text span {
         }
     }
 </style>
-
-
 <style>
     /* HERO SECTION */
     .hero {
@@ -1294,43 +1253,6 @@ header, .header-inner, .logo-text span {
         }
     }
 </style>
-
-<footer class="footer">
-    <div class="footer-inner">
-
-        <!-- LOGO -->
-        <div class="footer-logo">
-            <img src="img/logo.png" alt="Tempestivo" class="logo-img">
-            <div class="logo-text">
-                <span>TEMPESTIVO</span>
-                <span>RAPIDI & AFFIDABILI</span>
-            </div>
-        </div>
-
-        <!-- DICITURA TRASPARENZA -->
-        <p class="footer-description">
-            Tempestivo è una divisione di <strong>Officina Creativa</strong> dedicata al General Contracting e alle manutenzioni rapide.
-            Il team Tempestivo è composto da professionisti selezionati e aziende certificate, coordinati da una centrale operativa
-            che garantisce tempi certi e interventi rapidi.
-        </p>
-
-        <!-- LINK LEGALI -->
-        <div class="footer-links">
-            <a href="privacy.html" class="privacy-link">Privacy Policy</a>
-            <a href="cookie.html" class="privacy-link">Cookie Policy</a>
-            <a href="termini.html" class="privacy-link">Termini e Condizioni</a>
-        </div>
-
-    </div>
-	<div style="margin-top:25px;">
-    <a href="mappa-zone.html" style="color:var(--giallo);text-decoration:underline;">Mappa delle Zone</a> ·
-    <a href="servizi-partinico.html" style="color:var(--giallo);text-decoration:underline;">Partinico</a> ·
-    <a href="servizi-carini.html" style="color:var(--giallo);text-decoration:underline;">Carini</a> ·
-    <a href="servizi-alcamo.html" style="color:var(--giallo);text-decoration:underline;">Alcamo</a>
-</div>
-
-</footer>
-
 <style>
     /* FOOTER */
     .footer {
@@ -1431,7 +1353,6 @@ header, .header-inner, .logo-text span {
         opacity: 0.8;
     }
 </style>
-
 <!-- ============================
      OTTIMIZZAZIONE MOBILE 100%
      ============================ -->
@@ -1483,9 +1404,35 @@ header, .header-inner, .logo-text span {
     .privacy-link { font-size: 0.85rem; }
 }
 </style>
-<footer>
-  <p>P.IVA: 06772720824</p>
-</footer>
-
 </body>
 </html>
+<footer class="footer" style="background-color: #444444; color: #FFFFFF; padding: 40px 20px; text-align: center; margin-top: 50px;">
+<div class="footer-inner" style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; align-items: center;">
+<div class="footer-logo" style="display: flex; align-items: center; justify-content: center; gap: 12px; margin-bottom: 20px;">
+<img alt="Logo Tempestivo - Pronto Intervento e Ristrutturazioni a Palermo e Trapani" src="img/logo.png" style="height: 40px; width: auto;"/>
+<div class="logo-text" style="text-align: left;">
+<span style="font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 18px; display: block;">TEMPESTIVO</span>
+<span style="font-size: 11px; text-transform: uppercase; opacity: 0.8; color: #FFC857;">RAPIDI &amp; AFFIDABILI</span>
+</div>
+</div>
+<p class="footer-description" style="max-width: 700px; margin-bottom: 20px; font-size: 0.95rem; opacity: 0.9; line-height: 1.5;">
+            Tempestivo è una divisione di <strong>Officina Creativa</strong> dedicata al General Contracting e alle manutenzioni rapide.
+        </p>
+<div class="footer-links" style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-bottom: 20px;">
+<a href="soluzioni-business-palermo-trapani.html" style="color: #FFC857; font-weight: bold; text-decoration: none;">🏢 Soluzioni Business &amp; Condomini</a>
+<a href="ristrutturazioni-palermo-trapani.html" style="color: #FFFFFF; text-decoration: none;">Ristrutturazioni</a>
+<a href="pronto-intervento-palermo-trapani.html" style="color: #FFFFFF; text-decoration: none;">🆘 Pronto Intervento H24</a>
+<a href="chi-siamo.html" style="color: #FFFFFF; text-decoration: none;">Chi Siamo</a>
+</div>
+<div style="margin-top:15px; margin-bottom:15px;">
+<a href="mappa-zone.html" style="color: #FFC857; text-decoration: underline;">Mappa delle Zone</a> ·
+            <a href="servizi-partinico.html" style="color: #FFC857; text-decoration: underline;">Partinico</a> ·
+            <a href="servizi-carini.html" style="color: #FFC857; text-decoration: underline;">Carini</a> ·
+            <a href="servizi-alcamo.html" style="color: #FFC857; text-decoration: underline;">Alcamo</a>
+</div>
+<div class="footer-bottom" style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; width: 100%; font-size: 0.8rem; opacity: 0.7;">
+<p>P.IVA: 06772720824 | Divisione di Officina Creativa</p>
+<p>© 2026 Tempestivo. Tutti i diritti riservati. | <a href="privacy.html" style="color: #FFC857;">Privacy Policy</a></p>
+</div>
+</div>
+</footer>

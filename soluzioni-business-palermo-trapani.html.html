@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+
+<html lang="it">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Soluzioni Business e Manutenzione Programmata Palermo e Trapani | Tempestivo</title>
+<meta content="Partner tecnico per la manutenzione di condomini, aziende e industrie a Palermo e Trapani. Contratti di manutenzione programmata, pronto intervento e gestione impianti." name="description"/>
+<link href="https://tempestivo.it/soluzioni-business-palermo-trapani.html" rel="canonical"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&amp;family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<style>
+        :root {
+            --rosso: #E32626;
+            --blu-notte: #0B1B3B;
+            --giallo: #FFC857;
+            --grigio-chiaro: #F5F5F5;
+            --grigio-scuro: #444444;
+            --bianco: #FFFFFF;
+            --font-titoli: "Montserrat", Arial, sans-serif;
+            --font-testi: "Roboto", Arial, sans-serif;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: var(--font-testi); color: var(--grigio-scuro); background: var(--bianco); line-height: 1.6; }
+        a { text-decoration: none; color: inherit; transition: all 0.3s ease; }
+
+        /* HEADER */
+        header { width: 100%; position: fixed; top: 0; left: 0; z-index: 1000; background-color: rgba(11, 27, 59, 0.96); color: var(--bianco); box-shadow: 0 2px 6px rgba(0,0,0,0.2); }
+        .header-inner { max-width: 1200px; margin: 0 auto; padding: 12px 20px; display: flex; align-items: center; justify-content: space-between; }
+        .logo { display: flex; align-items: center; gap: 10px; }
+        .logo-img { height: 34px; width: auto; }
+        .logo-text { display: flex; flex-direction: column; }
+        .logo-text span:first-child { font-family: var(--font-titoli); font-weight: 800; font-size: 18px; }
+        .logo-text span:last-child { font-size: 11px; opacity: 0.8; color: var(--giallo); }
+        .btn-emergenza { background-color: var(--rosso); color: var(--bianco); padding: 8px 16px; border-radius: 999px; font-weight: 700; font-size: 13px; border: none; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; white-space: nowrap; }
+        .page-offset { height: 70px; }
+
+        /* HERO */
+        .hero { padding: 80px 20px 60px 20px; background: linear-gradient(135deg, rgba(11, 27, 59, 0.95), rgba(18, 39, 80, 0.95)), url('img/manutenzione-business.jpg') center/cover; color: var(--bianco); text-align: center; }
+        .hero-inner { max-width: 900px; margin: 0 auto; }
+        .hero-text h1 { font-family: var(--font-titoli); font-size: 2.8rem; font-weight: 800; margin-bottom: 20px; line-height: 1.2; }
+        .hero-text h1 span { color: var(--giallo); }
+        .hero-text p { font-size: 1.15rem; margin-bottom: 30px; }
+        .btn-cta { display: inline-block; background-color: var(--rosso); color: var(--bianco); padding: 15px 30px; border-radius: 999px; font-weight: 700; font-size: 1.1rem; text-transform: uppercase; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
+
+        /* SEZIONI */
+        .section { padding: 70px 20px; }
+        .section-alt { background: var(--grigio-chiaro); }
+        .section-inner { max-width: 1100px; margin: 0 auto; }
+        .section h2 { font-family: var(--font-titoli); font-size: 2.2rem; font-weight: 800; margin-bottom: 25px; color: var(--blu-notte); text-align: center; }
+        .section h2 span { color: var(--rosso); }
+
+        /* GRIGLIA HUB */
+        .hub-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 40px; }
+        .hub-card { background: var(--bianco); padding: 40px 30px; border-radius: 15px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border-bottom: 5px solid var(--blu-notte); transition: transform 0.3s; display: flex; flex-direction: column; height: 100%; }
+        .hub-card:hover { transform: translateY(-10px); border-bottom-color: var(--rosso); }
+        .hub-card.priority { border-bottom-color: var(--rosso); }
+        .hub-card h3 { color: var(--blu-notte); font-family: var(--font-titoli); font-size: 1.5rem; margin-bottom: 15px; }
+        .hub-card p { flex-grow: 1; margin-bottom: 25px; color: var(--grigio-scuro); }
+        .btn-outline { display: inline-block; padding: 10px 25px; border: 2px solid var(--blu-notte); color: var(--blu-notte); font-weight: 700; border-radius: 999px; text-transform: uppercase; font-size: 0.9rem; }
+        .hub-card:hover .btn-outline { background: var(--blu-notte); color: var(--bianco); }
+        .hub-card.priority:hover .btn-outline { background: var(--rosso); border-color: var(--rosso); }
+
+        /* ELEMENTI */
+        .two-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
+        .check-list { list-style: none; padding: 0; }
+        .check-list li { padding-left: 25px; margin-bottom: 12px; position: relative; font-weight: 700; color: var(--blu-notte); }
+        .check-list li::before { content: "✔"; position: absolute; left: 0; top: 0; color: var(--rosso); }
+        .zone-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px; text-align: center; }
+        .zone-pill { display: inline-block; background: var(--bianco); padding: 10px 15px; border-radius: 20px; font-weight: 700; color: var(--blu-notte); border: 1px solid rgba(0,0,0,0.05); }
+        .faq-item { background: var(--bianco); padding: 20px; border-radius: 10px; margin-bottom: 15px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); border-left: 4px solid var(--blu-notte); }
+        .faq-item h3 { font-family: var(--font-titoli); font-size: 1.1rem; margin-bottom: 8px; color: var(--blu-notte); }
+
+        footer { background: var(--grigio-scuro); color: var(--bianco); padding: 40px 20px; text-align: center; }
+        .sticky-cta-mobile { display: none; position: fixed; bottom: 0; left: 0; width: 100%; background: var(--rosso); color: white; text-align: center; padding: 15px; font-weight: 800; z-index: 9999; font-size: 1.1rem; box-shadow: 0 -2px 10px rgba(0,0,0,0.3); }
+
+        @media (max-width: 768px) {
+            .hero-text h1 { font-size: 2rem; }
+            .two-cols { grid-template-columns: 1fr; }
+            .sticky-cta-mobile { display: block; }
+            body { padding-bottom: 60px; }
+        }
+    </style>
+<script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Tempestivo - Soluzioni Business e Condomini",
+        "description": "Partner tecnico per la manutenzione programmata e il pronto intervento in condomini, aziende e industrie a Palermo e Trapani.",
+        "url": "https://tempestivo.it/soluzioni-business-palermo-trapani.html",
+        "telephone": "+393520258583",
+        "areaServed": [
+          {"@type": "AdministrativeArea", "name": "Palermo"},
+          {"@type": "AdministrativeArea", "name": "Trapani"}
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Servizi B2B e Condominiali",
+          "itemListElement": [
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Manutenzione Condomini" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Manutenzione Aziende e Attività" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Assistenza Aziende Agricole" } }
+          ]
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Quali sono i vantaggi di un contratto di manutenzione programmata con Tempestivo?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Un contratto garantisce priorità assoluta negli interventi, riduzione drastica dei fermi operativi, costi chiari e impianti sempre conformi alle normative vigenti." }
+          },
+          {
+            "@type": "Question",
+            "name": "Come avviene la gestione degli interventi urgenti per i condomini?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Supportiamo gli amministratori garantendo l'uscita del tecnico entro 60 minuti per guasti idraulici, elettrici e blocco autoclavi, h24." }
+          },
+          {
+            "@type": "Question",
+            "name": "Coprite anche le zone industriali di Trapani e Palermo?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Assolutamente sì. Operiamo capillarmente nei distretti industriali, agricoli e commerciali di entrambe le province." }
+          }
+        ]
+      }
+    ]
+    </script>
+</head>
+<body>
+
+
+
+
+<header>
+<div class="header-inner">
+<a class="logo" href="index.html">
+<img alt="Logo Tempestivo - Pronto Intervento e Ristrutturazioni a Palermo e Trapani" class="logo-img" src="img/logo.png" style="height:34px; width:auto;"/>
+<div class="logo-text">
+<span>TEMPESTIVO</span>
+<span style="font-size: 11px; text-transform: uppercase; opacity: 0.8; color: var(--giallo);">RAPIDI &amp; AFFIDABILI</span>
+</div>
+</a>
+<nav class="main-nav">
+<a class="business-nav-link" href="soluzioni-business-palermo-trapani.html">Area Business</a>
+</nav>
+<div class="header-cta">
+<a class="btn-emergenza" href="tel:3520258583">
+<span class="icon">⚠️</span>
+<span>3520258583</span>
+</a>
+</div>
+</div>
+</header>
+<nav class="sub-nav">
+<div class="sub-nav-inner">
+<a class="sub-nav-link" href="chi-siamo.html">Chi Siamo</a>
+<a class="sub-nav-link" href="servizi.html">Servizi</a>
+<a class="sub-nav-link" href="mappa-zone.html">Zone Coperte</a>
+<a class="sub-nav-link" href="landing-ristrutturazioni.html">Ristrutturazioni complete e veloci</a>
+</div>
+</nav>
+<div class="page-offset"></div>
+<a class="sticky-cta-mobile" href="tel:3520258583">PARLA CON UN TECNICO: 352.025.85.83</a>
+<section class="hero">
+<div class="hero-inner">
+<div class="hero-text">
+<h1>Partner Tecnico per <span>Condomini</span> e <span>Aziende</span> a Palermo e Trapani</h1>
+<p>Non aspettare l'emergenza. Tempestivo offre gestione integrata e manutenzione programmata per garantire la totale continuità operativa del tuo business e la sicurezza del tuo condominio.</p>
+<a class="btn-cta" href="#hub-servizi">Scopri le nostre soluzioni</a>
+</div>
+</div>
+</section>
+<!-- HUB SERVIZI VERTICALI -->
+<section class="section section-alt" id="hub-servizi">
+<div class="section-inner">
+<h2>Scegli il tuo <span>Settore</span></h2>
+<p style="text-align: center; max-width: 700px; margin: 0 auto;">Piani di intervento su misura studiati per risolvere le criticità specifiche della tua attività. Scegli un partner che capisce le tue urgenze.</p>
+<div class="hub-grid">
+<div class="hub-card priority">
+<h3>Amministratori e Condomini</h3>
+<p>Gestione totale delle emergenze idrauliche ed elettriche. Riparazione autoclavi, ripristino illuminazione e supporto tecnico dedicato per sollevare l'amministratore da ogni stress organizzativo.</p>
+<a class="btn-outline" href="manutenzione-condomini-palermo-trapani.html">Servizi Condominiali</a>
+</div>
+<div class="hub-card priority">
+<h3>Aziende e Attività Commerciali</h3>
+<p>Zero fermo macchina e continuità operativa. Manutenzione programmata per impianti elettrici, quadri di automazione, clima e sistemi idraulici di negozi, uffici e poli industriali.</p>
+<a class="btn-outline" href="manutenzione-aziende-attivita-palermo-trapani.html">Soluzioni Corporate</a>
+</div>
+<div class="hub-card">
+<h3>Cantine e Aziende Agricole</h3>
+<p>Reperibilità garantita nei periodi critici di vendemmia e molitura. Assistenza rapida su elettropompe, pozzi, quadri di potenza e impianti di irrigazione.</p>
+<a class="btn-outline" href="manutenzione-aziende-agricole-palermo-trapani.html">Settore Agricolo</a>
+</div>
+</div>
+</div>
+</section>
+<!-- PERCHÈ UN PARTNER UNICO -->
+<section class="section">
+<div class="section-inner two-cols">
+<div>
+<h2>Perché scegliere un <span>Partner Unico</span></h2>
+<p style="margin-bottom: 20px;">Gestire decine di fornitori diversi disperde tempo e risorse. Tempestivo centralizza la gestione tecnica offrendo efficienza e garanzie contrattuali.</p>
+<ul class="check-list">
+<li>Interventi d'urgenza garantiti in &lt; 60 minuti</li>
+<li>Un unico interlocutore e zero burocrazia</li>
+<li>Impianti sempre conformi al DM 37/08</li>
+<li>Prevenzione dei guasti e abbattimento costi imprevisti</li>
+</ul>
+</div>
+<div>
+<img alt="Tecnico manutenzione Tempestivo" src="img/manutenzione-programmata.jpg" style="width: 100%; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);"/>
+</div>
+</div>
+</section>
+<!-- FAQ B2B -->
+<section class="section section-alt">
+<div class="section-inner">
+<h2>Domande <span>Frequenti</span> Business</h2>
+<div class="faq-item">
+<h3>Quali sono i vantaggi di un contratto di manutenzione programmata?</h3>
+<p>Un contratto garantisce priorità assoluta negli interventi, riduzione drastica dei fermi operativi, costi chiari e impianti sempre conformi alle normative vigenti.</p>
+</div>
+<div class="faq-item">
+<h3>Come avviene la gestione degli interventi urgenti per i condomini?</h3>
+<p>Supportiamo gli amministratori garantendo l'uscita del tecnico entro 60 minuti per guasti idraulici, elettrici e blocco autoclavi, con reperibilità h24.</p>
+</div>
+<div class="faq-item">
+<h3>Coprite anche le zone industriali di Trapani e Palermo?</h3>
+<p>Assolutamente sì. Operiamo capillarmente nei distretti industriali, agricoli e commerciali.</p>
+</div>
+</div>
+</section>
+</body>
+</html>
+<footer class="footer" style="background-color: #444444; color: #FFFFFF; padding: 40px 20px; text-align: center; margin-top: 50px;">
+<div class="footer-inner" style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; align-items: center;">
+<div class="footer-logo" style="display: flex; align-items: center; justify-content: center; gap: 12px; margin-bottom: 20px;">
+<img alt="Logo Tempestivo - Pronto Intervento e Ristrutturazioni a Palermo e Trapani" src="img/logo.png" style="height: 40px; width: auto;"/>
+<div class="logo-text" style="text-align: left;">
+<span style="font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 18px; display: block;">TEMPESTIVO</span>
+<span style="font-size: 11px; text-transform: uppercase; opacity: 0.8; color: #FFC857;">RAPIDI &amp; AFFIDABILI</span>
+</div>
+</div>
+<p class="footer-description" style="max-width: 700px; margin-bottom: 20px; font-size: 0.95rem; opacity: 0.9; line-height: 1.5;">
+            Tempestivo è una divisione di <strong>Officina Creativa</strong> dedicata al General Contracting e alle manutenzioni rapide.
+        </p>
+<div class="footer-links" style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-bottom: 20px;">
+<a href="soluzioni-business-palermo-trapani.html" style="color: #FFC857; font-weight: bold; text-decoration: none;">🏢 Soluzioni Business &amp; Condomini</a>
+<a href="ristrutturazioni-palermo-trapani.html" style="color: #FFFFFF; text-decoration: none;">Ristrutturazioni</a>
+<a href="pronto-intervento-palermo-trapani.html" style="color: #FFFFFF; text-decoration: none;">🆘 Pronto Intervento H24</a>
+<a href="chi-siamo.html" style="color: #FFFFFF; text-decoration: none;">Chi Siamo</a>
+</div>
+<div style="margin-top:15px; margin-bottom:15px;">
+<a href="mappa-zone.html" style="color: #FFC857; text-decoration: underline;">Mappa delle Zone</a> ·
+            <a href="servizi-partinico.html" style="color: #FFC857; text-decoration: underline;">Partinico</a> ·
+            <a href="servizi-carini.html" style="color: #FFC857; text-decoration: underline;">Carini</a> ·
+            <a href="servizi-alcamo.html" style="color: #FFC857; text-decoration: underline;">Alcamo</a>
+</div>
+<div class="footer-bottom" style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; width: 100%; font-size: 0.8rem; opacity: 0.7;">
+<p>P.IVA: 06772720824 | Divisione di Officina Creativa</p>
+<p>© 2026 Tempestivo. Tutti i diritti riservati. | <a href="privacy.html" style="color: #FFC857;">Privacy Policy</a></p>
+</div>
+</div>
+</footer>
