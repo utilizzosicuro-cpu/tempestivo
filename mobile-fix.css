@@ -1,5 +1,5 @@
 /* ==========================================
-   MOBILE FIXES v17 - Full Width Cards & Grid Fix
+   MOBILE FIXES v18 - Enhanced Typography & Accessibility
    ========================================== */
 
 @media (max-width: 768px) {
@@ -27,7 +27,7 @@
         text-align: center !important;
         width: 100% !important;
         height: auto !important;
-        padding: 15px 10px !important;
+        padding: 18px 12px !important;
         background-color: #0d2140 !important;
     }
 
@@ -49,25 +49,25 @@
         justify-content: center !important;
         text-align: center !important;
         width: 100% !important;
-        margin: 0 auto 10px auto !important;
+        margin: 0 auto 12px auto !important;
         padding: 0 !important;
         text-decoration: none !important;
     }
 
     .logo-mark {
-        width: 44px !important;
-        height: 44px !important;
-        min-width: 44px !important;
-        min-height: 44px !important;
-        max-width: 44px !important;
-        max-height: 44px !important;
+        width: 48px !important;
+        height: 48px !important;
+        min-width: 48px !important;
+        min-height: 48px !important;
+        max-width: 48px !important;
+        max-height: 48px !important;
         background-color: #ff4d4d !important;
         border-radius: 50% !important;
         display: flex !important;
         align-items: center !important;
         justify-content: center !important;
-        margin: 0 auto 6px auto !important;
-        font-size: 1.2rem !important;
+        margin: 0 auto 8px auto !important;
+        font-size: 1.4rem !important;
         color: #ffffff !important;
         flex-shrink: 0 !important;
     }
@@ -89,21 +89,23 @@
         width: 100% !important;
         margin: 0 auto !important;
         padding: 0 !important;
-        line-height: 1.2 !important;
+        line-height: 1.25 !important;
     }
 
+    /* Titolo Logo Maggiorato */
     .logo-text span:first-child {
-        font-size: 1.2rem !important;
+        font-size: 1.4rem !important;
         font-weight: 800 !important;
         color: #ffffff !important;
         letter-spacing: 0.5px !important;
     }
 
+    /* Sottotitolo Logo Maggiorato */
     .logo-text span:last-child {
-        font-size: 0.75rem !important;
-        color: rgba(255, 255, 255, 0.7) !important;
+        font-size: 0.85rem !important;
+        color: rgba(255, 255, 255, 0.8) !important;
         text-transform: uppercase !important;
-        margin-top: 2px !important;
+        margin-top: 3px !important;
     }
 
     /* MENU DI NAVIGAZIONE */
@@ -112,21 +114,21 @@
         flex-direction: column !important;
         align-items: center !important;
         justify-content: center !important;
-        gap: 6px !important;
-        margin: 8px 0 !important;
+        gap: 8px !important;
+        margin: 10px 0 !important;
         padding: 0 !important;
         width: 100% !important;
     }
 
     a.nav-link {
-        font-size: 0.95rem !important;
+        font-size: 1.05rem !important; /* Aumentato */
         font-weight: 700 !important;
         color: #ffffff !important;
         text-decoration: none !important;
         text-transform: uppercase !important;
         text-align: center !important;
         display: block !important;
-        padding: 2px 0 !important;
+        padding: 4px 0 !important;
         margin: 0 !important;
     }
 
@@ -134,7 +136,7 @@
         width: 100% !important;
         display: flex !important;
         justify-content: center !important;
-        margin-top: 6px !important;
+        margin-top: 8px !important;
     }
 
     a.btn-emergenza {
@@ -143,22 +145,22 @@
         justify-content: center !important;
         background-color: #e52e2e !important;
         color: #ffffff !important;
-        padding: 8px 20px !important;
+        padding: 10px 24px !important;
         border-radius: 6px !important;
         text-decoration: none !important;
         font-weight: bold !important;
-        font-size: 1rem !important;
+        font-size: 1.15rem !important; /* Aumentato per maggiore leggibilità */
         margin: 0 auto !important;
     }
 
     /* 3. HERO SECTION */
     .hero {
-        padding: 30px 15px !important;
+        padding: 35px 15px !important;
     }
 
     .hero-content h1 {
-        font-size: 1.65rem !important;
-        line-height: 1.25 !important;
+        font-size: 1.85rem !important; /* Aumentato */
+        line-height: 1.3 !important;
         text-align: center !important;
         width: 100% !important;
         margin: 0 auto 15px auto !important;
@@ -167,10 +169,10 @@
     }
 
     .hero-content .subtitle {
-        font-size: 0.95rem !important;
-        line-height: 1.4 !important;
+        font-size: 1.1rem !important; /* Aumentato */
+        line-height: 1.5 !important;
         text-align: center !important;
-        margin: 0 auto 20px auto !important;
+        margin: 0 auto 22px auto !important;
     }
 
     a.btn-cta {
@@ -178,54 +180,64 @@
         align-items: center !important;
         justify-content: center !important;
         width: 100% !important;
-        max-width: 320px !important;
-        padding: 12px 15px !important;
-        font-size: 0.85rem !important;
+        max-width: 340px !important;
+        padding: 14px 18px !important;
+        font-size: 0.95rem !important; /* Aumentato */
+        font-weight: 700 !important;
         text-align: center !important;
         border-radius: 30px !important;
         margin: 0 auto !important;
+        line-height: 1.3 !important;
     }
 
-    /* 4. FIX SERVIZI E VANTAGGI (Incolonnamento Singolo 100% Larghezza) */
+    /* 4. SEZIONI, CARD & VANTAGGI (Font Maggiorati e Contenuto Centrato) */
+    .servizi h2, .perche-tempestivo h2, .zone-coperte h2, .processo h2 {
+        font-size: 1.75rem !important;
+        line-height: 1.3 !important;
+        text-align: center !important;
+        margin-bottom: 20px !important;
+    }
+
     .servizi-grid, .vantaggi-grid {
         display: flex !important;
         flex-direction: column !important;
         grid-template-columns: 1fr !important;
         width: 100% !important;
-        gap: 20px !important;
-        padding: 0 10px !important;
+        gap: 22px !important;
+        padding: 0 8px !important;
     }
 
     .card-servizio, .vantaggio {
         width: 100% !important;
         max-width: 100% !important;
         margin: 0 0 15px 0 !important;
-        padding: 20px 15px !important;
+        padding: 22px 18px !important;
         box-sizing: border-box !important;
     }
 
     .card-servizio h3, .vantaggio h3 {
-        font-size: 1.25rem !important;
-        line-height: 1.3 !important;
-        margin-bottom: 10px !important;
+        font-size: 1.35rem !important; /* Titoli card ben evidenti */
+        line-height: 1.35 !important;
+        margin-bottom: 12px !important;
         hyphens: none !important;
         word-break: normal !important;
     }
 
     .card-servizio p, .vantaggio p {
-        font-size: 0.95rem !important;
-        line-height: 1.4 !important;
+        font-size: 1.05rem !important; /* Testo del corpo molto più leggibile */
+        line-height: 1.5 !important;
     }
 
     .card-servizio ul {
         padding-left: 20px !important;
-        margin-top: 10px !important;
+        margin-top: 12px !important;
         text-align: left !important;
     }
 
     .card-servizio li {
-        font-size: 0.9rem !important;
-        margin-bottom: 5px !important;
+        font-size: 1rem !important; /* Liste servizi aumentate */
+        line-height: 1.4 !important;
+        margin-bottom: 8px !important;
     }
 
     /* 5. TIMELINE / PROCESSO (.step-number) */
@@ -233,7 +245,7 @@
         display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
-        gap: 20px !important;
+        gap: 24px !important;
     }
 
     .step {
@@ -242,30 +254,41 @@
         align-items: center !important;
         text-align: center !important;
         width: 100% !important;
+        padding: 0 10px !important;
+    }
+
+    .step h3 {
+        font-size: 1.25rem !important;
+        margin-bottom: 6px !important;
+    }
+
+    .step p {
+        font-size: 1.05rem !important;
+        line-height: 1.4 !important;
     }
 
     .step-number {
-        width: 44px !important;
-        height: 44px !important;
-        min-width: 44px !important;
-        min-height: 44px !important;
-        max-width: 44px !important;
-        max-height: 44px !important;
+        width: 48px !important;
+        height: 48px !important;
+        min-width: 48px !important;
+        min-height: 48px !important;
+        max-width: 48px !important;
+        max-height: 48px !important;
         border-radius: 50% !important;
         background-color: #ff4d4d !important;
         color: #ffffff !important;
         display: flex !important;
         align-items: center !important;
         justify-content: center !important;
-        margin: 0 auto 10px auto !important;
+        margin: 0 auto 12px auto !important;
         font-weight: bold !important;
-        font-size: 1.1rem !important;
+        font-size: 1.25rem !important;
         flex-shrink: 0 !important;
     }
 
-    /* 6. FOOTER CENTRATO */
+    /* 6. FOOTER CENTRATO E ACCESSIBILE */
     footer {
-        padding: 30px 15px 20px 15px !important;
+        padding: 35px 15px 25px 15px !important;
         text-align: center !important;
     }
 
@@ -274,7 +297,7 @@
         flex-direction: column !important;
         align-items: center !important;
         justify-content: center !important;
-        gap: 25px !important;
+        gap: 28px !important;
         text-align: center !important;
     }
 
@@ -284,10 +307,14 @@
         margin: 0 auto !important;
     }
 
-    footer p, footer li, footer h4 {
-        text-align: center !important;
-        margin-left: auto !important;
-        margin-right: auto !important;
+    footer h4 {
+        font-size: 1.25rem !important;
+        margin-bottom: 12px !important;
+    }
+
+    footer p {
+        font-size: 1rem !important;
+        line-height: 1.5 !important;
     }
 
     footer ul {
@@ -297,11 +324,12 @@
         display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
-        gap: 6px !important;
+        gap: 8px !important;
     }
 
     footer a {
         display: inline-block !important;
         text-align: center !important;
+        font-size: 1.05rem !important;
     }
 }
