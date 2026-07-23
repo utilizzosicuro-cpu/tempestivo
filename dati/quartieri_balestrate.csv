@@ -1,0 +1,9 @@
+slug,nome,descrizione_unica,caratteristica,vincoli
+centro-storico,Centro Storico Balestrate,"Il cuore di Balestrate con Piazza Marconi, la Torre storica e i vicoli caratteristici del centro","Architettura mediterranea e centro commerciale naturale","Vincolo paesaggistico della Soprintendenza per edifici storici"
+balestrate-mare,Balestrate Mare,"Zona costiera con la spiaggia sabbiosa, il lungomare e le attività balneari, meta turistica estiva","Zona balneare turistica con spiaggia","Vincoli costieri, piano regolatore balneare, stagionalità turistica"
+piano-torre,Piano Torre,"Zona panoramica con vista sul Golfo di Carini e sull'antica Torre di Balestrate","Zona residenziale panoramica","Vincoli paesaggistici per la posizione collinare"
+zona-residenziale,Zona Residenziale,"Quartiere residenziale moderno con villette e appartamenti, zona tranquilla vicino al centro","Zona residenziale moderna","Regolamento edilizio comunale, vincoli condominiali"
+zona-commerciale,Zona Commerciale,"Area con attività commerciali, negozi e servizi lungo Via Roma e la SS113","Zona commerciale e di transito","Normative commerciali, vincoli attività produttive"
+contrada-san-cataldo,Contrada San Cataldo,"Zona agricola e residenziale nell'entroterra di Balestrate, con case rurali e uliveti","Zona agricola-residenziale","Vincoli agricoli e paesaggistici"
+contrada-purgatorio,Contrada Purgatorio,"Frazione interna collinare con tradizione agricola e residenze sparse","Zona agricola collinare","Vincoli agricoli e paesaggistici"
+zona-industriale,Zona Industriale,"Area artigianale e industriale con attività produttive e depositi","Zona industriale e artigianale","Normative industriali, vincoli ambientali"

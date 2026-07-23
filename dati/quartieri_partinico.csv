@@ -1,0 +1,9 @@
+slug,nome,descrizione_unica,caratteristica,vincoli
+centro-storico,Centro Storico Partinico,"Il cuore di Partinico con Piazza Duomo, la Chiesa Madre e i vicoli caratteristici del centro storico","Architettura mediterranea e centro commerciale naturale","Vincolo paesaggistico della Soprintendenza per edifici storici"
+san-giuseppe,San Giuseppe,"Quartiere residenziale con villette e appartamenti, zona tranquilla vicino al centro","Zona residenziale di pregio","Regolamento edilizio comunale, vincoli condominiali"
+crocevia,Crocevia,"Zona commerciale e di transito con attività commerciali, negozi e servizi lungo la SS113","Zona commerciale e di transito","Normative commerciali, vincoli attività produttive"
+san-cataldo,San Cataldo,"Quartiere residenziale popolare con condomini e appartamenti, zona servita","Quartiere residenziale popolare","Regolamento edilizio comunale"
+partinico-mare,Partinico Mare,"Frazione costiera con attività balneari e residenze, vicina al mare","Zona balneare residenziale","Vincoli costieri, piano regolatore balneare"
+contrada-capofonte,Contrada Capofonte,"Zona agricola e vitivinicola nell'entroterra di Partinico, con case rurali e vigneti DOC","Zona agricola-vitivinicola","Vincoli agricoli e paesaggistici, tutela vigneti DOC"
+contrada-trabbia,Contrada Trabbia,"Frazione interna collinare con tradizione agricola e residenze sparse","Zona agricola collinare","Vincoli agricoli e paesaggistici"
+zona-industriale,Zona Industriale PIA,"Area artigianale e industriale PIA con attività produttive, depositi e officine","Zona industriale e artigianale","Normative industriali, vincoli ambientali PIA"

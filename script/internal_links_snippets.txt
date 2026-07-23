@@ -1,0 +1,112 @@
+=== SNIPPET DA INCOLLARE NELLE LANDING PAGE DI OGNI COMUNE ===
+
+--- Palermo ---
+
+<div style="background: var(--grigio-chiaro); padding: 20px; border-radius: 10px; text-align: center; margin: 40px 0;">
+    <p style="font-size: 1.1rem; font-weight: 600; color: var(--blu-notte); margin-bottom: 10px;">
+        ⭐ <a href="recensioni-palermo.html" style="color: var(--rosso); text-decoration: none;">Leggi le 127 recensioni verificate dei nostri clienti a Palermo</a>
+    </p>
+    <p style="font-size: 0.9rem; color: var(--grigio-scuro);">Scopri perché siamo l'impresa edile e di impianti più recensita della zona.</p>
+</div>
+
+
+--- Castellammare del Golfo ---
+
+<div style="background: var(--grigio-chiaro); padding: 20px; border-radius: 10px; text-align: center; margin: 40px 0;">
+    <p style="font-size: 1.1rem; font-weight: 600; color: var(--blu-notte); margin-bottom: 10px;">
+        ⭐ <a href="recensioni-castellammare.html" style="color: var(--rosso); text-decoration: none;">Leggi le 127 recensioni verificate dei nostri clienti a Castellammare del Golfo</a>
+    </p>
+    <p style="font-size: 0.9rem; color: var(--grigio-scuro);">Scopri perché siamo l'impresa edile e di impianti più recensita della zona.</p>
+</div>
+
+
+--- Alcamo ---
+
+<div style="background: var(--grigio-chiaro); padding: 20px; border-radius: 10px; text-align: center; margin: 40px 0;">
+    <p style="font-size: 1.1rem; font-weight: 600; color: var(--blu-notte); margin-bottom: 10px;">
+        ⭐ <a href="recensioni-alcamo.html" style="color: var(--rosso); text-decoration: none;">Leggi le 127 recensioni verificate dei nostri clienti a Alcamo</a>
+    </p>
+    <p style="font-size: 0.9rem; color: var(--grigio-scuro);">Scopri perché siamo l'impresa edile e di impianti più recensita della zona.</p>
+</div>
+
+
+--- Terrasini ---
+
+<div style="background: var(--grigio-chiaro); padding: 20px; border-radius: 10px; text-align: center; margin: 40px 0;">
+    <p style="font-size: 1.1rem; font-weight: 600; color: var(--blu-notte); margin-bottom: 10px;">
+        ⭐ <a href="recensioni-terrasini.html" style="color: var(--rosso); text-decoration: none;">Leggi le 127 recensioni verificate dei nostri clienti a Terrasini</a>
+    </p>
+    <p style="font-size: 0.9rem; color: var(--grigio-scuro);">Scopri perché siamo l'impresa edile e di impianti più recensita della zona.</p>
+</div>
+
+
+--- Cinisi ---
+
+<div style="background: var(--grigio-chiaro); padding: 20px; border-radius: 10px; text-align: center; margin: 40px 0;">
+    <p style="font-size: 1.1rem; font-weight: 600; color: var(--blu-notte); margin-bottom: 10px;">
+        ⭐ <a href="recensioni-cinisi.html" style="color: var(--rosso); text-decoration: none;">Leggi le 127 recensioni verificate dei nostri clienti a Cinisi</a>
+    </p>
+    <p style="font-size: 0.9rem; color: var(--grigio-scuro);">Scopri perché siamo l'impresa edile e di impianti più recensita della zona.</p>
+</div>
+
+
+--- Balestrate ---
+
+<div style="background: var(--grigio-chiaro); padding: 20px; border-radius: 10px; text-align: center; margin: 40px 0;">
+    <p style="font-size: 1.1rem; font-weight: 600; color: var(--blu-notte); margin-bottom: 10px;">
+        ⭐ <a href="recensioni-balestrate.html" style="color: var(--rosso); text-decoration: none;">Leggi le 127 recensioni verificate dei nostri clienti a Balestrate</a>
+    </p>
+    <p style="font-size: 0.9rem; color: var(--grigio-scuro);">Scopri perché siamo l'impresa edile e di impianti più recensita della zona.</p>
+</div>
+
+
+--- Partinico ---
+
+<div style="background: var(--grigio-chiaro); padding: 20px; border-radius: 10px; text-align: center; margin: 40px 0;">
+    <p style="font-size: 1.1rem; font-weight: 600; color: var(--blu-notte); margin-bottom: 10px;">
+        ⭐ <a href="recensioni-partinico.html" style="color: var(--rosso); text-decoration: none;">Leggi le 127 recensioni verificate dei nostri clienti a Partinico</a>
+    </p>
+    <p style="font-size: 0.9rem; color: var(--grigio-scuro);">Scopri perché siamo l'impresa edile e di impianti più recensita della zona.</p>
+</div>
+
+
+--- Monreale ---
+
+<div style="background: var(--grigio-chiaro); padding: 20px; border-radius: 10px; text-align: center; margin: 40px 0;">
+    <p style="font-size: 1.1rem; font-weight: 600; color: var(--blu-notte); margin-bottom: 10px;">
+        ⭐ <a href="recensioni-monreale.html" style="color: var(--rosso); text-decoration: none;">Leggi le 127 recensioni verificate dei nostri clienti a Monreale</a>
+    </p>
+    <p style="font-size: 0.9rem; color: var(--grigio-scuro);">Scopri perché siamo l'impresa edile e di impianti più recensita della zona.</p>
+</div>
+
+
+--- Trappeto ---
+
+<div style="background: var(--grigio-chiaro); padding: 20px; border-radius: 10px; text-align: center; margin: 40px 0;">
+    <p style="font-size: 1.1rem; font-weight: 600; color: var(--blu-notte); margin-bottom: 10px;">
+        ⭐ <a href="recensioni-trappeto.html" style="color: var(--rosso); text-decoration: none;">Leggi le 127 recensioni verificate dei nostri clienti a Trappeto</a>
+    </p>
+    <p style="font-size: 0.9rem; color: var(--grigio-scuro);">Scopri perché siamo l'impresa edile e di impianti più recensita della zona.</p>
+</div>
+
+
+--- Isola delle Femmine ---
+
+<div style="background: var(--grigio-chiaro); padding: 20px; border-radius: 10px; text-align: center; margin: 40px 0;">
+    <p style="font-size: 1.1rem; font-weight: 600; color: var(--blu-notte); margin-bottom: 10px;">
+        ⭐ <a href="recensioni-isola-delle-femmine.html" style="color: var(--rosso); text-decoration: none;">Leggi le 127 recensioni verificate dei nostri clienti a Isola delle Femmine</a>
+    </p>
+    <p style="font-size: 0.9rem; color: var(--grigio-scuro);">Scopri perché siamo l'impresa edile e di impianti più recensita della zona.</p>
+</div>
+
+
+--- Carini ---
+
+<div style="background: var(--grigio-chiaro); padding: 20px; border-radius: 10px; text-align: center; margin: 40px 0;">
+    <p style="font-size: 1.1rem; font-weight: 600; color: var(--blu-notte); margin-bottom: 10px;">
+        ⭐ <a href="recensioni-carini.html" style="color: var(--rosso); text-decoration: none;">Leggi le 127 recensioni verificate dei nostri clienti a Carini</a>
+    </p>
+    <p style="font-size: 0.9rem; color: var(--grigio-scuro);">Scopri perché siamo l'impresa edile e di impianti più recensita della zona.</p>
+</div>
+
+

@@ -1,0 +1,231 @@
+{
+  "introduzioni": {
+    "centro-storico": [
+      "Cerchi un'impresa affidabile per ristrutturare il tuo immobile nel Centro Storico (Il Borgo) di Trappeto? Conosciamo perfettamente le esigenze delle case tradizionali vicine al mare.",
+      "Ristrutturare nel borgo di Trappeto significa rispettare il fascino dell'architettura mediterranea. Il nostro team è specializzato in interventi che uniscono comfort moderno e rispetto del contesto.",
+      "Operiamo nel Centro Storico di Trappeto trasformando vecchi appartamenti in spazi luminosi e funzionali, mantenendo intatto il carattere del borgo marinaro."
+    ],
+    "lungomare": [
+      "A Trappeto Lungomare, trasformiamo B&B, case vacanza e residenze estive in spazi moderni e confortevoli, ideali per massimizzare il rendimento turistico.",
+      "Ristrutturazioni su misura sul Lungomare di Trappeto: gestiamo ogni aspetto del cantiere con la massima cura, ottimizzando gli spazi per il massimo comfort estivo.",
+      "Il nostro team conosce bene le esigenze delle proprietà fronte mare a Trappeto, garantendo interventi rapidi e puliti, perfetti per chi deve aprire la stagione balneare senza ritardi."
+    ],
+    "zona-commerciale": [
+      "Nella Zona Commerciale SS113 di Trappeto, offriamo interventi rapidi e professionali per negozi, uffici e abitazioni, ottimizzando gli spazi con la massima efficienza.",
+      "A Zona Commerciale, gli spazi necessitano spesso di adeguamenti impiantistici rapidi per mantenere la continuità operativa. Noi sappiamo gestire ogni aspetto senza fermare la tua attività.",
+      "Partner di riferimento per attività commerciali a Trappeto, con interventi rapidi che rispettano i tempi concordati e le normative di sicurezza."
+    ],
+    "zona-residenziale": [
+      "Operiamo nella Zona Residenziale di Trappeto con soluzioni su misura per villette e condomini, gestendo ogni aspetto del cantiere con la massima cura.",
+      "Nella zona di espansione residenziale, la logistica del cantiere richiede attenzione per non disturbare la quiete del quartiere. Pianifichiamo gli interventi per minimizzare il disagio.",
+      "Esperienza pluriennale nella Zona Residenziale di Trappeto: conosciamo le criticità degli immobili moderni e le soluzioni migliori per valorizzarli."
+    ],
+    "contrada-fiume": [
+      "Nella zona di Contrada Fiume, offriamo interventi per case rurali e strutture agricole, con particolare attenzione ai vincoli paesaggistici dell'entroterra trappetese.",
+      "A Contrada Fiume, trasformiamo case rurali in spazi moderni e funzionali, rispettando il contesto agricolo e le normative locali.",
+      "Il nostro team conosce bene le esigenze delle proprietà a Contrada Fiume, garantendo interventi rapidi anche in zone con accesso limitato."
+    ],
+    "contrada-castelluzzo": [
+      "Nella zona collinare di Contrada Castelluzzo, offriamo interventi per abitazioni isolate e strutture rurali, con un focus sulla qualità e sulle tempistiche certe.",
+      "A Contrada Castelluzzo, il nostro team è specializzato in ristrutturazioni per abitazioni di campagna, garantendo risultati impeccabili anche in zone di difficile accesso.",
+      "Operiamo a Contrada Castelluzzo con soluzioni su misura per ogni esigenza: dall'adeguamento impiantistico alla completa ristrutturazione di case rurali."
+    ],
+    "default": [
+      "Cerchi un'impresa di ristrutturazioni seria e affidabile a Trappeto? Tempestivo è la soluzione che stavi cercando.",
+      "Ristrutturare casa a Trappeto non è mai stato così semplice. Con Tempestivo hai un unico referente per tutto il cantiere.",
+      "Dal sopralluogo alla consegna delle chiavi: gestiamo ogni fase della tua ristrutturazione a Trappeto con professionalità, trasparenza e tempi certi."
+    ]
+  },
+  "problemi": {
+    "centro-storico": [
+      "Gli immobili nel Centro Storico di Trappeto presentano spesso impianti obsoleti e problemi di umidità di risalita. Il nostro team è specializzato in consolidamenti rispettosi.",
+      "Nel borgo di Trappeto, la logistica del cantiere è complessa: vicoli stretti, parcheggi limitati e orari ristretti. Noi sappiamo gestire ogni aspetto senza intasare la zona.",
+      "L'umidità di risalita nei muri perimetrali è una costante nel centro storico. Applichiamo tecnologie innovative per l'isolamento senza alterare l'estetica storica."
+    ],
+    "lungomare": [
+      "Le case sul Lungomare di Trappeto soffrono spesso di umidità da salsedine a causa della vicinanza al mare. Utilizziamo prodotti specifici anti-salsedine per garantire durata nel tempo.",
+      "A Trappeto Lungomare, la vicinanza al mare accelera il degrado di intonaci e infissi. Utilizziamo materiali ad alta resistenza per garantire durata nel tempo.",
+      "L'umidità e la salsedine sono le problematiche principali degli immobili fronte mare. Abbiamo sviluppato protocolli specifici per proteggere la tua casa o il tuo B&B."
+    ],
+    "zona-commerciale": [
+      "Nella Zona Commerciale SS113, gli spazi commerciali necessitano spesso di adeguamenti impiantistici rapidi per mantenere la continuità operativa.",
+      "A Zona Commerciale, la gestione del cantiere deve essere rapida e non invasiva per non compromettere le attività commerciali o la vita quotidiana dei residenti.",
+      "Le problematiche principali a Zona Commerciale riguardano l'adeguamento degli impianti alle normative vigenti e l'ottimizzazione degli spazi esistenti."
+    ],
+    "zona-residenziale": [
+      "Nella Zona Residenziale di Trappeto, gli immobili necessitano di interventi che rispettino le caratteristiche architettoniche originali, integrando tecnologie moderne.",
+      "Nella zona di espansione, la logistica del cantiere richiede attenzione per non disturbare la quiete del quartiere. Pianifichiamo gli orari con cura.",
+      "Le problematiche principali nella Zona Residenziale riguardano l'adeguamento degli impianti alle normative vigenti e l'ottimizzazione degli spazi esistenti."
+    ],
+    "contrada-fiume": [
+      "Nella zona di Contrada Fiume, le case rurali presentano spesso problemi strutturali legati all'età e ai vincoli paesaggistici. Il nostro team è specializzato in interventi di recupero rispettosi.",
+      "A Contrada Fiume, la logistica del cantiere può essere complessa per le strade strette e l'accesso limitato. Pianifichiamo gli interventi con cura.",
+      "Le problematiche principali a Contrada Fiume riguardano il recupero delle strutture rurali nel rispetto dei vincoli agricoli e paesaggistici."
+    ],
+    "contrada-castelluzzo": [
+      "Nella zona collinare di Contrada Castelluzzo, le case isolate presentano spesso problemi di isolamento termico e umidità. Utilizziamo soluzioni specifiche per il comfort abitativo.",
+      "A Contrada Castelluzzo, la logistica del cantiere può essere complessa per le strade collinari e l'accesso limitato. Pianifichiamo gli interventi con cura.",
+      "Le problematiche principali a Contrada Castelluzzo riguardano l'efficientamento energetico e l'adeguamento degli impianti in zone di difficile accesso."
+    ],
+    "default": [
+      "Ogni immobile a Trappeto ha le sue criticità: umidità, impianti obsoleti, spazi mal distribuiti. Il nostro sopralluogo tecnico identifica tutte le problematiche.",
+      "Le ristrutturazioni a Trappeto presentano sfide specifiche legate al clima marino, alla tipologia costruttiva e alle normative locali. Noi le conosciamo tutte.",
+      "Prima di iniziare qualsiasi lavoro, effettuiamo un'analisi approfondita dello stato dell'immobile per prevenire sorprese in corso d'opera e garantire un preventivo trasparente."
+    ]
+  },
+  "soluzioni": {
+    "ristrutturazioni-trappeto": [
+      "Ristrutturazioni complete chiavi in mano a Trappeto: dal progetto al collaudo, coordiniamo tutte le maestranze per consegnare il tuo immobile pronto all'uso.",
+      "Gestiamo l'intero processo di ristrutturazione: progetto, permessi, demolizioni, impianti, finiture. Tu pensi solo a scegliere i materiali, noi al resto.",
+      "Ristrutturare casa senza stress a Trappeto: coordiniamo tutte le maestranze, rispettiamo le tempistiche contrattualizzate e garantiamo il risultato pattuito."
+    ],
+    "impianti-elettrici-trappeto": [
+      "Realizziamo e certifichiamo nuovi impianti elettrici a norma DM 37/08, con quadri moderni e automazioni, garantendo sicurezza e efficienza energetica.",
+      "Dalla diagnosi al collaudo: aggiorniamo il tuo impianto elettrico con materiali di prima qualità, frutti e placche moderne, e rilascio immediato della certificazione.",
+      "Impianti elettrici sicuri e a norma: gestiamo tutto noi, dal passaggio dei cavi all'installazione di sistemi di allarme o domotica, con minimo disagio per te."
+    ],
+    "impianti-idraulici-trappeto": [
+      "Riparazione perdite, rifacimento completo di bagni e cucine, installazione di autoclavi e pompe: risolviamo ogni problema idraulico con rapidità e precisione.",
+      "Rifacimento impianti idraulici a Trappeto: utilizziamo tubazioni ad alta resistenza, valvole di qualità e garantiamo collaudi in pressione per la tua tranquillità.",
+      "Dal rifacimento degli scarichi all'installazione di nuovi sanitari: il nostro team idraulico interviene in modo pulito, rapido e con garanzia sui materiali."
+    ],
+    "pronto-intervento-trappeto": [
+      "Intervento rapido H24 per emergenze elettriche e idrauliche a Trappeto. Tecnici qualificati pronti a risolvere corto circuiti, perdite e allagamenti in tempi record.",
+      "Non lasciare che un'emergenza blocchi la tua giornata o la tua stagione turistica. Il nostro team arriva rapidamente per mettere in sicurezza l'impianto.",
+      "Pronto intervento professionale a Trappeto: diagnosi immediata, riparazione d'urgenza e preventivo chiaro per eventuali lavori definitivi."
+    ],
+    "default": [
+      "Offriamo soluzioni personalizzate per ogni esigenza: sopralluogo gratuito, preventivo dettagliato e cantiere gestito da professionisti qualificati della zona.",
+      "Il nostro approccio: ascolto delle esigenze, progetto su misura, esecuzione impeccabile e assistenza post-lavoro. Qualità garantita a Trappeto.",
+      "Ogni intervento è unico come la tua casa: studiamo la soluzione migliore per te, con materiali certificati e maestranze esperte del territorio."
+    ]
+  },
+  "trust_signals": {
+    "centro-storico": [
+      "Oltre 50 interventi completati nel Centro Storico di Trappeto, tutti approvati dagli enti preposti. Conosciamo le procedure e le tempistiche.",
+      "Collaboriamo con i migliori tecnici della zona per interventi nel rispetto del patrimonio storico del borgo marinaro.",
+      "Il 90% dei nostri clienti nel Centro Storico ci ha scelto per passaparola. La qualità e il rispetto delle regole parlano da sé."
+    ],
+    "lungomare": [
+      "Il 90% dei nostri clienti sul Lungomare di Trappeto ci ha scelto per passaparola. Garantiamo interventi puliti e rispettosi delle zone residenziali e turistiche.",
+      "Specialisti nella protezione degli immobili dalla salsedine a Trappeto: utilizziamo solo materiali certificati ad alta resistenza.",
+      "Oltre 40 B&B e case ristrutturate sul Lungomare negli ultimi 5 anni. Chiedi di vedere le nostre referenze nella zona."
+    ],
+    "zona-commerciale": [
+      "Partner di riferimento per attività commerciali a Trappeto, con interventi rapidi che non fermano la tua operatività.",
+      "Il nostro team ha completato cantieri in tutti i principali locali commerciali di Zona SS113. Referenze verificabili.",
+      "Specialisti in efficientamento energetico e adeguamento impianti a Zona Commerciale: risultati misurabili e detrazioni fiscali garantite."
+    ],
+    "zona-residenziale": [
+      "Esperienza pluriennale nella Zona Residenziale di Trappeto: gestiamo cantieri complessi con professionisti qualificati, rispettando sempre le tempistiche concordate.",
+      "Oltre 60 ristrutturazioni completate nella zona di espansione, tutte nei tempi previsti e nel budget concordato.",
+      "Collaboriamo con amministratori di condominio e proprietari di ville a Trappeto per interventi rapidi e rispettosi delle regole."
+    ],
+    "contrada-fiume": [
+      "Specialisti nel recupero di case rurali a Contrada Fiume: oltre 25 interventi completati con successo nel rispetto dei vincoli paesaggistici.",
+      "Conosciamo ogni edificio della zona: abbiamo lavorato in Contrada Fiume e aree limitrofe per anni.",
+      "Il nostro team include esperti in ristrutturazioni rurali per interventi nel rispetto del contesto agricolo di Trappeto."
+    ],
+    "contrada-castelluzzo": [
+      "Oltre 20 interventi completati a Contrada Castelluzzo, tutti nei tempi previsti e nel rispetto dei vincoli collinari.",
+      "Specialisti in ristrutturazioni in zone di difficile accesso: il nostro team è attrezzato per operare anche a Contrada Castelluzzo.",
+      "Il 90% dei nostri clienti a Contrada Castelluzzo ci ha scelto per passaparola. La qualità parla da sé."
+    ],
+    "default": [
+      "Oltre 500 cantieri completati tra Palermo e Trapani. La nostra reputazione è il nostro miglior biglietto da visita.",
+      "Il 95% dei nostri clienti ci raccomanda ad amici e parenti. La soddisfazione e la trasparenza sono la nostra priorità.",
+      "Garanzia 10 anni su tutti gli impianti installati e assicurazione RC professionale per la tua massima tranquillità."
+    ]
+  },
+  "sintesi": {
+    "ristrutturazioni-trappeto": [
+      "✓ Project Manager unico per tutto il cantiere",
+      "✓ Tempi certi contrattualizzati",
+      "✓ Pratiche edilizie e detrazioni gestite da noi",
+      "✓ Garanzia 10 anni su impianti strutturali"
+    ],
+    "impianti-elettrici-trappeto": [
+      "✓ Progettazione e realizzazione a norma DM 37/08",
+      "✓ Materiali certificati e di prima qualità",
+      "✓ Collaudo e certificazione di conformità inclusi",
+      "✓ Assistenza post-intervento garantita"
+    ],
+    "impianti-idraulici-trappeto": [
+      "✓ Diagnosi rapida e preventiva dei guasti",
+      "✓ Tubazioni e materiali ad alta resistenza",
+      "✓ Installazione autoclavi e pompe professionali",
+      "✓ Pulizia finale e smaltimento macerie incluso"
+    ],
+    "pronto-intervento-trappeto": [
+      "✓ Reperibilità H24 per emergenze",
+      "✓ Tecnici qualificati e attrezzati",
+      "✓ Intervento rapido entro poche ore",
+      "✓ Preventivo chiaro prima di iniziare"
+    ],
+    "default": [
+      "✓ Sopralluogo gratuito entro 24/48h",
+      "✓ Preventivo dettagliato e trasparente",
+      "✓ Tempi certi contrattualizzati",
+      "✓ Garanzia su tutti i lavori eseguiti"
+    ]
+  },
+  "cta": [
+    "Richiedi un sopralluogo gratuito a Trappeto. Ti contatteremo entro 24 ore.",
+    "Chiama ora per un preventivo personalizzato. Rispondiamo subito.",
+    "Compila il form: ti invieremo un preventivo dettagliato entro 48 ore.",
+    "Prenota un sopralluogo gratuito: un nostro tecnico verrà da te senza costi nascosti.",
+    "Contattaci per una consulenza gratuita: ti spiegheremo come procedere passo dopo passo."
+  ],
+  "faq": {
+    "ristrutturazioni-trappeto": [
+      {
+        "q": "Quanto tempo serve per ristrutturare un appartamento a Trappeto?",
+        "a": "I tempi variano in base alla metratura, ma garantiamo tempi certi contrattualizzati. Una ristrutturazione completa si completa in 45-90 giorni."
+      },
+      {
+        "q": "Vi occupate anche delle pratiche edilizie e delle detrazioni?",
+        "a": "Sì, il nostro team di tecnici interni gestisce tutte le pratiche (CILA, SCIA) e le comunicazioni all'Agenzia delle Entrate per le detrazioni fiscali."
+      }
+    ],
+    "impianti-elettrici-trappeto": [
+      {
+        "q": "Rilasciate la certificazione DM 37/08?",
+        "a": "Assolutamente sì. Ogni nostro intervento elettrico è collaudato e certificato a norma di legge, con rilascio immediato della dichiarazione di conformità."
+      },
+      {
+        "q": "Posso richiedere l'installazione di un impianto di allarme o domotica?",
+        "a": "Certamente. Integriamo sistemi di automazione, allarme e domotica direttamente nel nuovo impianto elettrico, su misura per le tue esigenze."
+      }
+    ],
+    "impianti-idraulici-trappeto": [
+      {
+        "q": "Quanto costa rifare completamente un bagno?",
+        "a": "Il costo dipende dalle dimensioni e dai materiali scelti, ma i nostri preventivi sono trasparenti e partono da soluzioni competitive chiavi in mano."
+      },
+      {
+        "q": "Intervenite anche per la sostituzione di autoclavi e pompe?",
+        "a": "Sì, siamo specializzati nell'installazione e manutenzione di autoclavi e pompe per garantire la giusta pressione dell'acqua, soprattutto utile in estate a Trappeto."
+      }
+    ],
+    "pronto-intervento-trappeto": [
+      {
+        "q": "Quanto tempo impiegate ad arrivare per un'emergenza?",
+        "a": "Per le emergenze H24 a Trappeto, i nostri tecnici sono organizzati per intervenire nel minor tempo possibile, solitamente entro poche ore."
+      },
+      {
+        "q": "Il sopralluogo per l'emergenza è a pagamento?",
+        "a": "Il sopralluogo per diagnosticare il problema ha un costo simbolico, che viene poi completamente detratto dal preventivo finale se decidi di procedere con la riparazione."
+      }
+    ],
+    "default": [
+      {
+        "q": "Il sopralluogo è davvero gratuito?",
+        "a": "Sì, 100% gratuito e senza impegno. Veniamo da te, valutiamo la situazione e ti forniamo un preventivo dettagliato."
+      },
+      {
+        "q": "Lavorate anche nei festivi?",
+        "a": "Per le emergenze di pronto intervento siamo disponibili H24, festivi inclusi. Per le ristrutturazioni programmate, siamo disponibili dal lunedì al sabato."
+      }
+    ]
+  }
+}

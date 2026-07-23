@@ -1,0 +1,26 @@
+{
+  "generale": {
+    "landing-ristrutturazioni.html": {
+      "titolo": "Costi e Pratiche Edilizie",
+      "testo": "..."
+    },
+    "mappa-zone.html": {
+      "titolo": "Copertura Territoriale",
+      "testo": "..."
+    },
+    "soluzioni-business-palermo-trapani.html": {
+      "titolo": "Manutenzioni B2B",
+      "testo": "..."
+    }
+  },
+  "modelli_automatici": {
+    "servizi-": {
+      "titolo": "Assistenza Tecnica in zona",
+      "testo": "Il nostro servizio di pronto intervento e ristrutturazione a {citta} garantisce rapidità e tecnici certificati."
+    },
+    "ristrutturazioni-": {
+      "titolo": "Ristrutturazioni e Design",
+      "testo": "Interventi di ristrutturazione chiavi in mano con gestione burocratica inclusa."
+    }
+  }
+}
