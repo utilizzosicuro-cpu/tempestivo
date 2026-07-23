@@ -1,9 +1,9 @@
 /* ==========================================
-   MOBILE FIXES v9 - Clean & Safe Reset
+   MOBILE FIXES v10 - Final Single Column & UI Fix
    ========================================== */
 
 @media (max-width: 768px) {
-    /* 1. Blocco scroll orizzontale senza spezzare il layout */
+    /* 1. Reset base anti-overflow */
     html, body {
         max-width: 100% !important;
         overflow-x: hidden !important;
@@ -13,9 +13,9 @@
         box-sizing: border-box !important;
     }
 
-    /* 2. RIPRISTINO HEADER (Niente più trasparenze o elementi sovrapposti) */
+    /* 2. HEADER E NAVBAR */
     header, .header, .site-header, nav {
-        position: relative !important; /* Impedisce all'header di coprire il testo sotto */
+        position: relative !important;
         top: auto !important;
         left: auto !important;
         display: flex !important;
@@ -23,18 +23,15 @@
         align-items: center !important;
         justify-content: center !important;
         width: 100% !important;
-        height: auto !important;
         padding: 15px 10px !important;
-        background-color: #0d2140 !important; /* Colore blu pieno dello sfondo */
+        background-color: #0d2140 !important;
         z-index: 99 !important;
     }
 
-    /* Ripristino posizionamento normale degli elementi dell'header */
     header *, nav * {
         position: static !important;
     }
 
-    /* Logo dell'Header */
     header img, nav img, .logo img {
         max-height: 40px !important;
         width: auto !important;
@@ -42,12 +39,11 @@
         display: block !important;
     }
 
-    /* Menu di navigazione centrale */
-    header ul, nav ul, .nav-links {
+    header ul, nav ul {
         display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
-        gap: 12px !important;
+        gap: 10px !important;
         margin: 10px 0 !important;
         padding: 0 !important;
         list-style: none !important;
@@ -56,55 +52,65 @@
     header a, nav a {
         font-size: 0.9rem !important;
         font-weight: bold !important;
-        text-decoration: none !important;
         color: #ffffff !important;
-    }
-
-    /* Pulsante Rosso del Telefono */
-    header a[href^="tel:"], header .btn, header [class*="phone"] {
-        display: inline-flex !important;
-        align-items: center !important;
-        justify-content: center !important;
-        margin-top: 10px !important;
-        padding: 10px 20px !important;
-        background-color: #e52e2e !important;
-        color: #ffffff !important;
-        border-radius: 6px !important;
-        font-weight: bold !important;
         text-decoration: none !important;
     }
 
-    /* 3. FIX CARD INCOLONNATE (Processo, Velocità, Hub) */
-    /* Forza la griglia e i contenitori di card a scendere in verticale */
-    .process-grid, .steps-container, .reviews-grid, .vantaggi-grid,
-    [class*="process"], [class*="steps"] {
+    /* 3. FORZA TUTTE LE CARD IN COLONNA UNICA (Processo, Servizi, Vantaggi) */
+    /* Resetta qualsiasi griglia CSS o Flexbox con colonne affiancate */
+    main div, section div, .container div,
+    [class*="grid"], [class*="cards"], [class*="steps"], [class*="services"], [class*="process"], [class*="row"] {
         display: flex !important;
         flex-direction: column !important;
-        align-items: center !important;
+        grid-template-columns: 1fr !important;
         width: 100% !important;
         gap: 20px !important;
     }
 
-    /* Rendiamo le card flessibili a larghezza intera */
-    .step-card, .process-card, .card, [class*="step"], [class*="card"] {
+    /* Forza ogni singola card ad occupare il 100% della larghezza */
+    main div > *, section div > *,
+    [class*="card"], [class*="step"], [class*="service"], [class*="col"], .card, .step-card {
         width: 100% !important;
         max-width: 100% !important;
-        margin: 0 0 10px 0 !important;
+        flex: 1 1 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
     }
 
-    /* Mantiene i cerchietti con i numeri (1, 2, 3) perfettamente tondi */
+    /* Mantiene tondi i badge con i numeri 1, 2, 3... */
     [class*="number"], [class*="badge"], .step-num, .number-badge {
-        width: 40px !important;
-        height: 40px !important;
+        width: 42px !important;
+        height: 42px !important;
+        min-width: 42px !important;
+        min-height: 42px !important;
         border-radius: 50% !important;
         display: flex !important;
         align-items: center !important;
         justify-content: center !important;
-        margin: 0 auto 10px auto !important;
+        margin: 0 auto 12px auto !important;
         flex-shrink: 0 !important;
     }
 
-    /* 4. RIPRISTINO FOOTER */
+    /* 4. FIX PULSANTE ROSSO (CTA Hero) */
+    a.btn, .btn, button, [class*="cta"] a, [class*="btn-"] {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: auto !important;
+        max-width: 100% !important;
+        height: auto !important;
+        min-height: 48px !important;
+        padding: 12px 20px !important;
+        margin: 15px auto !important;
+        font-size: 0.85rem !important;
+        line-height: 1.3 !important;
+        text-align: center !important;
+        white-space: normal !important;
+        word-break: break-word !important;
+        border-radius: 8px !important;
+    }
+
+    /* 5. FOOTER FIX */
     footer, .footer, [class*="footer"] {
         position: relative !important;
         display: flex !important;
@@ -119,25 +125,14 @@
     footer img {
         max-height: 40px !important;
         width: auto !important;
-        margin-bottom: 15px !important;
+        margin: 0 auto 15px auto !important;
     }
 
     footer [class*="grid"], footer [class*="row"] {
         display: flex !important;
         flex-direction: column !important;
+        align-items: center !important;
         gap: 15px !important;
         width: 100% !important;
-    }
-
-    /* 5. IMMAGINI E TESTI GENERALI */
-    img, video, iframe {
-        max-width: 100% !important;
-        height: auto !important;
-    }
-
-    .container, section, main {
-        max-width: 100% !important;
-        padding-left: 15px !important;
-        padding-right: 15px !important;
     }
 }
