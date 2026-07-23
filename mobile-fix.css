@@ -1,5 +1,5 @@
 /* ==========================================
-   MOBILE FIXES v12 - Logo Circle & Layout Fix
+   MOBILE FIXES v13 - Compact Vertical Spacing
    ========================================== */
 
 @media (max-width: 768px) {
@@ -13,7 +13,7 @@
         box-sizing: border-box !important;
     }
 
-    /* 2. HEADER & NAVBAR */
+    /* 2. HEADER E NAVBAR COMPATTA E CENTRATA */
     header, .header, .site-header, nav, [class*="header"], [class*="nav"] {
         position: relative !important;
         top: auto !important;
@@ -22,9 +22,10 @@
         flex-direction: column !important;
         align-items: center !important;
         justify-content: center !important;
+        text-align: center !important;
         width: 100% !important;
         height: auto !important;
-        padding: 15px 10px !important;
+        padding: 10px 10px !important; /* Ridotto il padding dell'header */
         background-color: #0d2140 !important;
         z-index: 99 !important;
     }
@@ -38,67 +39,80 @@
         margin: 0 auto !important;
     }
 
-    /* FIX LOGO HEADER & FOOTER: Icona tonda + Testo Sotto */
+    /* LOGO HEADER & FOOTER: Centrato e compatto */
     .logo, [class*="logo"], header a:first-child, footer a:first-child {
         display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
         justify-content: center !important;
         text-align: center !important;
-        width: auto !important;
-        margin: 0 auto 10px auto !important;
+        width: 100% !important;
+        margin: 0 auto 4px auto !important; /* Margin inferiore ridotto */
         text-decoration: none !important;
     }
 
-    /* Blocca la deformazione dell'icona del logo (Cerchio perfetto) */
+    /* Cerchio Logo perfetto */
     .logo img, [class*="logo"] img, header img, footer img,
     .logo [class*="icon"], .logo span, .logo div {
-        width: 48px !important;
-        height: 48px !important;
-        max-width: 48px !important;
-        max-height: 48px !important;
-        min-width: 48px !important;
-        min-height: 48px !important;
+        width: 44px !important;
+        height: 44px !important;
+        max-width: 44px !important;
+        max-height: 44px !important;
+        min-width: 44px !important;
+        min-height: 44px !important;
         border-radius: 50% !important;
         object-fit: contain !important;
-        margin: 0 auto 6px auto !important;
+        margin: 0 auto 2px auto !important; /* Ridotto spazio sotto l'icona */
         display: block !important;
     }
 
-    /* Testo TEMPESTIVO sotto l'icona */
+    /* Testo del Logo Centrato */
     .logo span, .logo h1, .logo h2, .logo p, [class*="logo-text"] {
-        width: auto !important;
+        width: 100% !important;
         display: block !important;
         text-align: center !important;
         margin: 0 !important;
     }
 
-    /* Menu di navigazione */
+    /* Menu di navigazione compatto */
     header ul, nav ul {
         display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
-        gap: 10px !important;
-        margin: 10px 0 !important;
+        justify-content: center !important;
+        gap: 4px !important; /* Spazio verticale tra le voci del menu minimizzato */
+        margin: 6px 0 !important; /* Margin del menu ridotto */
         padding: 0 !important;
         list-style: none !important;
+        width: 100% !important;
+    }
+
+    header li, nav li {
+        width: 100% !important;
+        text-align: center !important;
+        margin: 0 !important;
+        padding: 2px 0 !important;
     }
 
     header a, nav a {
-        font-size: 0.95rem !important;
+        font-size: 0.9rem !important;
         font-weight: bold !important;
         color: #ffffff !important;
         text-decoration: none !important;
+        display: inline-block !important;
+        text-align: center !important;
     }
 
     /* Pulsante Telefono Header */
     header a[href^="tel:"], header [class*="btn"] {
         display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
         width: auto !important;
         max-width: 90% !important;
         white-space: nowrap !important;
-        padding: 10px 24px !important;
-        margin-top: 8px !important;
+        padding: 8px 18px !important;
+        margin: 6px auto 0 auto !important; /* Margin superiore ridotto */
         background-color: #e52e2e !important;
         color: #ffffff !important;
         border-radius: 6px !important;
@@ -106,7 +120,7 @@
         text-align: center !important;
     }
 
-    /* 3. CARD & CONTENUTI CORPO PAGINA */
+    /* 3. CARD & CONTENUTI CORPO PAGINA (Incolonnati) */
     main div, section div, .container div,
     [class*="grid"], [class*="cards"], [class*="steps"], [class*="services"], [class*="process"] {
         display: flex !important;
@@ -125,7 +139,7 @@
         margin-right: 0 !important;
     }
 
-    /* Pallini con numeri 1, 2, 3 tondi */
+    /* Pallini con numeri tondi */
     [class*="number"], [class*="badge"], .step-num, .number-badge {
         width: 42px !important;
         height: 42px !important;
@@ -158,14 +172,15 @@
         border-radius: 8px !important;
     }
 
-    /* 4. FOOTER */
+    /* 4. FOOTER COMPATTO E CENTRATO */
     footer, .footer, [class*="footer"] {
         position: relative !important;
         display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
+        justify-content: center !important;
         text-align: center !important;
-        padding: 30px 15px !important;
+        padding: 20px 15px !important;
         background-color: #0d2140 !important;
         width: 100% !important;
     }
@@ -175,8 +190,9 @@
         flex-direction: column !important;
         align-items: center !important;
         justify-content: center !important;
+        text-align: center !important;
         width: 100% !important;
-        gap: 15px !important;
+        gap: 10px !important; /* Ridotto il gap tra sezioni del footer */
         margin: 0 auto !important;
     }
 
@@ -186,6 +202,11 @@
         list-style: none !important;
         display: flex !important;
         flex-direction: column !important;
-        gap: 8px !important;
+        align-items: center !important;
+        gap: 4px !important; /* Ridotto lo spazio tra i link del footer */
+    }
+
+    footer li {
+        text-align: center !important;
     }
 }
