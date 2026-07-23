@@ -1,5 +1,5 @@
 /* ==========================================
-   MOBILE FIXES v18 - Enhanced Typography & Accessibility
+   MOBILE FIXES v19 - Enhanced Fonts & Full Vertical Layout
    ========================================== */
 
 @media (max-width: 768px) {
@@ -92,7 +92,6 @@
         line-height: 1.25 !important;
     }
 
-    /* Titolo Logo Maggiorato */
     .logo-text span:first-child {
         font-size: 1.4rem !important;
         font-weight: 800 !important;
@@ -100,7 +99,6 @@
         letter-spacing: 0.5px !important;
     }
 
-    /* Sottotitolo Logo Maggiorato */
     .logo-text span:last-child {
         font-size: 0.85rem !important;
         color: rgba(255, 255, 255, 0.8) !important;
@@ -121,7 +119,7 @@
     }
 
     a.nav-link {
-        font-size: 1.05rem !important; /* Aumentato */
+        font-size: 1.05rem !important;
         font-weight: 700 !important;
         color: #ffffff !important;
         text-decoration: none !important;
@@ -149,7 +147,7 @@
         border-radius: 6px !important;
         text-decoration: none !important;
         font-weight: bold !important;
-        font-size: 1.15rem !important; /* Aumentato per maggiore leggibilità */
+        font-size: 1.15rem !important;
         margin: 0 auto !important;
     }
 
@@ -159,7 +157,7 @@
     }
 
     .hero-content h1 {
-        font-size: 1.85rem !important; /* Aumentato */
+        font-size: 1.85rem !important;
         line-height: 1.3 !important;
         text-align: center !important;
         width: 100% !important;
@@ -169,7 +167,7 @@
     }
 
     .hero-content .subtitle {
-        font-size: 1.1rem !important; /* Aumentato */
+        font-size: 1.1rem !important;
         line-height: 1.5 !important;
         text-align: center !important;
         margin: 0 auto 22px auto !important;
@@ -182,7 +180,7 @@
         width: 100% !important;
         max-width: 340px !important;
         padding: 14px 18px !important;
-        font-size: 0.95rem !important; /* Aumentato */
+        font-size: 0.95rem !important;
         font-weight: 700 !important;
         text-align: center !important;
         border-radius: 30px !important;
@@ -190,7 +188,7 @@
         line-height: 1.3 !important;
     }
 
-    /* 4. SEZIONI, CARD & VANTAGGI (Font Maggiorati e Contenuto Centrato) */
+    /* 4. SERVIZI E VANTAGGI INCOLONNATI */
     .servizi h2, .perche-tempestivo h2, .zone-coperte h2, .processo h2 {
         font-size: 1.75rem !important;
         line-height: 1.3 !important;
@@ -216,7 +214,7 @@
     }
 
     .card-servizio h3, .vantaggio h3 {
-        font-size: 1.35rem !important; /* Titoli card ben evidenti */
+        font-size: 1.35rem !important;
         line-height: 1.35 !important;
         margin-bottom: 12px !important;
         hyphens: none !important;
@@ -224,7 +222,7 @@
     }
 
     .card-servizio p, .vantaggio p {
-        font-size: 1.05rem !important; /* Testo del corpo molto più leggibile */
+        font-size: 1.05rem !important;
         line-height: 1.5 !important;
     }
 
@@ -235,12 +233,40 @@
     }
 
     .card-servizio li {
-        font-size: 1rem !important; /* Liste servizi aumentate */
+        font-size: 1rem !important;
         line-height: 1.4 !important;
         margin-bottom: 8px !important;
     }
 
-    /* 5. TIMELINE / PROCESSO (.step-number) */
+    /* 5. ZONE SERVITE INCOLONNATE PERFETTAMENTE */
+    .zone-coperte {
+        padding: 30px 15px !important;
+    }
+
+    .zone-grid {
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100% !important;
+        gap: 12px !important;
+        padding: 0 !important;
+        margin: 20px auto 0 auto !important;
+    }
+
+    a.zone-pill, .zone-pill {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 14px 20px !important;
+        font-size: 1.1rem !important;
+        font-weight: 700 !important;
+        text-align: center !important;
+        box-sizing: border-box !important;
+        margin: 0 !important;
+    }
+
+    /* 6. TIMELINE / PROCESSO (.step-number) */
     .timeline {
         display: flex !important;
         flex-direction: column !important;
@@ -286,7 +312,7 @@
         flex-shrink: 0 !important;
     }
 
-    /* 6. FOOTER CENTRATO E ACCESSIBILE */
+    /* 7. FOOTER CENTRATO E ACCESSIBILE */
     footer {
         padding: 35px 15px 25px 15px !important;
         text-align: center !important;
