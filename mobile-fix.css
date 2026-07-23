@@ -1,10 +1,10 @@
 /* ==========================================
-   MOBILE FIXES v4 - Tempestivo.it
-   Header responsive pulito + layout stabile
+   MOBILE FIXES v5 - Tempestivo.it
+   Header forzato a colonna + layout perfetto
    ========================================== */
 
 @media (max-width: 768px) {
-    /* 1. Reset generale per evitare tagli o scroll orizzontali */
+    /* 1. Reset generale per impedire scorrimenti */
     html, body {
         max-width: 100% !important;
         overflow-x: hidden !important;
@@ -14,63 +14,81 @@
         box-sizing: border-box !important;
     }
 
-    /* 2. OPTIMIZATION HEADER MOBILE */
-    /* Forza l'header ad andare in verticale per far stare tutto comodamente */
-    header, .header, .site-header, nav, .header-container {
+    /* 2. HEADER & NAVBAR FIX (FORZATURA A COLONNA) */
+    /* Qualsiasi contenitore dentro l'header viene incolonnato */
+    header, .header, nav, [class*="header"], [class*="nav"], [class*="navbar"] {
         display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
         justify-content: center !important;
         width: 100% !important;
-        padding: 15px 10px !important;
         height: auto !important;
-        gap: 12px !important; /* Spazio tra logo, menu e telefono */
+        padding: 12px 8px !important;
+        position: relative !important;
+        gap: 10px !important;
     }
 
-    /* Logo centrato in alto */
-    .logo, header img, .site-logo {
-        margin: 0 auto !important;
+    /* Annulla posizionamenti float o assoluti che schiacciano gli elementi a destra */
+    header *, nav *, [class*="header"] *, [class*="nav"] * {
+        position: static !important;
+        float: none !important;
+        right: auto !important;
+        left: auto !important;
+        top: auto !important;
+        bottom: auto !important;
+    }
+
+    /* Logo centrato */
+    header img, nav img, [class*="logo"] {
         max-height: 45px !important;
         width: auto !important;
+        margin: 0 auto !important;
+        display: block !important;
     }
 
-    /* Menu di navigazione orizzontale ben spaziato */
-    .nav-links, nav ul, header nav {
+    /* Menu di navigazione (CHI SIAMO, SERVIZI, ZONE) disposti in riga orizzontale al centro */
+    header ul, nav ul, [class*="menu"], [class*="links"] {
         display: flex !important;
         flex-direction: row !important;
         flex-wrap: wrap !important;
         justify-content: center !important;
         align-items: center !important;
-        gap: 15px !important;
-        margin: 5px 0 !important;
+        gap: 12px !important;
+        margin: 6px 0 !important;
         padding: 0 !important;
         width: 100% !important;
+        list-style: none !important;
     }
 
-    /* Link del menu (CHI SIAMO, SERVIZI, ZONE) */
-    header a, nav a, .nav-links a {
+    header li, nav li {
         display: inline-block !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    header a, nav a {
         font-size: 0.85rem !important;
         font-weight: bold !important;
         text-decoration: none !important;
         white-space: nowrap !important;
-        margin: 0 !important;
     }
 
-    /* Bottone Numero di Telefono in alto */
-    header [class*="btn"], header a[href^="tel:"], .header-phone {
+    /* Pulsante rosso del Telefono nell'Header */
+    header a[href^="tel:"], header [class*="phone"], header [class*="call"], header [class*="btn"] {
         display: inline-flex !important;
         align-items: center !important;
         justify-content: center !important;
         width: auto !important;
-        max-width: 100% !important;
-        margin: 5px auto 0 auto !important;
+        max-width: 90% !important;
+        margin: 4px auto !important;
         padding: 8px 16px !important;
         font-size: 0.9rem !important;
+        border-radius: 6px !important;
     }
 
-    /* 3. OPTIMIZATION PULSANTI E CTA */
-    .btn, a.btn, button, [class*="btn-"], [class*="button"] {
+    /* 3. FIX PULSANTE CENTRALE ROSSO (Mantiene la forma perfetta della v3) */
+    main .btn, main a.btn, section .btn, section a.btn, 
+    .cta-section a, [class*="hero"] a[class*="btn"], [class*="btn-"] {
         display: inline-flex !important;
         align-items: center !important;
         justify-content: center !important;
@@ -86,7 +104,7 @@
         white-space: normal !important;
     }
 
-    /* 4. CONTENITORI & TESTI */
+    /* 4. CONTENITORI GENERALI */
     .container, section, main {
         max-width: 100% !important;
         padding-left: 15px !important;
@@ -99,7 +117,6 @@
         margin-bottom: 15px !important;
     }
 
-    /* 5. MEDIA E GRIGLIE */
     img, video, iframe {
         max-width: 100% !important;
         height: auto !important;
