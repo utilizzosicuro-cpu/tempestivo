@@ -1,10 +1,10 @@
 /* ==========================================
-   MOBILE FIXES v7 - Tempestivo.it
-   Forzatura layout a colonna singola universale
+   MOBILE FIXES v8 - Tempestivo.it
+   Incolonnamento perfetto + Ripristino forme
    ========================================== */
 
 @media (max-width: 768px) {
-    /* 1. Reset generale */
+    /* 1. Reset e gestione viewport */
     html, body {
         max-width: 100% !important;
         overflow-x: hidden !important;
@@ -14,135 +14,134 @@
         box-sizing: border-box !important;
     }
 
-    /* 2. FORZA TUTTE LE GRIGLIE E I CONTENITORI FLEX IN COLONNA */
-    /* Qualsiasi elemento che usa flex o grid nell'area principale va in verticale */
-    main div, section div, .container div,
-    [class*="grid"], [class*="row"], [class*="steps"], [class*="process"],
-    [class*="cards"], [class*="wrapper"], [class*="flex"] {
+    /* 2. PROTEZIONE CERCHI / BADGE / ICONE (Impedisce l'effetto schiacciato) */
+    [class*="number"], [class*="badge"], [class*="circle"], [class*="step-number"], 
+    [class*="icon"], .step-num, .number-badge, span[class*="step"] {
+        width: 40px !important;
+        height: 40px !important;
+        max-width: 40px !important;
+        max-height: 40px !important;
+        border-radius: 50% !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        margin: 0 auto 10px auto !important;
+        flex-shrink: 0 !important;
+    }
+
+    /* 3. INCOLONNAMENTO CARD PROCESSO & CONTENITORI */
+    [class*="process"], [class*="steps"], [class*="cards"], 
+    .process-grid, .steps-container, .process-steps {
         display: flex !important;
         flex-direction: column !important;
-        grid-template-columns: 1fr !important;
+        align-items: center !important;
         width: 100% !important;
-        max-width: 100% !important;
-        min-width: 0 !important;
+        gap: 20px !important;
     }
 
-    /* Annulla larghezze fisse sulle singole card/box per farle occupare tutto lo schermo */
-    main div > *, section div > *,
-    [class*="card"], [class*="step"], [class*="item"], [class*="box"], [class*="col"] {
+    /* Card singole ben distanziate */
+    [class*="step-card"], [class*="process-card"], .step, .card {
         width: 100% !important;
         max-width: 100% !important;
-        flex: 1 1 100% !important;
-        margin-left: 0 !important;
-        margin-right: 0 !important;
+        margin: 0 !important;
+        padding: 20px 15px !important;
     }
 
-    /* 3. HEADER & NAVBAR FIX */
-    header, .header, nav, [class*="header"], [class*="nav"], [class*="navbar"] {
+    /* 4. HEADER & NAVBAR CLEAN */
+    header, .header, nav, [class*="header"], [class*="nav"] {
         display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
         justify-content: center !important;
         width: 100% !important;
         height: auto !important;
-        padding: 12px 8px !important;
-        position: relative !important;
-        gap: 10px !important;
+        padding: 15px 10px !important;
+        gap: 12px !important;
     }
 
-    header *, nav *, [class*="header"] *, [class*="nav"] * {
+    /* Annulla float e posizioni assolute distruttive */
+    header *, nav * {
         position: static !important;
         float: none !important;
-        right: auto !important;
-        left: auto !important;
-        top: auto !important;
-        bottom: auto !important;
     }
 
-    header img, nav img, [class*="logo"] {
-        max-height: 45px !important;
+    /* Immagini e Logo nell'Header mantenendo le proporzioni corrette */
+    header img, nav img, .logo img {
+        max-height: 40px !important;
         width: auto !important;
+        max-width: 80% !important;
+        height: auto !important;
         margin: 0 auto !important;
         display: block !important;
     }
 
-    header ul, nav ul, [class*="menu"], [class*="links"] {
+    /* Menu di navigazione */
+    header ul, nav ul {
         display: flex !important;
-        flex-direction: row !important;
-        flex-wrap: wrap !important;
-        justify-content: center !important;
+        flex-direction: column !important;
         align-items: center !important;
-        gap: 12px !important;
-        margin: 6px 0 !important;
+        gap: 10px !important;
+        margin: 5px 0 !important;
         padding: 0 !important;
-        width: 100% !important;
         list-style: none !important;
     }
 
-    header li, nav li {
-        display: inline-block !important;
-        margin: 0 !important;
-        padding: 0 !important;
-    }
-
     header a, nav a {
-        font-size: 0.85rem !important;
+        font-size: 0.9rem !important;
         font-weight: bold !important;
         text-decoration: none !important;
-        white-space: nowrap !important;
     }
 
-    header a[href^="tel:"], header [class*="phone"], header [class*="call"], header [class*="btn"] {
+    /* Pulsante telefono Header */
+    header a[href^="tel:"], header [class*="btn"] {
         display: inline-flex !important;
         align-items: center !important;
         justify-content: center !important;
-        width: auto !important;
-        max-width: 90% !important;
-        margin: 4px auto !important;
-        padding: 8px 16px !important;
+        padding: 8px 18px !important;
         font-size: 0.9rem !important;
         border-radius: 6px !important;
+        margin-top: 5px !important;
     }
 
-    /* 4. FIX PULSANTI */
-    main .btn, main a.btn, section .btn, section a.btn, 
-    .cta-section a, [class*="hero"] a[class*="btn"], [class*="btn-"] {
-        display: inline-flex !important;
+    /* 5. FIX FOOTER (Piedipagina) */
+    footer, .footer, [class*="footer"] {
+        display: flex !important;
+        flex-direction: column !important;
         align-items: center !important;
-        justify-content: center !important;
-        width: auto !important;
-        max-width: 95% !important;
-        min-height: 44px !important;
-        margin: 10px auto !important;
-        padding: 10px 18px !important;
-        border-radius: 8px !important;
-        font-size: 0.9rem !important;
-        line-height: 1.3 !important;
         text-align: center !important;
-        white-space: normal !important;
+        padding: 30px 15px !important;
+        gap: 20px !important;
     }
 
-    /* 5. CONTENITORI E TESTI */
+    footer img, .footer img {
+        max-height: 40px !important;
+        width: auto !important;
+        margin: 0 auto 10px auto !important;
+    }
+
+    footer [class*="grid"], footer [class*="row"], footer .container {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 20px !important;
+        width: 100% !important;
+    }
+
+    /* 6. GENERAL CONTAINER & BUTTONS */
     .container, section, main {
         max-width: 100% !important;
         padding-left: 15px !important;
         padding-right: 15px !important;
     }
 
-    h1 {
-        font-size: 1.7rem !important;
-        line-height: 1.25 !important;
-        margin-bottom: 15px !important;
-    }
-
-    img, video, iframe {
-        max-width: 100% !important;
-        height: auto !important;
-    }
-
-    .zones-list ul {
-        columns: 1 !important;
-        -webkit-columns: 1 !important;
-        -moz-columns: 1 !important;
+    .btn, a.btn, button, [class*="btn-"] {
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        max-width: 95% !important;
+        min-height: 44px !important;
+        padding: 10px 18px !important;
+        border-radius: 8px !important;
+        white-space: normal !important;
     }
 }
