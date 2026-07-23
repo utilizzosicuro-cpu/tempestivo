@@ -1,9 +1,10 @@
 /* ==========================================
-   MOBILE FIXES v3 - Tempestivo.it
+   MOBILE FIXES v4 - Tempestivo.it
+   Header responsive pulito + layout stabile
    ========================================== */
 
 @media (max-width: 768px) {
-    /* 1. Gestione viewport e reset larghezze */
+    /* 1. Reset generale per evitare tagli o scroll orizzontali */
     html, body {
         max-width: 100% !important;
         overflow-x: hidden !important;
@@ -13,40 +14,68 @@
         box-sizing: border-box !important;
     }
 
-    /* 2. FIX HEADER & MENU (Evita le sovrapposizioni in alto) */
-    header, .site-header, nav, .nav-links {
+    /* 2. OPTIMIZATION HEADER MOBILE */
+    /* Forza l'header ad andare in verticale per far stare tutto comodamente */
+    header, .header, .site-header, nav, .header-container {
         display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
         justify-content: center !important;
-        position: relative !important;
+        width: 100% !important;
+        padding: 15px 10px !important;
         height: auto !important;
-        padding: 10px 5px !important;
+        gap: 12px !important; /* Spazio tra logo, menu e telefono */
     }
 
-    /* Risolve il testo sovrapposto CHI SIAMO / SERVIZI / ZONE */
+    /* Logo centrato in alto */
+    .logo, header img, .site-logo {
+        margin: 0 auto !important;
+        max-height: 45px !important;
+        width: auto !important;
+    }
+
+    /* Menu di navigazione orizzontale ben spaziato */
+    .nav-links, nav ul, header nav {
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 15px !important;
+        margin: 5px 0 !important;
+        padding: 0 !important;
+        width: 100% !important;
+    }
+
+    /* Link del menu (CHI SIAMO, SERVIZI, ZONE) */
     header a, nav a, .nav-links a {
         display: inline-block !important;
-        margin: 4px 8px !important;
-        position: static !important;
+        font-size: 0.85rem !important;
+        font-weight: bold !important;
+        text-decoration: none !important;
         white-space: nowrap !important;
+        margin: 0 !important;
+    }
+
+    /* Bottone Numero di Telefono in alto */
+    header [class*="btn"], header a[href^="tel:"], .header-phone {
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: auto !important;
+        max-width: 100% !important;
+        margin: 5px auto 0 auto !important;
+        padding: 8px 16px !important;
         font-size: 0.9rem !important;
     }
 
-    /* Fix per il Logo / Icona in alto */
-    header img, .logo img {
-        max-height: 40px !important;
-        width: auto !important;
-        margin-bottom: 8px !important;
-    }
-
-    /* 3. FIX PULSANTI ROSSI (Evita che il testo vada a capo male o si spezzi) */
+    /* 3. OPTIMIZATION PULSANTI E CTA */
     .btn, a.btn, button, [class*="btn-"], [class*="button"] {
         display: inline-flex !important;
         align-items: center !important;
         justify-content: center !important;
         width: auto !important;
-        max-width: 90% !important;
+        max-width: 95% !important;
         min-height: 44px !important;
         margin: 10px auto !important;
         padding: 10px 18px !important;
@@ -54,31 +83,28 @@
         font-size: 0.9rem !important;
         line-height: 1.3 !important;
         text-align: center !important;
-        white-space: normal !important; /* Permette al testo del bottone di scorrere bene */
-        position: static !important;
+        white-space: normal !important;
     }
 
-    /* 4. FIX CONTENITORI & TESTI */
+    /* 4. CONTENITORI & TESTI */
     .container, section, main {
         max-width: 100% !important;
         padding-left: 15px !important;
         padding-right: 15px !important;
     }
 
-    /* Tipografia principale */
     h1 {
-        font-size: 1.75rem !important;
-        line-height: 1.2 !important;
+        font-size: 1.7rem !important;
+        line-height: 1.25 !important;
         margin-bottom: 15px !important;
     }
 
-    /* Immagini e media fluidi */
+    /* 5. MEDIA E GRIGLIE */
     img, video, iframe {
         max-width: 100% !important;
         height: auto !important;
     }
 
-    /* Liste a colonne (zone e recensioni) */
     .reviews-grid, .vantaggi-grid, .zones-list ul {
         display: flex !important;
         flex-direction: column !important;
