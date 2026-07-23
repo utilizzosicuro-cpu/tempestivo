@@ -1,19 +1,23 @@
 /* ==========================================
-   MOBILE FIXES v14 - Pixel Perfect Header & Footer
+   MOBILE FIXES v15 - Perfect Alignment & Text Wrap
    ========================================== */
 
 @media (max-width: 768px) {
-    /* 1. Reset base */
+    /* 1. Reset globale layout e overflow */
     html, body {
         max-width: 100% !important;
         overflow-x: hidden !important;
+        margin: 0 !important;
+        padding: 0 !important;
     }
 
     *, *::before, *::after {
         box-sizing: border-box !important;
+        word-wrap: break-word !important;
+        overflow-wrap: break-word !important;
     }
 
-    /* 2. HEADER E NAVBAR */
+    /* 2. HEADER & NAVBAR CENTRATA */
     header, .header, .site-header, nav, [class*="header"], [class*="nav"] {
         position: relative !important;
         top: auto !important;
@@ -30,60 +34,65 @@
         z-index: 99 !important;
     }
 
-    header div, nav div {
+    header div, nav div, header .container, nav .container {
         display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
         justify-content: center !important;
         width: 100% !important;
         margin: 0 auto !important;
+        padding: 0 !important;
     }
 
-    /* LOGO HEADER & FOOTER */
+    /* FIX ALLINEAMENTO LOGO + TESTO (Header & Footer) */
     .logo, [class*="logo"], header a:first-child, footer a:first-child {
         display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
         justify-content: center !important;
+        align-content: center !important;
         text-align: center !important;
         width: 100% !important;
-        margin: 0 auto 12px auto !important; /* Aumentato lo spazio per evitare sovrapposizioni al menu */
+        margin: 0 auto 10px auto !important;
+        padding: 0 !important;
         text-decoration: none !important;
     }
 
-    /* Cerchio Logo perfetto */
+    /* Cerchio rosso perfettamente al centro */
     .logo img, [class*="logo"] img, header img, footer img,
-    .logo [class*="icon"], .logo span, .logo div {
-        width: 44px !important;
-        height: 44px !important;
-        max-width: 44px !important;
-        max-height: 44px !important;
-        min-width: 44px !important;
-        min-height: 44px !important;
+    .logo [class*="icon"], .logo span:first-child, .logo div:first-child {
+        width: 46px !important;
+        height: 46px !important;
+        max-width: 46px !important;
+        max-height: 46px !important;
+        min-width: 46px !important;
+        min-height: 46px !important;
         border-radius: 50% !important;
         object-fit: contain !important;
-        margin: 0 auto 4px auto !important;
+        margin: 0 auto 6px auto !important;
         display: block !important;
+        float: none !important;
     }
 
-    /* Testi e payoff del Logo */
+    /* Testo TEMPESTIVO & Subtitle centrate al 100% */
     .logo span, .logo h1, .logo h2, .logo p, [class*="logo-text"], [class*="subtitle"], [class*="tagline"] {
         width: 100% !important;
         display: block !important;
         text-align: center !important;
-        margin: 0 !important;
+        margin: 0 auto !important;
         padding: 0 !important;
+        float: none !important;
         line-height: 1.2 !important;
     }
 
-    /* Menu di navigazione */
+    /* Menu di Navigazione */
     header ul, nav ul {
         display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
         justify-content: center !important;
         gap: 8px !important;
-        margin: 8px 0 !important;
+        margin: 10px 0 !important;
         padding: 0 !important;
         list-style: none !important;
         width: 100% !important;
@@ -96,11 +105,12 @@
     }
 
     header a, nav a {
-        font-size: 0.9rem !important;
+        font-size: 0.95rem !important;
         font-weight: bold !important;
         color: #ffffff !important;
         text-decoration: none !important;
         display: inline-block !important;
+        text-align: center !important;
     }
 
     /* Pulsante Telefono Header */
@@ -111,7 +121,7 @@
         width: auto !important;
         max-width: 90% !important;
         white-space: nowrap !important;
-        padding: 8px 20px !important;
+        padding: 10px 22px !important;
         margin: 8px auto 0 auto !important;
         background-color: #e52e2e !important;
         color: #ffffff !important;
@@ -120,7 +130,20 @@
         text-align: center !important;
     }
 
-    /* 3. CARD & CONTENUTI CORPO PAGINA */
+    /* 3. FIX TESTO TRONCATO HERO ("Ristrutturazione...") */
+    h1, .hero h1, [class*="title"], [class*="heading"] {
+        font-size: 1.75rem !important; /* Ridotto leggermente per far entrare le parole lunghe */
+        line-height: 1.25 !important;
+        text-align: center !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 0 10px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        hyphens: auto !important;
+    }
+
+    /* 4. CARD & CONTENUTI GENERALI */
     main div, section div, .container div,
     [class*="grid"], [class*="cards"], [class*="steps"], [class*="services"], [class*="process"] {
         display: flex !important;
@@ -139,21 +162,7 @@
         margin-right: 0 !important;
     }
 
-    /* Pallini con numeri tondi */
-    [class*="number"], [class*="badge"], .step-num, .number-badge {
-        width: 42px !important;
-        height: 42px !important;
-        min-width: 42px !important;
-        min-height: 42px !important;
-        border-radius: 50% !important;
-        display: flex !important;
-        align-items: center !important;
-        justify-content: center !important;
-        margin: 0 auto 12px auto !important;
-        flex-shrink: 0 !important;
-    }
-
-    /* Pulsante CTA Hero */
+    /* Pulsanti CTA generici */
     a.btn, .btn, button, [class*="cta"] a {
         display: flex !important;
         align-items: center !important;
@@ -172,7 +181,7 @@
         border-radius: 8px !important;
     }
 
-    /* 4. FOOTER & ALLINEAMENTO ICONE */
+    /* 5. FOOTER PERFECT ALIGNMENT */
     footer, .footer, [class*="footer"] {
         position: relative !important;
         display: flex !important;
@@ -196,12 +205,9 @@
         margin: 0 auto !important;
     }
 
-    /* Allinea le icone in linea col testo (es. email e SOS) */
     footer p, footer li, footer a {
-        display: inline-flex !important;
-        align-items: center !important;
+        text-align: center !important;
         justify-content: center !important;
-        gap: 6px !important;
     }
 
     footer ul {
