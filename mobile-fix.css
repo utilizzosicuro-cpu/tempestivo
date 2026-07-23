@@ -1,6 +1,6 @@
 /* ==========================================
-   MOBILE FIXES v6 - Tempestivo.it
-   Header responsive + Card processo in colonna
+   MOBILE FIXES v7 - Tempestivo.it
+   Forzatura layout a colonna singola universale
    ========================================== */
 
 @media (max-width: 768px) {
@@ -14,7 +14,30 @@
         box-sizing: border-box !important;
     }
 
-    /* 2. HEADER & NAVBAR FIX */
+    /* 2. FORZA TUTTE LE GRIGLIE E I CONTENITORI FLEX IN COLONNA */
+    /* Qualsiasi elemento che usa flex o grid nell'area principale va in verticale */
+    main div, section div, .container div,
+    [class*="grid"], [class*="row"], [class*="steps"], [class*="process"],
+    [class*="cards"], [class*="wrapper"], [class*="flex"] {
+        display: flex !important;
+        flex-direction: column !important;
+        grid-template-columns: 1fr !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+    }
+
+    /* Annulla larghezze fisse sulle singole card/box per farle occupare tutto lo schermo */
+    main div > *, section div > *,
+    [class*="card"], [class*="step"], [class*="item"], [class*="box"], [class*="col"] {
+        width: 100% !important;
+        max-width: 100% !important;
+        flex: 1 1 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    /* 3. HEADER & NAVBAR FIX */
     header, .header, nav, [class*="header"], [class*="nav"], [class*="navbar"] {
         display: flex !important;
         flex-direction: column !important;
@@ -81,24 +104,6 @@
         border-radius: 6px !important;
     }
 
-    /* 3. FIX CARD PROCESSO & GRIGLIE (Sistemazione dello screenshot) */
-    /* Forza qualsiasi contenitore di step/card a disporsi in verticale */
-    [class*="process"], [class*="steps"], [class*="cards"], 
-    .process-grid, .steps-container, .process-steps, .cards-container {
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: center !important;
-        width: 100% !important;
-        gap: 15px !important;
-    }
-
-    /* Le singole card (1, 2, 3...) prendono la larghezza del display */
-    [class*="step"], [class*="process-card"], [class*="card"] {
-        width: 100% !important;
-        max-width: 100% !important;
-        margin: 0 0 15px 0 !important;
-    }
-
     /* 4. FIX PULSANTI */
     main .btn, main a.btn, section .btn, section a.btn, 
     .cta-section a, [class*="hero"] a[class*="btn"], [class*="btn-"] {
@@ -117,7 +122,7 @@
         white-space: normal !important;
     }
 
-    /* 5. CONTENITORI GENERALI */
+    /* 5. CONTENITORI E TESTI */
     .container, section, main {
         max-width: 100% !important;
         padding-left: 15px !important;
@@ -135,11 +140,9 @@
         height: auto !important;
     }
 
-    .reviews-grid, .vantaggi-grid, .zones-list ul {
-        display: flex !important;
-        flex-direction: column !important;
-        grid-template-columns: 1fr !important;
+    .zones-list ul {
         columns: 1 !important;
-        width: 100% !important;
+        -webkit-columns: 1 !important;
+        -moz-columns: 1 !important;
     }
 }
