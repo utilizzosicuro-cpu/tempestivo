@@ -1,5 +1,5 @@
 /* ==========================================
-   MOBILE FIXES v10 - Final Single Column & UI Fix
+   MOBILE FIXES v11 - Fixed Header & Footer
    ========================================== */
 
 @media (max-width: 768px) {
@@ -13,8 +13,8 @@
         box-sizing: border-box !important;
     }
 
-    /* 2. HEADER E NAVBAR */
-    header, .header, .site-header, nav {
+    /* 2. HEADER E NAVBAR (Forzato in colonna singola pulita) */
+    header, .header, .site-header, nav, [class*="header"], [class*="nav"] {
         position: relative !important;
         top: auto !important;
         left: auto !important;
@@ -23,13 +23,21 @@
         align-items: center !important;
         justify-content: center !important;
         width: 100% !important;
+        height: auto !important;
         padding: 15px 10px !important;
         background-color: #0d2140 !important;
         z-index: 99 !important;
     }
 
-    header *, nav * {
-        position: static !important;
+    /* Annulla flex/float orizzontali interni all'header */
+    header div, nav div, header > *, nav > * {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 auto !important;
+        float: none !important;
     }
 
     header img, nav img, .logo img {
@@ -43,7 +51,7 @@
         display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
-        gap: 10px !important;
+        gap: 8px !important;
         margin: 10px 0 !important;
         padding: 0 !important;
         list-style: none !important;
@@ -56,10 +64,25 @@
         text-decoration: none !important;
     }
 
-    /* 3. FORZA TUTTE LE CARD IN COLONNA UNICA (Processo, Servizi, Vantaggi) */
-    /* Resetta qualsiasi griglia CSS o Flexbox con colonne affiancate */
+    /* Fix Pulsante Telefono Header (Evita che il testo vada in verticale) */
+    header a[href^="tel:"], header [class*="btn"], header button {
+        display: inline-flex !important;
+        width: auto !important;
+        max-width: 90% !important;
+        white-space: nowrap !important; /* Impedisce che il numero vada a capo lettera per lettera */
+        writing-mode: horizontal-tb !important;
+        padding: 10px 20px !important;
+        margin-top: 10px !important;
+        background-color: #e52e2e !important;
+        color: #ffffff !important;
+        border-radius: 6px !important;
+        font-weight: bold !important;
+        text-align: center !important;
+    }
+
+    /* 3. CARD & CONTENUTI CORPO PAGINA (Incolonnati) */
     main div, section div, .container div,
-    [class*="grid"], [class*="cards"], [class*="steps"], [class*="services"], [class*="process"], [class*="row"] {
+    [class*="grid"], [class*="cards"], [class*="steps"], [class*="services"], [class*="process"] {
         display: flex !important;
         flex-direction: column !important;
         grid-template-columns: 1fr !important;
@@ -67,9 +90,8 @@
         gap: 20px !important;
     }
 
-    /* Forza ogni singola card ad occupare il 100% della larghezza */
     main div > *, section div > *,
-    [class*="card"], [class*="step"], [class*="service"], [class*="col"], .card, .step-card {
+    [class*="card"], [class*="step"], [class*="service"], .card, .step-card {
         width: 100% !important;
         max-width: 100% !important;
         flex: 1 1 100% !important;
@@ -77,7 +99,7 @@
         margin-right: 0 !important;
     }
 
-    /* Mantiene tondi i badge con i numeri 1, 2, 3... */
+    /* Pallini con numeri tondi */
     [class*="number"], [class*="badge"], .step-num, .number-badge {
         width: 42px !important;
         height: 42px !important;
@@ -91,8 +113,8 @@
         flex-shrink: 0 !important;
     }
 
-    /* 4. FIX PULSANTE ROSSO (CTA Hero) */
-    a.btn, .btn, button, [class*="cta"] a, [class*="btn-"] {
+    /* Pulsante CTA Hero */
+    a.btn, .btn, button, [class*="cta"] a {
         display: flex !important;
         align-items: center !important;
         justify-content: center !important;
@@ -110,7 +132,7 @@
         border-radius: 8px !important;
     }
 
-    /* 5. FOOTER FIX */
+    /* 4. FOOTER (Perfettamente centrato e incolonato) */
     footer, .footer, [class*="footer"] {
         position: relative !important;
         display: flex !important;
@@ -122,17 +144,29 @@
         width: 100% !important;
     }
 
-    footer img {
-        max-height: 40px !important;
-        width: auto !important;
-        margin: 0 auto 15px auto !important;
-    }
-
-    footer [class*="grid"], footer [class*="row"] {
+    /* Forza tutte le sezioni e griglie interne del footer ad andare in colonna */
+    footer div, footer section, footer [class*="grid"], footer [class*="row"], footer .container {
         display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
-        gap: 15px !important;
+        justify-content: center !important;
         width: 100% !important;
+        gap: 20px !important;
+        margin: 0 auto !important;
+    }
+
+    footer img {
+        max-height: 40px !important;
+        width: auto !important;
+        margin: 0 auto 10px auto !important;
+    }
+
+    footer ul {
+        padding: 0 !important;
+        margin: 0 !important;
+        list-style: none !important;
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 8px !important;
     }
 }
