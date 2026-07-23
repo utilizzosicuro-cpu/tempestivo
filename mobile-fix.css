@@ -1,10 +1,10 @@
 /* ==========================================
-   MOBILE FIXES v5 - Tempestivo.it
-   Header forzato a colonna + layout perfetto
+   MOBILE FIXES v6 - Tempestivo.it
+   Header responsive + Card processo in colonna
    ========================================== */
 
 @media (max-width: 768px) {
-    /* 1. Reset generale per impedire scorrimenti */
+    /* 1. Reset generale */
     html, body {
         max-width: 100% !important;
         overflow-x: hidden !important;
@@ -14,8 +14,7 @@
         box-sizing: border-box !important;
     }
 
-    /* 2. HEADER & NAVBAR FIX (FORZATURA A COLONNA) */
-    /* Qualsiasi contenitore dentro l'header viene incolonnato */
+    /* 2. HEADER & NAVBAR FIX */
     header, .header, nav, [class*="header"], [class*="nav"], [class*="navbar"] {
         display: flex !important;
         flex-direction: column !important;
@@ -28,7 +27,6 @@
         gap: 10px !important;
     }
 
-    /* Annulla posizionamenti float o assoluti che schiacciano gli elementi a destra */
     header *, nav *, [class*="header"] *, [class*="nav"] * {
         position: static !important;
         float: none !important;
@@ -38,7 +36,6 @@
         bottom: auto !important;
     }
 
-    /* Logo centrato */
     header img, nav img, [class*="logo"] {
         max-height: 45px !important;
         width: auto !important;
@@ -46,7 +43,6 @@
         display: block !important;
     }
 
-    /* Menu di navigazione (CHI SIAMO, SERVIZI, ZONE) disposti in riga orizzontale al centro */
     header ul, nav ul, [class*="menu"], [class*="links"] {
         display: flex !important;
         flex-direction: row !important;
@@ -73,7 +69,6 @@
         white-space: nowrap !important;
     }
 
-    /* Pulsante rosso del Telefono nell'Header */
     header a[href^="tel:"], header [class*="phone"], header [class*="call"], header [class*="btn"] {
         display: inline-flex !important;
         align-items: center !important;
@@ -86,7 +81,25 @@
         border-radius: 6px !important;
     }
 
-    /* 3. FIX PULSANTE CENTRALE ROSSO (Mantiene la forma perfetta della v3) */
+    /* 3. FIX CARD PROCESSO & GRIGLIE (Sistemazione dello screenshot) */
+    /* Forza qualsiasi contenitore di step/card a disporsi in verticale */
+    [class*="process"], [class*="steps"], [class*="cards"], 
+    .process-grid, .steps-container, .process-steps, .cards-container {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        width: 100% !important;
+        gap: 15px !important;
+    }
+
+    /* Le singole card (1, 2, 3...) prendono la larghezza del display */
+    [class*="step"], [class*="process-card"], [class*="card"] {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 0 15px 0 !important;
+    }
+
+    /* 4. FIX PULSANTI */
     main .btn, main a.btn, section .btn, section a.btn, 
     .cta-section a, [class*="hero"] a[class*="btn"], [class*="btn-"] {
         display: inline-flex !important;
@@ -104,7 +117,7 @@
         white-space: normal !important;
     }
 
-    /* 4. CONTENITORI GENERALI */
+    /* 5. CONTENITORI GENERALI */
     .container, section, main {
         max-width: 100% !important;
         padding-left: 15px !important;
