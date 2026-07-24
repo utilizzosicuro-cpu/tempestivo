@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://tempestivo.it/sitemap.xml
+Sitemap: https://tempestivo.it/sitemap-index.xml
+Sitemap: https://tempestivo.it/sitemap_root.xml
