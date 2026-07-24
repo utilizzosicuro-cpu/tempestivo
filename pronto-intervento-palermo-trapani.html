@@ -37,148 +37,224 @@
 <link href="style.css" rel="stylesheet"/>
 <!-- SCHEMA.ORG AVANZATO PER AI OVERVIEWS -->
 <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
-      "@graph": [
+      "@type": [
+        "HomeAndConstructionBusiness",
+        "ProfessionalService"
+      ],
+      "@id": "https://tempestivo.it/#business",
+      "name": "Tempestivo Pronto Intervento",
+      "description": "Servizio di pronto intervento H24 per emergenze idrauliche, elettriche e di climatizzazione a Palermo, Trapani e provincia.",
+      "url": "https://tempestivo.it/pronto-intervento-palermo-trapani.html",
+      "telephone": "+393520258583",
+      "priceRange": "€€",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "areaServed": [
         {
-          "@type": ["HomeAndConstructionBusiness", "ProfessionalService"],
-          "@id": "https://tempestivo.it/#business",
-          "name": "Tempestivo Pronto Intervento",
-          "description": "Servizio di pronto intervento H24 per emergenze idrauliche, elettriche e di climatizzazione a Palermo, Trapani e provincia.",
-          "url": "https://tempestivo.it/pronto-intervento-palermo-trapani.html",
-          "telephone": "+393520258583",
-          "priceRange": "€€",
-          "openingHoursSpecification": {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-            "opens": "00:00",
-            "closes": "23:59"
-          },
-          "areaServed": [
-            {"@type": "City", "name": "Palermo"},
-            {"@type": "City", "name": "Trapani"},
-            {"@type": "City", "name": "Monreale"},
-            {"@type": "City", "name": "Partinico"},
-            {"@type": "City", "name": "Alcamo"},
-            {"@type": "City", "name": "Castellammare del Golfo"},
-            {"@type": "City", "name": "Carini"},
-            {"@type": "City", "name": "Terrasini"},
-            {"@type": "City", "name": "Cinisi"},
-            {"@type": "City", "name": "Trappeto"},
-            {"@type": "City", "name": "Balestrate"},
-            {"@type": "City", "name": "Isola delle Femmine"}
-          ]
+          "@type": "City",
+          "name": "Palermo"
         },
         {
-          "@type": "Service",
-          "name": "Pronto Intervento Idraulico ed Elettrico H24",
-          "provider": {"@id": "https://tempestivo.it/#business"},
-          "areaServed": {"@type": "State", "name": "Sicilia"},
-          "description": "Riparazione urgente di perdite d'acqua, corto circuiti, blackout e guasti alle caldaie con arrivo in 60-90 minuti."
+          "@type": "City",
+          "name": "Trapani"
         },
         {
-          "@type": "HowTo",
-          "name": "Come funziona il Pronto Intervento Tempestivo",
-          "description": "4 semplici passaggi per risolvere la tua emergenza in tempi record.",
-          "step": [
-            {
-              "@type": "HowToStep",
-              "position": 1,
-              "name": "Chiama il Numero H24",
-              "text": "Contatta il 3520258583. Un operatore ti risponderà immediatamente per valutare l'urgenza."
-            },
-            {
-              "@type": "HowToStep",
-              "position": 2,
-              "name": "Dispatch del Tecnico",
-              "text": "Inviamo il tecnico specializzato (idraulico o elettricista) più vicino alla tua zona in 60-90 minuti."
-            },
-            {
-              "@type": "HowToStep",
-              "position": 3,
-              "name": "Diagnosi e Preventivo",
-              "text": "Il tecnico valuta il guasto e ti comunica un preventivo chiaro e bloccato prima di iniziare i lavori."
-            },
-            {
-              "@type": "HowToStep",
-              "position": 4,
-              "name": "Risoluzione e Certificazione",
-              "text": "Riparazione immediata del guasto e rilascio della documentazione o certificazione di conformità se richiesta."
-            }
-          ]
+          "@type": "City",
+          "name": "Monreale"
         },
         {
-          "@type": "FAQPage",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "Quanto costa un pronto intervento idraulico o elettrico?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Il costo della chiamata H24 è trasparente e viene comunicato al telefono. Il preventivo per la riparazione viene fornito dal tecnico in loco prima di qualsiasi lavoro, senza sorprese."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Intervenite anche di notte, nei festivi e nel weekend?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Sì, il nostro servizio di pronto intervento è attivo 24 ore su 24, 7 giorni su 7, inclusi tutti i giorni festivi."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Quali zone coprite esattamente?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Copriamo Palermo e Trapani città, e tutti i comuni limitrofi: Monreale, Partinico, Alcamo, Castellammare del Golfo, Carini, Terrasini, Cinisi, Trappeto, Balestrate e Isola delle Femmine."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "I vostri tecnici sono certificati?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Assolutamente sì. Tutti i nostri tecnici sono abilitati e rilasciano regolare certificazione di conformità (DM 37/08) per gli interventi sugli impianti."
-              }
-            }
-          ]
+          "@type": "City",
+          "name": "Partinico"
         },
         {
-          "@type": "BreadcrumbList",
-          "itemListElement": [
-            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://tempestivo.it/"},
-            {"@type": "ListItem", "position": 2, "name": "Pronto Intervento H24", "item": "https://tempestivo.it/pronto-intervento-palermo-trapani.html"}
-          ]
+          "@type": "City",
+          "name": "Alcamo"
+        },
+        {
+          "@type": "City",
+          "name": "Castellammare del Golfo"
+        },
+        {
+          "@type": "City",
+          "name": "Carini"
+        },
+        {
+          "@type": "City",
+          "name": "Terrasini"
+        },
+        {
+          "@type": "City",
+          "name": "Cinisi"
+        },
+        {
+          "@type": "City",
+          "name": "Trappeto"
+        },
+        {
+          "@type": "City",
+          "name": "Balestrate"
+        },
+        {
+          "@type": "City",
+          "name": "Isola delle Femmine"
+        }
+      ],
+      "image": "https://tempestivo.it/logo.png",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Contrada Incastrone snc",
+        "postalCode": "90047",
+        "addressLocality": "Partinico",
+        "addressRegion": "PA",
+        "addressCountry": "IT"
+      }
+    },
+    {
+      "@type": "Service",
+      "name": "Pronto Intervento Idraulico ed Elettrico H24",
+      "provider": {
+        "@id": "https://tempestivo.it/#business"
+      },
+      "areaServed": {
+        "@type": "State",
+        "name": "Sicilia"
+      },
+      "description": "Riparazione urgente di perdite d'acqua, corto circuiti, blackout e guasti alle caldaie con arrivo in 60-90 minuti."
+    },
+    {
+      "@type": "HowTo",
+      "name": "Come funziona il Pronto Intervento Tempestivo",
+      "description": "4 semplici passaggi per risolvere la tua emergenza in tempi record.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Chiama il Numero H24",
+          "text": "Contatta il 3520258583. Un operatore ti risponderà immediatamente per valutare l'urgenza."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Dispatch del Tecnico",
+          "text": "Inviamo il tecnico specializzato (idraulico o elettricista) più vicino alla tua zona in 60-90 minuti."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Diagnosi e Preventivo",
+          "text": "Il tecnico valuta il guasto e ti comunica un preventivo chiaro e bloccato prima di iniziare i lavori."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "Risoluzione e Certificazione",
+          "text": "Riparazione immediata del guasto e rilascio della documentazione o certificazione di conformità se richiesta."
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Quanto costa un pronto intervento idraulico o elettrico?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Il costo della chiamata H24 è trasparente e viene comunicato al telefono. Il preventivo per la riparazione viene fornito dal tecnico in loco prima di qualsiasi lavoro, senza sorprese."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Intervenite anche di notte, nei festivi e nel weekend?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sì, il nostro servizio di pronto intervento è attivo 24 ore su 24, 7 giorni su 7, inclusi tutti i giorni festivi."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quali zone coprite esattamente?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Copriamo Palermo e Trapani città, e tutti i comuni limitrofi: Monreale, Partinico, Alcamo, Castellammare del Golfo, Carini, Terrasini, Cinisi, Trappeto, Balestrate e Isola delle Femmine."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "I vostri tecnici sono certificati?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Assolutamente sì. Tutti i nostri tecnici sono abilitati e rilasciano regolare certificazione di conformità (DM 37/08) per gli interventi sugli impianti."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://tempestivo.it/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Pronto Intervento H24",
+          "item": "https://tempestivo.it/pronto-intervento-palermo-trapani.html"
         }
       ]
     }
-    </script>
+  ]
+}
+</script>
 <!-- Schema.org Organization -->
 <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Tempestivo",
-      "alternateName": "Tempestivo Ristrutturazioni e Pronto Intervento",
-      "url": "https://tempestivo.it",
-      "logo": "https://tempestivo.it/assets/logo.png",
-      "description": "Divisione di Officina Creativa dedicata al General Contracting, ristrutturazioni chiavi in mano e pronto intervento H24 in Sicilia Occidentale.",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Palermo",
-        "addressRegion": "PA",
-        "addressCountry": "IT"
-      },
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+393520258583",
-        "contactType": "customer service",
-        "areaServed": "IT",
-        "availableLanguage": ["Italian"]
-      }
-    }
-    </script>
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Tempestivo",
+  "alternateName": "Tempestivo Ristrutturazioni e Pronto Intervento",
+  "url": "https://tempestivo.it",
+  "logo": "https://tempestivo.it/assets/logo.png",
+  "description": "Divisione di Officina Creativa dedicata al General Contracting, ristrutturazioni chiavi in mano e pronto intervento H24 in Sicilia Occidentale.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Palermo",
+    "addressRegion": "PA",
+    "addressCountry": "IT",
+    "streetAddress": "Contrada Incastrone snc",
+    "postalCode": "90047"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+393520258583",
+    "contactType": "customer service",
+    "areaServed": "IT",
+    "availableLanguage": [
+      "Italian"
+    ]
+  },
+  "image": "https://tempestivo.it/logo.png"
+}
+</script>
   <link rel="stylesheet" href="/mobile-fix.css">
 </head>
 <body>

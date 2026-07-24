@@ -43,7 +43,10 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": ["HomeAndConstructionBusiness", "ProfessionalService"],
+      "@type": [
+        "HomeAndConstructionBusiness",
+        "ProfessionalService"
+      ],
       "@id": "https://tempestivo.it/#business",
       "name": "Tempestivo Ristrutturazioni",
       "url": "https://tempestivo.it",
@@ -56,24 +59,56 @@
         "@type": "PostalAddress",
         "addressLocality": "Palermo",
         "addressRegion": "PA",
-        "addressCountry": "IT"
+        "addressCountry": "IT",
+        "streetAddress": "Contrada Incastrone snc",
+        "postalCode": "90047"
       },
       "areaServed": [
-        {"@type": "City", "name": "Palermo"},
-        {"@type": "City", "name": "Trapani"},
-        {"@type": "City", "name": "Monreale"},
-        {"@type": "City", "name": "Partinico"},
-        {"@type": "City", "name": "Alcamo"},
-        {"@type": "City", "name": "Castellammare del Golfo"},
-        {"@type": "City", "name": "Carini"},
-        {"@type": "City", "name": "Terrasini"}
-      ]
+        {
+          "@type": "City",
+          "name": "Palermo"
+        },
+        {
+          "@type": "City",
+          "name": "Trapani"
+        },
+        {
+          "@type": "City",
+          "name": "Monreale"
+        },
+        {
+          "@type": "City",
+          "name": "Partinico"
+        },
+        {
+          "@type": "City",
+          "name": "Alcamo"
+        },
+        {
+          "@type": "City",
+          "name": "Castellammare del Golfo"
+        },
+        {
+          "@type": "City",
+          "name": "Carini"
+        },
+        {
+          "@type": "City",
+          "name": "Terrasini"
+        }
+      ],
+      "image": "https://tempestivo.it/logo.png"
     },
     {
       "@type": "Service",
       "name": "Ristrutturazioni Chiavi in Mano",
-      "provider": {"@id": "https://tempestivo.it/#business"},
-      "areaServed": {"@type": "State", "name": "Sicilia"},
+      "provider": {
+        "@id": "https://tempestivo.it/#business"
+      },
+      "areaServed": {
+        "@type": "State",
+        "name": "Sicilia"
+      },
       "description": "Ristrutturazioni complete di appartamenti, ville e locali commerciali con project management unico, pratiche edilizie e certificazioni incluse."
     },
     {

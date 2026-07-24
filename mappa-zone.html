@@ -38,132 +38,174 @@
 <link href="style.css" rel="stylesheet"/>
 <!-- SCHEMA.ORG AVANZATO PER AI OVERVIEWS -->
 <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
-      "@graph": [
+      "@type": "Organization",
+      "@id": "https://tempestivo.it/#organization",
+      "name": "Tempestivo",
+      "url": "https://tempestivo.it",
+      "logo": "https://tempestivo.it/assets/logo.png",
+      "description": "Ristrutturazioni e pronto intervento H24 a Palermo, Trapani e provincia",
+      "telephone": "+393520258583",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Palermo",
+        "addressRegion": "PA",
+        "addressCountry": "IT",
+        "streetAddress": "Contrada Incastrone snc",
+        "postalCode": "90047"
+      },
+      "image": "https://tempestivo.it/logo.png"
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://tempestivo.it/mappa-zone.html#service",
+      "name": "Tempestivo - Ristrutturazioni e Pronto Intervento",
+      "description": "Servizi di ristrutturazione, impianti elettrici, idraulici e pronto intervento H24 a Palermo, Trapani e in tutti i comuni della provincia.",
+      "url": "https://tempestivo.it/mappa-zone.html",
+      "telephone": "+393520258583",
+      "areaServed": [
         {
-          "@type": "Organization",
-          "@id": "https://tempestivo.it/#organization",
-          "name": "Tempestivo",
-          "url": "https://tempestivo.it",
-          "logo": "https://tempestivo.it/assets/logo.png",
-          "description": "Ristrutturazioni e pronto intervento H24 a Palermo, Trapani e provincia",
-          "telephone": "+393520258583",
-          "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Palermo",
-            "addressRegion": "PA",
-            "addressCountry": "IT"
+          "@type": "City",
+          "name": "Palermo"
+        },
+        {
+          "@type": "City",
+          "name": "Trapani"
+        },
+        {
+          "@type": "City",
+          "name": "Monreale"
+        },
+        {
+          "@type": "City",
+          "name": "Partinico"
+        },
+        {
+          "@type": "City",
+          "name": "Carini"
+        },
+        {
+          "@type": "City",
+          "name": "Isola delle Femmine"
+        },
+        {
+          "@type": "City",
+          "name": "Terrasini"
+        },
+        {
+          "@type": "City",
+          "name": "Cinisi"
+        },
+        {
+          "@type": "City",
+          "name": "Trappeto"
+        },
+        {
+          "@type": "City",
+          "name": "Balestrate"
+        },
+        {
+          "@type": "City",
+          "name": "Alcamo"
+        },
+        {
+          "@type": "City",
+          "name": "Castellammare del Golfo"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Palermo",
+        "addressRegion": "PA",
+        "addressCountry": "IT",
+        "streetAddress": "Contrada Incastrone snc",
+        "postalCode": "90047"
+      },
+      "parentOrganization": {
+        "@id": "https://tempestivo.it/#organization"
+      },
+      "image": "https://tempestivo.it/logo.png"
+    },
+    {
+      "@type": "HowTo",
+      "@id": "https://tempestivo.it/mappa-zone.html#howto",
+      "name": "Come richiedere un intervento nella tua zona",
+      "description": "Procedura semplice e rapida per ottenere un sopralluogo e un preventivo in qualsiasi comune della nostra area di copertura.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Verifica la tua zona",
+          "text": "Controlla se il tuo comune è presente nella nostra mappa delle zone servite (copriamo tutta l'area Palermo-Trapani)."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Contattaci",
+          "text": "Chiama il 3520258583 o compila il form online specificando il tuo comune e il tipo di intervento."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Sopralluogo Rapido",
+          "text": "Un nostro tecnico specializzato raggiungerà la tua proprietà per una valutazione gratuita."
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://tempestivo.it/mappa-zone.html#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Intervenite anche nei piccoli comuni come Trappeto o Balestrate?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Assolutamente sì. La nostra copertura è capillare in tutta la fascia costiera e l'entroterra tra Palermo e Trapani, inclusi Trappeto, Balestrate, Cinisi e Isola delle Femmine."
           }
         },
         {
-          "@type": "ProfessionalService",
-          "@id": "https://tempestivo.it/mappa-zone.html#service",
-          "name": "Tempestivo - Ristrutturazioni e Pronto Intervento",
-          "description": "Servizi di ristrutturazione, impianti elettrici, idraulici e pronto intervento H24 a Palermo, Trapani e in tutti i comuni della provincia.",
-          "url": "https://tempestivo.it/mappa-zone.html",
-          "telephone": "+393520258583",
-          "areaServed": [
-            {"@type": "City", "name": "Palermo"},
-            {"@type": "City", "name": "Trapani"},
-            {"@type": "City", "name": "Monreale"},
-            {"@type": "City", "name": "Partinico"},
-            {"@type": "City", "name": "Carini"},
-            {"@type": "City", "name": "Isola delle Femmine"},
-            {"@type": "City", "name": "Terrasini"},
-            {"@type": "City", "name": "Cinisi"},
-            {"@type": "City", "name": "Trappeto"},
-            {"@type": "City", "name": "Balestrate"},
-            {"@type": "City", "name": "Alcamo"},
-            {"@type": "City", "name": "Castellammare del Golfo"}
-          ],
-          "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Palermo",
-            "addressRegion": "PA",
-            "addressCountry": "IT"
-          },
-          "parentOrganization": {
-            "@id": "https://tempestivo.it/#organization"
+          "@type": "Question",
+          "name": "Conoscete i vincoli paesaggistici di Monreale e dei centri storici?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sì, il nostro team è esperto nella gestione di pratiche edilizie in zone soggette a vincoli, come il centro storico di Monreale (UNESCO) o i borghi antichi di Alcamo e Castellammare."
           }
         },
         {
-          "@type": "HowTo",
-          "@id": "https://tempestivo.it/mappa-zone.html#howto",
-          "name": "Come richiedere un intervento nella tua zona",
-          "description": "Procedura semplice e rapida per ottenere un sopralluogo e un preventivo in qualsiasi comune della nostra area di copertura.",
-          "step": [
-            {
-              "@type": "HowToStep",
-              "position": 1,
-              "name": "Verifica la tua zona",
-              "text": "Controlla se il tuo comune è presente nella nostra mappa delle zone servite (copriamo tutta l'area Palermo-Trapani)."
-            },
-            {
-              "@type": "HowToStep",
-              "position": 2,
-              "name": "Contattaci",
-              "text": "Chiama il 3520258583 o compila il form online specificando il tuo comune e il tipo di intervento."
-            },
-            {
-              "@type": "HowToStep",
-              "position": 3,
-              "name": "Sopralluogo Rapido",
-              "text": "Un nostro tecnico specializzato raggiungerà la tua proprietà per una valutazione gratuita."
-            }
-          ]
+          "@type": "Question",
+          "name": "Quanto tempo impiegate ad arrivare per un'emergenza a Terrasini o Carini?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Grazie alle nostre squadre dislocate strategicamente, garantiamo tempi di intervento rapidi, generalmente entro 60-90 minuti per le emergenze H24 in tutta l'area metropolitana."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://tempestivo.it/mappa-zone.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://tempestivo.it/"
         },
         {
-          "@type": "FAQPage",
-          "@id": "https://tempestivo.it/mappa-zone.html#faq",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "Intervenite anche nei piccoli comuni come Trappeto o Balestrate?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Assolutamente sì. La nostra copertura è capillare in tutta la fascia costiera e l'entroterra tra Palermo e Trapani, inclusi Trappeto, Balestrate, Cinisi e Isola delle Femmine."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Conoscete i vincoli paesaggistici di Monreale e dei centri storici?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Sì, il nostro team è esperto nella gestione di pratiche edilizie in zone soggette a vincoli, come il centro storico di Monreale (UNESCO) o i borghi antichi di Alcamo e Castellammare."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Quanto tempo impiegate ad arrivare per un'emergenza a Terrasini o Carini?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Grazie alle nostre squadre dislocate strategicamente, garantiamo tempi di intervento rapidi, generalmente entro 60-90 minuti per le emergenze H24 in tutta l'area metropolitana."
-              }
-            }
-          ]
-        },
-        {
-          "@type": "BreadcrumbList",
-          "@id": "https://tempestivo.it/mappa-zone.html#breadcrumb",
-          "itemListElement": [
-            {
-              "@type": "ListItem",
-              "position": 1,
-              "name": "Home",
-              "item": "https://tempestivo.it/"
-            },
-            {
-              "@type": "ListItem",
-              "position": 2,
-              "name": "Mappa delle Zone",
-              "item": "https://tempestivo.it/mappa-zone.html"
-            }
-          ]
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Mappa delle Zone",
+          "item": "https://tempestivo.it/mappa-zone.html"
         }
       ]
     }
-    </script>
+  ]
+}
+</script>
   <link rel="stylesheet" href="/mobile-fix.css">
 </head>
 <body>

@@ -37,125 +37,167 @@
 <meta content="38.1157, 13.3615" name="ICBM"/>
 <!-- Schema.org JSON-LD -->
 <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
-      "@graph": [
+      "@type": [
+        "HomeAndConstructionBusiness",
+        "ProfessionalService"
+      ],
+      "@id": "https://tempestivo.it/#business",
+      "name": "Tempestivo",
+      "alternateName": "Tempestivo Ristrutturazioni e Pronto Intervento",
+      "url": "https://tempestivo.it",
+      "telephone": "+393520258583",
+      "email": "tempestivoweb@gmail.com",
+      "priceRange": "€€",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Palermo",
+        "addressRegion": "PA",
+        "addressCountry": "IT",
+        "streetAddress": "Contrada Incastrone snc",
+        "postalCode": "90047"
+      },
+      "areaServed": [
         {
-          "@type": ["HomeAndConstructionBusiness", "ProfessionalService"],
-          "@id": "https://tempestivo.it/#business",
-          "name": "Tempestivo",
-          "alternateName": "Tempestivo Ristrutturazioni e Pronto Intervento",
-          "url": "https://tempestivo.it",
-          "telephone": "+393520258583",
-          "email": "tempestivoweb@gmail.com",
-          "priceRange": "€€",
-          "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Palermo",
-            "addressRegion": "PA",
-            "addressCountry": "IT"
+          "@type": "City",
+          "name": "Palermo"
+        },
+        {
+          "@type": "City",
+          "name": "Trapani"
+        },
+        {
+          "@type": "City",
+          "name": "Monreale"
+        },
+        {
+          "@type": "City",
+          "name": "Partinico"
+        },
+        {
+          "@type": "City",
+          "name": "Carini"
+        },
+        {
+          "@type": "City",
+          "name": "Terrasini"
+        },
+        {
+          "@type": "City",
+          "name": "Cinisi"
+        },
+        {
+          "@type": "City",
+          "name": "Trappeto"
+        },
+        {
+          "@type": "City",
+          "name": "Balestrate"
+        },
+        {
+          "@type": "City",
+          "name": "Alcamo"
+        },
+        {
+          "@type": "City",
+          "name": "Castellammare del Golfo"
+        },
+        {
+          "@type": "City",
+          "name": "Isola delle Femmine"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Servizi Tempestivo",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Ristrutturazioni Complete",
+              "description": "Ristrutturazioni chiavi in mano di appartamenti, ville e locali commerciali"
+            }
           },
-          "areaServed": [
-            {"@type": "City", "name": "Palermo"},
-            {"@type": "City", "name": "Trapani"},
-            {"@type": "City", "name": "Monreale"},
-            {"@type": "City", "name": "Partinico"},
-            {"@type": "City", "name": "Carini"},
-            {"@type": "City", "name": "Terrasini"},
-            {"@type": "City", "name": "Cinisi"},
-            {"@type": "City", "name": "Trappeto"},
-            {"@type": "City", "name": "Balestrate"},
-            {"@type": "City", "name": "Alcamo"},
-            {"@type": "City", "name": "Castellammare del Golfo"},
-            {"@type": "City", "name": "Isola delle Femmine"}
-          ],
-          "hasOfferCatalog": {
-            "@type": "OfferCatalog",
-            "name": "Servizi Tempestivo",
-            "itemListElement": [
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "Ristrutturazioni Complete",
-                  "description": "Ristrutturazioni chiavi in mano di appartamenti, ville e locali commerciali"
-                }
-              },
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "Pronto Intervento H24",
-                  "description": "Intervento rapido per emergenze idrauliche ed elettriche 24 ore su 24"
-                }
-              },
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "Impianti Idraulici",
-                  "description": "Installazione e manutenzione impianti idraulici"
-                }
-              },
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "Impianti Elettrici",
-                  "description": "Installazione e certificazione impianti elettrici DM 37/08"
-                }
-              }
-            ]
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Pronto Intervento H24",
+              "description": "Intervento rapido per emergenze idrauliche ed elettriche 24 ore su 24"
+            }
           },
-          "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.9",
-            "reviewCount": "500",
-            "bestRating": "5",
-            "worstRating": "1"
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Impianti Idraulici",
+              "description": "Installazione e manutenzione impianti idraulici"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Impianti Elettrici",
+              "description": "Installazione e certificazione impianti elettrici DM 37/08"
+            }
+          }
+        ]
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "500",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "image": "https://tempestivo.it/logo.png"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://tempestivo.it/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Quanto tempo serve per un sopralluogo?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Garantiamo il sopralluogo entro 24/48 ore dalla richiesta in tutte le zone di Palermo, Trapani e provincia. Per le emergenze, interveniamo in tempi ancora più rapidi."
           }
         },
         {
-          "@type": "FAQPage",
-          "@id": "https://tempestivo.it/#faq",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "Quanto tempo serve per un sopralluogo?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Garantiamo il sopralluogo entro 24/48 ore dalla richiesta in tutte le zone di Palermo, Trapani e provincia. Per le emergenze, interveniamo in tempi ancora più rapidi."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Quali zone coprite?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Operiamo a Palermo e Trapani e in tutta la provincia: Monreale, Partinico, Carini, Terrasini, Cinisi, Trappeto, Balestrate, Alcamo, Castellammare del Golfo, Isola delle Femmine."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Rilasciate la certificazione DM 37/08 per gli impianti?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Sì, tutti i nostri interventi elettrici e idraulici sono certificati a norma di legge con rilascio immediato della dichiarazione di conformità DM 37/08."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Fate preventivi gratuiti?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Assolutamente sì. Il sopralluogo e il preventivo sono completamente gratuiti e senza impegno."
-              }
-            }
-          ]
+          "@type": "Question",
+          "name": "Quali zone coprite?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Operiamo a Palermo e Trapani e in tutta la provincia: Monreale, Partinico, Carini, Terrasini, Cinisi, Trappeto, Balestrate, Alcamo, Castellammare del Golfo, Isola delle Femmine."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Rilasciate la certificazione DM 37/08 per gli impianti?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sì, tutti i nostri interventi elettrici e idraulici sono certificati a norma di legge con rilascio immediato della dichiarazione di conformità DM 37/08."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Fate preventivi gratuiti?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Assolutamente sì. Il sopralluogo e il preventivo sono completamente gratuiti e senza impegno."
+          }
         }
       ]
     }
-    </script>
+  ]
+}
+</script>
 <link href="style.css" rel="stylesheet"/>
   <link rel="stylesheet" href="/mobile-fix.css">
 </head>
