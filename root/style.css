@@ -1,0 +1,706 @@
+/* ==========================================================================
+   1. VARIABILI ROOT & CONFIGURAZIONE BASE
+   ========================================================================== */
+:root {
+    --rosso: #E32626;
+    --blu-notte: #0B1B3B;
+    --giallo: #FFC857;
+    --grigio-chiaro: #F5F5F5;
+    --grigio-scuro: #444444;
+    --bianco: #FFFFFF;
+    --font-titoli: "Montserrat", Arial, sans-serif;
+    --font-testi: "Roboto", Arial, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-testi);
+    color: var(--grigio-scuro);
+    background-color: var(--bianco);
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Spazio globale per compensare l'header e la sub-nav fissi */
+.page-offset {
+    height: 115px; /* 70px (header) + 45px (sub-nav) */
+}
+
+/* ==========================================================================
+   2. HEADER & LOGO
+   ========================================================================== */
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: rgba(11, 27, 59, 0.96);
+    color: var(--bianco);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    box-sizing: border-box; 
+}
+
+/* Forza il colore bianco per tutto il testo dentro l'header */
+header, .header-inner, .logo-text span {
+    color: #FFFFFF !important;
+}
+
+.header-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 8px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0; 
+}
+
+.logo-img {
+    height: 34px;
+    width: auto;
+    display: block;
+}
+
+.logo-mark {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--rosso), #ff6b6b);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--bianco);
+    font-weight: 800;
+    font-size: 18px;
+    font-family: var(--font-titoli);
+    flex-shrink: 0;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+}
+
+.logo-text span:first-child {
+    font-family: var(--font-titoli);
+    font-weight: 800;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+
+.logo-text span:last-child {
+    font-size: 11px;
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+
+.header-cta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 1; 
+    min-width: 0; 
+}
+
+.main-nav {
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.nav-link {
+    color: var(--bianco);
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 5px 10px;
+}
+
+.nav-link:hover {
+    color: var(--giallo);
+}
+
+.btn-emergenza {
+    background-color: var(--rosso);
+    color: var(--bianco);
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    font-size: 0.85rem;
+    flex-shrink: 0;
+}
+
+.btn-emergenza:hover {
+    background-color: #c51f1f;
+}
+
+/* ==========================================================================
+   3. BARRA DI NAVIGAZIONE SECONDARIA (SUB-NAV)
+   ========================================================================== */
+.sub-nav {
+    width: 100%;
+    background-color: var(--blu-notte);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    position: fixed;
+    top: 70px;
+    left: 0;
+    z-index: 998;
+    padding: 12px 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.sub-nav-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.sub-nav-link {
+    color: #FFFFFF !important;
+    text-decoration: none;
+    font-family: var(--font-titoli);
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.sub-nav-link:hover {
+    color: var(--giallo) !important;
+}
+
+.sub-nav-link:visited {
+    color: #FFFFFF !important;
+}
+
+/* ==========================================================================
+   4. SEZIONE HERO
+   ========================================================================== */
+.hero {
+    position: relative;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    color: var(--bianco);
+    font-family: var(--font-titoli);
+}
+
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(11, 27, 59, 0.75);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 900px;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    line-height: 1.2;
+    color: var(--bianco);
+}
+
+.hero h1 .highlight {
+    color: var(--giallo);
+}
+
+.hero .subtitle {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    color: var(--bianco);
+    font-family: var(--font-testi);
+}
+
+.btn-cta {
+    background-color: var(--rosso);
+    color: var(--bianco);
+    padding: 14px 28px;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: uppercase;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-cta:hover {
+    background-color: #c51f1f;
+    transform: scale(1.05);
+}
+
+/* UTILITY PER BOX INTERAMENTE CLICCABILI */
+.box-link-wrapper {
+    text-decoration: none !important;
+    color: inherit !important;
+    display: block;
+    height: 100%;
+}
+
+/* ==========================================================================
+   5. SEZIONE LEAD MAGNET / SEZIONE FORM AI
+   ========================================================================== */
+.tempestivo-lead-section {
+    padding: 80px 20px;
+    background-color: var(--grigio-chiaro);
+    font-family: var(--font-testi);
+}
+
+.tempestivo-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+}
+
+.tempestivo-text-col, .tempestivo-form-col {
+    flex: 1;
+    min-width: 300px;
+}
+
+.tempestivo-text-col h2 {
+    color: var(--blu-notte);
+    font-family: var(--font-titoli);
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+
+.tempestivo-text-col .subtitle {
+    font-size: 1.3rem;
+    color: var(--rosso);
+    font-family: var(--font-titoli);
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.tempestivo-features {
+    list-style: none;
+    padding: 0;
+    margin: 25px 0;
+}
+
+.tempestivo-features li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 1.05rem;
+    line-height: 1.5;
+}
+
+.tempestivo-features li span {
+    font-size: 1.4rem;
+}
+
+.tempestivo-text-col .disclaimer {
+    font-style: italic;
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+.tempestivo-form {
+    background: var(--bianco);
+    padding: 35px;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    border-top: 5px solid var(--rosso);
+}
+
+.tempestivo-form .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.tempestivo-form .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+    font-size: 0.9rem;
+}
+
+.tempestivo-form .form-group input[type="text"],
+.tempestivo-form .form-group input[type="tel"],
+.tempestivo-form .form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    background-color: var(--bianco);
+    color: var(--grigio-scuro);
+}
+
+.tempestivo-form .form-group input:focus, 
+.tempestivo-form .form-group select:focus {
+    border-color: var(--blu-notte);
+    outline: none;
+}
+
+.file-label {
+    display: block;
+    background: #e9ecef;
+    border: 2px dashed #ced4da;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s;
+    font-weight: 600;
+}
+
+.file-label:hover {
+    background: #dee2e6;
+}
+
+.file-group small {
+    display: block;
+    margin-top: 5px;
+    color: #6c757d;
+    font-size: 0.8rem;
+}
+
+.tempestivo-form .btn-submit-lead {
+    width: 100%;
+    background-color: var(--rosso);
+    color: var(--bianco);
+    border: none;
+    padding: 16px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(227, 38, 38, 0.2);
+}
+
+.tempestivo-form .btn-submit-lead:hover {
+    background-color: #c51f1f;
+    transform: scale(1.02);
+}
+
+/* ==========================================================================
+   6. SEZIONE VANTAGGI (PERCHÉ TEMPESTIVO)
+   ========================================================================== */
+.perche-tempestivo {
+    padding: 80px 20px;
+    background-color: var(--grigio-chiaro);
+    text-align: center;
+}
+
+.perche-tempestivo h2 {
+    font-family: var(--font-titoli);
+    font-size: 2.4rem;
+    font-weight: 800;
+    margin-bottom: 50px;
+    color: var(--blu-notte);
+}
+
+.perche-tempestivo h2 span {
+    color: var(--rosso);
+}
+
+.vantaggi-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.vantaggio {
+    background: var(--bianco);
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vantaggio:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.vantaggio h3 {
+    font-family: var(--font-titoli);
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: var(--blu-notte);
+}
+
+.vantaggio p {
+    font-size: 1rem;
+    color: var(--grigio-scuro);
+    line-height: 1.5;
+}
+
+/* ==========================================================================
+   7. SEZIONE SERVIZI
+   ========================================================================== */
+.servizi {
+    padding: 80px 20px;
+    background-color: var(--bianco);
+    text-align: center;
+}
+
+.servizi h2 {
+    font-family: var(--font-titoli);
+    font-size: 2.4rem;
+    font-weight: 800;
+    margin-bottom: 50px;
+    color: var(--blu-notte);
+}
+
+.servizi-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card-servizio {
+    background: var(--grigio-chiaro);
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+
+.card-servizio:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.card-img img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 25px;
+}
+
+.card-content h3 {
+    font-family: var(--font-titoli);
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    color: var(--blu-notte);
+}
+
+.card-content ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.card-content ul li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    padding-left: 18px;
+    position: relative;
+}
+
+.card-content ul li::before {
+    content: "?";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--rosso);
+    font-weight: 700;
+}
+
+/* ==========================================================================
+   8. SEZIONE PROCESSO (TIMELINE)
+   ========================================================================== */
+.processo {
+    padding: 80px 20px;
+    background-color: var(--grigio-chiaro);
+    text-align: center;
+}
+
+.processo h2 {
+    font-family: var(--font-titoli);
+    font-size: 2.4rem;
+    font-weight: 800;
+    margin-bottom: 60px;
+    color: var(--blu-notte);
+}
+
+.processo h2 span {
+    color: var(--rosso);
+}
+
+.timeline {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.step {
+    background: var(--bianco);
+    padding: 30px 20px;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.step:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.step-number {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: var(--rosso);
+    color: var(--bianco);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 0 auto 15px auto;
+}
+
+.step-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.step h3 {
+    font-family: var(--font-titoli);
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: var(--blu-notte);
+}
+
+.step p {
+    font-size: 1rem;
+    color: var(--grigio-scuro);
+}
+
+/* ==========================================================================
+   9. SEZIONE ZONE COPERTE
+   ========================================================================== */
+.zone-coperte {
+    padding: 80px 20px;
+    background-color: var(--grigio-chiaro);
+    text-align: center;
+}
+
+.zone-coperte h2 {
+    font-family: var(--font-titoli);
+    font-size: 2.4rem;
+    font-weight: 800;
+    margin-bottom: 40px;
+    color: var(--blu-notte);
+}
+
+.zone-coperte h2 span {
+    color: var(--rosso);
+}
+
+.zone-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 18px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.zone-pill {
+    background: var(--bianco);
+    padding: 12px 18px;
+    border-radius: 999px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+    font-weight: 600;
+}
+
+.zone-pill a {
+    color: var(--blu-notte);
+}
+
+/* ==========================================================================
+   10. SEZIONE MODULO CONTATTO (URGENZE) & COMPONENTI FORM
+   ========================================================================== */
+.contatto {
+    padding: 80px 20px;
+    background-color: var(--blu-notte);
+    color: var(--bianco);
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.contatto h2 {
+    font-family: var(--font-titoli);
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-bottom: 40px;
+}
+
+.contact-form {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
