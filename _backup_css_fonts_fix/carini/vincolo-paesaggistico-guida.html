@@ -141,7 +141,8 @@
   ]
 }
 </script>
-<link rel="stylesheet" href="/mobile-fix.css">
+<link rel="preload" href="/mobile-fix.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/mobile-fix.css"></noscript>
 </head>
 <body>
 <header class="header">
