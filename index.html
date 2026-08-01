@@ -202,8 +202,9 @@
   ]
 }
 </script>
-<link href="style.css" rel="stylesheet"/>
-<link href="/mobile-fix.css" rel="stylesheet"/>
+<link rel="preload" href="/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/style.css"></noscript>
+<link rel="stylesheet" href="/mobile-fix.css">
 </head>
 <body>
 <!-- HEADER -->
