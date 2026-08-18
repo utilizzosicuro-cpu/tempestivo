@@ -14,9 +14,10 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <!-- META TAG OTTIMIZZATI (CTR e Intento Locale) -->
-<title>Servizi Impresa Edile Palermo Trapani Palermo e Trapani |</title>
+<title>Servizi di Ristrutturazione e Pronto Intervento | Tempestivo</title>
 <meta name="description" content="Per servizi impresa edile palermo trapani a Palermo e Trapani scegli Tempestivo : prezzi competitivi e chiari. Richiedi un preventivo gratuito! Tempestivo, la" />
-<meta content="servizi ristrutturazione palermo, pronto intervento idraulico trapani, elettricista h24 monreale, impresa edile alcamo, ristrutturazione bagno castellammare, tempestivo" name="keywords"/>
+<meta name="description" content="Ristrutturazioni chiavi in mano, impianti elettrici e idraulici certificati DM 37/08, pronto intervento H24. Unico referente per Palermo, Trapani e provincia.">
+<link rel="canonical" href="https://tempestivo.it/servizi.html">
 <link href="https://tempestivo.it/servizi.html" rel="canonical"/>
 <!-- Geo Tags -->
 <meta content="IT-PA" name="geo.region"/>
@@ -43,105 +44,114 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": [
-        "HomeAndConstructionBusiness",
-        "ProfessionalService"
-      ],
+      "@type": "WebSite",
+      "@id": "https://tempestivo.it/#website",
+      "url": "https://tempestivo.it",
+      "name": "Tempestivo",
+      "description": "Impresa edile e ristrutturazioni chiavi in mano a Palermo e Trapani",
+      "publisher": {"@id": "https://tempestivo.it/#business"}
+    },
+    {
+      "@type": ["LocalBusiness", "HomeAndConstructionBusiness", "ProfessionalService", "GeneralContractor", "Plumber", "Electrician"],
       "@id": "https://tempestivo.it/#business",
       "name": "Tempestivo",
       "alternateName": "Tempestivo Ristrutturazioni e Pronto Intervento",
-      "description": "Divisione di Officina Creativa dedicata al General Contracting, ristrutturazioni chiavi in mano e pronto intervento H24 in Sicilia Occidentale.",
-      "url": "https://tempestivo.it/servizi.html",
-      "telephone": "+393520258583",
+      "url": "https://tempestivo.it",
+      "telephone": "+39 352 025 85 83",
       "email": "tempestivoweb@gmail.com",
+      "taxID": "06772720824",
       "priceRange": "€€",
+      "image": "https://tempestivo.it/logo.png",
+      "logo": "https://tempestivo.it/logo.png",
+      "description": "Divisione di Officina Creativa dedicata al General Contracting, ristrutturazioni chiavi in mano e pronto intervento H24 in Sicilia Occidentale.",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+39 352 025 85 83",
+        "contactType": "customer service",
+        "areaServed": "IT",
+        "availableLanguage": ["Italian"]
+      },
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "Palermo",
+        "streetAddress": "Contrada Incastrona, snc",
+        "addressLocality": "Partinico",
         "addressRegion": "PA",
-        "addressCountry": "IT",
-        "streetAddress": "Contrada Incastrone snc",
-        "postalCode": "90047"
+        "postalCode": "90047",
+        "addressCountry": "IT"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 38.0436,
+        "longitude": 13.1188
       },
       "areaServed": [
-        {
-          "@type": "City",
-          "name": "Palermo"
-        },
-        {
-          "@type": "City",
-          "name": "Trapani"
-        },
-        {
-          "@type": "City",
-          "name": "Monreale"
-        },
-        {
-          "@type": "City",
-          "name": "Alcamo"
-        },
-        {
-          "@type": "City",
-          "name": "Castellammare del Golfo"
-        },
-        {
-          "@type": "City",
-          "name": "Carini"
-        },
-        {
-          "@type": "City",
-          "name": "Trappeto"
-        },
-        {
-          "@type": "City",
-          "name": "Terrasini"
-        }
+        {"@type": "City", "name": "Palermo"},
+        {"@type": "City", "name": "Trapani"},
+        {"@type": "City", "name": "Monreale"},
+        {"@type": "City", "name": "Partinico"},
+        {"@type": "City", "name": "Alcamo"},
+        {"@type": "City", "name": "Castellammare del Golfo"},
+        {"@type": "City", "name": "Carini"},
+        {"@type": "City", "name": "Terrasini"},
+        {"@type": "City", "name": "Cinisi"},
+        {"@type": "City", "name": "Trappeto"},
+        {"@type": "City", "name": "Balestrate"},
+        {"@type": "City", "name": "Isola delle Femmine"}
       ],
-      "image": "https://tempestivo.it/logo.png",
-      "provider": {
-        "@type": "Organization",
-        "name": "Tempestivo",
-        "url": "https://tempestivo.it"
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Servizi Tempestivo",
+        "itemListElement": [
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Ristrutturazioni Chiavi in Mano"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Impianti Elettrici Certificati DM 37/08"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Impianti Idraulici"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Pronto Intervento H24"}}
+        ]
       }
     },
     {
+      "@type": "WebPage",
+      "@id": "https://tempestivo.it/servizi.html#webpage",
+      "url": "https://tempestivo.it/servizi.html",
+      "name": "Servizi di Ristrutturazione e Pronto Intervento | Tempestivo",
+      "description": "Dal piccolo intervento urgente alla ristrutturazione completa. Unico referente certificato per Palermo, Trapani e tutta la provincia.",
+      "isPartOf": {"@id": "https://tempestivo.it/#website"},
+      "about": {"@id": "https://tempestivo.it/#business"},
+      "inLanguage": "it-IT"
+    },
+    {
       "@type": "Service",
+      "@id": "https://tempestivo.it/servizi.html#service-ristrutturazioni",
       "name": "Ristrutturazioni Chiavi in Mano",
-      "provider": {
-        "@id": "https://tempestivo.it/#business"
-      },
-      "areaServed": {
-        "@type": "State",
-        "name": "Sicilia"
-      },
-      "description": "Ristrutturazioni complete di appartamenti, ville e locali commerciali con gestione unica di pratiche, materiali e maestranze."
+      "description": "Ristrutturazioni complete di appartamenti, ville e locali commerciali con gestione unica di pratiche, materiali e maestranze.",
+      "provider": {"@id": "https://tempestivo.it/#business"},
+      "areaServed": {"@type": "State", "name": "Sicilia"}
     },
     {
       "@type": "Service",
+      "@id": "https://tempestivo.it/servizi.html#service-impianti",
       "name": "Impianti Elettrici e Idraulici Certificati",
-      "provider": {
-        "@id": "https://tempestivo.it/#business"
-      },
-      "areaServed": {
-        "@type": "State",
-        "name": "Sicilia"
-      },
-      "description": "Installazione, manutenzione e certificazione DM 37/08 di impianti elettrici e idraulici per privati e aziende."
+      "description": "Installazione, manutenzione e certificazione DM 37/08 di impianti elettrici e idraulici per privati e aziende.",
+      "provider": {"@id": "https://tempestivo.it/#business"},
+      "areaServed": {"@type": "State", "name": "Sicilia"}
     },
     {
       "@type": "Service",
+      "@id": "https://tempestivo.it/servizi.html#service-pronto-intervento",
       "name": "Pronto Intervento H24",
-      "provider": {
-        "@id": "https://tempestivo.it/#business"
-      },
-      "areaServed": {
-        "@type": "State",
-        "name": "Sicilia"
-      },
-      "description": "Intervento rapido 24/7 per emergenze idrauliche (perdite, allagamenti) ed elettriche (blackout, cortocircuiti)."
+      "description": "Intervento rapido 24/7 per emergenze idrauliche (perdite, allagamenti) ed elettriche (blackout, cortocircuiti).",
+      "provider": {"@id": "https://tempestivo.it/#business"},
+      "areaServed": {"@type": "State", "name": "Sicilia"}
     },
     {
       "@type": "HowTo",
+      "@id": "https://tempestivo.it/servizi.html#howto",
       "name": "Come richiedere un intervento con Tempestivo",
       "description": "4 semplici passaggi per risolvere il tuo problema o avviare la tua ristrutturazione.",
       "step": [
@@ -149,7 +159,7 @@
           "@type": "HowToStep",
           "position": 1,
           "name": "Contattaci",
-          "text": "Chiama il 3520258583 o compila il form online. Rispondiamo entro poche ore."
+          "text": "Chiama il +39 352 025 85 83 o compila il form online. Rispondiamo entro poche ore."
         },
         {
           "@type": "HowToStep",
@@ -173,6 +183,7 @@
     },
     {
       "@type": "FAQPage",
+      "@id": "https://tempestivo.it/servizi.html#faq",
       "mainEntity": [
         {
           "@type": "Question",
@@ -202,58 +213,13 @@
     },
     {
       "@type": "BreadcrumbList",
+      "@id": "https://tempestivo.it/servizi.html#breadcrumb",
       "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://tempestivo.it/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Servizi",
-          "item": "https://tempestivo.it/servizi.html"
-        }
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://tempestivo.it/"},
+        {"@type": "ListItem", "position": 2, "name": "Servizi", "item": "https://tempestivo.it/servizi.html"}
       ]
     }
   ]
-}
-</script>
-<!-- Schema.org Organization -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Tempestivo",
-  "alternateName": "Tempestivo Ristrutturazioni e Pronto Intervento",
-  "url": "https://tempestivo.it/servizi.html",
-  "logo": "https://tempestivo.it/assets/logo.png",
-  "description": "Divisione di Officina Creativa dedicata al General Contracting, ristrutturazioni chiavi in mano e pronto intervento H24 in Sicilia Occidentale.",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Palermo",
-    "addressRegion": "PA",
-    "addressCountry": "IT",
-    "streetAddress": "Contrada Incastrone snc",
-    "postalCode": "90047"
-  },
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "telephone": "+393520258583",
-    "contactType": "customer service",
-    "areaServed": "IT",
-    "availableLanguage": [
-      "Italian"
-    ]
-  },
-  "image": "https://tempestivo.it/logo.png",
-  "telephone": "+39 352 025 85 83",
-  "provider": {
-    "@type": "Organization",
-    "name": "Tempestivo",
-    "url": "https://tempestivo.it"
-  }
 }
 </script>
 <link href="/mobile-fix.css" rel="stylesheet"/>
@@ -266,16 +232,16 @@
 <div class="logo-mark">⚡</div>
 <div class="logo-text">
 <span>TEMPESTIVO</span>
-<span style="font-size:11px;text-transform:uppercase;opacity:0.8;color:var(--giallo);">RAPIDI &amp; AFFIDABILI</span>
+<span style="font-size:11px;text-transform:uppercase;opacity:0.8;color:var(--giallo);"> RAPIDI &amp; AFFIDABILI</span>
 </div>
 </a>
 <nav class="main-nav">
 <a class="nav-link" href="/soluzioni-business-palermo-trapani.html">Area Business</a>
 </nav>
 <div class="header-cta">
-<a class="btn-emergenza" href="tel:3520258583">
+<a class="btn-emergenza" href="tel:39 352 025 85 83">
 <span class="icon">⚠️</span>
-<span>3520258583</span>
+<span>+39 352 025 85 83</span>
 </a>
 </div>
 </div>
@@ -294,7 +260,7 @@
 <section class="hero">
 <div class="hero-overlay"></div>
 <div class="hero-content">
-<h1>Esperti in Servizi Impresa Edile Palermo Trapani a Palermo e Trapani</h1>
+<h1>I nostri servizi di ristrutturazione e pronto intervento</h1>
 <p class="subtitle">Dal piccolo intervento urgente alla ristrutturazione completa. Un unico referente certificato per Palermo, Trapani e tutta la provincia. Tempi certi, qualità garantita.</p>
 <a class="btn-cta" href="#servizi-principali">Scopri le Soluzioni</a>
 </div>
@@ -377,7 +343,7 @@
 <div class="step">
 <div class="step-number">1</div>
 <h3>Contattaci</h3>
-<p>Chiama il 3520258583 o compila il form. Rispondiamo entro poche ore per fissare un appuntamento.</p>
+<p>Chiama il +39 352 025 85 83 o compila il form. Rispondiamo entro poche ore per fissare un appuntamento.</p>
 </div>
 <div class="step">
 <div class="step-number">2</div>
@@ -403,17 +369,17 @@
             La nostra struttura logistica ci permette di intervenire con la stessa rapidità ed efficienza sia nei centri urbani che nelle zone periferiche della Sicilia Occidentale.
         </p>
 <div class="zone-grid">
-<a class="zone-pill" href="/palermo/servizi_palermo.html">Palermo e Provincia</a>
-<a class="zone-pill" href="/monreale/servizi_monreale.html">Monreale</a>
-<a class="zone-pill" href="/alcamo/servizi_alcamo.html">Alcamo</a>
-<a class="zone-pill" href="/castellammare/servizi_castellammare.html">Castellammare del Golfo</a>
-<a class="zone-pill" href="/carini/servizi_carini.html">Carini</a>
-<a class="zone-pill" href="/trappeto/servizi_trappeto.html">Trappeto</a>
-<a class="zone-pill" href="/terrasini/servizi_terrasini.html">Terrasini</a>
-<a class="zone-pill" href="/cinisi/servizi_cinisi.html">Cinisi</a>
-<a class="zone-pill" href="/balestrate/servizi_balestrate.html">Balestrate</a>
-<a class="zone-pill" href="/partinico/servizi_partinico.html">Partinico</a>
-<a class="zone-pill" href="/isola-delle-femmine/servizi_isola_delle_femmine.html">Isola delle Femmine</a>
+<a class="zone-pill" href="/palermo/index.html">Palermo</a>
+<a class="zone-pill" href="/monreale/index.html">Monreale</a>
+<a class="zone-pill" href="/partinico/index.html">Partinico</a>
+<a class="zone-pill" href="/carini/index.html">Carini</a>
+<a class="zone-pill" href="/isola-delle-femmine/index.html">Isola delle Femmine</a>
+<a class="zone-pill" href="/terrasini/index.html">Terrasini</a>
+<a class="zone-pill" href="/cinisi/index.html">Cinisi</a>
+<a class="zone-pill" href="/trappeto/index.html">Trappeto</a>
+<a class="zone-pill" href="/balestrate/index.html">Balestrate</a>
+<a class="zone-pill" href="/alcamo/index.html">Alcamo</a>
+<a class="zone-pill" href="/castellammare/index.html">Castellammare del Golfo</a>
 </div>
 </section>
 <!-- FAQ SECTION -->
@@ -440,7 +406,7 @@
 <div class="tempestivo-text-col">
 <h2 style="color:var(--bianco);">Hai un progetto in mente o un'urgenza da risolvere?</h2>
 <p class="subtitle" style="color:var(--giallo);">Contattaci oggi stesso per un sopralluogo gratuito e senza impegno.</p>
-<a class="btn-cta" href="tel:3520258583" style="background-color:var(--rosso);">📞 Chiama Ora: 3520258583</a>
+<a class="btn-cta" href="tel:39 352 025 85 83" style="background-color:var(--rosso);">📞 Chiama Ora: +39 352 025 85 83</a>
 </div>
 </div>
 </section>
@@ -452,11 +418,11 @@
 <div class="logo-mark">⚡</div>
 <div class="logo-text">
 <span>TEMPESTIVO</span>
-<span style="font-size:11px;text-transform:uppercase;opacity:0.8;color:var(--giallo);">RAPIDI &amp; AFFIDABILI</span>
+<span style="font-size:11px;text-transform:uppercase;opacity:0.8;color:var(--giallo);"> RAPIDI &amp; AFFIDABILI</span>
 </div>
 </div>
 <p>Tempestivo è una divisione di Officina Creativa dedicata al General Contracting e alle manutenzioni rapide.</p>
-<p><strong>📞 3520258583</strong></p>
+<p><strong>📞 +39 352 025 85 83</strong></p>
 <p><strong>✉️ tempestivoweb@gmail.com</strong></p>
 </div>
 <div>
@@ -470,9 +436,9 @@
 <div>
 <h4 style="font-family:var(--font-titoli);color:var(--giallo);margin-bottom:20px;">Zone Principali</h4>
 <ul style="list-style:none;padding:0;">
-<li style="margin-bottom:10px;"><a href="/palermo/servizi_palermo.html" style="color:var(--bianco);text-decoration:none;">Palermo</a></li>
+<li style="margin-bottom:10px;"><a href="/palermo/index.html" style="color:var(--bianco);text-decoration:none;">Palermo</a></li>
 <li style="margin-bottom:10px;"><a href="landing-ristrutturazioni.html" style="color:var(--bianco);text-decoration:none;">Trapani</a></li>
-<li style="margin-bottom:10px;"><a href="/monreale/servizi_monreale.html" style="color:var(--bianco);text-decoration:none;">Monreale</a></li>
+<li style="margin-bottom:10px;"><a href="/monreale/index.html" style="color:var(--bianco);text-decoration:none;">Monreale</a></li>
 <li style="margin-bottom:10px;"><a href="mappa-zone.html" style="color:var(--bianco);text-decoration:none;">Vedi tutte le zone →</a></li>
 </ul>
 </div>
@@ -487,6 +453,8 @@
 </div>
 <div style="max-width:1100px;margin:40px auto 0;padding-top:20px;border-top:1px solid rgba(255,255,255,0.1);text-align:center;font-size:0.9rem;opacity:0.8;">
 <p>P.IVA: 06772720824 | Divisione di Officina Creativa</p>
+<p><strong>📍 Contrada Incastrona snc, 90047 Partinico (PA)</strong></p>
+<p><strong>📞 +39 352 025 85 83</strong></p>
 <p>© 2026 Tempestivo. Tutti i diritti riservati.</p>
 </div>
 </footer>
