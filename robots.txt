@@ -17,4 +17,4 @@ Disallow: /
 User-agent: SemrushBot
 Disallow: /
 
-Sitemap: https://www.tuosito.it/sitemap.xml
+Sitemap: https://tempestivo.it/sitemap.xml
