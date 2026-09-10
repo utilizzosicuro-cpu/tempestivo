@@ -1,0 +1,51 @@
+/* ==========================================
+   MOBILE FIXES - Tempestivo.it
+   Versione isolata per ottimizzazione mobile
+   ========================================== */
+
+@media (max-width: 768px) {
+    /* Previene lo scorrimento orizzontale della pagina */
+    html, body {
+        overflow-x: hidden !important;
+        max-width: 100vw !important;
+    }
+
+    /* Rende tutti i media fluidi e adatti allo schermo */
+    img, video, iframe, svg {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+
+    /* Aggiusta contenitori e sezioni rigide */
+    .container, .main-container, section, article {
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Forza la colonna singola per layout a griglia o colonne CSS */
+    .reviews-grid, .vantaggi-grid, .grid, .row {
+        display: flex !important;
+        flex-direction: column !important;
+        grid-template-columns: 1fr !important;
+        width: 100% !important;
+    }
+
+    /* Corregge liste a colonne multipli (es. zone servite) */
+    .zones-list ul {
+        columns: 1 !important;
+        -webkit-columns: 1 !important;
+        -moz-columns: 1 !important;
+    }
+
+    /* Header e Nav bar mobile */
+    .header-inner, .sub-nav-inner {
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+    }
+
+    /* Tipografia adattiva per schermi piccoli */
+    h1 { font-size: 1.8rem !important; }
+    h2 { font-size: 1.5rem !important; }
+    h3 { font-size: 1.2rem !important; }
+}

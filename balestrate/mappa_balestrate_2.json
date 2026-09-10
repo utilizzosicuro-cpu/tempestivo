@@ -1,0 +1,456 @@
+{
+    "cartella_radice": "C:\\Users\\ettor\\Desktop\\sito official\\balestrate",
+    "file_totali": 45,
+    "struttura": {
+        "index.html": {
+            "nome_file": "index.html",
+            "estensione": ".html",
+            "percorso_assoluto": "C:\\Users\\ettor\\Desktop\\sito official\\balestrate\\index.html",
+            "percorso_relativo": "index.html",
+            "dimensione_bytes": 31350,
+            "canonical_attuale": "https://tempestivo.it/balestrate/",
+            "og_url_attuale": "https://tempestivo.it/balestrate/",
+            "titolo": "Pronto Intervento Tecnico e Ristrutturazioni Edili a Balestrate (PA) | Tempestivo"
+        },
+        "mappa.py": {
+            "nome_file": "mappa.py",
+            "estensione": ".py",
+            "percorso_assoluto": "C:\\Users\\ettor\\Desktop\\sito official\\balestrate\\mappa.py",
+            "percorso_relativo": "mappa.py",
+            "dimensione_bytes": 3547,
+            "canonical_attuale": null,
+            "og_url_attuale": null,
+            "titolo": null
+        },
+        "mappa_canonical_3.json": {
+            "nome_file": "mappa_canonical_3.json",
+            "estensione": ".json",
+            "percorso_assoluto": "C:\\Users\\ettor\\Desktop\\sito official\\balestrate\\mappa_canonical_3.json",
+            "percorso_relativo": "mappa_canonical_3.json",
+            "dimensione_bytes": 17456,
+            "canonical_attuale": null,
+            "og_url_attuale": null,
+            "titolo": null
+        },
+        "agliastro/elettricista/index.html": {
+            "nome_file": "index.html",
+            "estensione": ".html",
+            "percorso_assoluto": "C:\\Users\\ettor\\Desktop\\sito official\\balestrate\\agliastro\\elettricista\\index.html",
+            "percorso_relativo": "agliastro/elettricista/index.html",
+            "dimensione_bytes": 29985,
+            "canonical_attuale": "https://tempestivo.it/balestrate/agliastro/elettricista/",
+            "og_url_attuale": "https://tempestivo.it/balestrate/agliastro/elettricista/",
+            "titolo": "Elettricista urgente a Contrada Agliastro – Intervento immediato 24/7"
+        },
+        "alcamo/alcamo-marina/ristrutturazioni-chiavi-in-mano/index.html": {
+            "nome_file": "index.html",
+            "estensione": ".html",
+            "percorso_assoluto": "C:\\Users\\ettor\\Desktop\\sito official\\balestrate\\alcamo\\alcamo-marina\\ristrutturazioni-chiavi-in-mano\\index.html",
+            "percorso_relativo": "alcamo/alcamo-marina/ristrutturazioni-chiavi-in-mano/index.html",
+            "dimensione_bytes": 13601,
+            "canonical_attuale": "https://tempestivo.it/alcamo/alcamo-marina/ristrutturazioni-chiavi-in-mano/",
+            "og_url_attuale": "https://tempestivo.it/alcamo/alcamo-marina/ristrutturazioni-chiavi-in-mano/",
+            "titolo": "Ristrutturazioni Chiavi in Mano a Alcamo Marina (Alcamo) | Tempestivo"
+        },
+        "alcamo/centro-storico/ristrutturazioni-chiavi-in-mano/index.html": {
+            "nome_file": "index.html",
+            "estensione": ".html",
+            "percorso_assoluto": "C:\\Users\\ettor\\Desktop\\sito official\\balestrate\\alcamo\\centro-storico\\ristrutturazioni-chiavi-in-mano\\index.html",
+            "percorso_relativo": "alcamo/centro-storico/ristrutturazioni-chiavi-in-mano/index.html",
+            "dimensione_bytes": 13622,
+            "canonical_attuale": "https://tempestivo.it/alcamo/centro-storico/ristrutturazioni-chiavi-in-mano/",
+            "og_url_attuale": "https://tempestivo.it/alcamo/centro-storico/ristrutturazioni-chiavi-in-mano/",
+            "titolo": "Ristrutturazioni Chiavi in Mano a Centro Storico (Alcamo) | Tempestivo"
+        },
+        "alcamo/contrada-bosco/ristrutturazioni-chiavi-in-mano/index.html": {
+            "nome_file": "index.html",
+            "estensione": ".html",
+            "percorso_assoluto": "C:\\Users\\ettor\\Desktop\\sito official\\balestrate\\alcamo\\contrada-bosco\\ristrutturazioni-chiavi-in-mano\\index.html",
+            "percorso_relativo": "alcamo/contrada-bosco/ristrutturazioni-chiavi-in-mano/index.html",
+            "dimensione_bytes": 13703,
+            "canonical_attuale": "https://tempestivo.it/alcamo/contrada-bosco/ristrutturazioni-chiavi-in-mano/",
+            "og_url_attuale": "https://tempestivo.it/alcamo/contrada-bosco/ristrutturazioni-chiavi-in-mano/",
+            "titolo": "Ristrutturazioni Chiavi in Mano a Contrada Bosco (Alcamo) | Tempestivo"
+        },
+        "alcamo/dati/ristrutturazioni-chiavi-in-mano/index.html": {
+            "nome_file": "index.html",
+            "estensione": ".html",
+            "percorso_assoluto": "C:\\Users\\ettor\\Desktop\\sito official\\balestrate\\alcamo\\dati\\ristrutturazioni-chiavi-in-mano\\index.html",
+            "percorso_relativo": "alcamo/dati/ristrutturazioni-chiavi-in-mano/index.html",
+            "dimensione_bytes": 13412,
+            "canonical_attuale": "https://tempestivo.it/alcamo/dati/ristrutturazioni-chiavi-in-mano/",
+            "og_url_attuale": "https://tempestivo.it/alcamo/dati/ristrutturazioni-chiavi-in-mano/",
+            "titolo": "Ristrutturazioni Chiavi in Mano a Dati (Alcamo) | Tempestivo"
+        },
+        "alcamo/pronto-intervento-elettrico-e-idraulico-alcamo/ristrutturazioni-chiavi-in-mano/index.html": {
+            "nome_file": "index.html",
+            "estensione": ".html",
+            "percorso_assoluto": "C:\\Users\\ettor\\Desktop\\sito official\\balestrate\\alcamo\\pronto-intervento-elettrico-e-idraulico-alcamo\\ristrutturazioni-chiavi-in-mano\\index.html",
+            "percorso_relativo": "alcamo/pronto-intervento-elettrico-e-idraulico-alcamo/ristrutturazioni-chiavi-in-mano/index.html",
+            "dimensione_bytes": 14294,
+            "canonical_attuale": "https://tempestivo.it/alcamo/pronto-intervento-elettrico-e-idraulico-alcamo/ristrutturazioni-chiavi-in-mano/",
+            "og_url_attuale": "https://tempestivo.it/alcamo/pronto-intervento-elettrico-e-idraulico-alcamo/ristrutturazioni-chiavi-in-mano/",
+            "titolo": "Ristrutturazioni Chiavi in Mano a Pronto Intervento Elettrico E Idraulico Alcamo (Alcamo) | Tempestivo"
+        },
+        "alcamo/ristrutturazione-bagno/ristrutturazioni-chiavi-in-mano/index.html": {
+            "nome_file": "index.html",
+            "estensione": ".html",
+            "percorso_assoluto": "C:\\Users\\ettor\\Desktop\\sito official\\balestrate\\alcamo\\ristrutturazione-bagno\\ristrutturazioni-chiavi-in-mano\\index.html",
+            "percorso_relativo": "alcamo/ristrutturazione-bagno/ristrutturazioni-chiavi-in-mano/index.html",
+            "dimensione_bytes": 13790,
+            "canonical_attuale": "https://tempestivo.it/alcamo/ristrutturazione-bagno/ristrutturazioni-chiavi-in-mano/",
+            "og_url_attuale": "https://tempestivo.it/alcamo/ristrutturazione-bagno/ristrutturazioni-chiavi-in-mano/",
+            "titolo": "Ristrutturazioni Chiavi in Mano a Ristrutturazione Bagno (Alcamo) | Tempestivo"
+        },
+        "alcamo/ristrutturazione-completa/ristrutturazioni-chiavi-in-mano/index.html": {
+            "nome_file": "index.html",
+            "estensione": ".html",
+            "percorso_assoluto": "C:\\Users\\ettor\\Desktop\\sito official\\balestrate\\alcamo\\ristrutturazione-completa\\ristrutturazioni-chiavi-in-mano\\index.html",
+            "percorso_relativo": "alcamo/ristrutturazione-completa/ristrutturazioni-chiavi-in-mano/index.html",
+            "dimensione_bytes": 13853,
+            "canonical_attuale": "https://tempestivo.it/alcamo/ristrutturazione-completa/ristrutturazioni-chiavi-in-mano/",
+            "og_url_attuale": "https://tempestivo.it/alcamo/ristrutturazione-completa/ristrutturazioni-chiavi-in-mano/",
+            "titolo": "Ristrutturazioni Chiavi in Mano a Ristrutturazione Completa (Alcamo) | Tempestivo"
+        },
+        "alcamo/zona-viale-europa/ristrutturazioni-chiavi-in-mano/index.html": {
+            "nome_file": "index.html",
+            "estensione": ".html",
+            "percorso_assoluto": "C:\\Users\\ettor\\Desktop\\sito official\\balestrate\\alcamo\\zona-viale-europa\\ristrutturazioni-chiavi-in-mano\\index.html",
+            "percorso_relativo": "alcamo/zona-viale-europa/ristrutturazioni-chiavi-in-mano/index.html",
+            "dimensione_bytes": 13766,
+            "canonical_attuale": "https://tempestivo.it/alcamo/zona-viale-europa/ristrutturazioni-chiavi-in-mano/",
+            "og_url_attuale": "https://tempestivo.it/alcamo/zona-viale-europa/ristrutturazioni-chiavi-in-mano/",
+            "titolo": "Ristrutturazioni Chiavi in Mano a Zona Viale Europa (Alcamo) | Tempestivo"
+        },
+        "badiella/elettricista/index.html": {
+            "nome_file": "index.html",
+            "estensione": ".html",
+            "percorso_assoluto": "C:\\Users\\ettor\\Desktop\\sito official\\balestrate\\badiella\\elettricista\\index.html",
+            "percorso_relativo": "badiella/elettricista/index.html",
+            "dimensione_bytes": 29975,
+            "canonical_attuale": "https://tempestivo.it/balestrate/badiella/elettricista/",
+            "og_url_attuale": "https://tempestivo.it/balestrate/badiella/elettricista/",
+            "titolo": "Elettricista urgente a Contrada Badiella – Intervento immediato 24/7"
+        },
+        "calatubo/elettricista/index.html": {
+            "nome_file": "index.html",
+            "estensione": ".html",
+            "percorso_assoluto": "C:\\Users\\ettor\\Desktop\\sito official\\balestrate\\calatubo\\elettricista\\index.html",
+            "percorso_relativo": "calatubo/elettricista/index.html",
+            "dimensione_bytes": 30028,
+            "canonical_attuale": "https://tempestivo.it/balestrate/calatubo/elettricista/",
+            "og_url_attuale": "https://tempestivo.it/balestrate/calatubo/elettricista/",
+            "titolo": "Elettricista urgente a Contrada Calatubo – Intervento immediato 24/7"
+        },
+        "calatubo/idraulico/index.html": {
+            "nome_file": "index.html",
+            "estensione": ".html",
+            "percorso_assoluto": "C:\\Users\\ettor\\Desktop\\sito official\\balestrate\\calatubo\\idraulico\\index.html",
+            "percorso_relativo": "calatubo/idraulico/index.html",
+            "dimensione_bytes": 29027,
+            "canonical_attuale": "https://tempestivo.it/balestrate/calatubo/idraulico/",
+            "og_url_attuale": "https://tempestivo.it/balestrate/calatubo/idraulico/",
+            "titolo": "Idraulico urgente a Contrada Calatubo Balestrate – Intervento immediato 24/7"
+        },
+        "cataldo/elettricista/index.html": {
+            "nome_file": "index.html",
+            "estensione": ".html",
+            "percorso_assoluto": "C:\\Users\\ettor\\Desktop\\sito official\\balestrate\\cataldo\\elettricista\\index.html",
+            "percorso_relativo": "cataldo/elettricista/index.html",
+            "dimensione_bytes": 29912,
+            "canonical_attuale": "https://tempestivo.it/balestrate/cataldo/elettricista/",
+            "og_url_attuale": "https://tempestivo.it/balestrate/cataldo/elettricista/",
+            "titolo": "Elettricista urgente a Contrada Cataldo – Intervento immediato 24/7"
+        },
+        "centro-storico/idraulico/index.html": {
+            "nome_file": "index.html",
+            "estensione": ".html",
+            "percorso_assoluto": "C:\\Users\\ettor\\Desktop\\sito official\\balestrate\\centro-storico\\idraulico\\index.html",
+            "percorso_relativo": "centro-storico/idraulico/index.html",
+            "dimensione_bytes": 29226,
+            "canonical_attuale": "https://tempestivo.it/balestrate/idraulico-urgente-balestrate-balestrate-centro-storico/",
+            "og_url_attuale": "https://tempestivo.it/balestrate/idraulico-urgente-balestrate-balestrate-centro-storico/",
+            "titolo": "Idraulico urgente nel Centro Storico di Balestrate – Intervento immediato 24/7"
+        },
+        "chiusa/elettricista/index.html": {
+            "nome_file": "index.html",
+            "estensione": ".html",
+            "percorso_assoluto": "C:\\Users\\ettor\\Desktop\\sito official\\balestrate\\chiusa\\elettricista\\index.html",
+            "percorso_relativo": "chiusa/elettricista/index.html",
+            "dimensione_bytes": 29874,
+            "canonical_attuale": "https://tempestivo.it/balestrate/chiusa/elettricista/",
+            "og_url_attuale": "https://tempestivo.it/balestrate/chiusa/elettricista/",
+            "titolo": "Elettricista urgente a Contrada Chiusa – Intervento immediato 24/7"
+        },
+        "colonna/elettricista/index.html": {
+            "nome_file": "index.html",
+            "estensione": ".html",
+            "percorso_assoluto": "C:\\Users\\ettor\\Desktop\\sito official\\balestrate\\colonna\\elettricista\\index.html",
+            "percorso_relativo": "colonna/elettricista/index.html",
+            "dimensione_bytes": 29897,
+            "canonical_attuale": "https://tempestivo.it/balestrate/colonna/elettricista/",
+            "og_url_attuale": "https://tempestivo.it/balestrate/colonna/elettricista/",
+            "titolo": "Elettricista urgente a Contrada Colonna – Intervento immediato 24/7"
+        },
+        "concivivi/elettricista/index.html": {
+            "nome_file": "index.html",
+            "estensione": ".html",
+            "percorso_assoluto": "C:\\Users\\ettor\\Desktop\\sito official\\balestrate\\concivivi\\elettricista\\index.html",
+            "percorso_relativo": "concivivi/elettricista/index.html",
+            "dimensione_bytes": 29936,
+            "canonical_attuale": "https://tempestivo.it/balestrate/concivivi/elettricista/",
+            "og_url_attuale": "https://tempestivo.it/balestrate/concivivi/elettricista/",
+            "titolo": "Elettricista urgente a Contrada Concivivi – Intervento immediato 24/7"
+        },
+        "croce-vanella/elettricista/index.html": {
+            "nome_file": "index.html",
+            "estensione": ".html",
+            "percorso_assoluto": "C:\\Users\\ettor\\Desktop\\sito official\\balestrate\\croce-vanella\\elettricista\\index.html",
+            "percorso_relativo": "croce-vanella/elettricista/index.html",
+            "dimensione_bytes": 30114,
+            "canonical_attuale": "https://tempestivo.it/balestrate/croce-vanella/elettricista/",
+            "og_url_attuale": "https://tempestivo.it/balestrate/croce-vanella/elettricista/",
+            "titolo": "Elettricista urgente a Contrada Croce Vanella – Intervento immediato 24/7"
+        },
+        "forgitella/elettricista/index.html": {
+            "nome_file": "index.html",
+            "estensione": ".html",
+            "percorso_assoluto": "C:\\Users\\ettor\\Desktop\\sito official\\balestrate\\forgitella\\elettricista\\index.html",
+            "percorso_relativo": "forgitella/elettricista/index.html",
+            "dimensione_bytes": 30011,
+            "canonical_attuale": "https://tempestivo.it/balestrate/forgitella/elettricista/",
+            "og_url_attuale": "https://tempestivo.it/balestrate/forgitella/elettricista/",
+            "titolo": "Elettricista urgente a Contrada Forgitella – Intervento immediato 24/7"
+        },
+        "forgitella/idraulico/index.html": {
+            "nome_file": "index.html",
+            "estensione": ".html",
+            "percorso_assoluto": "C:\\Users\\ettor\\Desktop\\sito official\\balestrate\\forgitella\\idraulico\\index.html",
+            "percorso_relativo": "forgitella/idraulico/index.html",
+            "dimensione_bytes": 28955,
+            "canonical_attuale": "https://tempestivo.it/balestrate/forgitella/idraulico/",
+            "og_url_attuale": "https://tempestivo.it/balestrate/forgitella/idraulico/",
+            "titolo": "Idraulico urgente Contrada Forgitella Balestrate – Intervento immediato 24/7"
+        },
+        "giardini/elettricista/index.html": {
+            "nome_file": "index.html",
+            "estensione": ".html",
+            "percorso_assoluto": "C:\\Users\\ettor\\Desktop\\sito official\\balestrate\\giardini\\elettricista\\index.html",
+            "percorso_relativo": "giardini/elettricista/index.html",
+            "dimensione_bytes": 29881,
+            "canonical_attuale": "https://tempestivo.it/balestrate/giardini/elettricista/",
+            "og_url_attuale": "https://tempestivo.it/balestrate/giardini/elettricista/",
+            "titolo": "Elettricista urgente a Contrada Giardini – Intervento immediato 24/7"
+        },
+        "lungomare/idraulico/index.html": {
+            "nome_file": "index.html",
+            "estensione": ".html",
+            "percorso_assoluto": "C:\\Users\\ettor\\Desktop\\sito official\\balestrate\\lungomare\\idraulico\\index.html",
+            "percorso_relativo": "lungomare/idraulico/index.html",
+            "dimensione_bytes": 29022,
+            "canonical_attuale": "https://tempestivo.it/balestrate/idraulico-urgente-balestrate-balestrate-lungomare/",
+            "og_url_attuale": "https://tempestivo.it/balestrate/idraulico-urgente-balestrate-balestrate-lungomare/",
+            "titolo": "Idraulico urgente Lungomare di Balestrate – Intervento immediato 24/7"
+        },
+        "passetto/elettricista/index.html": {
+            "nome_file": "index.html",
+            "estensione": ".html",
+            "percorso_assoluto": "C:\\Users\\ettor\\Desktop\\sito official\\balestrate\\passetto\\elettricista\\index.html",
+            "percorso_relativo": "passetto/elettricista/index.html",
+            "dimensione_bytes": 29950,
+            "canonical_attuale": "https://tempestivo.it/balestrate/passetto/elettricista/",
+            "og_url_attuale": "https://tempestivo.it/balestrate/passetto/elettricista/",
+            "titolo": "Elettricista urgente a Contrada Passetto – Intervento immediato 24/7"
+        },
+        "piano-di-tresca/elettricista/index.html": {
+            "nome_file": "index.html",
+            "estensione": ".html",
+            "percorso_assoluto": "C:\\Users\\ettor\\Desktop\\sito official\\balestrate\\piano-di-tresca\\elettricista\\index.html",
+            "percorso_relativo": "piano-di-tresca/elettricista/index.html",
+            "dimensione_bytes": 30065,
+            "canonical_attuale": "https://tempestivo.it/balestrate/piano-di-tresca/elettricista/",
+            "og_url_attuale": "https://tempestivo.it/balestrate/piano-di-tresca/elettricista/",
+            "titolo": "Elettricista urgente a Contrada Piano di Tresca – Intervento immediato 24/7"
+        },
+        "piano-di-tresca/idraulico/index.html": {
+            "nome_file": "index.html",
+            "estensione": ".html",
+            "percorso_assoluto": "C:\\Users\\ettor\\Desktop\\sito official\\balestrate\\piano-di-tresca\\idraulico\\index.html",
+            "percorso_relativo": "piano-di-tresca/idraulico/index.html",
+            "dimensione_bytes": 29101,
+            "canonical_attuale": "https://tempestivo.it/balestrate/piano-di-tresca/idraulico/",
+            "og_url_attuale": "https://tempestivo.it/balestrate/piano-di-tresca/idraulico/",
+            "titolo": "Idraulico urgente contrada Piano di Tresca Balestrate – Intervento immediato 24/7"
+        },
+        "piano-trappeto/elettricista/index.html": {
+            "nome_file": "index.html",
+            "estensione": ".html",
+            "percorso_assoluto": "C:\\Users\\ettor\\Desktop\\sito official\\balestrate\\piano-trappeto\\elettricista\\index.html",
+            "percorso_relativo": "piano-trappeto/elettricista/index.html",
+            "dimensione_bytes": 30140,
+            "canonical_attuale": "https://tempestivo.it/balestrate/piano-trappeto/elettricista/",
+            "og_url_attuale": "https://tempestivo.it/balestrate/piano-trappeto/elettricista/",
+            "titolo": "Elettricista urgente a Contrada Piano Trappeto – Intervento immediato 24/7"
+        },
+        "piano-trappeto/idraulico/index.html": {
+            "nome_file": "index.html",
+            "estensione": ".html",
+            "percorso_assoluto": "C:\\Users\\ettor\\Desktop\\sito official\\balestrate\\piano-trappeto\\idraulico\\index.html",
+            "percorso_relativo": "piano-trappeto/idraulico/index.html",
+            "dimensione_bytes": 29106,
+            "canonical_attuale": "https://tempestivo.it/balestrate/piano-trappeto/idraulico/",
+            "og_url_attuale": "https://tempestivo.it/balestrate/piano-trappeto/idraulico/",
+            "titolo": "Idraulico urgente a Piano Trappeto Balestrate – Intervento immediato 24/7"
+        },
+        "porto/idraulico/index.html": {
+            "nome_file": "index.html",
+            "estensione": ".html",
+            "percorso_assoluto": "C:\\Users\\ettor\\Desktop\\sito official\\balestrate\\porto\\idraulico\\index.html",
+            "percorso_relativo": "porto/idraulico/index.html",
+            "dimensione_bytes": 28995,
+            "canonical_attuale": "https://tempestivo.it/balestrate/idraulico-urgente-balestrate-balestrate-porto/",
+            "og_url_attuale": "https://tempestivo.it/balestrate/idraulico-urgente-balestrate-balestrate-porto/",
+            "titolo": "Idraulico urgente al Porto di Balestrate – Intervento immediato 24/7"
+        },
+        "pronto-intervento-elettrico-e-idraulico-balestrate/index.html": {
+            "nome_file": "index.html",
+            "estensione": ".html",
+            "percorso_assoluto": "C:\\Users\\ettor\\Desktop\\sito official\\balestrate\\pronto-intervento-elettrico-e-idraulico-balestrate\\index.html",
+            "percorso_relativo": "pronto-intervento-elettrico-e-idraulico-balestrate/index.html",
+            "dimensione_bytes": 38163,
+            "canonical_attuale": "https://tempestivo.it/balestrate/pronto-intervento-elettrico-e-idraulico-balestrate/",
+            "og_url_attuale": "https://tempestivo.it/balestrate/pronto-intervento-elettrico-e-idraulico-balestrate/",
+            "titolo": "Pronto Intervento Elettrico e Idraulico Balestrate – H24"
+        },
+        "pronto-intervento-elettrico-e-idraulico-balestrate/indexx.html": {
+            "nome_file": "indexx.html",
+            "estensione": ".html",
+            "percorso_assoluto": "C:\\Users\\ettor\\Desktop\\sito official\\balestrate\\pronto-intervento-elettrico-e-idraulico-balestrate\\indexx.html",
+            "percorso_relativo": "pronto-intervento-elettrico-e-idraulico-balestrate/indexx.html",
+            "dimensione_bytes": 36610,
+            "canonical_attuale": "https://tempestivo.it/balestrate/pronto-intervento-elettrico-e-idraulico-balestrate/indexx.html/",
+            "og_url_attuale": "https://tempestivo.it/balestrate/pronto-intervento-elettrico-e-idraulico-balestrate/indexx.html/",
+            "titolo": "Pronto Intervento Elettrico e Idraulico Balestrate – H24"
+        },
+        "ristrutturazione-bagno-balestrate/index.html": {
+            "nome_file": "index.html",
+            "estensione": ".html",
+            "percorso_assoluto": "C:\\Users\\ettor\\Desktop\\sito official\\balestrate\\ristrutturazione-bagno-balestrate\\index.html",
+            "percorso_relativo": "ristrutturazione-bagno-balestrate/index.html",
+            "dimensione_bytes": 30161,
+            "canonical_attuale": "https://tempestivo.it/balestrate/ristrutturazione-bagno-balestrate/",
+            "og_url_attuale": "https://tempestivo.it/balestrate/ristrutturazione-bagno-balestrate/",
+            "titolo": "Ristrutturazione bagno Balestrate – Progettazione e lavori certificati"
+        },
+        "ristrutturazioni-chiavi-in-mano/contenuti.json": {
+            "nome_file": "contenuti.json",
+            "estensione": ".json",
+            "percorso_assoluto": "C:\\Users\\ettor\\Desktop\\sito official\\balestrate\\ristrutturazioni-chiavi-in-mano\\contenuti.json",
+            "percorso_relativo": "ristrutturazioni-chiavi-in-mano/contenuti.json",
+            "dimensione_bytes": 8001,
+            "canonical_attuale": null,
+            "og_url_attuale": null,
+            "titolo": null
+        },
+        "ristrutturazioni-chiavi-in-mano/genera_ristrutturazioni_balestrate.py": {
+            "nome_file": "genera_ristrutturazioni_balestrate.py",
+            "estensione": ".py",
+            "percorso_assoluto": "C:\\Users\\ettor\\Desktop\\sito official\\balestrate\\ristrutturazioni-chiavi-in-mano\\genera_ristrutturazioni_balestrate.py",
+            "percorso_relativo": "ristrutturazioni-chiavi-in-mano/genera_ristrutturazioni_balestrate.py",
+            "dimensione_bytes": 24255,
+            "canonical_attuale": null,
+            "og_url_attuale": null,
+            "titolo": null
+        },
+        "ristrutturazioni-chiavi-in-mano/index.html": {
+            "nome_file": "index.html",
+            "estensione": ".html",
+            "percorso_assoluto": "C:\\Users\\ettor\\Desktop\\sito official\\balestrate\\ristrutturazioni-chiavi-in-mano\\index.html",
+            "percorso_relativo": "ristrutturazioni-chiavi-in-mano/index.html",
+            "dimensione_bytes": 59552,
+            "canonical_attuale": "https://tempestivo.it/balestrate/ristrutturazioni-chiavi-in-mano/",
+            "og_url_attuale": "https://tempestivo.it/balestrate/ristrutturazioni-chiavi-in-mano/",
+            "titolo": "Ristrutturazioni Chiavi in Mano Express a Balestrate | Tempestivo"
+        },
+        "ristrutturazioni-chiavi-in-mano/template master.html": {
+            "nome_file": "template master.html",
+            "estensione": ".html",
+            "percorso_assoluto": "C:\\Users\\ettor\\Desktop\\sito official\\balestrate\\ristrutturazioni-chiavi-in-mano\\template master.html",
+            "percorso_relativo": "ristrutturazioni-chiavi-in-mano/template master.html",
+            "dimensione_bytes": 10680,
+            "canonical_attuale": "{{ canonical_url }}",
+            "og_url_attuale": "{{ canonical_url }}",
+            "titolo": "{{ page_title }}"
+        },
+        "ruffino/elettricista/index.html": {
+            "nome_file": "index.html",
+            "estensione": ".html",
+            "percorso_assoluto": "C:\\Users\\ettor\\Desktop\\sito official\\balestrate\\ruffino\\elettricista\\index.html",
+            "percorso_relativo": "ruffino/elettricista/index.html",
+            "dimensione_bytes": 29965,
+            "canonical_attuale": "https://tempestivo.it/balestrate/ruffino/elettricista/",
+            "og_url_attuale": "https://tempestivo.it/balestrate/ruffino/elettricista/",
+            "titolo": "Elettricista urgente a Contrada Ruffino – Intervento immediato 24/7"
+        },
+        "sicciarotta/elettricista/index.html": {
+            "nome_file": "index.html",
+            "estensione": ".html",
+            "percorso_assoluto": "C:\\Users\\ettor\\Desktop\\sito official\\balestrate\\sicciarotta\\elettricista\\index.html",
+            "percorso_relativo": "sicciarotta/elettricista/index.html",
+            "dimensione_bytes": 30120,
+            "canonical_attuale": "https://tempestivo.it/balestrate/sicciarotta/elettricista/",
+            "og_url_attuale": "https://tempestivo.it/balestrate/sicciarotta/elettricista/",
+            "titolo": "Elettricista urgente a Contrada Sicciarotta – Intervento immediato 24/7"
+        },
+        "sicciarotta/idraulico/index.html": {
+            "nome_file": "index.html",
+            "estensione": ".html",
+            "percorso_assoluto": "C:\\Users\\ettor\\Desktop\\sito official\\balestrate\\sicciarotta\\idraulico\\index.html",
+            "percorso_relativo": "sicciarotta/idraulico/index.html",
+            "dimensione_bytes": 29046,
+            "canonical_attuale": "https://tempestivo.it/balestrate/sicciarotta/idraulico/",
+            "og_url_attuale": "https://tempestivo.it/balestrate/sicciarotta/idraulico/",
+            "titolo": "Idraulico urgente contrada Sicciarotta Balestrate – Intervento immediato 24/7"
+        },
+        "tavolata/elettricista/index.html": {
+            "nome_file": "index.html",
+            "estensione": ".html",
+            "percorso_assoluto": "C:\\Users\\ettor\\Desktop\\sito official\\balestrate\\tavolata\\elettricista\\index.html",
+            "percorso_relativo": "tavolata/elettricista/index.html",
+            "dimensione_bytes": 30038,
+            "canonical_attuale": "https://tempestivo.it/balestrate/tavolata/elettricista/",
+            "og_url_attuale": "https://tempestivo.it/balestrate/tavolata/elettricista/",
+            "titolo": "Elettricista urgente a Contrada Tavolata – Intervento immediato 24/7"
+        },
+        "tavolata/idraulico/index.html": {
+            "nome_file": "index.html",
+            "estensione": ".html",
+            "percorso_assoluto": "C:\\Users\\ettor\\Desktop\\sito official\\balestrate\\tavolata\\idraulico\\index.html",
+            "percorso_relativo": "tavolata/idraulico/index.html",
+            "dimensione_bytes": 28985,
+            "canonical_attuale": "https://tempestivo.it/balestrate/tavolata/idraulico/",
+            "og_url_attuale": "https://tempestivo.it/balestrate/tavolata/idraulico/",
+            "titolo": "Idraulico urgente a Contrada Tavolata Balestrate – Intervento immediato 24/7"
+        },
+        "tavolatella/elettricista/index.html": {
+            "nome_file": "index.html",
+            "estensione": ".html",
+            "percorso_assoluto": "C:\\Users\\ettor\\Desktop\\sito official\\balestrate\\tavolatella\\elettricista\\index.html",
+            "percorso_relativo": "tavolatella/elettricista/index.html",
+            "dimensione_bytes": 30052,
+            "canonical_attuale": "https://tempestivo.it/balestrate/tavolatella/elettricista/",
+            "og_url_attuale": "https://tempestivo.it/balestrate/tavolatella/elettricista/",
+            "titolo": "Elettricista urgente a Contrada Tavolatella – Intervento immediato 24/7"
+        },
+        "telegrafo/elettricista/index.html": {
+            "nome_file": "index.html",
+            "estensione": ".html",
+            "percorso_assoluto": "C:\\Users\\ettor\\Desktop\\sito official\\balestrate\\telegrafo\\elettricista\\index.html",
+            "percorso_relativo": "telegrafo/elettricista/index.html",
+            "dimensione_bytes": 29979,
+            "canonical_attuale": "https://tempestivo.it/balestrate/telegrafo/elettricista/",
+            "og_url_attuale": "https://tempestivo.it/balestrate/telegrafo/elettricista/",
+            "titolo": "Elettricista urgente a Contrada Telegrafo – Intervento immediato 24/7"
+        }
+    }
+}

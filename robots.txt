@@ -1,0 +1,20 @@
+# robots.txt generato automaticamente da DataGraph Sanitizer & SEO Engine
+# Per maggiori informazioni visita: https://www.robotstxt.org/
+
+User-agent: *
+Allow: /images/
+Allow: /css/
+Allow: /js/
+Disallow: /admin/
+Disallow: /login/
+Disallow: /api/
+Disallow: /checkout/
+Disallow: /search?
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+Sitemap: https://tempestivo.it/sitemap.xml
