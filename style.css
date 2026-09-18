@@ -103,6 +103,12 @@ header,
   white-space: nowrap;
 }
 
+.business-nav-link {
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+}
+
 .logo-text span:first-child {
   font-family: var(--font-titoli);
   font-weight: 800;
