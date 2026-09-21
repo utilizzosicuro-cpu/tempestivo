@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Mappa del sito
+Sitemap: https://www.tempestivo.it/sitemap.xml
