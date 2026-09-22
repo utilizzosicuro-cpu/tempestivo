@@ -197,10 +197,11 @@
 <p class="disclaimer">Nessun obbligo di acquisto. Servizio attivo nelle province di Palermo e Trapani.</p>
 </div>
 <div class="tempestivo-form-col">
-<form class="tempestivo-form" onsubmit="event.preventDefault(); alert('Grazie! Ti contatteremo entro 24h.');">
+<form class="tempestivo-form" action="https://formspree.io/f/mykljgev" method="POST" enctype="multipart/form-data">
 <div class="form-group">
 <label for="nome">Nome e Cognome *</label>
 <input id="nome" name="nome" required="" type="text"/>
+  <input type="hidden" name="_next" value="https://tempestivo.it/">
 </div>
 <div class="form-group">
 <label for="citta">Città dell'immobile *</label>
@@ -222,8 +223,8 @@
 </select>
 </div>
 <div class="form-group file-group">
-<label class="file-label" for="foto">📁 Carica la foto attuale della stanza *</label>
-<input accept="image/*" id="foto" name="foto" required="" type="file"/>
+<label class="file-label" for="foto">📁 Carica la foto attuale della stanza (Facoltativo)</label>
+<input accept="image/*" id="foto" name="foto" type="file"/>
 <small>Accetta immagini (JPG, PNG) - Max 10MB</small>
 </div>
 <button class="btn-submit-lead" type="submit">VOGLIO IL MIO PROGETTO E PREVENTIVO GRATIS</button>
