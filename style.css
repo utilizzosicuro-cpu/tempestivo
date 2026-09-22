@@ -780,6 +780,16 @@ header,
 /* ==========================================================================
 11. FOOTER & NAVIGAZIONE SECONDARIA
 ========================================================================== */
+.contatto a {
+  color: var(--bianco) !important;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contatto a:hover {
+  color: var(--giallo) !important;
+}
+
 .footer-nav {
   margin-top: 40px;
   padding-top: 30px;
@@ -805,13 +815,13 @@ header,
 }
 
 .footer-nav ul li a {
-  color: rgba(255,255,255,0.8);
+  color: var(--bianco) !important;
   font-size: 0.9rem;
   transition: color 0.3s;
 }
 
 .footer-nav ul li a:hover {
-  color: var(--giallo);
+  color: var(--giallo) !important;
 }
 
 /* ==========================================================================
