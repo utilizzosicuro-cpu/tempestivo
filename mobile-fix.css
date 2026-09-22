@@ -768,3 +768,17 @@ nav.sub-nav,
     }
 
 }
+
+/* ==========================================================================
+CORREZIONE COLORE LINK FOOTER & SOCIAL SU MOBILE
+========================================================================== */
+footer a,
+.social-trust-links a {
+  color: #FFFFFF !important; /* Colore bianco per i link nel footer */
+  text-decoration: none !important;
+}
+
+footer a:hover,
+.social-trust-links a:hover {
+  color: #FFC857 !important; /* Giallo al passaggio del mouse/tocco */
+}
