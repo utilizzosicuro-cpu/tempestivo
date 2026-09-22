@@ -108,6 +108,17 @@ header,
   display: flex;
   flex-direction: column;
   white-space: nowrap;
+  color: var(--bianco) !important;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+.business-nav-link:hover {
+  color: var(--giallo) !important;
 }
 
 .logo-text span:first-child {
