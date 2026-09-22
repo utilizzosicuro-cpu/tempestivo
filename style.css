@@ -1029,3 +1029,18 @@ textarea:focus {
     height: auto;
   }
 }
+
+/* ==========================================================================
+CORREZIONE DEFINITIVA LINK NEL FOOTER E SOCIAL TRUST
+========================================================================== */
+footer a,
+.social-trust-links a {
+  color: var(--bianco) !important;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover,
+.social-trust-links a:hover {
+  color: var(--giallo) !important;
+}
