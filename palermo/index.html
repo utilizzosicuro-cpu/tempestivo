@@ -27,8 +27,8 @@
 <meta content="Palermo, Sicilia" name="geo.placename"/>
 <meta content="38.1157, 13.3615" name="geo.position"/>
 <meta content="38.1157, 13.3615" name="ICBM"/>
-<!-- SCHEMA.ORG STRUTTURATO POTENZIATO PER SEO & AI OVERVIEWS -->
-<script type="application/ld+json">{
+<script type="application/ld+json">
+{
     "@context": "https://schema.org",
     "@graph": [
         {
@@ -74,9 +74,40 @@
                 "latitude": "38.1157",
                 "longitude": "13.3615"
             },
-            "areaServed": {
-                "@type": "City",
-                "name": "Palermo"
+            "areaServed": [
+                {
+                    "@type": "City",
+                    "name": "Palermo"
+                },
+                {
+                    "@type": "City",
+                    "name": "Trapani"
+                },
+                {
+                    "@type": "AdministrativeArea",
+                    "name": "Sicilia"
+                }
+            ],
+            "openingHoursSpecification": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                    "Sunday"
+                ],
+                "opens": "00:00",
+                "closes": "23:59"
+            },
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.9",
+                "reviewCount": "45",
+                "bestRating": "5",
+                "worstRating": "1"
             },
             "hasOfferCatalog": {
                 "@type": "OfferCatalog",
@@ -85,17 +116,13 @@
                     {
                         "@type": "Offer",
                         "itemOffered": {
-                            "@type": "Service",
-                            "name": "Ristrutturazioni Chiavi in Mano Palermo",
-                            "description": "Servizio completo di General Contractor con unico referente, gestione pratiche edilizie e tempi certi."
+                            "@id": "https://tempestivo.it/#service-ristrutturazioni"
                         }
                     },
                     {
                         "@type": "Offer",
                         "itemOffered": {
-                            "@type": "Service",
-                            "name": "Rifacimento Bagno Chiavi in Mano",
-                            "description": "Ristrutturazione completa di bagni con impianti a norma DM 37/08."
+                            "@id": "https://tempestivo.it/#service-bagno"
                         }
                     }
                 ]
@@ -107,7 +134,34 @@
             ]
         },
         {
+            "@type": "Service",
+            "@id": "https://tempestivo.it/#service-ristrutturazioni",
+            "name": "Ristrutturazioni Chiavi in Mano Palermo",
+            "description": "Servizio completo di General Contractor con unico referente, gestione pratiche edilizie e tempi certi.",
+            "provider": {
+                "@id": "https://tempestivo.it/#business"
+            },
+            "areaServed": {
+                "@type": "City",
+                "name": "Palermo"
+            }
+        },
+        {
+            "@type": "Service",
+            "@id": "https://tempestivo.it/#service-bagno",
+            "name": "Rifacimento Bagno Chiavi in Mano",
+            "description": "Ristrutturazione completa di bagni con impianti a norma DM 37/08.",
+            "provider": {
+                "@id": "https://tempestivo.it/#business"
+            },
+            "areaServed": {
+                "@type": "City",
+                "name": "Palermo"
+            }
+        },
+        {
             "@type": "FAQPage",
+            "@id": "https://tempestivo.it/#faq",
             "mainEntity": [
                 {
                     "@type": "Question",
@@ -128,7 +182,8 @@
             ]
         }
     ]
-}</script>
+}
+</script>
 <style id="tempestivo-sticky-style"></style>
 <link href="https://tempestivo.it/palermo/" rel="canonical"/>
 <meta content="https://tempestivo.it/palermo/INDEX.html" property="og:url"/>
