@@ -1044,3 +1044,54 @@ footer a:hover,
 .social-trust-links a:hover {
   color: var(--giallo) !important;
 }
+
+/* --- Impostazioni Generali e Testo --- */
+body {
+  color: #1e293b; /* Testo principale scuro e ben leggibile */
+  background-color: #f8fafc;
+  font-family: system-ui, -apple-side, sans-serif;
+  line-height: 1.6;
+}
+
+/* --- Box con Sfondo Chiaro --- */
+.box-chiaro, .card, .guida-item {
+  background-color: #ffffff;
+  color: #1e293b;
+  border: 1px solid #e2e8f0;
+}
+
+.box-chiaro p, .card p, .guida-item p {
+  color: #334155; /* Grigio scuro per massima leggibilità */
+}
+
+/* --- Box con Sfondo Scuro o Sfumato --- */
+section[style*="background"], .hero-section {
+  color: #ffffff;
+}
+
+section[style*="background"] p, .hero-section p {
+  color: #f1f5f9; /* Bianco sporco morbido ma ad alto contrasto */
+  opacity: 1;
+}
+
+/* --- Gestione Link --- */
+main a {
+  color: #0284c7;
+  text-decoration: underline;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+main a:hover {
+  color: #0369a1;
+}
+
+/* --- Header e Navigazione --- */
+header, .header-container {
+  color: #ffffff !important;
+}
+
+header a {
+  color: #ffffff !important;
+  text-decoration: none;
+}
