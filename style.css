@@ -1154,3 +1154,24 @@ div[style*="background-color"] li {
 .timeline .step p {
     color: #334155 !important;
 }
+
+/* 1. Assicura che la sezione finale scura mantenga i suoi colori originali */
+.tempestivo-lead-section h2 {
+    color: var(--bianco) !important;
+}
+
+.tempestivo-lead-section p, 
+.tempestivo-lead-section .subtitle {
+    color: var(--giallo) !important;
+}
+
+/* 2. Oppure, se hai usato selettori globali sulle section, escludi quelle scure usando :not() */
+section:not(.tempestivo-lead-section)[style*="background-color"] h2,
+section:not(.tempestivo-lead-section)[style*="background"] h2 {
+    color: var(--blu-notte) !important;
+}
+
+section:not(.tempestivo-lead-section)[style*="background-color"] p,
+section:not(.tempestivo-lead-section)[style*="background"] p {
+    color: #334155 !important;
+}
