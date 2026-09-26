@@ -1038,115 +1038,41 @@ textarea:focus {
 }
 
 /* ==========================================================================
-CORREZIONE DEFINITIVA LINK NEL FOOTER E SOCIAL TRUST
+CORREZIONI FINALI E GESTIONE CONTRASTI
 ========================================================================== */
+
+/* Link nel footer e social trust */
 footer a,
 .social-trust-links a {
-  color: var(--bianco) !important;
-  text-decoration: none;
-  transition: color 0.3s ease;
+    color: var(--bianco) !important;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 footer a:hover,
 .social-trust-links a:hover {
-  color: var(--giallo) !important;
+    color: var(--giallo) !important;
 }
 
-/* --- Impostazioni Generali e Testo --- */
-body {
-  color: #1e293b; /* Testo principale scuro e ben leggibile */
-  background-color: #f8fafc;
-  font-family: system-ui, -apple-side, sans-serif;
-  line-height: 1.6;
-}
-
-/* --- Box con Sfondo Chiaro --- */
+/* Leggibilità standard per box e schede con sfondo chiaro */
 .box-chiaro, .card, .guida-item {
-  background-color: #ffffff;
-  color: #1e293b;
-  border: 1px solid #e2e8f0;
-}
-
-.box-chiaro p, .card p, .guida-item p {
-  color: #334155; /* Grigio scuro per massima leggibilità */
-}
-
-/* --- Box con Sfondo Scuro o Sfumato --- */
-section[style*="background"], .hero-section {
-  color: #ffffff;
-}
-
-section[style*="background"] p, .hero-section p {
-  color: #f1f5f9; /* Bianco sporco morbido ma ad alto contrasto */
-  opacity: 1;
-}
-
-/* --- Gestione Link --- */
-main a {
-  color: #0284c7;
-  text-decoration: underline;
-  font-weight: 600;
-  transition: color 0.2s ease;
-}
-
-main a:hover {
-  color: #0369a1;
-}
-
-/* --- Header e Navigazione --- */
-header, .header-container {
-  color: #ffffff !important;
-}
-
-header a {
-  color: #ffffff !important;
-  text-decoration: none;
-}
-
-/* Sicurezza contrasto testi su sfondi chiari */
-.vantaggio p, 
-.vantaggio span, 
-.service-card p, 
-.card-content p,
-.section-desc {
-  color: var(--grigio-scuro);
-}
-
-/* Assicura che i titoli all'interno dei box siano sempre ben visibili */
-.vantaggio h3, 
-.service-card h3 {
-  color: var(--blu-notte);
-}
-
-/* Forza un colore di testo scuro leggibile su qualsiasi contenitore con sfondo chiaro */
-section[style*="background-color: #f1f5f9"],
-section[style*="background-color: #f8f9fa"],
-section[style*="background-color: #f9f9f9"],
-section[style*="background-color: var(--grigio-chiaro)"],
-section[style*="background: #eef2f7"],
-div[style*="background-color"] {
+    background-color: #ffffff;
     color: #1e293b;
+    border: 1px solid #e2e8f0;
 }
 
-/* Assicura che i titoli all'interno di sfondi chiari siano sempre blu scuro o rossi */
-section[style*="background-color"] h2,
-div[style*="background-color"] h2 {
-    color: var(--blu-notte) !important;
+.box-chiaro p, .card p, .guida-item p,
+.vantaggio p, .vantaggio span, 
+.service-card p, .card-content p,
+.section-desc {
+    color: var(--grigio-scuro);
 }
 
-section[style*="background-color"] h3,
-div[style*="background-color"] h3 {
-    color: var(--rosso) !important;
+.vantaggio h3, .service-card h3 {
+    color: var(--blu-notte);
 }
 
-/* Assicura che paragrafi e liste siano leggibili */
-section[style*="background-color"] p,
-section[style*="background-color"] li,
-div[style*="background-color"] p,
-div[style*="background-color"] li {
-    color: #334155 !important;
-}
-
+/* Timeline / Schema d'intervento */
 .timeline .step h3 {
     color: var(--blu-notte) !important;
 }
@@ -1155,38 +1081,12 @@ div[style*="background-color"] li {
     color: #334155 !important;
 }
 
-/* 1. Assicura che la sezione finale scura mantenga i suoi colori originali */
-.tempestivo-lead-section h2 {
+/* BLOCCO DI SICUREZZA PER LA SEZIONE FINALE SCURA (Massima priorità) */
+.tempestivo-lead-section {
+    background-color: var(--blu-notte) !important;
     color: var(--bianco) !important;
 }
 
-.tempestivo-lead-section p, 
-.tempestivo-lead-section .subtitle {
-    color: var(--giallo) !important;
-}
-
-/* 2. Oppure, se hai usato selettori globali sulle section, escludi quelle scure usando :not() */
-section:not(.tempestivo-lead-section)[style*="background-color"] h2,
-section:not(.tempestivo-lead-section)[style*="background"] h2 {
-    color: var(--blu-notte) !important;
-}
-
-section:not(.tempestivo-lead-section)[style*="background-color"] p,
-section:not(.tempestivo-lead-section)[style*="background"] p {
-    color: #334155 !important;
-}
-
-/* 1. Forza il testo bianco e visibile nella sezione di lead scura */
-.tempestivo-lead-section h2 {
-    color: var(--bianco) !important;
-}
-
-.tempestivo-lead-section p, 
-.tempestivo-lead-section .subtitle {
-    color: var(--giallo) !important;
-}
-
-/* Forza il colore bianco e giallo sulla sezione finale scura con massima priorità */
 .tempestivo-lead-section h2,
 .tempestivo-lead-section h3 {
     color: var(--bianco) !important;
