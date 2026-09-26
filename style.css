@@ -1117,3 +1117,32 @@ header a {
 .service-card h3 {
   color: var(--blu-notte);
 }
+
+/* Forza un colore di testo scuro leggibile su qualsiasi contenitore con sfondo chiaro */
+section[style*="background-color: #f1f5f9"],
+section[style*="background-color: #f8f9fa"],
+section[style*="background-color: #f9f9f9"],
+section[style*="background-color: var(--grigio-chiaro)"],
+section[style*="background: #eef2f7"],
+div[style*="background-color"] {
+    color: #1e293b;
+}
+
+/* Assicura che i titoli all'interno di sfondi chiari siano sempre blu scuro o rossi */
+section[style*="background-color"] h2,
+div[style*="background-color"] h2 {
+    color: var(--blu-notte) !important;
+}
+
+section[style*="background-color"] h3,
+div[style*="background-color"] h3 {
+    color: var(--rosso) !important;
+}
+
+/* Assicura che paragrafi e liste siano leggibili */
+section[style*="background-color"] p,
+section[style*="background-color"] li,
+div[style*="background-color"] p,
+div[style*="background-color"] li {
+    color: #334155 !important;
+}
