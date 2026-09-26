@@ -645,6 +645,199 @@ Ogni cantiere di ristrutturazione gestito da <strong>Tempestivo</strong> a Paler
 <li><strong>Garanzia e Polizze:</strong> Copertura assicurativa completa e totale tranquillità per tutta la durata dei lavori.</li>
 </ul>
 </section>
+  <!-- SEZIONE PRIMA E DOPO INTERATTIVA (GALLERIA VISIVA) -->
+<section style="background: #ffffff; border: 2px solid var(--blu-notte); padding: 35px; border-radius: 12px; margin-bottom: 40px; box-shadow: 0 10px 30px rgba(0,0,0,0.08);">
+<div style="text-align: center; margin-bottom: 25px;">
+<span style="font-size: 2rem;">📸</span>
+<h2 style="color: var(--blu-notte); margin: 10px 0 5px; font-size: 1.75rem;">Galleria Visiva: Prima e Dopo i Cantieri a Palermo</h2>
+<p style="color: #64748b; font-size: 1rem;">Trascina lo slider o esplora le immagini affiancate per scoprire la trasformazione reale dei nostri cantieri tra Mondello, Libertà e Politeama.</p>
+</div>
+
+<!-- Griglia Contenitrice -->
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; margin-top: 25px;">
+
+  <!-- Cantiere 1: Bagno a Mondello -->
+  <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.03);">
+    <h3 style="color: var(--blu-notte); font-size: 1.15rem; margin-top: 0; margin-bottom: 12px;">🚿 Ristrutturazione Bagno Vista Mare - Mondello</h3>
+    
+    <!-- Contenitore Slider Prima/Dopo -->
+    <div class="img-comp-container" style="position: relative; height: 240px; border-radius: 8px; overflow: hidden; margin-bottom: 15px;">
+      <div class="img-comp-img" style="position: absolute; width: 100%; height: 100%; overflow: hidden;">
+        <img src="images/bagno-ristrutturato-moderno-mondello-palermo-tempestivo.png" alt="Bagno Moderno Ultimato Mondello" style="width: 100%; height: 240px; object-fit: cover; display: block;">
+      </div>
+      <div class="img-comp-img img-comp-overlay" style="position: absolute; width: 50%; height: 100%; overflow: hidden;">
+        <img src="images/bagno-ristrutturazione-vista-mare-mondello-palermo-tempestivo.png" alt="Cantiere Bagno Prima dei Lavori Mondello" style="width: 100%; height: 240px; object-fit: cover; display: block;">
+      </div>
+    </div>
+    <p style="font-size: 0.9rem; color: #475569; line-height: 1.5; margin: 0;"><strong>Intervento:</strong> Risanamento da salsedine, impermeabilizzazione e posa gres con formula express in 7 giorni.</p>
+  </div>
+
+  <!-- Cantiere 2: Locale Commerciale Politeama / Libertà -->
+  <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.03);">
+    <h3 style="color: var(--blu-notte); font-size: 1.15rem; margin-top: 0; margin-bottom: 12px;">🛍️ Locale Commerciale / Studio - Libertà</h3>
+    
+    <!-- Contenitore Slider Prima/Dopo -->
+    <div class="img-comp-container" style="position: relative; height: 240px; border-radius: 8px; overflow: hidden; margin-bottom: 15px;">
+      <div class="img-comp-img" style="position: absolute; width: 100%; height: 100%; overflow: hidden;">
+        <img src="images/locale-commerciale-ristrutturato-liberta-palermo-tempestivo.png" alt="Locale Commerciale Ultimato Libertà" style="width: 100%; height: 240px; object-fit: cover; display: block;">
+      </div>
+      <div class="img-comp-img img-comp-overlay" style="position: absolute; width: 50%; height: 100%; overflow: hidden;">
+        <img src="images/ristrutturazione-locale-commerciale-politeama-palermo-tempestivo.png" alt="Cantiere Locale Commerciale Prima" style="width: 100%; height: 240px; object-fit: cover; display: block;">
+      </div>
+    </div>
+    <p style="font-size: 0.9rem; color: #475569; line-height: 1.5; margin: 0;"><strong>Intervento:</strong> Restyling architettonico accelerato, impianti certificati e layout commerciale per negozi.</p>
+  </div>
+
+</div>
+</section>
+
+<!-- Stili e Script dedicati per il funzionamento dello slider visivo -->
+<style>
+.img-comp-container {
+  position: relative;
+  user-select: none;
+}
+.img-comp-slider {
+  position: absolute;
+  z-index: 9;
+  cursor: ew-resize;
+  width: 40px;
+  height: 40px;
+  background-color: var(--rosso);
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+</style>
+
+<script>
+function initComparisons() {
+  var x = document.getElementsByClassName("img-comp-overlay");
+  for (var i = 0; i < x.length; i++) {
+    compareImages(x[i]);
+  }
+  function compareImages(img) {
+    var slider, clicked = 0, w, h;
+    w = img.offsetWidth;
+    h = img.offsetHeight;
+    img.style.width = (w / 2) + "px";
+    
+    slider = document.createElement("DIV");
+    slider.setAttribute("class", "img-comp-slider");
+    slider.innerHTML = "↔";
+    img.parentElement.insertBefore(slider, img);
+    
+    slider.style.top = (h / 2) - (slider.offsetHeight / 2) + "px";
+    slider.style.left = (w / 2) - (slider.offsetWidth / 2) + "px";
+    
+    slider.addEventListener("mousedown", slideReady);
+    window.addEventListener("mouseup", slideFinish);
+    slider.addEventListener("touchstart", slideReady);
+    window.addEventListener("touchend", slideFinish);
+    
+    function slideReady(e) {
+      e.preventDefault();
+Per integrare una sezione **"Prima e Dopo" interattiva** con slider e immagini affiancate dei cantieri reali a Palermo nella pagina fornita (`index_5.html`), puoi inserire il codice HTML, CSS e JavaScript direttamente prima della sezione delle FAQ o subito dopo la sezione dei cantieri esistenti.
+
+### 1. Dove inserire il codice nella pagina
+All'interno del file `index_5.html`, cerca la sezione dei contatti o delle FAQ (ad esempio subito prima di `<section style="background-color: #fff; border: 1px solid #e9ecef; padding: 40px; border-radius: 12px; margin-top: 40px; ...">` dove sono presenti le *Domande Frequenti*). Incolla lì il blocco sottostante.
+
+---
+
+### 2. Il Codice da Inserire (HTML, CSS e JS)
+
+```html
+<!-- SEZIONE GALLERIA VISIVA: PRIMA E DOPO INTERATTIVO -->
+<section id="prima-e-dopo-interattivo" style="background: #ffffff; padding: 40px 20px; border-radius: 12px; border: 1px solid #e2e8f0; margin-top: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.03);">
+<div style="text-align: center; margin-bottom: 30px;">
+<span style="font-size: 2.5rem;">📸</span>
+<h2 style="color: var(--blu-notte); font-size: 1.75rem; margin-top: 10px;">Galleria Visiva: Prima e Dopo i Cantieri a Palermo</h2>
+<p style="color: #64748b; font-size: 1rem;">Trascina lo slider o confronta le immagini per scoprire la trasformazione reale dei nostri cantieri tra Mondello, Politeama e Zona Libertà.</p>
+</div>
+
+<div class="comparazione-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px;">
+
+  <!-- CANTIERE 1: Bagno Mondello -->
+  <div style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 8px; overflow: hidden; padding: 15px;">
+    <h3 style="color: var(--blu-notte); font-size: 1.15rem; margin-top: 0; margin-bottom: 12px;">🚿 Ristrutturazione Bagno - Mondello</h3>
+    <!-- Container Slider Prima/Dopo -->
+    <div class="img-comp-container" style="position: relative; height: 280px; width: 100%; border-radius: 6px; overflow: hidden;">
+      <div class="img-comp-img img-comp-background" style="position: absolute; width: 100%; height: 100%; overflow: hidden;">
+        <img src="images/bagno-ristrutturato-moderno-mondello-palermo-tempestivo.png" alt="Dopo la ristrutturazione a Mondello" style="display: block; width: 100%; height: 280px; object-fit: cover;">
+      </div>
+      <div class="img-comp-img img-comp-overlay" style="position: absolute; width: 50%; height: 100%; overflow: hidden; border-right: 3px solid var(--giallo);">
+        <img src="images/bagno-ristrutturazione-vista-mare-mondello-palermo-tempestivo.png" alt="Prima della ristrutturazione a Mondello" style="display: block; width: 100%; height: 280px; object-fit: cover;">
+      </div>
+      <!-- Range Slider Interattivo -->
+      <input type="range" min="0" max="100" value="50" class="slider-comparazione" style="position: absolute; -webkit-appearance: none; appearance: none; width: 100%; height: 100%; background: transparent; outline: none; margin: 0; z-index: 10; cursor: pointer;">
+    </div>
+    <p style="font-size: 0.85rem; color: #475569; margin-top: 12px; margin-bottom: 0;">Trascina il cursore per visualizzare lo stato grezzo (Prima) e la finitura completata (Dopo).</p>
+  </div>
+
+  <!-- CANTIERE 2: Locale Commerciale Politeama -->
+  <div style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 8px; overflow: hidden; padding: 15px;">
+    <h3 style="color: var(--blu-notte); font-size: 1.15rem; margin-top: 0; margin-bottom: 12px;">🛍️ Locale Commerciale - Politeama</h3>
+    <div class="img-comp-container" style="position: relative; height: 280px; width: 100%; border-radius: 6px; overflow: hidden;">
+      <div class="img-comp-img img-comp-background" style="position: absolute; width: 100%; height: 100%; overflow: hidden;">
+        <img src="images/locale-commerciale-ristrutturato-liberta-palermo-tempestivo.png" alt="Locale ultimato Zona Libertà" style="display: block; width: 100%; height: 280px; object-fit: cover;">
+      </div>
+      <div class="img-comp-img img-comp-overlay" style="position: absolute; width: 50%; height: 100%; overflow: hidden; border-right: 3px solid var(--giallo);">
+        <img src="images/ristrutturazione-locale-commerciale-politeama-palermo-tempestivo.png" alt="Cantiere in corso Politeama" style="display: block; width: 100%; height: 280px; object-fit: cover;">
+      </div>
+      <input type="range" min="0" max="100" value="50" class="slider-comparazione" style="position: absolute; -webkit-appearance: none; appearance: none; width: 100%; height: 100%; background: transparent; outline: none; margin: 0; z-index: 10; cursor: pointer;">
+    </div>
+    <p style="font-size: 0.85rem; color: #475569; margin-top: 12px; margin-bottom: 0;">Confronto diretto tra le lavorazioni edili iniziali e il restyling commerciale ultimato.</p>
+  </div>
+
+</div>
+</section>
+
+<!-- SCRIPT E STILI INTERATTIVI PER LO SLIDER -->
+<style>
+  .slider-comparazione::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: var(--rosso);
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  }
+  .slider-comparazione::-moz-range-thumb {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: var(--rosso);
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const containers = document.querySelectorAll(".img-comp-container");
+    containers.forEach(container => {
+      const slider = container.querySelector(".slider-comparazione");
+      const overlay = container.querySelector(".img-comp-overlay");
+      
+      // Imposta la larghezza iniziale in base al valore dello slider
+      overlay.style.width = slider.value + "%";
+
+      slider.addEventListener("input", function () {
+        overlay.style.width = slider.value + "%";
+      });
+      
+      slider.addEventListener("change", function () {
+        overlay.style.width = slider.value + "%";
+      });
+    });
+  });
+</script>
 <section style="background-color: var(--grigio-chiaro); padding: 40px; border-radius: 12px; margin-top: 40px;">
 <h2 style="color: var(--blu-notte);">Domande Frequenti - <span style="color: var(--rosso);">Ristrutturazioni Palermo</span></h2>
 <div class="faq-section" style="display: flex; flex-direction: column; gap: 20px; margin-top: 20px;">
