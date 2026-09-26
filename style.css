@@ -702,6 +702,13 @@ header,
 
 .zone-pill a {
   color: var(--blu-notte);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.zone-pill a:hover {
+  color: var(--rosso);
+  text-decoration: underline;
 }
 
 /* ==========================================================================
@@ -1094,4 +1101,19 @@ header, .header-container {
 header a {
   color: #ffffff !important;
   text-decoration: none;
+}
+
+/* Sicurezza contrasto testi su sfondi chiari */
+.vantaggio p, 
+.vantaggio span, 
+.service-card p, 
+.card-content p,
+.section-desc {
+  color: var(--grigio-scuro);
+}
+
+/* Assicura che i titoli all'interno dei box siano sempre ben visibili */
+.vantaggio h3, 
+.service-card h3 {
+  color: var(--blu-notte);
 }
