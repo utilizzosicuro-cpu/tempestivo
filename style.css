@@ -1175,3 +1175,22 @@ section:not(.tempestivo-lead-section)[style*="background-color"] p,
 section:not(.tempestivo-lead-section)[style*="background"] p {
     color: #334155 !important;
 }
+
+/* 1. Forza il testo bianco e visibile nella sezione di lead scura */
+.tempestivo-lead-section h2 {
+    color: var(--bianco) !important;
+}
+
+.tempestivo-lead-section p, 
+.tempestivo-lead-section .subtitle {
+    color: var(--giallo) !important;
+}
+
+/* 2. Applica la correzione del testo scuro SOLO sui veri sfondi chiari (escludendo la sezione blu) */
+section[style*="background-color: #f"] h2,
+section[style*="background-color:#f"] h2,
+section[style*="background-color: #e"] h2,
+section[style*="background-color:#e"] h2,
+section[style*="background-color: var(--grigio-chiaro)"] h2 {
+    color: var(--blu-notte) !important;
+}
