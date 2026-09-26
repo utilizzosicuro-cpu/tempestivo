@@ -1186,11 +1186,13 @@ section:not(.tempestivo-lead-section)[style*="background"] p {
     color: var(--giallo) !important;
 }
 
-/* 2. Applica la correzione del testo scuro SOLO sui veri sfondi chiari (escludendo la sezione blu) */
-section[style*="background-color: #f"] h2,
-section[style*="background-color:#f"] h2,
-section[style*="background-color: #e"] h2,
-section[style*="background-color:#e"] h2,
-section[style*="background-color: var(--grigio-chiaro)"] h2 {
-    color: var(--blu-notte) !important;
+/* Forza il colore bianco e giallo sulla sezione finale scura con massima priorità */
+.tempestivo-lead-section h2,
+.tempestivo-lead-section h3 {
+    color: var(--bianco) !important;
+}
+
+.tempestivo-lead-section p, 
+.tempestivo-lead-section .subtitle {
+    color: var(--giallo) !important;
 }
