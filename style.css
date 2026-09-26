@@ -1146,3 +1146,11 @@ div[style*="background-color"] p,
 div[style*="background-color"] li {
     color: #334155 !important;
 }
+
+.timeline .step h3 {
+    color: var(--blu-notte) !important;
+}
+
+.timeline .step p {
+    color: #334155 !important;
+}
