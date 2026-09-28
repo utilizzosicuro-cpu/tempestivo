@@ -1303,3 +1303,117 @@ footer a:hover,
   border-radius: 10px;
   border: 1px solid #e2e8f0;
 }
+
+/* Sezione Principale ROI */
+.roi-section-box {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  margin: 40px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+}
+
+.roi-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.roi-icon {
+  font-size: 32px;
+}
+
+.roi-title {
+  font-size: 24px;
+  color: #111;
+  margin: 0;
+}
+
+.roi-subtitle {
+  color: #6b7280;
+  font-size: 14px;
+  margin: 4px 0 0 0;
+}
+
+.roi-text {
+  font-size: 15px;
+  color: #374151;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Griglia Statistiche */
+.roi-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.roi-stat-card {
+  background: #f8fafc;
+  padding: 18px;
+  border-radius: 8px;
+}
+
+.roi-stat-card.card-red { border-left: 4px solid #ef4444; }
+.roi-stat-card.card-red .roi-stat-value { color: #ef4444; }
+
+.roi-stat-card.card-blue { border-left: 4px solid #3b82f6; }
+.roi-stat-card.card-blue .roi-stat-value { color: #3b82f6; }
+
+.roi-stat-card.card-green { border-left: 4px solid #10b981; }
+.roi-stat-card.card-green .roi-stat-value { color: #10b981; }
+
+.roi-stat-value {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.roi-stat-desc {
+  font-size: 13px;
+  color: #4b5563;
+  font-weight: 600;
+}
+
+/* Box Caso Studio */
+.roi-casestudy-box {
+  background: #fffbeb;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #fef3c7;
+  margin-bottom: 20px;
+}
+
+.roi-casestudy-title {
+  color: #92400e;
+  margin-top: 0;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.roi-casestudy-text {
+  font-size: 14px;
+  color: #78350f;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Badges */
+.roi-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.roi-badge {
+  background: #e0f2fe;
+  color: #0369a1;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
