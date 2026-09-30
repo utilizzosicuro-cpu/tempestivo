@@ -21,7 +21,24 @@
 <meta content="IT-PA" name="geo.region"/>
 <meta content="Palermo, Sicilia" name="geo.placename"/>
 <meta content="38.1157, 13.3615" name="geo.position"/><meta content="38.1157, 13.3615" name="ICBM"/>
-<!-- CSS Tempestivo --><link href="/style.css" rel="stylesheet"/><link href="/mobile-fix.css" rel="stylesheet"/></head>
+<!-- CSS Tempestivo --><link href="/style.css" rel="stylesheet"/><link href="/mobile-fix.css" rel="stylesheet"/>
+<style id="tempestivo-unified-visual-style">
+/* Integrazione grafica: uniforma le sezioni informative al layout delle altre pagine Tempestivo. */
+.section-desc { background:#fff; border:1px solid #e2e8f0; border-radius:12px; padding:28px 30px; margin:30px 0; box-shadow:0 4px 14px rgba(15,23,42,.045); color:#334155; }
+.section-desc h2 { color:var(--blu-notte); margin-top:0; margin-bottom:14px; }
+.section-desc h3 { color:var(--rosso); }
+.section-desc ul { margin-bottom:0; }
+.costi-trasparenza-section, .processo-section, .metrics-section, .prezzi-table-section, .testimonianze-section, .galleria-section { border-radius:12px; overflow:hidden; }
+.costi-grid, .timeline-grid, .focus-epoca-grid, .guide-grid, .roi-stats-grid, .galleria-grid, .metrics-grid { gap:20px; }
+.costi-grid .vantaggio, .focus-card, .guide-card, .metric-card, .roi-stat-card, .cantiere-card { border-radius:10px; box-shadow:0 4px 12px rgba(15,23,42,.06); }
+.step-card { border-radius:10px; box-shadow:0 4px 12px rgba(15,23,42,.06); }
+.table-responsive { border-radius:10px; overflow:auto; box-shadow:0 4px 14px rgba(15,23,42,.05); }
+.alert-box-warning, .alert-box-info { border-radius:10px; }
+.pm-section { border-radius:12px; }
+footer.footer { position:relative; }
+@media (max-width:768px){ .section-desc{padding:22px 18px;margin:24px 0;} }
+</style>
+</head>
 <body>
   <script type="application/ld+json">
 {
@@ -1185,28 +1202,33 @@ window.addEventListener("DOMContentLoaded", initComparisons);
   </div>
 </section>
 
-<footer class="footer">
-<div class="footer-inner-grid">
+<footer class="footer" style="background-color:var(--blu-notte);color:var(--bianco);padding:60px 20px 20px;margin-top:0;">
+<div class="footer-inner-grid" style="max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:40px;">
 <div>
-<h3 class="footer-col-title">Tempestivo Palermo</h3>
-<p class="footer-col-text">General Contractor e Impresa Edile specializzata in ristrutturazioni chiavi in mano express, interior design e risanamento strutturale.</p>
+<h3 class="footer-col-title" style="font-family:var(--font-titoli);color:var(--giallo);margin-bottom:20px;">Tempestivo Palermo</h3>
+<p class="footer-col-text" style="line-height:1.7;opacity:.9;">General Contractor e Impresa Edile specializzata in ristrutturazioni chiavi in mano express, interior design e risanamento strutturale.</p>
 </div>
 <div>
-<h4 class="footer-col-subtitle">Contatti Rapidi</h4>
+<h4 class="footer-col-subtitle" style="font-family:var(--font-titoli);color:var(--giallo);margin-bottom:20px;">Contatti Rapidi</h4>
 <p class="footer-contact-item">📞 <a href="tel:+393520258583" class="footer-contact-link">+39 352 025 85 83</a></p>
 <p class="footer-contact-item">📧 tempestivoweb@gmail.com</p>
 <p class="footer-contact-item">📍 Palermo e Provincia, Sicilia</p>
 </div>
 <div>
-<h4 class="footer-col-subtitle">Link Utili</h4>
-<ul class="footer-links-ul">
-<li class="footer-li"><a href="/palermo/" class="footer-link">Palermo Hub</a></li>
-<li class="footer-li"><a href="/servizi.html" class="footer-link">Tutti i Servizi</a></li>
-<li class="footer-li"><a href="/soluzioni-business-palermo-trapani.html/" class="footer-link">Area Business</a></li>
+<h4 class="footer-col-subtitle" style="font-family:var(--font-titoli);color:var(--giallo);margin-bottom:20px;">Link Utili</h4>
+<ul class="footer-links-ul" style="list-style:none;padding:0;">
+<li class="footer-li" style="margin-bottom:10px;"><a href="/palermo/" class="footer-link" style="color:var(--bianco);text-decoration:none;">Palermo Hub</a></li>
+<li class="footer-li" style="margin-bottom:10px;"><a href="/servizi.html" class="footer-link" style="color:var(--bianco);text-decoration:none;">Tutti i Servizi</a></li>
+<li class="footer-li" style="margin-bottom:10px;"><a href="/soluzioni-business-palermo-trapani.html/" class="footer-link" style="color:var(--bianco);text-decoration:none;">Area Business</a></li>
 </ul>
 </div>
 </div>
-<div class="footer-bottom">
+<div class="footer-social-strip" style="max-width:1100px;margin:35px auto 0;padding-top:20px;border-top:1px solid rgba(255,255,255,.12);text-align:center;">
+  <a href="https://maps.app.goo.gl/osdw8bBFTeFUem1p8" target="_blank" rel="noopener" style="color:var(--giallo);text-decoration:none;margin:0 10px;">Google Business Profile</a>
+  <a href="https://share.google/Z6Xvz3Q9JziVhTH7a" target="_blank" rel="noopener" style="color:var(--giallo);text-decoration:none;margin:0 10px;">Lascia una Recensione</a>
+  <a href="https://www.facebook.com/profile.php?id=61560676851531" target="_blank" rel="noopener" style="color:var(--giallo);text-decoration:none;margin:0 10px;">Facebook</a>
+</div>
+<div class="footer-bottom" style="max-width:1100px;margin:20px auto 0;padding-top:20px;border-top:1px solid rgba(255,255,255,.08);text-align:center;font-size:.9rem;opacity:.85;">
 <p>&copy; 2026 Tempestivo - Tutti i diritti riservati. P.IVA 06772720824</p>
 </div>
 </footer>
