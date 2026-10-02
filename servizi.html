@@ -10,8 +10,11 @@
 </script>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Ristrutturazioni e Pronto Intervento H24 | Palermo, Trapani e Provincia | Tempestivo</title>
-<meta content="Servizi edili, ristrutturazioni chiavi in mano, impianti certificati DM 37/08 e pronto intervento H24 a Palermo, Trapani, Alcamo, Carini, Castellammare, Balestrate, Terrasini e provincia." name="description"/>
+<title>Servizi Edili, Ristrutturazioni e Pronto Intervento H24 | Palermo e Trapani | Tempestivo</title>
+<meta
+  name="description"
+  content="Ristrutturazioni, servizi edili, impianti e pronto intervento H24 di Tempestivo. Operatività nelle aree servite tra Palermo e Trapani, con disponibilità da verificare in base alla zona e al tipo di intervento."
+/>
 <link href="https://tempestivo.it/servizi.html" rel="canonical"/>
 <meta content="IT-PA, IT-TP" name="geo.region"/>
 <meta content="Palermo, Trapani, Alcamo, Carini, Castellammare del Golfo, Balestrate, Terrasini" name="geo.placename"/>
@@ -19,8 +22,11 @@
 <meta content="38.1157, 13.3615" name="ICBM"/>
 <meta content="website" property="og:type"/>
 <meta content="https://tempestivo.it/servizi.html" property="og:url"/>
-<meta content="Ristrutturazioni e Pronto Intervento H24 | Palermo e Trapani | Tempestivo" property="og:title"/>
-<meta content="Copertura capillare in tutta la Sicilia Occidentale. Ristrutturazioni, impianti e pronto intervento H24 in ogni quartiere e contrada." property="og:description"/>
+<meta content="Servizi Edili, Ristrutturazioni e Pronto Intervento H24 | Palermo e Trapani | Tempestivo" property="og:title"/>
+<meta
+  content="Ristrutturazioni, servizi edili, impianti e pronto intervento H24 nelle aree servite tra Palermo e Trapani. Disponibilità da verificare in base alla zona."
+  property="og:description"
+/>
 <meta content="https://tempestivo.it/assets/og-servizi.jpg" property="og:image"/>
 <meta content="it_IT" property="og:locale"/>
 <meta content="summary_large_image" name="twitter:card"/>
@@ -37,17 +43,23 @@
 {
   "@context": "https://schema.org",
   "@graph": [
+
     {
-      "@type": ["GeneralContractor", "HomeAndConstructionBusiness", "LocalBusiness", "Organization"],
+      "@type": "GeneralContractor",
       "@id": "https://tempestivo.it/#organization",
       "name": "Tempestivo",
       "url": "https://tempestivo.it/",
-      "logo": "https://tempestivo.it/assets/og-servizi.jpg",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://tempestivo.it/#logo",
+        "url": "https://tempestivo.it/assets/og-servizi.jpg",
+        "contentUrl": "https://tempestivo.it/assets/og-servizi.jpg"
+      },
       "image": "https://tempestivo.it/assets/og-servizi.jpg",
-      "description": "Divisione di Officina Creativa dedicata al General Contracting, ristrutturazioni edili, impiantistica e manutenzioni rapide in tutta la Sicilia Occidentale.",
-      "telephone": "+39 352 025 85 83",
+      "description": "Tempestivo è una divisione di Officina Creativa dedicata a ristrutturazioni, servizi edili, impianti e manutenzioni.",
+      "telephone": "+393520258583",
       "email": "tempestivoweb@gmail.com",
-      "taxID": "06772720824",
+      "vatID": "IT06772720824",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Contrada Incastrona snc",
@@ -62,74 +74,120 @@
         "longitude": 13.112
       },
       "areaServed": [
-        {"@type": "AdministrativeArea", "name": "Palermo"},
-        {"@type": "AdministrativeArea", "name": "Trapani"},
-        {"@type": "AdministrativeArea", "name": "Alcamo"},
-        {"@type": "AdministrativeArea", "name": "Balestrate"},
-        {"@type": "AdministrativeArea", "name": "Carini"},
-        {"@type": "AdministrativeArea", "name": "Castellammare del Golfo"},
-        {"@type": "AdministrativeArea", "name": "Terrasini"}
+        {
+          "@type": "AdministrativeArea",
+          "name": "Area metropolitana di Palermo"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Provincia di Trapani"
+        },
+        {
+          "@type": "City",
+          "name": "Alcamo"
+        },
+        {
+          "@type": "City",
+          "name": "Balestrate"
+        },
+        {
+          "@type": "City",
+          "name": "Carini"
+        },
+        {
+          "@type": "City",
+          "name": "Castellammare del Golfo"
+        },
+        {
+          "@type": "City",
+          "name": "Terrasini"
+        }
       ],
       "sameAs": [
         "https://www.facebook.com/profile.php?id=61560676851531",
         "https://maps.app.goo.gl/osdw8bBFTeFUem1p8"
-      ],
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
-        ],
-        "opens": "00:00",
-        "closes": "23:59"
-      }
+      ]
     },
+
+    {
+      "@type": "WebSite",
+      "@id": "https://tempestivo.it/#website",
+      "url": "https://tempestivo.it/",
+      "name": "Tempestivo",
+      "publisher": {
+        "@id": "https://tempestivo.it/#organization"
+      },
+      "inLanguage": "it-IT"
+    },
+
     {
       "@type": "WebPage",
       "@id": "https://tempestivo.it/servizi.html#webpage",
       "url": "https://tempestivo.it/servizi.html",
-      "name": "Ristrutturazioni e Pronto Intervento H24 | Palermo, Trapani e Provincia",
-      "isPartOf": {"@id": "https://tempestivo.it/#organization"},
-      "description": "Copertura capillare per servizi edili, impianti certificati e pronto intervento H24 in tutti i comuni e quartieri di Palermo e Trapani.",
-      "breadcrumb": {"@id": "https://tempestivo.it/servizi.html#breadcrumb"},
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Servizi Tecnici ed Edili Territoriali Tempestivo",
-        "itemListElement": [
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Ristrutturazioni Chiavi in Mano",
-              "description": "Progettazione, pratiche edilizie CILA/SCIA, demolizioni e rifiniture in tutta la provincia."
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Impianti Elettrici Certificati",
-              "description": "Nuovi impianti, messa a norma e certificazione DM 37/08."
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Impianti Idraulici e Termici",
-              "description": "Rifacimento bagni, ricerca perdite e soluzioni anti-salsedine costiere."
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Pronto Intervento H24",
-              "description": "Assistenza urgente 24/7 per emergenze idrauliche ed elettriche in ogni quartiere e contrada."
-            }
-          }
-        ]
-      }
+      "name": "Servizi Edili, Ristrutturazioni e Pronto Intervento H24 | Palermo e Trapani",
+      "description": "Ristrutturazioni, servizi edili, impianti e pronto intervento H24 nelle aree territoriali servite da Tempestivo tra Palermo e Trapani.",
+      "isPartOf": {
+        "@id": "https://tempestivo.it/#website"
+      },
+      "about": {
+        "@id": "https://tempestivo.it/#organization"
+      },
+      "publisher": {
+        "@id": "https://tempestivo.it/#organization"
+      },
+      "breadcrumb": {
+        "@id": "https://tempestivo.it/servizi.html#breadcrumb"
+      },
+      "inLanguage": "it-IT"
     },
+
+    {
+      "@type": "OfferCatalog",
+      "@id": "https://tempestivo.it/servizi.html#servizi",
+      "name": "Servizi Tempestivo",
+      "itemListElement": [
+
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Ristrutturazioni chiavi in mano",
+            "description": "Coordinamento di lavori edili, impianti e finiture per interventi di ristrutturazione.",
+            "url": "https://tempestivo.it/landing-ristrutturazioni.html"
+          }
+        },
+
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Impianti elettrici",
+            "description": "Interventi su impianti elettrici, adeguamenti e manutenzioni, con documentazione prevista dalla normativa quando applicabile."
+          }
+        },
+
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Impianti idraulici e termici",
+            "description": "Interventi su impianti idrici, tubazioni, bagni, autoclavi e sistemi termici in base alla tipologia di lavoro richiesta."
+          }
+        },
+
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Pronto intervento H24",
+            "description": "Disponibilità per richieste urgenti relative ai servizi tecnici indicati, previa verifica della zona e della tipologia di intervento.",
+            "url": "https://tempestivo.it/pronto-intervento-palermo-trapani.html"
+          }
+        }
+
+      ]
+    },
+
     {
       "@type": "BreadcrumbList",
       "@id": "https://tempestivo.it/servizi.html#breadcrumb",
@@ -143,40 +201,12 @@
         {
           "@type": "ListItem",
           "position": 2,
-          "name": "Servizi e Copertura Territoriale",
+          "name": "Servizi",
           "item": "https://tempestivo.it/servizi.html"
         }
       ]
-    },
-    {
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Quali città e zone coperte esattamente dai vostri servizi?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Operiamo capillarmente su Palermo, Trapani e in tutti i comuni e frazioni della Sicilia Occidentale, inclusi Alcamo, Balestrate, Carini, Castellammare del Golfo, Palermo città e Terrasini."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Rilasciate le certificazioni di legge per gli impianti in tutta la provincia?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Assolutamente sì. Ogni nostro intervento elettrico o idraulico in qualsiasi comune o contrada servita è collaudato e certificato a norma di legge (DM 37/08)."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Quali sono i tempi di intervento per le emergenze nelle diverse zone?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Per le ristrutturazioni programmate garantiamo il sopralluogo entro 24/48 ore. Per il pronto intervento H24, grazie alla nostra organizzazione logistica ramificata, assicuriamo un arrivo medio in 30-60 minuti in tutte le aree coperte."
-          }
-        }
-      ]
     }
+
   ]
 }
 </script>
@@ -195,7 +225,7 @@
 <a class="business-nav-link" href="/soluzioni-business-palermo-trapani.html">Area Business</a>
 </nav>
 <div class="header-cta">
-<a class="btn-emergenza" href="tel:3520258583">
+<a class="btn-emergenza" href="tel:+393520258583">
 <span class="icon">⚠️</span>
 <span>+39 352 025 85 83</span>
 </a>
@@ -217,72 +247,109 @@
 <section class="hero">
 <div class="hero-overlay"></div>
 <div class="hero-content">
-<h1>Servizi Edili e Pronto Intervento H24 in Tutta la Sicilia Occidentale</h1>
-<p class="subtitle">Interventi rapidi, ristrutturazioni chiavi in mano e impiantistica certificata DM 37/08. Copertura capillare su Palermo, Trapani e tutte le località della provincia.</p>
-<div style="margin-top: 15px; font-weight: bold; color: var(--giallo); font-size: 1.1rem;">✓ Unico Referente  |  ✓ Tecnici Certificati DM 37/08  |  ✓ Presenza Capillare H24</div>
+<h1>Servizi Edili, Ristrutturazioni e Pronto Intervento H24 a Palermo, Trapani e nella Sicilia Occidentale</h1>
+<p class="subtitle">
+  Interventi rapidi, ristrutturazioni chiavi in mano e impiantistica conforme alla normativa applicabile.
+  Operatività nelle aree servite tra Palermo e Trapani, con disponibilità da verificare in base alla zona e al tipo di intervento.
+</p>
+<div style="margin-top: 15px; font-weight: bold; color: var(--giallo); font-size: 1.1rem;">✓ Unico Referente  |  ✓ Tecnici Qualificati  |  ✓ Presenza Capillare H24</div>
 <a class="btn-cta" href="#servizi-principali">Scopri Soluzioni e Zone</a>
 </div>
 </section>
 
+<!-- 1. BLOCCO PRINCIPALE DEI SERVIZI TRASFORMATO IN HUB-LINK -->
 <section class="servizi" id="servizi-principali">
-<h2>Cosa Facciamo</h2>
-<p style="max-width:800px;margin:-30px auto 40px;font-size:1.1rem;color:var(--grigio-scuro);">
-            Soluzioni professionali complete per ogni esigenza abitativa, condominiale e commerciale, gestite con standard elevati in ogni area servita.
-        </p>
+<h2>Servizi Edili, Impianti e Pronto Intervento</h2>
+<p style="max-width:800px;margin:-30px auto 40px;font-size:1.1rem;color:var(--grigio-scuro);text-align:center;">
+Tempestivo riunisce in un unico referente ristrutturazioni, impianti, manutenzioni e pronto intervento H24 nelle aree attualmente servite tra Palermo e Trapani. La disponibilità dell'intervento viene verificata in base al comune, alla zona e alla tipologia di lavoro richiesta.</p>
 <div class="servizi-grid">
 <div class="card-servizio">
 <div class="card-content">
 <h3>🏠 Ristrutturazioni Chiavi in Mano</h3>
-<p>Dal bagno all'intero immobile. Gestiamo progettazione, pratiche edilizie (CILA/SCIA), demolizioni, impianti e finiture in qualsiasi comune e contrada della nostra rete territoriale.</p>
+<p>Dalla ristrutturazione del bagno alla ristrutturazione completa dell'immobile, con coordinamento delle maestranze, impianti e finiture.</p>
 <ul>
 <li>Coordinamento unico di tutte le maestranze</li>
 <li>Tempi di consegna contrattualizzati</li>
 <li>Supporto per detrazioni fiscali (50%, 65%)</li>
 </ul>
+<div style="margin-top:15px;">
+  <a href="/landing-ristrutturazioni.html" style="font-weight:bold; color:var(--blu-notte); text-decoration:none;">Scopri le ristrutturazioni →</a>
+</div>
 </div>
 </div>
 <div class="card-servizio">
 <div class="card-content">
 <h3>⚡ Impianti Elettrici Certificati</h3>
-<p>Realizzazione di nuovi impianti, adeguamenti, quadri elettrici, domotica e sicurezza con rilascio di regolare certificazione di conformità DM 37/08.</p>
+<p>Nuovi impianti, adeguamenti, quadri elettrici, automazione e interventi con certificazione di conformità DM 37/08.</p>
 <ul>
 <li>Messa a norma di impianti datati</li>
 <li>Automazione cancelli e luci</li>
 <li>Interventi rapidi per attività commerciali</li>
 </ul>
+<div style="margin-top:15px;">
+  <a href="/mappa-zone.html" style="font-weight:bold; color:var(--blu-notte); text-decoration:none;">Trova il servizio nella tua zona →</a>
+</div>
 </div>
 </div>
 <div class="card-servizio">
 <div class="card-content">
 <h3>🚿 Impianti Idraulici e Termici</h3>
-<p>Installazione e manutenzione di impianti idrici, tubazioni, autoclavi, caldaie e sistemi di riscaldamento. Soluzioni mirate anche per le zone costiere e marittime.</p>
+<p>Interventi su impianti idrici, tubazioni, autoclavi, caldaie, bagni e sistemi di riscaldamento.</p>
 <ul>
 <li>Rifacimento completo bagni e cucine</li>
 <li>Ricerca perdite non distruttiva</li>
 <li>Installazione pompe e autoclavi</li>
 </ul>
+<div style="margin-top:15px;">
+  <a href="/mappa-zone.html" style="font-weight:bold; color:var(--blu-notte); text-decoration:none;">Scopri le zone coperte →</a>
+</div>
 </div>
 </div>
 <div class="card-servizio">
 <div class="card-content">
 <h3>🚨 Pronto Intervento H24</h3>
-<p>Servizio di emergenza attivo 24 ore su 24, 7 giorni su 7, per guasti idraulici ed elettrici improvvisi in tutte le città e zone coperte dalla nostra rete.</p>
+<p>Assistenza urgente per guasti idraulici ed elettrici, attiva 24 ore su 24 nelle aree servite.</p>
 <ul>
 <li>Arrivo medio in 30-60 minuti</li>
 <li>Preventivo chiaro prima di iniziare</li>
 <li>Tecnici specializzati sempre reperibili</li>
 </ul>
+<div style="margin-top:15px;">
+  <a href="/pronto-intervento-palermo-trapani.html" style="font-weight:bold; color:var(--blu-notte); text-decoration:none;">Vai al pronto intervento →</a>
+</div>
 </div>
 </div>
 </div>
 </section>
 
+<!-- 2. SEZIONE GEOGRAFICA CON INTRODUZIONE E AGGIUNTA DI TRAPANI -->
 <section class="zone-coperte" style="background-color: var(--grigio-chiaro); padding: 60px 20px;">
 <div style="max-width:1100px; margin:0 auto;">
-<h2 style="text-align:center; margin-bottom: 20px;">Copertura Capillare per Città, Quartieri e Contrade</h2>
+<h2 style="text-align:center; margin-bottom: 20px;">Servizi per Città, Quartieri e Contrade</h2>
 <p style="max-width:800px; margin:0 auto 40px; font-size:1.1rem; color:var(--grigio-scuro); text-align:center;">
-            Grazie a una struttura logistica ramificata, interveniamo tempestivamente in ogni area urbana, frazione e zona residenziale o turistica della Sicilia Occidentale.
-        </p>
+  I servizi Tempestivo sono organizzati per area territoriale: puoi scegliere il comune, il quartiere o la località in cui ti trovi e accedere direttamente al servizio disponibile nella tua zona.
+</p>
+
+<!-- TRAPANI (Aggiunto per coerenza con il focus strategico) -->
+<div style="margin-bottom:30px; background:#fff; padding:25px; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.05);">
+  <h3 style="color:var(--blu-notte); margin-bottom:15px; border-bottom:2px solid var(--giallo); display:inline-block; padding-bottom:5px;">
+    📍 Trapani
+  </h3>
+
+  <p style="color:var(--grigio-scuro); font-size:0.95rem; margin-top:5px;">
+    Tempestivo valuta interventi a Trapani in base alla zona, alla tipologia di lavoro e alla disponibilità operativa.
+    Per conoscere la disponibilità del servizio nella tua zona, contattaci direttamente.
+  </p>
+
+  <div style="margin-top:15px;">
+    <a
+      href="tel:+393520258583"
+      style="font-weight:bold; color:var(--blu-notte); text-decoration:none;"
+    >
+      Verifica la disponibilità a Trapani →
+    </a>
+  </div>
+</div>
 
 <!-- ALCAMO -->
 <div style="margin-bottom:30px; background:#fff; padding:25px; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.05);">
@@ -617,6 +684,7 @@
 </div>
 </section>
 
+<!-- 5. PERCHÉ SCEGLIERE TEMPESTIVO (SPOSTATO DOPO IL TERRITORIO) -->
 <section class="perche-tempestivo">
 <h2>Perché Scegliere <span>Tempestivo</span></h2>
 <div class="vantaggi-grid">
@@ -661,12 +729,17 @@
 </div>
 </section>
 
+<!-- 9. FAQ AGGIORNATA CON DOMANDA DI NAVIGAZIONE -->
 <section class="perche-tempestivo" style="background-color: var(--bianco);">
 <h2>Domande Frequenti sulla Nostra Copertura e Servizi</h2>
 <div style="max-width:800px;margin:0 auto;text-align:left;">
 <details style="background:var(--grigio-chiaro);padding:20px;border-radius:10px;margin-bottom:15px;cursor:pointer;">
+<summary style="font-weight:700;color:var(--blu-notte);font-family:var(--font-titoli);">Quali servizi posso richiedere tramite Tempestivo?</summary>
+<p style="margin-top:15px;color:var(--grigio-scuro);line-height:1.6;">Ristrutturazioni chiavi in mano, impianti elettrici, impianti idraulici e termici e pronto intervento H24. I servizi sono disponibili nelle aree territoriali coperte dalla rete Tempestivo.</p>
+</details>
+<details style="background:var(--grigio-chiaro);padding:20px;border-radius:10px;margin-bottom:15px;cursor:pointer;">
 <summary style="font-weight:700;color:var(--blu-notte);font-family:var(--font-titoli);">Quali città e zone coperte esattamente dai vostri servizi?</summary>
-<p style="margin-top:15px;color:var(--grigio-scuro);line-height:1.6;">Operiamo capillarmente su Palermo, Trapani e in tutti i comuni e frazioni della Sicilia Occidentale, inclusi Alcamo, Balestrate, Carini, Castellammare del Golfo e Terrasini con tutte le relative contrade e quartieri.</p>
+<p style="margin-top:15px;color:var(--grigio-scuro);line-height:1.6;">Siamo presenti nelle aree indicate nella sezione "Zone coperte". Per Trapani e per le località prive di una pagina dedicata, la disponibilità viene verificata direttamente in base alla zona e al tipo di intervento richiesto.</p>
 </details>
 <details style="background:var(--grigio-chiaro);padding:20px;border-radius:10px;margin-bottom:15px;cursor:pointer;">
 <summary style="font-weight:700;color:var(--blu-notte);font-family:var(--font-titoli);">Rilasciate le certificazioni di legge per gli impianti in tutta la provincia?</summary>
@@ -674,27 +747,45 @@
 </details>
 <details style="background:var(--grigio-chiaro);padding:20px;border-radius:10px;margin-bottom:15px;cursor:pointer;">
 <summary style="font-weight:700;color:var(--blu-notte);font-family:var(--font-titoli);">Quali sono i tempi di intervento per le emergenze nelle diverse zone?</summary>
-<p style="margin-top:15px;color:var(--grigio-scuro);line-height:1.6;">Per le ristrutturazioni programmate garantiamo il sopralluogo entro 24/48 ore. Per il pronto intervento H24, grazie alla nostra organizzazione logistica ramificata, assicuriamo un arrivo medio in 30-60 minuti in tutte le aree coperte.</p>
+<p style="margin-top:15px;color:var(--grigio-scuro);line-height:1.6;">I tempi dipendono dalla tipologia dell'intervento, dalla zona e dalla disponibilità del tecnico. Per le richieste urgenti valutiamo la situazione al momento della chiamata e comunichiamo la disponibilità e i tempi stimati di intervento.</p>
 </details>
 </div>
 </section>
 
-<section class="tempestivo-lead-section" style="text-align:center;background-color:var(--blu-notte);color:var(--bianco);">
-<div class="tempestivo-container" style="justify-content:center;">
-<div class="tempestivo-text-col">
-<h2 style="color:var(--bianco);">Hai bisogno di un intervento o di una ristrutturazione nella tua zona?</h2>
-<p class="subtitle" style="color:var(--giallo);">Contattaci oggi stesso per un sopralluogo gratuito e senza impegno in qualsiasi comune o contrada.</p>
-<a class="btn-cta" href="tel:393520258583" style="background-color:var(--rosso);">📞 Chiama Ora: +39 352 025 85 83</a>
-</div>
-</div>
-</section>
 
-<section style="background: #eef2f7; padding: 30px; border-radius: 12px; margin-top: 40px;">
-  <h2>Metriche di Successo e <span>Copertura Territoriale</span></h2>
-  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; text-align: center; margin-top: 20px;">
-    <div style="background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);"><span style="font-size: 2.5rem; font-weight: bold; color: var(--rosso); display: block;">200+</span><span style="font-size: 1rem; color: #333; font-weight: 600;">Interventi Mensili in Provincia</span></div>
-    <div style="background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);"><span style="font-size: 2.5rem; font-weight: bold; color: var(--blu-notte); display: block;">10+</span><span style="font-size: 1rem; color: #333; font-weight: 600;">Anni di Esperienza sul Campo</span></div>
-    <div style="background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);"><span style="font-size: 2.5rem; font-weight: bold; color: #28a745; display: block;">30 min</span><span style="font-size: 1rem; color: #333; font-weight: 600;">Tempo Medio di Arrivo H24</span></div>
+
+<section style="background:#eef2f7; padding:30px; border-radius:12px; margin-top:40px;">
+  <h2>Servizi e <span>Operatività</span></h2>
+
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;text-align:center;margin-top:20px;">
+
+    <div style="background:#fff;padding:20px;border-radius:8px;">
+      <span style="font-size:2rem;font-weight:bold;color:var(--rosso);display:block;">
+        H24
+      </span>
+      <span style="font-size:1rem;color:#333;font-weight:600;">
+        Disponibilità per richieste urgenti
+      </span>
+    </div>
+
+    <div style="background:#fff;padding:20px;border-radius:8px;">
+      <span style="font-size:2rem;font-weight:bold;color:var(--blu-notte);display:block;">
+        1
+      </span>
+      <span style="font-size:1rem;color:#333;font-weight:600;">
+        Unico referente per il coordinamento
+      </span>
+    </div>
+
+    <div style="background:#fff;padding:20px;border-radius:8px;">
+      <span style="font-size:2rem;font-weight:bold;color:#28a745;display:block;">
+        PA · TP
+      </span>
+      <span style="font-size:1rem;color:#333;font-weight:600;">
+        Aree territoriali indicate nella pagina
+      </span>
+    </div>
+
   </div>
 </section>
 
@@ -706,6 +797,27 @@
 <li><strong>Politiche di garanzia:</strong> Tutti i lavori godono di garanzia a norma di legge, rilascio immediato della dichiarazione di conformità DM 37/08 e copertura assicurativa RC professionale.</li>
 </ul>
 </div>
+<section class="tempestivo-lead-section" style="text-align:center;background-color:var(--blu-notte);color:var(--bianco);padding:60px 20px;">
+  <div class="tempestivo-container" style="justify-content:center;">
+    <div class="tempestivo-text-col" style="max-width:850px;margin:0 auto;">
+      <h2 style="color:var(--bianco);">
+        Hai bisogno di un intervento o di una ristrutturazione?
+      </h2>
+
+      <p class="subtitle" style="color:var(--giallo);">
+        Indicaci il comune e il tipo di intervento: verificheremo la disponibilità del servizio nella tua zona e ti forniremo le informazioni necessarie.
+      </p>
+
+      <a
+        class="btn-cta"
+        href="tel:+393520258583"
+        style="background-color:var(--rosso);display:inline-block;margin-top:20px;"
+      >
+        📞 Chiama ora: +39 352 025 85 83
+      </a>
+    </div>
+  </div>
+</section>
 
 <footer style="background-color:var(--blu-notte);color:var(--bianco);padding:60px 20px 20px;margin-top:0;">
 <div style="max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:40px;">
