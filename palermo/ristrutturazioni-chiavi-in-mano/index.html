@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="it">
 <head>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-CVM98Z28DB"></script>
@@ -36,7 +35,96 @@
 .alert-box-warning, .alert-box-info { border-radius:10px; }
 .pm-section { border-radius:12px; }
 footer.footer { position:relative; }
-@media (max-width:768px){ .section-desc{padding:22px 18px;margin:24px 0;} }
+
+/* --- STILI LIGHTBOX MODAL PRIMA/DOPO --- */
+.lightbox-modal {
+    display: none;
+    position: fixed;
+    z-index: 10000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(15, 23, 42, 0.9);
+    backdrop-filter: blur(4px);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.lightbox-modal.active {
+    display: flex;
+    opacity: 1;
+}
+.lightbox-content {
+    background: #fff;
+    border-radius: 12px;
+    max-width: 900px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    padding: 30px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    transform: scale(0.95);
+    transition: transform 0.3s ease;
+}
+.lightbox-modal.active .lightbox-content {
+    transform: scale(1);
+}
+.lightbox-close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #64748b;
+    cursor: pointer;
+    line-height: 1;
+    transition: color 0.2s;
+    z-index: 10;
+}
+.lightbox-close:hover {
+    color: #ef4444;
+}
+.lightbox-title {
+    text-align: center;
+    color: var(--blu-notte, #0f172a);
+    margin-bottom: 25px;
+    font-size: 1.4rem;
+    padding-right: 30px;
+}
+.lightbox-images {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.lightbox-image-wrapper {
+    flex: 1;
+    min-width: 280px;
+    text-align: center;
+}
+.lightbox-image-wrapper h4 {
+    margin-bottom: 10px;
+    color: var(--rosso, #dc2626);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.lightbox-image-wrapper img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 768px) { 
+    .section-desc{padding:22px 18px;margin:24px 0;} 
+    .lightbox-content { padding: 20px; max-height: 95vh; }
+    .lightbox-images { flex-direction: column; }
+}
 </style>
 <meta content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1" name="robots"/><meta content="https://tempestivo.it/palermo/ristrutturazioni-chiavi-in-mano/images/bagno-ristrutturato-moderno-mondello-palermo-tempestivo.png" property="og:image"/><link href="https://tempestivo.it/palermo/ristrutturazioni-chiavi-in-mano/" rel="canonical"/><script type="application/ld+json">{
   "@context": "https://schema.org",
@@ -71,7 +159,14 @@ footer.footer { position:relative; }
       "sameAs": [
         "https://www.facebook.com/profile.php?id=61560676851531",
         "https://maps.app.goo.gl/osdw8bBFTeFUem1p8"
-      ]
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0", 
+        "reviewCount": "7",
+        "bestRating": "5",
+        "worstRating": "1"
+      }
     },
     {
       "@type": "Service",
@@ -262,7 +357,7 @@ footer.footer { position:relative; }
 <div class="hero-content">
 <h1>Ristrutturazioni Chiavi in Mano a Palermo</h1>
 <p class="subtitle">Dalla progettazione alla consegna, un unico referente per coordinare lavori, pratiche, forniture e cantiere. Ristrutturiamo appartamenti, case, immobili storici, B&amp;B, case vacanza, uffici e locali commerciali a Palermo.</p>
-<div class="hero-highlights">✓ Unico referente   |   ✓ Progetto e anteprima 3D   |   ✓ Preventivo personalizzato   |   ✓ Cantiere coordinato</div>
+<div class="hero-highlights">✓ Unico referente   |   ✓ Progetto e anteprima 3D   |   ✓ Preventivo personalizzato   |   ✓ Cantiere coordinato</div>
 <a class="btn-cta btn-cta-custom" href="tel:+393520258583">📞 Richiedi un sopralluogo</a>
 </div>
 </section>
@@ -309,15 +404,37 @@ footer.footer { position:relative; }
 <div class="soprintendenza-main-text"><p class="soprintendenza-main-title">🏛️ Un approccio specifico per gli immobili storici</p><p class="soprintendenza-p">Nel Centro Storico di Palermo, alla Kalsa e nell’Albergheria è frequente incontrare edifici storici, murature esistenti, distribuzioni interne da ripensare e finiture che richiedono particolare attenzione. Gli eventuali vincoli e gli adempimenti vengono verificati in funzione dell’immobile e dell’intervento.</p><p class="soprintendenza-p-last">L’obiettivo è evitare di definire un progetto sulla base di ipotesi: prima si comprende l’immobile, poi si stabiliscono lavorazioni, pratiche applicabili, costi e programma dei lavori.</p></div>
 <div class="focus-epoca-box"><h3 class="focus-epoca-title">🔍 Palermo: Kalsa, Albergheria, Politeama e altre zone storiche</h3><p class="focus-epoca-desc">La stessa logica vale per immobili d’epoca e appartamenti signorili in zone come Kalsa, Albergheria e Politeama: la soluzione deve rispettare caratteristiche architettoniche, esigenze funzionali e adempimenti applicabili.</p><div class="focus-epoca-grid"><div class="focus-card"><h4>Analisi dell’immobile</h4><p>Stato esistente, distribuzione, impianti e criticità vengono valutati prima di definire il lavoro.</p></div><div class="focus-card"><h4>Verifica degli adempimenti</h4><p>Le pratiche e le autorizzazioni vengono individuate in relazione alle opere effettivamente previste.</p></div><div class="focus-card"><h4>Progetto coerente</h4><p>Le soluzioni vengono sviluppate tenendo insieme funzionalità, caratteristiche dell’edificio e risultato desiderato.</p></div></div></div>
 </section>
+
 <section class="cantieri-reali-section">
 <div class="cantieri-header"><h2 class="cantieri-title">🏆 Ristrutturazioni e cantieri a Palermo</h2><p class="cantieri-subtitle">Esempi di interventi e tipologie di cantiere presentati per mostrare come il metodo Tempestivo viene applicato a contesti diversi della città.</p></div>
 <div class="cantieri-grid">
-<div class="cantiere-card"><h3 class="cantiere-card-title">Ristrutturazione bagno — Mondello</h3><p class="cantiere-card-text"><strong>Intervento:</strong> ristrutturazione del bagno con revisione degli impianti, nuove finiture e soluzioni salvaspazio.</p><p class="cantiere-card-text"><strong>Approccio Tempestivo:</strong> definizione delle lavorazioni, coordinamento delle maestranze e scelta delle finiture prima dell’esecuzione.</p><a class="cantiere-link" href="/palermo/ristrutturazioni-chiavi-in-mano/images/bagno-ristrutturazione-vista-mare-mondello-palermo-tempestivo.png">Scopri il cantiere →</a></div>
-<div class="cantiere-card"><h3 class="cantiere-card-title">Locale commerciale — Zona Libertà</h3><p class="cantiere-card-text"><strong>Intervento:</strong> restyling di spazi commerciali in uno stabile signorile della zona Libertà.</p><p class="cantiere-card-text"><strong>Approccio Tempestivo:</strong> organizzazione delle lavorazioni e coordinamento delle attività necessarie per il nuovo layout.</p><a class="cantiere-link" href="/palermo/ristrutturazioni-chiavi-in-mano/images/locale-commerciale-ristrutturato-liberta-palermo-tempestivo.png">Scopri il cantiere →</a></div>
-<div class="cantiere-card"><h3 class="cantiere-card-title">Locale commerciale — Politeama</h3><p class="cantiere-card-text"><strong>Intervento:</strong> adeguamento e ristrutturazione di un locale commerciale nel cuore del Politeama.</p><p class="cantiere-card-text"><strong>Approccio Tempestivo:</strong> coordinamento delle lavorazioni e degli adempimenti applicabili all’intervento.</p><a class="cantiere-link" href="/palermo/ristrutturazioni-chiavi-in-mano/images/ristrutturazione-locale-commerciale-politeama-palermo-tempestivo.png">Scopri il cantiere →</a></div>
-<div class="cantiere-card"><h3 class="cantiere-card-title">Ufficio direzionale — Libertà</h3><p class="cantiere-card-text"><strong>Intervento:</strong> riconversione e riorganizzazione di spazi professionali in zona Libertà.</p><p class="cantiere-card-text"><strong>Approccio Tempestivo:</strong> coordinamento di opere edili, impiantistiche e finiture in funzione del nuovo utilizzo degli ambienti.</p><a class="cantiere-link" href="/palermo/ristrutturazioni-chiavi-in-mano/images/ristrutturazione-ufficio-direzionale-liberta-palermo-tempestivo.png">Scopri il cantiere →</a></div>
+    <div class="cantiere-card">
+        <h3 class="cantiere-card-title">Ristrutturazione bagno — Mondello</h3>
+        <p class="cantiere-card-text"><strong>Intervento:</strong> ristrutturazione del bagno con revisione degli impianti, nuove finiture e soluzioni salvaspazio.</p>
+        <p class="cantiere-card-text"><strong>Approccio Tempestivo:</strong> definizione delle lavorazioni, coordinamento delle maestranze e scelta delle finiture prima dell’esecuzione.</p>
+        <a class="cantiere-link" href="javascript:void(0)" data-before="images/bagno-ristrutturazione-vista-mare-mondello-palermo-tempestivo.png" data-after="images/bagno-ristrutturato-moderno-mondello-palermo-tempestivo.png">Scopri il cantiere →</a>
+    </div>
+    <div class="cantiere-card">
+        <h3 class="cantiere-card-title">Locale commerciale — Zona Libertà</h3>
+        <p class="cantiere-card-text"><strong>Intervento:</strong> restyling di spazi commerciali in uno stabile signorile della zona Libertà.</p>
+        <p class="cantiere-card-text"><strong>Approccio Tempestivo:</strong> organizzazione delle lavorazioni e coordinamento delle attività necessarie per il nuovo layout.</p>
+        <a class="cantiere-link" href="javascript:void(0)" data-before="images/ristrutturazione-locale-commerciale-politeama-palermo-tempestivo.png" data-after="images/locale-commerciale-ristrutturato-liberta-palermo-tempestivo.png">Scopri il cantiere →</a>
+    </div>
+    <div class="cantiere-card">
+        <h3 class="cantiere-card-title">Locale commerciale — Politeama</h3>
+        <p class="cantiere-card-text"><strong>Intervento:</strong> adeguamento e ristrutturazione di un locale commerciale nel cuore del Politeama.</p>
+        <p class="cantiere-card-text"><strong>Approccio Tempestivo:</strong> coordinamento delle lavorazioni e degli adempimenti applicabili all’intervento.</p>
+        <a class="cantiere-link" href="javascript:void(0)" data-after="images/ristrutturazione-locale-commerciale-politeama-palermo-tempestivo.png">Scopri il cantiere →</a>
+    </div>
+    <div class="cantiere-card">
+        <h3 class="cantiere-card-title">Ufficio direzionale — Libertà</h3>
+        <p class="cantiere-card-text"><strong>Intervento:</strong> riconversione e riorganizzazione di spazi professionali in zona Libertà.</p>
+        <p class="cantiere-card-text"><strong>Approccio Tempestivo:</strong> coordinamento di opere edili, impiantistiche e finiture in funzione del nuovo utilizzo degli ambienti.</p>
+        <a class="cantiere-link" href="javascript:void(0)" data-after="images/ristrutturazione-ufficio-direzionale-liberta-palermo-tempestivo.png">Scopri il cantiere →</a>
+    </div>
 </div>
 </section>
+
 <section class="processo-section">
 <h2 class="processo-title">Come funziona la ristrutturazione chiavi in mano</h2>
 <p class="section-desc">Un unico percorso in 6 fasi, dalla prima visita alla consegna. Ogni progetto viene adattato alle caratteristiche dell’immobile e alle esigenze del cliente.</p>
@@ -360,6 +477,24 @@ footer.footer { position:relative; }
 <h2 class="costi-title">Cosa comprende il preventivo di ristrutturazione</h2>
 <p class="section-desc">Il preventivo deve permettere di capire cosa viene effettivamente realizzato e quali forniture sono comprese.</p>
 <div class="costi-grid"><div class="vantaggio"><h3 class="vantaggio-title">✓ Lavorazioni</h3><p class="vantaggio-text">Opere edili, impianti e finiture previste dal progetto.</p></div><div class="vantaggio"><h3 class="vantaggio-title">✓ Forniture</h3><p class="vantaggio-text">Materiali e componenti inclusi vengono identificati nel capitolato.</p></div><div class="vantaggio"><h3 class="vantaggio-title">✓ Progettazione e pratiche</h3><p class="vantaggio-text">Quando previste, vengono indicate nel percorso tecnico e amministrativo.</p></div><div class="vantaggio"><h3 class="vantaggio-title">✓ Varianti</h3><p class="vantaggio-text">Eventuali lavorazioni aggiuntive vengono valutate separatamente quando emergono.</p></div></div>
+</section>
+<section class="costi-trasparenza-section" id="bonus-fiscali-palermo">
+  <h2 class="costi-title">Agevolazioni e Bonus Fiscali per la ristrutturazione a Palermo</h2>
+  <p class="section-desc">Ristrutturare casa a Palermo può significare anche un importante risparmio fiscale. Il team di Tempestivo si occupa di <strong>tutta la documentazione necessaria</strong> per accedere alle detrazioni fiscali vigenti, come il <strong>Bonus Ristrutturazione 50%</strong> e il <strong>Bonus Barriere Architettoniche</strong>. Gestiamo noi le pratiche, garantendoti la massima trasparenza e la certezza di usufruire delle agevolazioni spettanti, senza stress burocratici.</p>
+  <div class="costi-grid">
+    <div class="vantaggio">
+      <h3 class="vantaggio-title">✓ Bonus Ristrutturazione 50%</h3>
+      <p class="vantaggio-text">Detrazione IRPEF del 50% per interventi di manutenzione straordinaria, restauro e risanamento conservativo.</p>
+    </div>
+    <div class="vantaggio">
+      <h3 class="vantaggio-title">✓ Gestione Pratiche Garantita</h3>
+      <p class="vantaggio-text">Il nostro ufficio tecnico prepara e invia tutta la documentazione (CILA, SCIA, asseverazioni) per la corretta fruizione delle detrazioni.</p>
+    </div>
+    <div class="vantaggio">
+      <h3 class="vantaggio-title">✓ Consulenza Dedicata</h3>
+      <p class="vantaggio-text">Ti affianchiamo nella scelta delle lavorazioni che danno diritto alle agevolazioni, ottimizzando il tuo investimento.</p>
+    </div>
+  </div>
 </section>
 <section class="pm-section" id="project-manager-section">
 <h2 class="pm-title">Project Manager dedicato e coordinamento del cantiere</h2>
@@ -422,6 +557,7 @@ footer.footer { position:relative; }
 </section>
 </div>
 </main>
+
 <!-- INTEGRAZIONE COMPETITIVA: chiusura commerciale e rassicurazione finale -->
 <section class="costi-trasparenza-section">
 <h2 class="costi-title">La tua ristrutturazione a Palermo, <span class="highlight-red">seguita dall'inizio alla fine</span></h2>
@@ -445,6 +581,35 @@ footer.footer { position:relative; }
 <a class="btn-whatsapp" href="https://wa.me/393520258583?text=Salve,%20vorrei%20richiedere%20un%20sopralluogo%20gratuito%20per%20una%20ristrutturazione%20a%20Palermo" rel="noopener" target="_blank">💬 Parla con Tempestivo su WhatsApp</a>
 </div>
 </section>
+
+<!-- NUOVA SEZIONE: Local SEO Zone Operative -->
+<section class="zone-operative-section" style="background-color: #f8fafc; padding: 30px 20px; border-top: 1px solid #e2e8f0; text-align: center; margin-top: 40px;">
+  <h3 style="color: var(--blu-notte); font-size: 1.1rem; margin-bottom: 10px; font-family: var(--font-titoli, sans-serif);">Zone Operative: Ristrutturazioni a Palermo e Provincia</h3>
+  <p style="color: #475569; max-width: 800px; margin: 0 auto; line-height: 1.6;">
+    Il nostro servizio di ristrutturazione chiavi in mano è attivo a <strong>Palermo città</strong> e nei principali comuni della provincia: 
+    <strong>Bagheria, Monreale, Villabate, Sferracavallo, Isola delle Femmine e Ficarazzi</strong>. 
+    Portiamo la nostra esperienza di General Contractor direttamente nel tuo cantiere, ovunque tu sia.
+  </p>
+</section>
+
+<!-- LIGHTBOX MODAL PRIMA/DOPO -->
+<div id="cantiereLightbox" class="lightbox-modal" aria-hidden="true">
+    <div class="lightbox-content" role="dialog" aria-modal="true">
+        <span class="lightbox-close" aria-label="Chiudi">&times;</span>
+        <h3 id="lightboxTitle" class="lightbox-title">Dettaglio Cantiere</h3>
+        <div class="lightbox-images">
+            <div class="lightbox-image-wrapper" id="wrapperPrima" style="display:none;">
+                <h4>Prima</h4>
+                <img id="imgPrima" src="" alt="Prima della ristrutturazione">
+            </div>
+            <div class="lightbox-image-wrapper" id="wrapperDopo">
+                <h4>Dopo</h4>
+                <img id="imgDopo" src="" alt="Dopo la ristrutturazione">
+            </div>
+        </div>
+    </div>
+</div>
+
 <footer class="footer" style="background-color:var(--blu-notte);color:var(--bianco);padding:60px 20px 20px;margin-top:0;">
 <div class="footer-inner-grid" style="max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:40px;">
 <div>
@@ -475,6 +640,7 @@ footer.footer { position:relative; }
 <p>© 2026 Tempestivo - Tutti i diritti riservati. P.IVA 06772720824</p>
 </div>
 </footer>
+
 <!-- Barra Mobile CTA Fissa in Basso -->
 <div class="mobile-cta-bar" id="mobileCtaBar">
 <div class="cta-bar-content">
@@ -486,5 +652,79 @@ footer.footer { position:relative; }
     </a>
 </div>
 </div>
+
+<!-- SCRIPT LIGHTBOX MODAL -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const modal = document.getElementById('cantiereLightbox');
+    const closeBtn = document.querySelector('.lightbox-close');
+    const imgPrima = document.getElementById('imgPrima');
+    const imgDopo = document.getElementById('imgDopo');
+    const wrapperPrima = document.getElementById('wrapperPrima');
+    const wrapperDopo = document.getElementById('wrapperDopo');
+    const lightboxTitle = document.getElementById('lightboxTitle');
+
+    // Funzione per aprire il modal
+    function openLightbox(e) {
+        e.preventDefault();
+        const link = e.currentTarget;
+        const title = link.closest('.cantiere-card').querySelector('.cantiere-card-title').textContent;
+        const beforeSrc = link.getAttribute('data-before');
+        const afterSrc = link.getAttribute('data-after') || link.getAttribute('href');
+
+        lightboxTitle.textContent = title;
+
+        if (beforeSrc) {
+            imgPrima.src = beforeSrc;
+            wrapperPrima.style.display = 'block';
+        } else {
+            wrapperPrima.style.display = 'none';
+        }
+
+        imgDopo.src = afterSrc;
+        wrapperDopo.style.display = 'block';
+
+        modal.classList.add('active');
+        modal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden'; // Previene lo scroll della pagina
+    }
+
+    // Funzione per chiudere il modal
+    function closeLightbox() {
+        modal.classList.remove('active');
+        modal.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+        // Pulisce gli src per evitare flickering alla prossima apertura
+        setTimeout(() => {
+            imgPrima.src = '';
+            imgDopo.src = '';
+        }, 300);
+    }
+
+    // Assegna gli event listener ai link dei cantieri
+    const cantiereLinks = document.querySelectorAll('.cantiere-link');
+    cantiereLinks.forEach(link => {
+        link.addEventListener('click', openLightbox);
+    });
+
+    // Chiudi con il pulsante X
+    closeBtn.addEventListener('click', closeLightbox);
+
+    // Chiudi cliccando fuori dal contenuto
+    modal.addEventListener('click', function(e) {
+        if (e.target === modal) {
+            closeLightbox();
+        }
+    });
+
+    // Chiudi con il tasto ESC
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && modal.classList.contains('active')) {
+            closeLightbox();
+        }
+    });
+});
+</script>
+
 </body>
 </html>
