@@ -81,7 +81,18 @@ footer.footer { position:relative; }
       "serviceType": "Restauro e ristrutturazione immobili storici",
       "provider": {"@id": "https://tempestivo.it/#organization"},
       "areaServed": {"@type": "City", "name": "Palermo"},
-      "description": "Servizio di restauro e ristrutturazione di immobili storici e palazzi d'epoca a Palermo con gestione vincoli Soprintendenza BBCCAA."
+      "description": "Servizio di restauro e ristrutturazione di immobili storici e palazzi d'epoca a Palermo con gestione vincoli Soprintendenza BBCCAA.",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "EUR",
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "priceCurrency": "EUR",
+          "minPrice": "350",
+          "maxPrice": "650",
+          "unitText": "per mq"
+        }
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -90,6 +101,28 @@ footer.footer { position:relative; }
         {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://tempestivo.it/"},
         {"@type": "ListItem", "position": 2, "name": "Palermo", "item": "https://tempestivo.it/palermo/"},
         {"@type": "ListItem", "position": 3, "name": "Ristrutturazione Immobili Storici", "item": "https://tempestivo.it/palermo/ristrutturazione-immobili-storici/"}
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://tempestivo.it/palermo/ristrutturazione-immobili-storici/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Come si affronta il restauro di un immobile d'epoca a Palermo?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Il restauro conservativo di palazzi storici richiede un'attenta analisi stratigrafica, l'uso di malte a calce naturale e la gestione diretta dei pareri con la Soprintendenza BBCCAA."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Chi gestisce le autorizzazioni paesaggistiche e storiche?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Il nostro team tecnico gestisce integralmente le relazioni e le istanze presso la Soprintendenza per i Beni Culturali e Ambientali di Palermo, tutelando l'immobile e l'iter burocratico."
+          }
+        }
       ]
     }
   ]
