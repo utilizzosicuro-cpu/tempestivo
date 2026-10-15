@@ -81,7 +81,18 @@ footer.footer { position:relative; }
       "serviceType": "Ristrutturazione uffici e studi professionali",
       "provider": {"@id": "https://tempestivo.it/#organization"},
       "areaServed": {"@type": "City", "name": "Palermo"},
-      "description": "Servizio di ristrutturazione e restyling di uffici e studi professionali a Palermo con progettazione, cablaggio strutturato e coordinamento cantiere."
+      "description": "Servizio di ristrutturazione e restyling di uffici e studi professionali a Palermo con progettazione, cablaggio strutturato e coordinamento cantiere.",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "EUR",
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "priceCurrency": "EUR",
+          "minPrice": "350",
+          "maxPrice": "650",
+          "unitText": "per mq"
+        }
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -90,6 +101,28 @@ footer.footer { position:relative; }
         {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://tempestivo.it/"},
         {"@type": "ListItem", "position": 2, "name": "Palermo", "item": "https://tempestivo.it/palermo/"},
         {"@type": "ListItem", "position": 3, "name": "Ristrutturazione Uffici", "item": "https://tempestivo.it/palermo/ristrutturazione-uffici/"}
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://tempestivo.it/palermo/ristrutturazione-uffici/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Quanto costa ristrutturare un appartamento di 100 mq a Palermo?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Per una ristrutturazione completa a Palermo la fascia orientativa è di 350-650 €/mq, con un investimento stimato tra 35.000€ e 65.000€ definito dopo il sopralluogo tecnico gratuito."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Chi gestisce le pratiche catastali?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Il nostro ufficio tecnico interno si occupa direttamente di tutte le pratiche edilizie e catastali, incluse CILA, SCIA, aggiornamenti catastali e comunicazioni al Comune di Palermo."
+          }
+        }
       ]
     }
   ]
@@ -223,7 +256,7 @@ footer.footer { position:relative; }
 <div class="guide-header">
 <span class="guide-icon">📚</span>
 <h2 class="guide-title">Guide tecniche per la ristrutturazione di uffici a Palermo</h2>
-<p class="guide-subtitle</p>
+<p class="guide-subtitle"></p>
 <p class="guide-subtitle">Approfondimenti normativi e pratici per la riqualificazione di spazi direzionali e commerciali.</p>
 </div>
 <div class="guide-main-text">
