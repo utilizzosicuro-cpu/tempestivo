@@ -81,7 +81,18 @@ footer.footer { position:relative; }
       "serviceType": "Ristrutturazione negozi e locali commerciali",
       "provider": {"@id": "https://tempestivo.it/#organization"},
       "areaServed": {"@type": "City", "name": "Palermo"},
-      "description": "Servizio di ristrutturazione di negozi e locali commerciali a Palermo con progettazione, adempimenti sanitari, impianti e coordinamento cantiere."
+      "description": "Servizio di ristrutturazione di negozi e locali commerciali a Palermo con progettazione, adempimenti sanitari, impianti e coordinamento cantiere.",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "EUR",
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "priceCurrency": "EUR",
+          "minPrice": "350",
+          "maxPrice": "650",
+          "unitText": "per mq"
+        }
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -90,6 +101,28 @@ footer.footer { position:relative; }
         {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://tempestivo.it/"},
         {"@type": "ListItem", "position": 2, "name": "Palermo", "item": "https://tempestivo.it/palermo/"},
         {"@type": "ListItem", "position": 3, "name": "Ristrutturazione Locali Commerciali", "item": "https://tempestivo.it/palermo/ristrutturazione-locali-commerciali/"}
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://tempestivo.it/palermo/ristrutturazione-locali-commerciali/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Quanto costa ristrutturare un locale commerciale a Palermo?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Per il restyling o la ristrutturazione completa di negozi e locali commerciali a Palermo i costi orientativi variano in base alla metratura e agli impianti richiesti, con sopralluogo tecnico gratuito."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Chi gestisce le autorizzazioni sanitarie e comunali per i negozi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Il nostro team si occupa integralmente delle pratiche edilizie, delle autorizzazioni commerciali e della conformità igienico-sanitaria prevista per le attività aperte al pubblico a Palermo."
+          }
+        }
       ]
     }
   ]
