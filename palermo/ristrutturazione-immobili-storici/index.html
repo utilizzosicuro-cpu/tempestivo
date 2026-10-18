@@ -21,8 +21,8 @@
 <meta content="Palermo, Sicilia" name="geo.placename"/>
 <meta content="38.1157, 13.3615" name="geo.position"/>
 <meta content="38.1157, 13.3615" name="ICBM"/>
-<link href="/style.css" rel="stylesheet"/>
-<link href="/mobile-fix.css" rel="stylesheet"/>
+<link href="/style.css?v=20261022" rel="stylesheet"/>
+<link href="/mobile-fix.css?v=20261022" rel="stylesheet"/>
 <style id="tempestivo-unified-visual-style">
 .section-desc { background:#fff; border:1px solid #e2e8f0; border-radius:12px; padding:28px 30px; margin:30px 0; box-shadow:0 4px 14px rgba(15,23,42,.045); color:#334155; }
 .section-desc h2 { color:var(--blu-notte); margin-top:0; margin-bottom:14px; }
@@ -40,94 +40,168 @@ footer.footer { position:relative; }
 </style>
 <meta content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1" name="robots"/>
 <link href="https://tempestivo.it/palermo/ristrutturazione-immobili-storici/" rel="canonical"/>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
+<script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "GeneralContractor",
+   "@id": "https://tempestivo.it/#organization",
+   "name": "Tempestivo",
+   "url": "https://tempestivo.it/",
+   "logo": "https://tempestivo.it/logo.png",
+   "image": "https://tempestivo.it/img/cantiere-ristrutturazione-appartamento-palermo-tempestivo.webp",
+   "description": "Impresa edile e General Contractor specializzato in ristrutturazioni chiavi in mano, interior design, risanamento strutturale e progettazione 3D a Palermo.",
+   "telephone": "+393520258583",
+   "email": "tempestivoweb@gmail.com",
+   "taxID": "06772720824",
+   "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Contrada Incastrona, snc",
+    "addressLocality": "Partinico",
+    "addressRegion": "PA",
+    "postalCode": "90047",
+    "addressCountry": "IT"
+   },
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 38.059554,
+    "longitude": 13.110727
+   },
+   "areaServed": [
     {
-      "@type": "GeneralContractor",
-      "@id": "https://tempestivo.it/#organization",
-      "name": "Tempestivo - Ristrutturazioni Edili Palermo",
-      "url": "https://tempestivo.it/",
-      "logo": "https://tempestivo.it/logo.png",
-      "image": "https://tempestivo.it/palermo/ristrutturazioni-chiavi-in-mano/images/bagno-ristrutturazione-vista-mare-mondello-palermo-tempestivo.png",
-      "description": "Impresa edile e General Contractor specializzato in ristrutturazioni chiavi in mano, interior design, risanamento strutturale e progettazione 3D a Palermo.",
-      "telephone": "+393520258583",
-      "email": "tempestivoweb@gmail.com",
-      "taxID": "06772720824",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Contrada Incastrona, snc",
-        "addressLocality": "Partinico",
-        "addressRegion": "PA",
-        "postalCode": "90047",
-        "addressCountry": "IT"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 38.1157,
-        "longitude": 13.3615
-      },
-      "areaServed": [
-        {"@type": "City", "name": "Palermo"},
-        {"@type": "AdministrativeArea", "name": "Provincia di Palermo"}
-      ],
-      "priceRange": "€€-€€€"
+     "@type": "City",
+     "name": "Palermo"
     },
     {
-      "@type": "Service",
-      "@id": "https://tempestivo.it/palermo/ristrutturazione-immobili-storici/#service",
-      "name": "Ristrutturazione Immobili Storici a Palermo",
-      "serviceType": "Restauro e ristrutturazione immobili storici",
-      "provider": {"@id": "https://tempestivo.it/#organization"},
-      "areaServed": {"@type": "City", "name": "Palermo"},
-      "description": "Servizio di restauro e ristrutturazione di immobili storici e palazzi d'epoca a Palermo con gestione vincoli Soprintendenza BBCCAA.",
-      "offers": {
-        "@type": "Offer",
-        "priceCurrency": "EUR",
-        "priceSpecification": {
-          "@type": "PriceSpecification",
-          "priceCurrency": "EUR",
-          "minPrice": "350",
-          "maxPrice": "650",
-          "unitText": "per mq"
-        }
-      }
-    },
-    {
-      "@type": "BreadcrumbList",
-      "@id": "https://tempestivo.it/palermo/ristrutturazione-immobili-storici/#breadcrumb",
-      "itemListElement": [
-        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://tempestivo.it/"},
-        {"@type": "ListItem", "position": 2, "name": "Palermo", "item": "https://tempestivo.it/palermo/"},
-        {"@type": "ListItem", "position": 3, "name": "Ristrutturazione Immobili Storici", "item": "https://tempestivo.it/palermo/ristrutturazione-immobili-storici/"}
-      ]
-    },
-    {
-      "@type": "FAQPage",
-      "@id": "https://tempestivo.it/palermo/ristrutturazione-immobili-storici/#faq",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Come si affronta il restauro di un immobile d'epoca a Palermo?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Il restauro conservativo di palazzi storici richiede un'attenta analisi stratigrafica, l'uso di malte a calce naturale e la gestione diretta dei pareri con la Soprintendenza BBCCAA."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Chi gestisce le autorizzazioni paesaggistiche e storiche?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Il nostro team tecnico gestisce integralmente le relazioni e le istanze presso la Soprintendenza per i Beni Culturali e Ambientali di Palermo, tutelando l'immobile e l'iter burocratico."
-          }
-        }
-      ]
+     "@type": "AdministrativeArea",
+     "name": "Provincia di Palermo"
     }
-  ]
-}
-</script>
+   ],
+   "priceRange": "€€-€€€",
+   "alternateName": [
+    "Tempestivo Pronto Intervento H24",
+    "Tempestivo Ristrutturazioni",
+    "Tempestivo by Officina Creativa"
+   ],
+   "location": [
+    {
+     "@type": "Place",
+     "name": "Sede legale Palermo",
+     "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Via Libertà",
+      "addressLocality": "Palermo",
+      "addressRegion": "PA",
+      "postalCode": "90141",
+      "addressCountry": "IT"
+     },
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 38.1157,
+      "longitude": 13.3615
+     },
+     "telephone": "+393520258583"
+    },
+    {
+     "@type": "Place",
+     "name": "Sede operativa Partinico",
+     "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Contrada Incastrona, snc",
+      "addressLocality": "Partinico",
+      "addressRegion": "PA",
+      "postalCode": "90047",
+      "addressCountry": "IT"
+     },
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 38.059554,
+      "longitude": 13.110727
+     },
+     "telephone": "+393520258583"
+    }
+   ],
+   "sameAs": [
+    "https://maps.app.goo.gl/osdw8bBFTeFUem1p8",
+    "https://www.facebook.com/profile.php?id=61560676851531"
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://tempestivo.it/palermo/ristrutturazione-immobili-storici/#service",
+   "name": "Ristrutturazione Immobili Storici a Palermo",
+   "serviceType": "Restauro e ristrutturazione immobili storici",
+   "provider": {
+    "@id": "https://tempestivo.it/#organization"
+   },
+   "areaServed": {
+    "@type": "City",
+    "name": "Palermo"
+   },
+   "description": "Servizio di restauro e ristrutturazione di immobili storici e palazzi d'epoca a Palermo con gestione vincoli Soprintendenza BBCCAA.",
+   "offers": {
+    "@type": "Offer",
+    "priceCurrency": "EUR",
+    "priceSpecification": {
+     "@type": "PriceSpecification",
+     "priceCurrency": "EUR",
+     "minPrice": "350",
+     "maxPrice": "650",
+     "unitText": "per mq"
+    }
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "@id": "https://tempestivo.it/palermo/ristrutturazione-immobili-storici/#breadcrumb",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://tempestivo.it/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Palermo",
+     "item": "https://tempestivo.it/palermo/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Ristrutturazione Immobili Storici",
+     "item": "https://tempestivo.it/palermo/ristrutturazione-immobili-storici/"
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Come si affronta il restauro di un immobile d'epoca a Palermo?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Il restauro conservativo di palazzi storici richiede un'attenta analisi stratigrafica, l'uso di malte a calce naturale e la gestione diretta dei pareri con la Soprintendenza BBCCAA."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Chi gestisce le autorizzazioni paesaggistiche e storiche?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Il nostro team tecnico gestisce integralmente le relazioni e le istanze presso la Soprintendenza per i Beni Culturali e Ambientali di Palermo, tutelando l'immobile e l'iter burocratico."
+     }
+    }
+   ]
+  }
+ ]
+}</script>
+<meta content="https://tempestivo.it/img/og/og-ristrutturazioni.jpg" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="https://tempestivo.it/img/og/og-ristrutturazioni.jpg" name="twitter:image"/>
+<link href="/favicon.ico" rel="icon" sizes="any"/><link href="/apple-touch-icon.png" rel="apple-touch-icon"/>
 </head>
 <body>
 <header class="header">
@@ -140,7 +214,7 @@ footer.footer { position:relative; }
 </div>
 </a>
 <nav class="main-nav">
-<a class="business-nav-link" href="/soluzioni-business-palermo-trapani.html/">Area Business</a>
+<a class="business-nav-link" href="/soluzioni-business-palermo-trapani.html">Area Business</a>
 </nav>
 <div class="header-cta">
 <a class="btn-emergenza" href="tel:+393520258583">
@@ -156,6 +230,8 @@ footer.footer { position:relative; }
 <a class="sub-nav-link" href="/servizi.html">Servizi</a>
 <a class="sub-nav-link" href="/mappa-zone.html">Zone Coperte</a>
 <a class="sub-nav-link" href="/landing-ristrutturazioni.html">Ristrutturazioni complete e veloci</a>
+
+<a class="sub-nav-link" href="/tempi-e-copertura.html">Tempi e Copertura</a>
 </div>
 </nav>
 <div class="page-offset"></div>
@@ -254,6 +330,32 @@ footer.footer { position:relative; }
 </div>
 </section>
 </div>
+
+
+<section class="contesto-locale" style="background-color: var(--bianco); padding: 40px; border-radius: 12px; margin-top: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.03);">
+<h2>Piazza Marina-Kalsa: territorio, edifici e criticità frequenti</h2>
+<h3 style="color: var(--blu-notte); margin-top: 25px;">Come si raggiunge la zona e che territorio è</h3>
+<p style="color: var(--grigio-scuro); line-height: 1.7;">Parliamo di Piazza Marina-Kalsa, nel comune di Palermo: si entra da via Alloro, piazza Marina e corso Vittorio Emanuele, con vicoli stretti, ZTL e spazi di manovra ridotti all'osso. Per capire il contesto: il cuore della Kalsa, con palazzi nobiliari, giardini storici e corti che si aprono su vicoli lastricati. La densità delle costruzioni significa impianti che si sovrappongono tra loro: contatori di gruppo, colonne comuni e attraversamenti da riconoscere prima di intervenire.</p>
+<h3 style="color: var(--blu-notte); margin-top: 25px;">Che tipologia di immobili troviamo</h3>
+<p style="color: var(--grigio-scuro); line-height: 1.7;">Sul piano edilizio la zona è caratterizzata da palazzi nobiliari frazionati in appartamenti, case a corte e immobili destinati ad affitto breve, con murature spesse e soffitti alti. Sull’approvvigionamento idrico: acquedotto con colonne condominiali e serbatoi nei sottotetti, pressione scarsa ai piani alti. In concreto, chi lavora su questi immobili deve fare i conti con l'intervento edile nato per esigenze diverse da quelle attuali e poi ampliato nel tempo senza un progetto d’insieme.</p>
+<h3 style="color: var(--blu-notte); margin-top: 25px;">Guasti e criticità ricorrenti in zona</h3>
+<p style="color: var(--grigio-scuro); line-height: 1.7;">A Piazza Marina-Kalsa ogni cantiere va organizzato sul territorio reale. Il cantiere vive dentro il tessuto urbano: rumore, occupazione di suolo e turni di lavoro vanno concordati con chi abita accanto. Le scelte tecniche seguono il costruito: palazzi nobiliari frazionati in appartamenti, case a corte e immobili destinati ad affitto breve, con murature spesse e soffitti alti. Si comincia con il rilievo, si verificano impianti e alimentazioni e si stima la fattibilità degli attraversamenti, così il preventivo resta coerente con quello che si troverà aprendo le opere. Un elemento da considerare: da aprile a ottobre gli affitti brevi concentrano i consumi e richiedono impianti affidabili.</p>
+<h3 style="color: var(--blu-notte); margin-top: 25px;">Cosa guardiamo anche sul resto dell'impianto</h3>
+<p style="color: var(--grigio-scuro); line-height: 1.7;">Capita spesso che la richiesta di partenza ne nasconda un’altra: insieme a umidità di risalita che aggredisce gli intonaci e le tubazioni, in questa zona ricorre anche scarichi in pietra con pendenze minime, e affrontarli nella stessa visita evita di riaprire il cantiere due volte. Segnaliamo sempre ciò che troviamo oltre alla richiesta iniziale, con una stima separata: così si sa cosa è urgente e cosa può essere pianificato senza forzature.</p>
+</section>
+<section style="background-color: var(--grigio-chiaro); padding: 40px; border-radius: 12px; margin-top: 40px;">
+<h2>Domande Frequenti su <span>Ristrutturazione Immobili Storici e Palazzi d'Epoca a Palermo</span></h2>
+<div class="faq-section">
+<details class="faq-item">
+<summary>Come si affronta il restauro di un immobile d'epoca a Palermo?</summary>
+<div class="faq-answer">Il restauro conservativo di palazzi storici richiede un'attenta analisi stratigrafica, l'uso di malte a calce naturale e la gestione diretta dei pareri con la Soprintendenza BBCCAA.</div>
+</details>
+<details class="faq-item">
+<summary>Chi gestisce le autorizzazioni paesaggistiche e storiche?</summary>
+<div class="faq-answer">Il nostro team tecnico gestisce integralmente le relazioni e le istanze presso la Soprintendenza per i Beni Culturali e Ambientali di Palermo, tutelando l'immobile e l'iter burocratico.</div>
+</details>
+</div>
+</section>
 </main>
 <footer class="footer" style="background-color:var(--blu-notte);color:var(--bianco);padding:60px 20px 20px;margin-top:0;">
 <div class="footer-inner-grid" style="max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:40px;">
@@ -272,12 +374,19 @@ footer.footer { position:relative; }
 <ul class="footer-links-ul" style="list-style:none;padding:0;">
 <li class="footer-li" style="margin-bottom:10px;"><a class="footer-link" href="/palermo/" style="color:var(--bianco);text-decoration:none;">Palermo Hub</a></li>
 <li class="footer-li" style="margin-bottom:10px;"><a class="footer-link" href="/servizi.html" style="color:var(--bianco);text-decoration:none;">Tutti i Servizi</a></li>
-<li class="footer-li" style="margin-bottom:10px;"><a class="footer-link" href="/soluzioni-business-palermo-trapani.html/" style="color:var(--bianco);text-decoration:none;">Area Business</a></li>
+<li class="footer-li" style="margin-bottom:10px;"><a class="footer-link" href="/soluzioni-business-palermo-trapani.html" style="color:var(--bianco);text-decoration:none;">Area Business</a></li>
 </ul>
 </div>
 </div>
 <div class="footer-bottom" style="max-width:1100px;margin:20px auto 0;padding-top:20px;border-top:1px solid rgba(255,255,255,.08);text-align:center;font-size:.9rem;opacity:.85;">
 <p>© 2026 Tempestivo - Tutti i diritti riservati. P.IVA 06772720824</p>
+</div>
+<div style="max-width:1100px;margin:20px auto 0;text-align:center;font-size:0.9rem;"><a href="/tempi-e-copertura.html" style="color:var(--giallo);">Tempi di arrivo e copertura</a> &middot; <a href="/prezzi/" style="color:var(--giallo);">Prezzi e costi</a></div>
+
+<div class="footer-legal" style="max-width:1100px;margin:20px auto 0;padding-top:15px;border-top:1px solid rgba(255,255,255,0.12);text-align:center;font-size:0.85rem;">
+<a href="/privacy.html" style="color:inherit;text-decoration:underline;margin:0 10px;opacity:0.9;">Privacy Policy</a>
+<a href="/cookie.html" style="color:inherit;text-decoration:underline;margin:0 10px;opacity:0.9;">Cookie Policy</a>
+<a href="/termini.html" style="color:inherit;text-decoration:underline;margin:0 10px;opacity:0.9;">Termini e Condizioni</a>
 </div>
 </footer>
 <div class="mobile-cta-bar" id="mobileCtaBar">

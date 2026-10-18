@@ -5,9 +5,9 @@
 /* 1. FIX GLOBALE SUB-NAV (Desktop & Mobile) */
 nav.sub-nav, 
 .sub-nav {
-    position: relative !important;
-    top: auto !important;
-    left: auto !important;
+    position: fixed !important;
+    top: 70px !important;
+    left: 0 !important;
     z-index: 99 !important;
     width: 100% !important;
     background-color: #0b1b3b !important;
@@ -16,12 +16,23 @@ nav.sub-nav,
 }
 
 .page-offset {
-    height: 70px !important;
+    height: 115px !important;
 }
 
 /* 2. STILI PER DISPOSITIVI MOBILE (Schermi <= 768px) */
 @media (max-width: 768px) {
-    
+
+    /* Header e sub-nav tornano nel flusso del documento */
+    nav.sub-nav,
+    .sub-nav {
+        position: relative !important;
+        top: auto !important;
+    }
+
+    .page-offset {
+        height: 0 !important;
+    }
+
     /* Reset Globale e Overflow */
     html, body {
         max-width: 100% !important;
@@ -37,7 +48,9 @@ nav.sub-nav,
     }
 
     /* Header e Navbar Compatta */
-    header.header, .header, nav.main-nav {
+    /* nav.main-nav NON va incluso: è usato anche dal breadcrumb dei contenuti
+       e veniva dipinto di blu notte con i link invisibili. */
+    header.header, .header {
         position: relative !important;
         display: flex !important;
         flex-direction: column !important;
@@ -157,6 +170,17 @@ nav.sub-nav,
         padding: 5px 0 !important;
     }
 
+    /* I bottoni colorati mantengono il testo leggibile sul proprio sfondo */
+    a.sub-nav-link[style*="25D366"] {
+        color: #06301F !important;
+    }
+
+    a.sub-nav-link[style*="d9534f"],
+    a.sub-nav-link[style*="D9534F"] {
+        color: #ffffff !important;
+        background-color: #A93226 !important;
+    }
+
     .header-cta {
         width: 100% !important;
         display: flex !important;
@@ -168,7 +192,7 @@ nav.sub-nav,
         display: inline-flex !important;
         align-items: center !important;
         justify-content: center !important;
-        background-color: #e52e2e !important;
+        background-color: #C62828 !important;
         color: #ffffff !important;
         padding: 10px 24px !important;
         border-radius: 6px !important;

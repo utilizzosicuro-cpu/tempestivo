@@ -29,196 +29,322 @@
 <meta content="38.1157, 13.3615" name="ICBM"/>
 
 <!-- SCHEMA.ORG STRUTTURATO UNIFICATO (@GRAPH) -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
+<script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebSite",
+   "@id": "https://tempestivo.it/#website",
+   "url": "https://tempestivo.it",
+   "name": "Tempestivo",
+   "description": "Impresa edile, impianti e ristrutturazioni chiavi in mano a Palermo e Trapani",
+   "publisher": {
+    "@id": "https://tempestivo.it/#business"
+   }
+  },
+  {
+   "@type": [
+    "LocalBusiness",
+    "HomeAndConstructionBusiness",
+    "ProfessionalService",
+    "GeneralContractor",
+    "Plumber"
+   ],
+   "@id": "https://tempestivo.it/#business",
+   "name": "Tempestivo",
+   "alternateName": [
+    "Tempestivo by Officina Creativa",
+    "Tempestivo Pronto Intervento H24",
+    "Tempestivo Ristrutturazioni"
+   ],
+   "url": "https://tempestivo.it/servizi/collaudo-certificazione-impianti-palermo.html",
+   "telephone": "+393520258583",
+   "email": "tempestivoweb@gmail.com",
+   "taxID": "06772720824",
+   "priceRange": "€€",
+   "image": "https://tempestivo.it/logo.png",
+   "logo": "https://tempestivo.it/logo.png",
+   "description": "Servizio di collaudo strumentale, prove di tenuta pressioni e rilascio certificazioni DM 37/08 per impianti civili e industriali a Palermo e provincia.",
+   "parentOrganization": {
+    "@type": "Organization",
+    "name": "Officina Creativa",
+    "taxID": "06772720824"
+   },
+   "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Via Libertà",
+    "addressLocality": "Palermo",
+    "addressRegion": "PA",
+    "postalCode": "90141",
+    "addressCountry": "IT"
+   },
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "38.1157",
+    "longitude": "13.3615"
+   },
+   "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+     "Monday",
+     "Tuesday",
+     "Wednesday",
+     "Thursday",
+     "Friday",
+     "Saturday",
+     "Sunday"
+    ],
+    "opens": "00:00",
+    "closes": "23:59"
+   },
+   "areaServed": [
     {
-      "@type": "WebSite",
-      "@id": "https://tempestivo.it/#website",
-      "url": "https://tempestivo.it",
-      "name": "Tempestivo",
-      "description": "Impresa edile, impianti e ristrutturazioni chiavi in mano a Palermo e Trapani",
-      "publisher": {
-        "@id": "https://tempestivo.it/#business"
-      }
+     "@type": "City",
+     "name": "Palermo"
     },
     {
-      "@type": [
-        "LocalBusiness",
-        "HomeAndConstructionBusiness",
-        "ProfessionalService",
-        "GeneralContractor",
-        "Plumber"
-      ],
-      "@id": "https://tempestivo.it/#business",
-      "name": "Tempestivo - Collaudi e Certificazioni Impianti Palermo",
-      "alternateName": "Tempestivo by Officina Creativa",
-      "url": "https://tempestivo.it/servizi/collaudo-certificazione-impianti-palermo.html",
-      "telephone": "+393520258583",
-      "email": "tempestivoweb@gmail.com",
-      "taxID": "06772720824",
-      "priceRange": "€€",
-      "image": "https://tempestivo.it/logo.png",
-      "logo": "https://tempestivo.it/logo.png",
-      "description": "Servizio di collaudo strumentale, prove di tenuta pressioni e rilascio certificazioni DM 37/08 per impianti civili e industriali a Palermo e provincia.",
-      "parentOrganization": {
-        "@type": "Organization",
-        "name": "Officina Creativa",
-        "taxID": "06772720824"
-      },
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Via Libertà",
-        "addressLocality": "Palermo",
-        "addressRegion": "PA",
-        "postalCode": "90141",
-        "addressCountry": "IT"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": "38.1157",
-        "longitude": "13.3615"
-      },
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-        "opens": "00:00",
-        "closes": "23:59"
-      },
-      "areaServed": [
-        {"@type": "City", "name": "Palermo"},
-        {"@type": "Place", "name": "Albergheria"},
-        {"@type": "Place", "name": "Ballarò"},
-        {"@type": "Place", "name": "Boccadifalco"},
-        {"@type": "Place", "name": "Bonagia"},
-        {"@type": "Place", "name": "Brancaccio"},
-        {"@type": "Place", "name": "Calatafimi Villa Tasca"},
-        {"@type": "Place", "name": "Capo Papireto"},
-        {"@type": "Place", "name": "Centro Storico"},
-        {"@type": "Place", "name": "Cruillas"},
-        {"@type": "Place", "name": "Falsomiele"},
-        {"@type": "Place", "name": "Libertà"},
-        {"@type": "Place", "name": "Mondello"},
-        {"@type": "Place", "name": "Noce"},
-        {"@type": "Place", "name": "Oreto Stazione Centrale"},
-        {"@type": "Place", "name": "Partanna Mondello"},
-        {"@type": "Place", "name": "Passo Di Rigano"},
-        {"@type": "Place", "name": "Piazza Marina Kalsa"},
-        {"@type": "Place", "name": "Politeama Borgo Vecchio"},
-        {"@type": "Place", "name": "San Lorenzo"},
-        {"@type": "Place", "name": "Sferracavallo"},
-        {"@type": "Place", "name": "Tommaso Natale"},
-        {"@type": "Place", "name": "Uditore"},
-        {"@type": "Place", "name": "Villagrazia Di Palermo"},
-        {"@type": "Place", "name": "Zisa"}
-      ],
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Servizi di Collaudo e Certificazione Impianti",
-        "itemListElement": [
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Prova di Tenuta Pressioni e Collaudo Impianti",
-              "description": "Test strumentale su impianto idrico/termico per escludere micro-perdite e validare la resistenza delle tubazioni."
-            },
-            "price": "150.00",
-            "priceCurrency": "EUR"
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Rilascio Dichiarazione di Conformità DM 37/08",
-              "description": "Verifica requisiti e redazione della DiCo firmata da tecnici abilitati per impianti civili e industriali."
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Collaudo Impiantistico Completo",
-              "description": "Prove di carico, stress test e certificazione globale per impianti civili e industriali a Palermo."
-            }
-          }
-        ]
-      },
-      "sameAs": [
-        "https://maps.app.goo.gl/osdw8bBFTeFUem1p8",
-        "https://share.google/Z6Xvz3Q9JziVhTH7a",
-        "https://www.facebook.com/profile.php?id=61560676851531"
-      ]
+     "@type": "Place",
+     "name": "Albergheria"
     },
     {
-      "@type": "FAQPage",
-      "@id": "https://tempestivo.it/servizi/collaudo-certificazione-impianti-palermo.html#faq",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "In cosa consiste la prova di tenuta pressioni su un impianto?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "La prova di tenuta pressioni è un test strumentale eseguito per verificare che le tubazioni e i raccordi di un impianto (idrico o termico) mantengano la pressione stabilita nel tempo, escludendo la presenza di micro-perdite."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Quali documenti vengono rilasciati al termine del collaudo?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Al termine delle verifiche rilasciamo la Dichiarazione di Conformità (DiCo) ai sensi del DM 37/08, accompagnata dai rapporti di prova e dalle schede tecniche di collaudo."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "È obbligatorio il collaudo per gli impianti esistenti a Palermo?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Il collaudo e la certificazione sono obbligatori in caso di nuove installazioni, ristrutturazioni straordinarie, ampliamenti o nei passaggi di proprietà immobiliare per attestare la regolarità tecnica dell'immobile."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Quanto costa il collaudo di un impianto a Palermo?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Il listino orientativo per la prova di tenuta pressioni e collaudo base parte da € 150,00. Il rilascio della Dichiarazione di Conformità DM 37/08 e i collaudi complessi vengono quotati su preventivo in base alla tipologia e dimensione dell'impianto."
-          }
-        }
-      ]
+     "@type": "Place",
+     "name": "Ballarò"
     },
     {
-      "@type": "BreadcrumbList",
-      "@id": "https://tempestivo.it/servizi/collaudo-certificazione-impianti-palermo.html#breadcrumb",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://tempestivo.it/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Servizi",
-          "item": "https://tempestivo.it/servizi.html"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Collaudo e Certificazione Impianti Palermo",
-          "item": "https://tempestivo.it/servizi/collaudo-certificazione-impianti-palermo.html"
-        }
-      ]
+     "@type": "Place",
+     "name": "Boccadifalco"
+    },
+    {
+     "@type": "Place",
+     "name": "Bonagia"
+    },
+    {
+     "@type": "Place",
+     "name": "Brancaccio"
+    },
+    {
+     "@type": "Place",
+     "name": "Calatafimi Villa Tasca"
+    },
+    {
+     "@type": "Place",
+     "name": "Capo Papireto"
+    },
+    {
+     "@type": "Place",
+     "name": "Centro Storico"
+    },
+    {
+     "@type": "Place",
+     "name": "Cruillas"
+    },
+    {
+     "@type": "Place",
+     "name": "Falsomiele"
+    },
+    {
+     "@type": "Place",
+     "name": "Libertà"
+    },
+    {
+     "@type": "Place",
+     "name": "Mondello"
+    },
+    {
+     "@type": "Place",
+     "name": "Noce"
+    },
+    {
+     "@type": "Place",
+     "name": "Oreto Stazione Centrale"
+    },
+    {
+     "@type": "Place",
+     "name": "Partanna Mondello"
+    },
+    {
+     "@type": "Place",
+     "name": "Passo Di Rigano"
+    },
+    {
+     "@type": "Place",
+     "name": "Piazza Marina Kalsa"
+    },
+    {
+     "@type": "Place",
+     "name": "Politeama Borgo Vecchio"
+    },
+    {
+     "@type": "Place",
+     "name": "San Lorenzo"
+    },
+    {
+     "@type": "Place",
+     "name": "Sferracavallo"
+    },
+    {
+     "@type": "Place",
+     "name": "Tommaso Natale"
+    },
+    {
+     "@type": "Place",
+     "name": "Uditore"
+    },
+    {
+     "@type": "Place",
+     "name": "Villagrazia Di Palermo"
+    },
+    {
+     "@type": "Place",
+     "name": "Zisa"
     }
-  ]
-}
-</script>
+   ],
+   "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Servizi di Collaudo e Certificazione Impianti",
+    "itemListElement": [
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Prova di Tenuta Pressioni e Collaudo Impianti",
+       "description": "Test strumentale su impianto idrico/termico per escludere micro-perdite e validare la resistenza delle tubazioni."
+      },
+      "price": "150.00",
+      "priceCurrency": "EUR"
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Rilascio Dichiarazione di Conformità DM 37/08",
+       "description": "Verifica requisiti e redazione della DiCo firmata da tecnici abilitati per impianti civili e industriali."
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Collaudo Impiantistico Completo",
+       "description": "Prove di carico, stress test e certificazione globale per impianti civili e industriali a Palermo."
+      }
+     }
+    ]
+   },
+   "sameAs": [
+    "https://maps.app.goo.gl/osdw8bBFTeFUem1p8",
+    "https://share.google/Z6Xvz3Q9JziVhTH7a",
+    "https://www.facebook.com/profile.php?id=61560676851531"
+   ],
+   "location": [
+    {
+     "@type": "Place",
+     "name": "Sede legale Palermo",
+     "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Via Libertà",
+      "addressLocality": "Palermo",
+      "addressRegion": "PA",
+      "postalCode": "90141",
+      "addressCountry": "IT"
+     },
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 38.1157,
+      "longitude": 13.3615
+     },
+     "telephone": "+393520258583"
+    },
+    {
+     "@type": "Place",
+     "name": "Sede operativa Partinico",
+     "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Contrada Incastrona, snc",
+      "addressLocality": "Partinico",
+      "addressRegion": "PA",
+      "postalCode": "90047",
+      "addressCountry": "IT"
+     },
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 38.059554,
+      "longitude": 13.110727
+     },
+     "telephone": "+393520258583"
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "In cosa consiste la prova di tenuta pressioni su un impianto?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "La prova di tenuta pressioni è un test strumentale eseguito per verificare che le tubazioni e i raccordi di un impianto (idrico o termico) mantengano la pressione stabilita nel tempo, escludendo la presenza di micro-perdite."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Quali documenti vengono rilasciati al termine del collaudo?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Al termine delle verifiche rilasciamo la Dichiarazione di Conformità (DiCo) ai sensi del DM 37/08, accompagnata dai rapporti di prova e dalle schede tecniche di collaudo."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "È obbligatorio il collaudo per gli impianti esistenti a Palermo?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Il collaudo e la certificazione sono obbligatori in caso di nuove installazioni, ristrutturazioni straordinarie, ampliamenti o nei passaggi di proprietà immobiliare per attestare la regolarità tecnica dell'immobile."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Quanto costa il collaudo di un impianto a Palermo?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Il listino orientativo per la prova di tenuta pressioni e collaudo base parte da € 150,00. Il rilascio della Dichiarazione di Conformità DM 37/08 e i collaudi complessi vengono quotati su preventivo in base alla tipologia e dimensione dell'impianto."
+     }
+    }
+   ]
+  },
+  {
+   "@type": "BreadcrumbList",
+   "@id": "https://tempestivo.it/servizi/collaudo-certificazione-impianti-palermo.html#breadcrumb",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://tempestivo.it/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Servizi",
+     "item": "https://tempestivo.it/servizi.html"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Collaudo e Certificazione Impianti Palermo",
+     "item": "https://tempestivo.it/servizi/collaudo-certificazione-impianti-palermo.html"
+    }
+   ]
+  }
+ ]
+}</script>
 
 <style id="tempestivo-sticky-style"></style>
-<!-- CSS Tempestivo --><link href="/style.css" rel="stylesheet"/><link href="/mobile-fix.css" rel="stylesheet"/></head>
+<!-- CSS Tempestivo --><link href="/style.css?v=20261022" rel="stylesheet"/><link href="/mobile-fix.css?v=20261022" rel="stylesheet"/><meta content="https://tempestivo.it/img/og/og-elettricista.jpg" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="https://tempestivo.it/img/og/og-elettricista.jpg" name="twitter:image"/>
+<link href="/favicon.ico" rel="icon" sizes="any"/><link href="/apple-touch-icon.png" rel="apple-touch-icon"/>
+</head>
 <body>
 <!-- HEADER -->
 <header class="header">
@@ -248,6 +374,8 @@
 <a class="sub-nav-link" href="/servizi.html">Servizi</a>
 <a class="sub-nav-link" href="/mappa-zone.html">Zone Coperte</a>
 <a class="sub-nav-link" href="/landing-ristrutturazioni.html">Ristrutturazioni complete e veloci</a>
+
+<a class="sub-nav-link" href="/tempi-e-copertura.html">Tempi e Copertura</a>
 </div>
 </nav>
 <div class="page-offset"></div>
@@ -285,10 +413,10 @@
 
 <!-- DOPPIA CALL TO ACTION -->
 <div class="cta-group" style="display: flex; gap: 15px; margin: 20px 0; flex-wrap: wrap;">
-<a class="sub-nav-link" href="tel:+393520258583" style="flex: 1; min-width: 260px; text-align: center; background-color: #d9534f; color: #fff; padding: 14px; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 1.05rem;">
+<a class="sub-nav-link" href="tel:+393520258583" style="flex: 1; min-width: 260px; text-align: center; background-color: #A93226; color: #fff; padding: 14px; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 1.05rem;">
         📞 Preventivo Collaudo: +39 352 025 85 83
       </a>
-<a class="sub-nav-link" href="https://wa.me/393520258583?text=Richiesta%20Info%20Collaudo%20Certificazioni%20Impianti%20Palermo" style="flex: 1; min-width: 260px; text-align: center; background-color: #25D366; color: #fff; padding: 14px; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 1.05rem;">
+<a class="sub-nav-link" href="https://wa.me/393520258583?text=Richiesta%20Info%20Collaudo%20Certificazioni%20Impianti%20Palermo" style="flex: 1; min-width: 260px; text-align: center; background-color: #25D366; color: #06301F; padding: 14px; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 1.05rem;">
         💬 WhatsApp Tecnico H24
       </a>
 </div>
@@ -297,7 +425,7 @@
 <section class="section-desc" style="margin: 30px 0;">
     <h2>Garantire sicurezza, legalità e conformità normativa a Palermo</h2>
     <p>Il collaudo e la certificazione di un impianto rappresentano il momento cruciale per attestarne la perfetta efficienza e la totale sicurezza d'uso. Che si tratti di un immobile residenziale o di una struttura produttiva, operare senza le dovute verifiche strumentali espone a rischi strutturali e sanzioni amministrative rilevanti.</p>
-    <p><strong>Tempestivo</strong> esegue controlli approfonditi avvalendosi di strumentazione di misura all'avanguardia. Se stai completando un cantiere, puoi abbinare queste verifiche ai nostri servizi di <a href="/servizi/riscaldamento-climatizzazione-palermo.html" style="color:var(--rosso); font-weight:bold; text-decoration:none;">riscaldamento e climatizzazione</a> o alle nostre <a href="/landing-ristrutturazioni.html" style="color:var(--rosso); font-weight:bold; text-decoration:none;">ristrutturazioni complete e veloci a Palermo</a>.</p>
+    <p><strong>Tempestivo</strong> esegue controlli approfonditi avvalendosi di strumentazione di misura all'avanguardia. Se stai completando un cantiere, puoi abbinare queste verifiche ai nostri servizi di <a href="/servizi/riscaldamento-climatizzazione-palermo.html" style="color: #C41E1E; font-weight:bold; text-decoration:none;">riscaldamento e climatizzazione</a> o alle nostre <a href="/landing-ristrutturazioni.html" style="color: #C41E1E; font-weight:bold; text-decoration:none;">ristrutturazioni complete e veloci a Palermo</a>.</p>
 </section>
 
 <!-- BOX INFO -->
@@ -322,16 +450,15 @@
     <p style="margin: 0; font-size: 0.95rem; line-height: 1.6;"><strong>🏛️ Collaudi per impianti industriali e commerciali</strong> <a href="/servizi/impianti-idraulici-industriali-commerciali-palermo.html" style="color: #856404; font-weight: bold; text-decoration: underline; border-bottom: 1px dotted #856404;">I nostri collaudi</a></p>
 </div>
 
-
 <!-- GRIGLIA DEI QUARTIERI (POSIZIONATA STRATEGICAMENTE DOPO IL TESTO DESCRITTIVO) -->
 <section style="background-color: var(--grigio-chiaro); padding: 40px; border-radius: 12px; margin: 40px 0;">
     <h2>Zone d'Intervento e Hub Locali a <span>Palermo</span></h2>
-    <p class="section-desc" style="margin-bottom: 25px;">Accedi alle sezioni territoriali dedicate per interventi d'emergenza, costi specifici e riparazioni su misura nei principali quartieri:</p>
+    <p class="section-desc" style="margin-bottom: 25px;">Scegli il quartiere in cui si trova l'impianto da verificare: per ogni zona trovi tempi di sopralluogo, documenti rilasciati e costi orientativi di collaudo.</p>
     <div class="vantaggi-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
         
         <div class="vantaggio" style="background: var(--bianco); padding: 20px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
             <h3 style="color:var(--rosso); margin-top:0;"><a href="/palermo/albergheria/impianti-idraulici/" style="text-decoration:none; color:inherit;">🏛️ Albergheria</a></h3>
-            <p style="margin: 10px 0; color: #555; font-size: 0.95rem;">Interventi urgenti idraulici ed elettrici adatti a palazzi storici, impianti datati e contesti protetti.</p>
+            <p style="margin: 10px 0; color: #555; font-size: 0.95rem;">Albergheria: collaudo e certificazione degli impianti in case a corte e palazzi frazionati attorno al mercato di Ballarò.</p>
             <div style="display: flex; flex-direction: column; gap: 5px;">
                 <a class="service-link" href="/palermo/albergheria/impianti-idraulici/" style="display:inline-block; font-weight:bold; color:var(--blu-notte); text-decoration:none;">Impianti Idraulici Albergheria →</a>
             </div>
@@ -339,7 +466,7 @@
 
         <div class="vantaggio" style="background: var(--bianco); padding: 20px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
             <h3 style="color:var(--rosso); margin-top:0;"><a href="/palermo/ballaro/impianti-idraulici/" style="text-decoration:none; color:inherit;">🛒 Ballarò</a></h3>
-            <p style="margin: 10px 0; color: #555; font-size: 0.95rem;">Soluzioni rapide per case, negozi e banchi commerciali dello storico mercato.</p>
+            <p style="margin: 10px 0; color: #555; font-size: 0.95rem;">Ballarò: collaudo e certificazione degli impianti in bassi e botteghe che convivono con il mercato storico.</p>
             <div style="display: flex; flex-direction: column; gap: 5px;">
                 <a class="service-link" href="/palermo/ballaro/impianti-idraulici/" style="display:inline-block; font-weight:bold; color:var(--blu-notte); text-decoration:none;">Impianti Idraulici Ballarò →</a>
             </div>
@@ -347,7 +474,7 @@
 
         <div class="vantaggio" style="background: var(--bianco); padding: 20px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
             <h3 style="color:var(--rosso); margin-top:0;"><a href="/palermo/boccadifalco/impianti-idraulici/" style="text-decoration:none; color:inherit;">🌳 Boccadifalco</a></h3>
-            <p style="margin: 10px 0; color: #555; font-size: 0.95rem;">Riparazioni e manutenzione impianti per abitazioni e contesti residenziali periferici.</p>
+            <p style="margin: 10px 0; color: #555; font-size: 0.95rem;">Boccadifalco: collaudo e certificazione degli impianti in ville e case rurali con pozzo lungo la salita al castello.</p>
             <div style="display: flex; flex-direction: column; gap: 5px;">
                 <a class="service-link" href="/palermo/boccadifalco/impianti-idraulici/" style="display:inline-block; font-weight:bold; color:var(--blu-notte); text-decoration:none;">Impianti Idraulici Boccadifalco →</a>
             </div>
@@ -355,7 +482,7 @@
 
         <div class="vantaggio" style="background: var(--bianco); padding: 20px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
             <h3 style="color:var(--rosso); margin-top:0;"><a href="/palermo/bonagia/impianti-idraulici/" style="text-decoration:none; color:inherit;">🏘️ Bonagia</a></h3>
-            <p style="margin: 10px 0; color: #555; font-size: 0.95rem;">Interventi celeri su impianti civili, appartamenti e condomini della zona.</p>
+            <p style="margin: 10px 0; color: #555; font-size: 0.95rem;">Bonagia: collaudo e certificazione degli impianti in palazzine di edilizia residenziale degli anni Settanta con parti comuni estese.</p>
             <div style="display: flex; flex-direction: column; gap: 5px;">
                 <a class="service-link" href="/palermo/bonagia/impianti-idraulici/" style="display:inline-block; font-weight:bold; color:var(--blu-notte); text-decoration:none;">Impianti Idraulici Bonagia →</a>
             </div>
@@ -363,7 +490,7 @@
 
         <div class="vantaggio" style="background: var(--bianco); padding: 20px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
             <h3 style="color:var(--rosso); margin-top:0;"><a href="/palermo/brancaccio/impianti-idraulici/" style="text-decoration:none; color:inherit;">🏗️ Brancaccio</a></h3>
-            <p style="margin: 10px 0; color: #555; font-size: 0.95rem;">Soluzioni tecniche mirate per edifici residenziali, magazzini e strutture commerciali.</p>
+            <p style="margin: 10px 0; color: #555; font-size: 0.95rem;">Brancaccio: collaudo e certificazione degli impianti in palazzoni popolari e capannoni ai margini della zona industriale.</p>
             <div style="display: flex; flex-direction: column; gap: 5px;">
                 <a class="service-link" href="/palermo/brancaccio/impianti-idraulici/" style="display:inline-block; font-weight:bold; color:var(--blu-notte); text-decoration:none;">Impianti Idraulici Brancaccio →</a>
             </div>
@@ -371,7 +498,7 @@
 
         <div class="vantaggio" style="background: var(--bianco); padding: 20px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
             <h3 style="color:var(--rosso); margin-top:0;"><a href="/palermo/calatafimi-villa-tasca/impianti-idraulici/" style="text-decoration:none; color:inherit;">🏡 Calatafimi Villa Tasca</a></h3>
-            <p style="margin: 10px 0; color: #555; font-size: 0.95rem;">Assistenza tecnica specializzata per condomini e ville della zona.</p>
+            <p style="margin: 10px 0; color: #555; font-size: 0.95rem;">Calatafimi Villa Tasca: collaudo e certificazione degli impianti in palazzine e ville liberty con giardino e locali tecnici esterni.</p>
             <div style="display: flex; flex-direction: column; gap: 5px;">
                 <a class="service-link" href="/palermo/calatafimi-villa-tasca/impianti-idraulici/" style="display:inline-block; font-weight:bold; color:var(--blu-notte); text-decoration:none;">Impianti Idraulici Calatafimi Villa Tasca →</a>
             </div>
@@ -379,7 +506,7 @@
 
         <div class="vantaggio" style="background: var(--bianco); padding: 20px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
             <h3 style="color:var(--rosso); margin-top:0;"><a href="/palermo/capo-papireto/impianti-idraulici/" style="text-decoration:none; color:inherit;">📍 Capo Papireto</a></h3>
-            <p style="margin: 10px 0; color: #555; font-size: 0.95rem;">Rifacimento e manutenzione impianti in edifici del centro storico.</p>
+            <p style="margin: 10px 0; color: #555; font-size: 0.95rem;">Capo Papireto: collaudo e certificazione degli impianti in corti e botteghe del mercato del Capo, con contatori in nicchie umide.</p>
             <div style="display: flex; flex-direction: column; gap: 5px;">
                 <a class="service-link" href="/palermo/capo-papireto/impianti-idraulici/" style="display:inline-block; font-weight:bold; color:var(--blu-notte); text-decoration:none;">Impianti Idraulici Capo Papireto →</a>
             </div>
@@ -387,7 +514,7 @@
 
         <div class="vantaggio" style="background: var(--bianco); padding: 20px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
             <h3 style="color:var(--rosso); margin-top:0;"><a href="/palermo/centro-storico/impianti-idraulici/" style="text-decoration:none; color:inherit;">🏛️ Centro Storico</a></h3>
-            <p style="margin: 10px 0; color: #555; font-size: 0.95rem;">Interventi mirati nel cuore di Palermo per palazzi storici e botteghe.</p>
+            <p style="margin: 10px 0; color: #555; font-size: 0.95rem;">Centro Storico: collaudo e certificazione degli impianti in palazzi nobiliari vincolati, murature spesse e impianti d'epoca.</p>
             <div style="display: flex; flex-direction: column; gap: 5px;">
                 <a class="service-link" href="/palermo/centro-storico/impianti-idraulici/" style="display:inline-block; font-weight:bold; color:var(--blu-notte); text-decoration:none;">Impianti Idraulici Centro Storico →</a>
             </div>
@@ -395,7 +522,7 @@
 
         <div class="vantaggio" style="background: var(--bianco); padding: 20px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
             <h3 style="color:var(--rosso); margin-top:0;"><a href="/palermo/cruillas/impianti-idraulici/" style="text-decoration:none; color:inherit;">🏘️ Cruillas</a></h3>
-            <p style="margin: 10px 0; color: #555; font-size: 0.95rem;">Soluzioni rapide per impianti residenziali e commerciali di Cruillas.</p>
+            <p style="margin: 10px 0; color: #555; font-size: 0.95rem;">Cruillas: collaudo e certificazione degli impianti in villette collinari con pozzo, cisterna e impianti ampliati nel tempo.</p>
             <div style="display: flex; flex-direction: column; gap: 5px;">
                 <a class="service-link" href="/palermo/cruillas/impianti-idraulici/" style="display:inline-block; font-weight:bold; color:var(--blu-notte); text-decoration:none;">Impianti Idraulici Cruillas →</a>
             </div>
@@ -403,7 +530,7 @@
 
         <div class="vantaggio" style="background: var(--bianco); padding: 20px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
             <h3 style="color:var(--rosso); margin-top:0;"><a href="/palermo/falsomiele/impianti-idraulici/" style="text-decoration:none; color:inherit;">🏡 Falsomiele</a></h3>
-            <p style="margin: 10px 0; color: #555; font-size: 0.95rem;">Servizi tecnici di manutenzione e messa a norma per appartamenti e stabili.</p>
+            <p style="margin: 10px 0; color: #555; font-size: 0.95rem;">Falsomiele: collaudo e certificazione degli impianti in palazzine e case basse miste a officine e terreni liberi.</p>
             <div style="display: flex; flex-direction: column; gap: 5px;">
                 <a class="service-link" href="/palermo/falsomiele/impianti-idraulici/" style="display:inline-block; font-weight:bold; color:var(--blu-notte); text-decoration:none;">Impianti Idraulici Falsomiele →</a>
             </div>
@@ -411,7 +538,7 @@
 
         <div class="vantaggio" style="background: var(--bianco); padding: 20px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
             <h3 style="color:var(--rosso); margin-top:0;"><a href="/palermo/liberta/impianti-idraulici/" style="text-decoration:none; color:inherit;">🏙️ Libertà</a></h3>
-            <p style="margin: 10px 0; color: #555; font-size: 0.95rem;">Impianti e rifacimenti di alto livello per appartamenti signorili e uffici.</p>
+            <p style="margin: 10px 0; color: #555; font-size: 0.95rem;">Libertà: collaudo e certificazione degli impianti in palazzi signorili con uffici, negozi e cortili interni.</p>
             <div style="display: flex; flex-direction: column; gap: 5px;">
                 <a class="service-link" href="/palermo/liberta/impianti-idraulici/" style="display:inline-block; font-weight:bold; color:var(--blu-notte); text-decoration:none;">Impianti Idraulici Libertà →</a>
             </div>
@@ -419,7 +546,7 @@
 
         <div class="vantaggio" style="background: var(--bianco); padding: 20px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
             <h3 style="color:var(--rosso); margin-top:0;"><a href="/palermo/mondello/impianti-idraulici/" style="text-decoration:none; color:inherit;">🏖️ Mondello</a></h3>
-            <p style="margin: 10px 0; color: #555; font-size: 0.95rem;">Riparazioni e interventi su ville, case vacanza e immobili della zona balneare.</p>
+            <p style="margin: 10px 0; color: #555; font-size: 0.95rem;">Mondello: collaudo e certificazione degli impianti in ville liberty e case vacanza esposte alla salsedine.</p>
             <div style="display: flex; flex-direction: column; gap: 5px;">
                 <a class="service-link" href="/palermo/mondello/impianti-idraulici/" style="display:inline-block; font-weight:bold; color:var(--blu-notte); text-decoration:none;">Impianti Idraulici Mondello →</a>
             </div>
@@ -427,7 +554,7 @@
 
         <div class="vantaggio" style="background: var(--bianco); padding: 20px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
             <h3 style="color:var(--rosso); margin-top:0;"><a href="/palermo/noce/impianti-idraulici/" style="text-decoration:none; color:inherit;">🏡 Noce</a></h3>
-            <p style="margin: 10px 0; color: #555; font-size: 0.95rem;">Interventi rapidi e puntuali per abitazioni e stabili residenziali.</p>
+            <p style="margin: 10px 0; color: #555; font-size: 0.95rem;">Noce: collaudo e certificazione degli impianti in palazzine degli anni Sessanta con impianti modificati in più riprese.</p>
             <div style="display: flex; flex-direction: column; gap: 5px;">
                 <a class="service-link" href="/palermo/noce/impianti-idraulici/" style="display:inline-block; font-weight:bold; color:var(--blu-notte); text-decoration:none;">Impianti Idraulici Noce →</a>
             </div>
@@ -435,7 +562,7 @@
 
         <div class="vantaggio" style="background: var(--bianco); padding: 20px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
             <h3 style="color:var(--rosso); margin-top:0;"><a href="/palermo/oreto-stazione-centrale/impianti-idraulici/" style="text-decoration:none; color:inherit;">🚉 Oreto Stazione Centrale</a></h3>
-            <p style="margin: 10px 0; color: #555; font-size: 0.95rem;">Soluzioni mirate per immobili, condomini e attività commerciali della zona.</p>
+            <p style="margin: 10px 0; color: #555; font-size: 0.95rem;">Oreto Stazione Centrale: collaudo e certificazione degli impianti in palazzine d'inizio Novecento, alberghi e magazzini riconvertiti.</p>
             <div style="display: flex; flex-direction: column; gap: 5px;">
                 <a class="service-link" href="/palermo/oreto-stazione-centrale/impianti-idraulici/" style="display:inline-block; font-weight:bold; color:var(--blu-notte); text-decoration:none;">Impianti Idraulici Oreto Stazione Centrale →</a>
             </div>
@@ -443,7 +570,7 @@
 
         <div class="vantaggio" style="background: var(--bianco); padding: 20px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
             <h3 style="color:var(--rosso); margin-top:0;"><a href="/palermo/partanna-mondello/impianti-idraulici/" style="text-decoration:none; color:inherit;">🌴 Partanna Mondello</a></h3>
-            <p style="margin: 10px 0; color: #555; font-size: 0.95rem;">Riparazioni e ristrutturazioni per edifici residenziali e ville locali.</p>
+            <p style="margin: 10px 0; color: #555; font-size: 0.95rem;">Partanna Mondello: collaudo e certificazione degli impianti in villette e residence con piscina tra la pineta e il mare.</p>
             <div style="display: flex; flex-direction: column; gap: 5px;">
                 <a class="service-link" href="/palermo/partanna-mondello/impianti-idraulici/" style="display:inline-block; font-weight:bold; color:var(--blu-notte); text-decoration:none;">Impianti Idraulici Partanna Mondello →</a>
             </div>
@@ -451,7 +578,7 @@
 
         <div class="vantaggio" style="background: var(--bianco); padding: 20px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
             <h3 style="color:var(--rosso); margin-top:0;"><a href="/palermo/passo-di-rigano/impianti-idraulici/" style="text-decoration:none; color:inherit;">🚗 Passo Di Rigano</a></h3>
-            <p style="margin: 10px 0; color: #555; font-size: 0.95rem;">Assistenza tempestiva su impianti civili e commerciali nell'area.</p>
+            <p style="margin: 10px 0; color: #555; font-size: 0.95rem;">Passo Di Rigano: collaudo e certificazione degli impianti in ville con giardino e pozzi nelle proprietà più distanti dal centro.</p>
             <div style="display: flex; flex-direction: column; gap: 5px;">
                 <a class="service-link" href="/palermo/passo-di-rigano/impianti-idraulici/" style="display:inline-block; font-weight:bold; color:var(--blu-notte); text-decoration:none;">Impianti Idraulici Passo Di Rigano →</a>
             </div>
@@ -459,7 +586,7 @@
 
         <div class="vantaggio" style="background: var(--bianco); padding: 20px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
             <h3 style="color:var(--rosso); margin-top:0;"><a href="/palermo/piazza-marina-kalsa/impianti-idraulici/" style="text-decoration:none; color:inherit;">⛵ Piazza Marina Kalsa</a></h3>
-            <p style="margin: 10px 0; color: #555; font-size: 0.95rem;">Lavori specializzati in contesti storici e palazzi d'epoca protetti.</p>
+            <p style="margin: 10px 0; color: #555; font-size: 0.95rem;">Piazza Marina Kalsa: collaudo e certificazione degli impianti in palazzi storici e case a corte con umidità di risalita.</p>
             <div style="display: flex; flex-direction: column; gap: 5px;">
                 <a class="service-link" href="/palermo/piazza-marina-kalsa/impianti-idraulici/" style="display:inline-block; font-weight:bold; color:var(--blu-notte); text-decoration:none;">Impianti Idraulici Piazza Marina Kalsa →</a>
             </div>
@@ -467,7 +594,7 @@
 
         <div class="vantaggio" style="background: var(--bianco); padding: 20px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
             <h3 style="color:var(--rosso); margin-top:0;"><a href="/palermo/politeama-borgo-vecchio/impianti-idraulici/" style="text-decoration:none; color:inherit;">🎭 Politeama Borgo Vecchio</a></h3>
-            <p style="margin: 10px 0; color: #555; font-size: 0.95rem;">Servizi dedicati ad appartamenti, uffici e negozi del centro cittadino.</p>
+            <p style="margin: 10px 0; color: #555; font-size: 0.95rem;">Politeama Borgo Vecchio: collaudo e certificazione degli impianti in palazzi umbertini con uffici, teatri e mercato rionale.</p>
             <div style="display: flex; flex-direction: column; gap: 5px;">
                 <a class="service-link" href="/palermo/politeama-borgo-vecchio/impianti-idraulici/" style="display:inline-block; font-weight:bold; color:var(--blu-notte); text-decoration:none;">Impianti Idraulici Politeama Borgo Vecchio →</a>
             </div>
@@ -475,7 +602,7 @@
 
         <div class="vantaggio" style="background: var(--bianco); padding: 20px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
             <h3 style="color:var(--rosso); margin-top:0;"><a href="/palermo/san-lorenzo/impianti-idraulici/" style="text-decoration:none; color:inherit;">🏡 San Lorenzo</a></h3>
-            <p style="margin: 10px 0; color: #555; font-size: 0.95rem;">Manutenzione e installazione impianti per residenze e condomini.</p>
+            <p style="margin: 10px 0; color: #555; font-size: 0.95rem;">San Lorenzo: collaudo e certificazione degli impianti in case a corte e monolocali affittati agli studenti.</p>
             <div style="display: flex; flex-direction: column; gap: 5px;">
                 <a class="service-link" href="/palermo/san-lorenzo/impianti-idraulici/" style="display:inline-block; font-weight:bold; color:var(--blu-notte); text-decoration:none;">Impianti Idraulici San Lorenzo →</a>
             </div>
@@ -483,7 +610,7 @@
 
         <div class="vantaggio" style="background: var(--bianco); padding: 20px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
             <h3 style="color:var(--rosso); margin-top:0;"><a href="/palermo/sferracavallo/impianti-idraulici/" style="text-decoration:none; color:inherit;">🌊 Sferracavallo</a></h3>
-            <p style="margin: 10px 0; color: #555; font-size: 0.95rem;">Interventi tecnici mirati per abitazioni e locali della borgata marinara.</p>
+            <p style="margin: 10px 0; color: #555; font-size: 0.95rem;">Sferracavallo: collaudo e certificazione degli impianti in case di pescatori e ristoranti affacciati sul mare.</p>
             <div style="display: flex; flex-direction: column; gap: 5px;">
                 <a class="service-link" href="/palermo/sferracavallo/impianti-idraulici/" style="display:inline-block; font-weight:bold; color:var(--blu-notte); text-decoration:none;">Impianti Idraulici Sferracavallo →</a>
             </div>
@@ -491,7 +618,7 @@
 
         <div class="vantaggio" style="background: var(--bianco); padding: 20px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
             <h3 style="color:var(--rosso); margin-top:0;"><a href="/palermo/tommaso-natale/impianti-idraulici/" style="text-decoration:none; color:inherit;">🏘️ Tommaso Natale</a></h3>
-            <p style="margin: 10px 0; color: #555; font-size: 0.95rem;">Riparazioni, adeguamenti e rifacimenti completi per stabili locali.</p>
+            <p style="margin: 10px 0; color: #555; font-size: 0.95rem;">Tommaso Natale: collaudo e certificazione degli impianti in villette e residence tra la costa e le prime pendici.</p>
             <div style="display: flex; flex-direction: column; gap: 5px;">
                 <a class="service-link" href="/palermo/tommaso-natale/impianti-idraulici/" style="display:inline-block; font-weight:bold; color:var(--blu-notte); text-decoration:none;">Impianti Idraulici Tommaso Natale →</a>
             </div>
@@ -499,7 +626,7 @@
 
         <div class="vantaggio" style="background: var(--bianco); padding: 20px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
             <h3 style="color:var(--rosso); margin-top:0;"><a href="/palermo/uditore/impianti-idraulici/" style="text-decoration:none; color:inherit;">🌳 Uditore</a></h3>
-            <p style="margin: 10px 0; color: #555; font-size: 0.95rem;">Assistenza tempestiva e manutenzione per condomini e appartamenti.</p>
+            <p style="margin: 10px 0; color: #555; font-size: 0.95rem;">Uditore: collaudo e certificazione degli impianti in ville con giardino e palazzine con serbatoi sui terrazzi.</p>
             <div style="display: flex; flex-direction: column; gap: 5px;">
                 <a class="service-link" href="/palermo/uditore/impianti-idraulici/" style="display:inline-block; font-weight:bold; color:var(--blu-notte); text-decoration:none;">Impianti Idraulici Uditore →</a>
             </div>
@@ -507,7 +634,7 @@
 
         <div class="vantaggio" style="background: var(--bianco); padding: 20px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
             <h3 style="color:var(--rosso); margin-top:0;"><a href="/palermo/villagrazia-di-palermo/impianti-idraulici/" style="text-decoration:none; color:inherit;">🏡 Villagrazia Di Palermo</a></h3>
-            <p style="margin: 10px 0; color: #555; font-size: 0.95rem;">Soluzioni tecniche su misura per abitazioni e contesti residenziali periferici.</p>
+            <p style="margin: 10px 0; color: #555; font-size: 0.95rem;">Villagrazia Di Palermo: collaudo e certificazione degli impianti in case con laboratori annessi, capannoni e serre della zona sud.</p>
             <div style="display: flex; flex-direction: column; gap: 5px;">
                 <a class="service-link" href="/palermo/villagrazia-di-palermo/impianti-idraulici/" style="display:inline-block; font-weight:bold; color:var(--blu-notte); text-decoration:none;">Impianti Idraulici Villagrazia Di Palermo →</a>
             </div>
@@ -515,7 +642,7 @@
 
         <div class="vantaggio" style="background: var(--bianco); padding: 20px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
             <h3 style="color:var(--rosso); margin-top:0;"><a href="/palermo/zisa/impianti-idraulici/" style="text-decoration:none; color:inherit;">🏰 Zisa</a></h3>
-            <p style="margin: 10px 0; color: #555; font-size: 0.95rem;">Rifacimenti e interventi di messa a norma in edifici storici e moderni.</p>
+            <p style="margin: 10px 0; color: #555; font-size: 0.95rem;">Zisa: collaudo e certificazione degli impianti in palazzoni e palazzine dense intorno al complesso storico della Zisa.</p>
             <div style="display: flex; flex-direction: column; gap: 5px;">
                 <a class="service-link" href="/palermo/zisa/impianti-idraulici/" style="display:inline-block; font-weight:bold; color:var(--blu-notte); text-decoration:none;">Impianti Idraulici Zisa →</a>
             </div>
@@ -588,21 +715,29 @@
 </section>
 
 <!-- FAQ VISIBILE (SINCRO CON SCHEMA.ORG) -->
-<section class="faq-section" style="background-color: var(--grigio-chiaro); padding: 40px; border-radius: 12px; margin-top: 40px;">
-<h2>Domande Frequenti (FAQ) su Collaudi e Certificazioni</h2>
-<div style="margin-top: 20px;">
-<h3 style="color:var(--blu-notte); font-size: 1.1rem;">In cosa consiste la prova di tenuta pressioni su un impianto?</h3>
-<p>La prova di tenuta pressioni è un test strumentale eseguito per verificare che le tubazioni e i raccordi di un impianto (idrico o termico) mantengano la pressione stabilita nel tempo, escludendo la presenza di micro-perdite.</p>
-
-<h3 style="color:var(--blu-notte); font-size: 1.1rem; margin-top: 20px;">Quali documenti vengono rilasciati al termine del collaudo?</h3>
-<p>Al termine delle verifiche e dei test strumentali, rilasciamo la Dichiarazione di Conformità (DiCo) ai sensi del DM 37/08, accompagnata dai relativi rapporti di prova e dalle schede tecniche di collaudo.</p>
-
-<h3 style="color:var(--blu-notte); font-size: 1.1rem; margin-top: 20px;">È obbligatorio il collaudo per gli impianti esistenti a Palermo?</h3>
-<p>Il collaudo e la certificazione sono obbligatori in caso di nuove installazioni, ristrutturazioni straordinarie, ampliamenti o nei passaggi di proprietà immobiliare per attestare la regolarità tecnica dell'immobile.</p>
-</div>
-</section>
 
 </article>
+<section style="background-color: var(--grigio-chiaro); padding: 40px; border-radius: 12px; margin-top: 40px;">
+<h2>Domande Frequenti su <span>Collaudo, Tenuta Pressioni e Certificazioni Impianti a Palermo</span></h2>
+<div class="faq-section">
+<details class="faq-item">
+<summary>In cosa consiste la prova di tenuta pressioni su un impianto?</summary>
+<div class="faq-answer">La prova di tenuta pressioni è un test strumentale eseguito per verificare che le tubazioni e i raccordi di un impianto (idrico o termico) mantengano la pressione stabilita nel tempo, escludendo la presenza di micro-perdite.</div>
+</details>
+<details class="faq-item">
+<summary>Quali documenti vengono rilasciati al termine del collaudo?</summary>
+<div class="faq-answer">Al termine delle verifiche rilasciamo la Dichiarazione di Conformità (DiCo) ai sensi del DM 37/08, accompagnata dai rapporti di prova e dalle schede tecniche di collaudo.</div>
+</details>
+<details class="faq-item">
+<summary>È obbligatorio il collaudo per gli impianti esistenti a Palermo?</summary>
+<div class="faq-answer">Il collaudo e la certificazione sono obbligatori in caso di nuove installazioni, ristrutturazioni straordinarie, ampliamenti o nei passaggi di proprietà immobiliare per attestare la regolarità tecnica dell'immobile.</div>
+</details>
+<details class="faq-item">
+<summary>Quanto costa il collaudo di un impianto a Palermo?</summary>
+<div class="faq-answer">Il listino orientativo per la prova di tenuta pressioni e collaudo base parte da € 150,00. Il rilascio della Dichiarazione di Conformità DM 37/08 e i collaudi complessi vengono quotati su preventivo in base alla tipologia e dimensione dell'impianto.</div>
+</details>
+</div>
+</section>
 </main>
 
 <!-- LEAD SECTION FINALE -->
@@ -611,7 +746,7 @@
 <div class="tempestivo-text-col">
 <h2 style="color: var(--bianco);">Hai bisogno di collaudare o certificare un impianto a Palermo?</h2>
 <p style="margin-bottom: 25px; opacity: 0.9; color: var(--giallo);">Affidati alla competenza tecnica di Tempestivo per verifiche a norma di legge.</p>
-<a class="btn-cta" href="tel:+393520258583" style="background-color: var(--rosso);">📞 Chiama il +39 352 025 85 83</a>
+<a class="btn-cta" href="tel:+393520258583" style="background-color: #C62828;">📞 Chiama il +39 352 025 85 83</a>
 </div>
 </div>
 </section>
@@ -645,6 +780,8 @@
 <ul style="list-style:none;padding:0;">
 <li style="margin-bottom:10px;"><a href="/chi-siamo.html" style="color:var(--giallo);text-decoration:none;">Chi Siamo</a></li>
 <li style="margin-bottom:10px;"><a href="/mappa-zone.html" style="color:var(--bianco);text-decoration:none;">Mappa delle Zone</a></li>
+<li style="margin-bottom:10px;"><a href="/tempi-e-copertura.html" style="color:var(--bianco);text-decoration:none;">Tempi e Copertura</a></li>
+<li style="margin-bottom:10px;"><a href="/prezzi/" style="color:var(--bianco);text-decoration:none;">Prezzi e Costi</a></li>
 <li style="margin-bottom:10px;"><a href="/#progetto-gratis" style="color:var(--bianco);text-decoration:none;">Contatti</a></li>
 </ul>
 </div>
@@ -655,6 +792,12 @@
 <p><strong>📞 +39 352 025 85 83</strong></p>
 <p>© 2026 Tempestivo. Tutti i diritti riservati.</p>
 <div class="social-trust-links" style="margin: 15px 0; display:flex; gap:15px; justify-content:center;"><a class="social-bp" href="https://maps.app.goo.gl/osdw8bBFTeFUem1p8" rel="noopener" style="color: var(--giallo);" target="_blank">Google Business Profile</a> | <a class="social-rev" href="https://share.google/Z6Xvz3Q9JziVhTH7a" rel="noopener" style="color: var(--giallo);" target="_blank">Lascia una Recensione</a> | <a class="social-fb" href="https://www.facebook.com/profile.php?id=61560676851531" rel="noopener" style="color: var(--giallo);" target="_blank">Facebook Profile</a></div>
+</div>
+
+<div class="footer-legal" style="max-width:1100px;margin:20px auto 0;padding-top:15px;border-top:1px solid rgba(255,255,255,0.12);text-align:center;font-size:0.85rem;">
+<a href="/privacy.html" style="color:inherit;text-decoration:underline;margin:0 10px;opacity:0.9;">Privacy Policy</a>
+<a href="/cookie.html" style="color:inherit;text-decoration:underline;margin:0 10px;opacity:0.9;">Cookie Policy</a>
+<a href="/termini.html" style="color:inherit;text-decoration:underline;margin:0 10px;opacity:0.9;">Termini e Condizioni</a>
 </div>
 </footer>
 

@@ -61,9 +61,22 @@ header,
   color: #FFFFFF !important;
 }
 
+/* I bottoni colorati della sub-nav non possono restare bianchi:
+   il contrasto su verde WhatsApp e su rosso sarebbe insufficiente. */
+a.sub-nav-link[style*="25D366"] {
+  color: #06301F !important;
+}
+
+a.sub-nav-link[style*="d9534f"],
+a.sub-nav-link[style*="D9534F"] {
+  color: #FFFFFF !important;
+  background-color: #A93226 !important;
+}
+
 .header-inner {
   max-width: 1100px;
   margin: 0 auto;
+  min-height: 70px;
   padding: 8px 15px;
   display: flex;
   align-items: center;
@@ -160,8 +173,64 @@ header,
   color: var(--giallo);
 }
 
+/* ==========================================================================
+   BREADCRUMB INTERNO (nav.main-nav dentro i contenuti)
+   Il breadcrumb usa nav.main-nav come la navigazione dell'header: senza
+   regole dedicate i link restavano blu di default e, quando il contenitore
+   veniva colorato di blu notte, diventavano invisibili.
+   ========================================================================== */
+nav.main-nav ol li {
+  color: var(--grigio-scuro);
+}
+
+nav.main-nav ol li a {
+  color: #0B4EA2;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+nav.main-nav ol li a:hover {
+  color: var(--rosso);
+}
+
+nav.main-nav ol .current,
+nav.main-nav ol .current strong,
+nav.main-nav ol li[aria-current="page"],
+nav.main-nav ol li[aria-current="page"] strong {
+  color: var(--grigio-scuro);
+  text-decoration: none;
+}
+
+/* ==========================================================================
+   BARRA EMERGENZA
+   Su desktop l'header è fisso e la barra finisce dietro di esso: il testo
+   bianco traspariva al 4% creando testo fantasma illeggibile. Resta attiva
+   su mobile, dove l'header è in flusso e la barra è effettivamente visibile.
+   ========================================================================== */
+@media (min-width: 769px) {
+  .emergency-bar {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+   STELLE DI VALUTAZIONE
+   L'oro pieno (#ffc107) su fondo chiaro era illeggibile (1.5:1) e trascinava
+   nello stesso colore anche il testo del blocco: qui il giallo resta alle
+   stelle e il testo torna scuro.
+   ========================================================================== */
+.stars-gold {
+  color: #B8860B;
+}
+
+.stars-gold p,
+.stars-gold p a,
+.stars-gold p strong {
+  color: var(--grigio-scuro);
+}
+
 .btn-emergenza {
-  background-color: var(--rosso);
+  background-color: #C62828;
   color: var(--bianco) !important;
   padding: 8px 16px;
   border-radius: 5px;
@@ -175,7 +244,7 @@ header,
 }
 
 .btn-emergenza:hover {
-  background-color: #c51f1f;
+  background-color: #A81E1E;
 }
 
 /* ==========================================================================
@@ -227,6 +296,7 @@ header,
 .hero {
   position: relative;
   height: 90vh;
+  background: linear-gradient(135deg, #0b1b3b 0%, #16325c 55%, #1f4272 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -283,7 +353,8 @@ header,
 }
 
 .btn-cta {
-  background-color: var(--rosso);
+  display: inline-block;
+  background-color: #C62828;
   color: var(--bianco);
   padding: 14px 28px;
   border-radius: 999px;
@@ -292,6 +363,17 @@ header,
   text-transform: uppercase;
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
   transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* CTA con sfondo WhatsApp: il bianco su #25D366 non è leggibile (1.98:1) */
+a.btn-cta[style*="25D366"],
+a.btn-cta[style*="25d366"] {
+  color: #06301F;
+}
+
+a.btn-cta[style*="25D366"]:hover,
+a.btn-cta[style*="25d366"]:hover {
+  color: #06301F;
 }
 
 .btn-cta:hover {
@@ -440,7 +522,7 @@ header,
 
 .tempestivo-form .btn-submit-lead {
   width: 100%;
-  background-color: var(--rosso);
+  background-color: #C62828;
   color: var(--bianco);
   border: none;
   padding: 16px;
@@ -768,7 +850,7 @@ header,
 
 .contact-form .btn-submit {
   grid-column: 1 / -1;
-  background-color: var(--rosso);
+  background-color: #C62828;
   color: var(--bianco);
   border: none;
   padding: 16px;
