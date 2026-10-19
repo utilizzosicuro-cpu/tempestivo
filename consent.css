@@ -1,0 +1,147 @@
+/* Banner consenso Tempestivo */
+#tpl-consent,
+#tpl-consent * {
+  box-sizing: border-box;
+}
+
+#tpl-consent {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99999;
+  background: #0B1B3B;
+  color: #FFFFFF;
+  border-top: 4px solid #FFC857;
+  box-shadow: 0 -8px 30px rgba(0, 0, 0, 0.25);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+#tpl-consent .tpl-consent-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 18px 20px;
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#tpl-consent .tpl-consent-text {
+  flex: 1 1 560px;
+  min-width: 260px;
+}
+
+#tpl-consent strong {
+  color: #FFC857;
+}
+
+#tpl-consent a {
+  color: #FFFFFF;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+#tpl-consent .tpl-consent-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#tpl-consent button {
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 6px;
+  padding: 10px 16px;
+  border: 2px solid transparent;
+  min-height: 44px;
+}
+
+#tpl-consent .tpl-accept {
+  background: #E32626;
+  color: #FFFFFF;
+  border-color: #E32626;
+}
+
+#tpl-consent .tpl-reject {
+  background: transparent;
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+}
+
+#tpl-consent .tpl-prefs {
+  background: transparent;
+  color: #FFC857;
+  border-color: transparent;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+#tpl-consent button:hover,
+#tpl-consent button:focus-visible {
+  outline: 3px solid #FFC857;
+  outline-offset: 2px;
+}
+
+#tpl-consent .tpl-panel {
+  display: none;
+  width: 100%;
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  padding-top: 14px;
+  margin-top: 4px;
+}
+
+#tpl-consent .tpl-panel.is-open {
+  display: block;
+}
+
+#tpl-consent .tpl-panel label {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+#tpl-consent .tpl-panel input[type="checkbox"] {
+  margin-top: 5px;
+  width: 18px;
+  height: 18px;
+  accent-color: #E32626;
+  flex: 0 0 auto;
+}
+
+#tpl-consent .tpl-panel .tpl-save {
+  background: #FFC857;
+  color: #0B1B3B;
+  border-color: #FFC857;
+  margin-top: 6px;
+}
+
+#tpl-consent .tpl-note {
+  font-size: 12.5px;
+  color: rgba(255, 255, 255, 0.75);
+  margin-top: 8px;
+}
+
+a[data-consent-open] {
+  cursor: pointer;
+}
+
+@media (max-width: 640px) {
+  #tpl-consent .tpl-consent-inner {
+    padding: 14px 14px 12px;
+    gap: 10px;
+  }
+  #tpl-consent .tpl-consent-actions {
+    width: 100%;
+  }
+  #tpl-consent .tpl-consent-actions button {
+    flex: 1 1 auto;
+  }
+}
