@@ -47,57 +47,60 @@ nav.sub-nav,
         overflow-wrap: break-word !important;
     }
 
-    /* Header e Navbar Compatta */
-    /* nav.main-nav NON va incluso: è usato anche dal breadcrumb dei contenuti
-       e veniva dipinto di blu notte con i link invisibili. */
+    /* Header compatto: una sola riga (logo + telefono).
+       Prima logo, "Area Business" e CTA si impilavano in colonna e
+       l'header occupava 269 px, un terzo della piega a 390x844.
+       nav.main-nav NON va incluso: è usato anche dal breadcrumb dei
+       contenuti e veniva dipinto di blu notte con i link invisibili. */
     header.header, .header {
         position: relative !important;
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: center !important;
-        justify-content: center !important;
-        text-align: center !important;
+        display: block !important;
         width: 100% !important;
         height: auto !important;
-        padding: 18px 12px !important;
+        padding: 0 !important;
         background-color: #0d2140 !important;
     }
 
     .header-inner {
         display: flex !important;
-        flex-direction: column !important;
+        flex-direction: row !important;
         align-items: center !important;
-        justify-content: center !important;
+        justify-content: space-between !important;
+        gap: 10px !important;
         width: 100% !important;
+        min-height: 56px !important;
         margin: 0 auto !important;
-        padding: 0 !important;
+        padding: 7px 12px !important;
     }
 
     /* Logo */
     a.logo, .logo {
         display: flex !important;
-        flex-direction: column !important;
+        flex-direction: row !important;
         align-items: center !important;
-        justify-content: center !important;
-        text-align: center !important;
-        width: 100% !important;
-        margin: 0 auto 12px auto !important;
+        justify-content: flex-start !important;
+        gap: 8px !important;
+        text-align: left !important;
+        width: auto !important;
+        margin: 0 !important;
         padding: 0 !important;
         text-decoration: none !important;
+        min-width: 0 !important;
     }
 
     .logo-mark {
-        width: 48px !important;
-        height: 48px !important;
-        min-width: 48px !important;
-        min-height: 48px !important;
+        width: 30px !important;
+        height: 30px !important;
+        min-width: 30px !important;
+        min-height: 30px !important;
         background-color: #ff4d4d !important;
         border-radius: 50% !important;
         display: flex !important;
         align-items: center !important;
         justify-content: center !important;
-        margin: 0 auto 8px auto !important;
-        font-size: 1.4rem !important;
+        margin: 0 !important;
+        font-size: 0.95rem !important;
+        line-height: 1 !important;
         color: #ffffff !important;
         flex-shrink: 0 !important;
     }
@@ -105,43 +108,43 @@ nav.sub-nav,
     .logo-text {
         display: flex !important;
         flex-direction: column !important;
-        align-items: center !important;
-        width: 100% !important;
+        align-items: flex-start !important;
+        width: auto !important;
+        min-width: 0 !important;
     }
 
     .logo-text span {
         display: block !important;
-        text-align: center !important;
-        width: 100% !important;
-        line-height: 1.25 !important;
+        text-align: left !important;
+        width: auto !important;
+        line-height: 1.15 !important;
+        white-space: nowrap !important;
     }
 
     .logo-text span:first-child {
-        font-size: 1.4rem !important;
+        font-size: 1rem !important;
         font-weight: 800 !important;
         color: #ffffff !important;
         letter-spacing: 0.5px !important;
     }
 
     .logo-text span:last-child {
-        font-size: 0.85rem !important;
-        color: rgba(255, 255, 255, 0.8) !important;
+        font-size: 0.58rem !important;
+        color: rgba(255, 255, 255, 0.82) !important;
         text-transform: uppercase !important;
-        margin-top: 3px !important;
+        margin-top: 2px !important;
+        letter-spacing: 0.4px !important;
     }
 
-    /* Menu di Navigazione Principale e Sub-Nav */
-    nav.main-nav {
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: center !important;
-        gap: 8px !important;
-        margin: 10px 0 !important;
-        width: 100% !important;
+    /* Il link "Area Business" dell'header è ridondante su mobile:
+       la stessa destinazione resta raggiungibile dal footer e dalla sub-nav. */
+    header .main-nav,
+    .header .main-nav {
+        display: none !important;
     }
 
     a.nav-link {
-        font-size: 1.05rem !important;
+        font-size: 1rem !important;
         font-weight: 700 !important;
         color: #ffffff !important;
         text-decoration: none !important;
@@ -150,24 +153,40 @@ nav.sub-nav,
         padding: 4px 0 !important;
     }
 
+    /* Sub-nav su una sola riga scorrevole e sottile: prima si impilava su 5 righe
+       occupando ~500 px sopra l'H1 (difetto site-wide). */
+    .sub-nav {
+        padding: 0 !important;
+    }
+
     .sub-nav-inner {
         display: flex !important;
-        flex-direction: column !important;
+        flex-direction: row !important;
         align-items: center !important;
-        justify-content: center !important;
-        gap: 10px !important;
+        justify-content: flex-start !important;
+        flex-wrap: nowrap !important;
+        gap: 16px !important;
         width: 100% !important;
-        padding: 12px 10px !important;
+        padding: 7px 12px !important;
+        overflow-x: auto !important;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+    }
+
+    .sub-nav-inner::-webkit-scrollbar {
+        display: none;
     }
 
     a.sub-nav-link, 
     .sub-nav-link {
-        font-size: 0.95rem !important;
+        font-size: 0.72rem !important;
         font-weight: 700 !important;
         color: #ffffff !important;
         text-decoration: none !important;
         display: block !important;
-        padding: 5px 0 !important;
+        flex: 0 0 auto !important;
+        white-space: nowrap !important;
+        padding: 3px 0 !important;
     }
 
     /* I bottoni colorati mantengono il testo leggibile sul proprio sfondo */
@@ -182,29 +201,81 @@ nav.sub-nav,
     }
 
     .header-cta {
-        width: 100% !important;
+        width: auto !important;
         display: flex !important;
-        justify-content: center !important;
-        margin-top: 8px !important;
+        justify-content: flex-end !important;
+        align-items: center !important;
+        margin: 0 !important;
+        flex-shrink: 0 !important;
     }
 
     a.btn-emergenza {
         display: inline-flex !important;
         align-items: center !important;
         justify-content: center !important;
+        gap: 6px !important;
         background-color: #C62828 !important;
         color: #ffffff !important;
-        padding: 10px 24px !important;
+        padding: 9px 12px !important;
         border-radius: 6px !important;
         text-decoration: none !important;
-        font-weight: bold !important;
-        font-size: 1.15rem !important;
-        margin: 0 auto !important;
+        font-weight: 700 !important;
+        font-size: 0.82rem !important;
+        line-height: 1.1 !important;
+        white-space: nowrap !important;
+        margin: 0 !important;
     }
 
-    /* Hero Section */
+    a.btn-emergenza .icon {
+        font-size: 0.95rem !important;
+        line-height: 1 !important;
+    }
+
+    /* Hero Section: su mobile l'altezza non è più 90vh (schermata quasi
+       vuota tra header e H1) ma è dettata dal contenuto. */
     .hero {
-        padding: 35px 15px !important;
+        height: auto !important;
+        min-height: 0 !important;
+        padding: 34px 15px 38px !important;
+        display: block !important;
+    }
+
+    .hero-content {
+        max-width: 100% !important;
+        padding: 0 !important;
+    }
+
+    /* Schermi molto stretti (iPhone SE 320 px): la CTA andava a capo e
+       riportava l'header a 88 px. Qui logo e telefono restano su una riga. */
+    @media (max-width: 360px) {
+        .logo-text span:last-child {
+            display: none !important;
+        }
+
+        .logo {
+            gap: 6px !important;
+        }
+
+        .logo-text span:first-child {
+            font-size: 0.9rem !important;
+            letter-spacing: 0 !important;
+        }
+
+        .logo-mark {
+            width: 28px !important;
+            height: 28px !important;
+            min-width: 28px !important;
+            font-size: 0.9rem !important;
+        }
+
+        a.btn-emergenza {
+            font-size: 0.74rem !important;
+            padding: 8px 8px !important;
+        }
+
+        a.btn-emergenza .icon {
+            display: none !important;
+        }
     }
 
     .hero-content h1 {
@@ -410,4 +481,148 @@ footer a,
 footer a:hover,
 .social-trust-links a:hover {
   color: #FFC857 !important;
+}
+
+/* ============================================================
+   4. CTA MOBILE STICKY (classe usata da tutte le pagine del sito)
+   Prima del fix la classe .tempestivo-mobile-cta non aveva regole:
+   il blocco era testo statico in fondo alla pagina.
+   ============================================================ */
+.tempestivo-mobile-cta {
+  display: none !important;
+}
+
+@media (max-width: 768px) {
+  .tempestivo-mobile-cta {
+    display: block !important;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9000;
+    background: #A93226;
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 -3px 14px rgba(0, 0, 0, 0.28);
+  }
+
+  .tempestivo-mobile-cta a,
+  .tempestivo-mobile-cta .sticky-call-btn {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px;
+    min-height: 48px;
+    padding: 12px 16px;
+    color: #FFFFFF !important;
+    text-decoration: none !important;
+    font-weight: 700;
+    font-size: 1.02rem;
+    line-height: 1.2;
+  }
+
+  .tempestivo-mobile-cta .icon {
+    font-size: 1.15rem;
+    line-height: 1;
+  }
+
+  body {
+    /* !important per vincere il reset padding:0 !important piu sopra */
+    padding-bottom: 66px !important;
+  }
+}
+
+/* ============================================================
+   5. BREADCRUMB: la lista non aveva regole dedicate e mostrava
+   la numerazione "1. Home / 2. Terrasini" (tutto il sito).
+   ============================================================ */
+.breadcrumb-nav {
+  margin: 22px 0 18px !important;
+}
+
+.breadcrumb-nav ol {
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  align-items: center !important;
+  gap: 6px !important;
+  font-size: 0.88rem;
+}
+
+.breadcrumb-nav ol li {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0;
+}
+
+.breadcrumb-nav ol li a {
+  color: #0B4EA2;
+  text-decoration: none;
+}
+
+.breadcrumb-nav ol li a:hover {
+  color: #A93226;
+  text-decoration: underline;
+}
+
+.breadcrumb-nav .separator {
+  opacity: 0.55;
+}
+
+.breadcrumb-nav .current {
+  color: #334155;
+  font-weight: 600;
+}
+
+/* Nelle pagine dove il breadcrumb è figlio diretto di .hub-page non c'era
+   nessun contenitore con padding: a 390 px partiva a x=0, appiccicato al bordo. */
+@media (max-width: 768px) {
+  .hub-page > .breadcrumb-nav {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+}
+
+/* ============================================================
+   6. CARD CON IMMAGINE E ANCORE
+   Le immagini delle card avevano altezze diverse e disallineavano
+   i titoli; le ancore finivano sotto header + sub-nav fissi.
+   ============================================================ */
+.vantaggi-grid .vantaggio > img {
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+
+h1, h2, h3 {
+  scroll-margin-top: 130px;
+}
+
+/* ============================================================
+   7. TABELLE PREZZI SU MOBILE
+   Le tabelle a 4 colonne si comprimevano fino a spezzare ogni
+   parola. Sotto 700px la tabella mantiene una larghezza minima
+   leggibile e scorre in orizzontale dentro il suo contenitore.
+   ============================================================ */
+.tab-prezzi {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tab-prezzi-hint {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .tab-prezzi {
+    min-width: 560px;
+  }
+
+  .tab-prezzi-hint {
+    display: block;
+    font-size: 0.85rem;
+    color: #475569;
+    margin-top: 6px;
+  }
 }
