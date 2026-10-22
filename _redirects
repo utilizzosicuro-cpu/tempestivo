@@ -79,3 +79,7 @@
 /terrasini/paterna/idraulico/  /terrasini/idraulico-centro-e-paese/  301
 /terrasini/san-cataldo/elettricista/  /terrasini/elettricista-centro-e-paese/  301
 /terrasini/san-cataldo/idraulico/  /terrasini/idraulico-centro-e-paese/  301
+
+# Torre Pozzillo: URL servizio spostati sulle landing urgenza
+/cinisi/torre-pozzillo/elettricista/  /cinisi/torre-pozzillo/elettricista-urgente/  301
+/cinisi/torre-pozzillo/idraulico/  /cinisi/torre-pozzillo/idraulico-urgente/  301

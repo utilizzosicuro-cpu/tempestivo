@@ -52,6 +52,157 @@
     document.head.appendChild(s);
   }
 
+  // --------------------------------------------------------------------
+  // Contesto pagina + eventi conversione (GA4)
+  // Il contesto si ricava dall'URL: nessun attributo da aggiungere a 240
+  // pagine e nessun rischio di disallineamento tra HTML e tracciamento.
+  // --------------------------------------------------------------------
+  // Comuni con pagine ma senza cluster dedicato: servono solo a impedire che
+  // una pagina multi-comune venga attribuita a un comune solo.
+  var CITTA_EXTRA = ["trapani"];
+
+  var COMUNI = {
+    "palermo": "Palermo",
+    "carini": "Carini",
+    "terrasini": "Terrasini",
+    "balestrate": "Balestrate",
+    "castellammare-del-golfo": "Castellammare del Golfo",
+    "alcamo": "Alcamo",
+    "cinisi": "Cinisi",
+    "bagheria": "Bagheria",
+    "monreale": "Monreale"
+  };
+
+  function pageContext() {
+    var path = location.pathname.replace(/\/+$/, "") || "/";
+    var parts = path.split("/").filter(function (p) { return p; });
+    var comune = COMUNI[parts[0]] || "";
+    var zona = "";
+    var servizio = "non_definito";
+    var tipo = "altra";
+    var low = path.toLowerCase();
+
+    // Pagine fuori dai cluster comunali (/guasti/, /servizi/, /prezzi/): il
+    // comune si ricava dallo slug solo se compare un solo comune, altrimenti
+    // resta vuoto (es. /pronto-intervento-palermo-trapani.html e' multi-comune).
+    if (!comune) {
+      var tokens = low.split(/[^a-z]+/);
+      var found = [];
+      for (var i = 0; i < tokens.length; i++) {
+        if (!tokens[i]) continue;
+        if (CITTA_EXTRA.indexOf(tokens[i]) !== -1) {
+          found.push(tokens[i]);
+          continue;
+        }
+        for (var slug in COMUNI) {
+          if (slug === tokens[i] || slug.indexOf(tokens[i] + "-") === 0) {
+            if (found.indexOf(slug) === -1) found.push(slug);
+          }
+        }
+      }
+      if (found.length === 1) comune = COMUNI[found[0]] || "";
+    }
+
+    if (/\/guasti(\/|$)/.test(low)) tipo = "guasto";
+    else if (low.indexOf("caso-studio") !== -1) tipo = "case_study";
+    else if (low.indexOf("/prezzi/") !== -1) tipo = "prezzo";
+    else if (low.indexOf("/servizi/") !== -1) tipo = "servizio";
+    else if (path === "/") tipo = "home";
+    else if (comune && parts.length === 1) tipo = "hub_comune";
+    else if (comune && parts.length === 2) {
+      tipo = /urgent|pronto|h24/.test(parts[1]) ? "pronto_intervento" : "hub_servizio";
+    } else if (comune && parts.length >= 3) {
+      // Distingue la landing urgenza di zona (pronto_intervento) dalla pagina
+      // di servizio della stessa zona, altrimenti in GA4 finiscono insieme.
+      tipo = /urgent|pronto|h24/.test(parts[2]) ? "pronto_intervento" : "zona";
+      zona = parts[1].replace(/-/g, " ");
+    }
+
+    if (comune && parts.length >= 3 && !zona &&
+        !/^(elettricista|idraulico|pronto|impianti|ristruttur|guasti|prezzi|servizi)/.test(parts[1])) {
+      zona = parts[1].replace(/-/g, " ");
+    }
+
+    // Landing fuori dai cluster comunali: senza queste regole finirebbero
+    // tutte in page_type "altra" e non sarebbero distinguibili in GA4.
+    if (tipo === "altra") {
+      if (/\/guasti\//.test(low)) tipo = "guasto";
+      else if (/pronto-intervento|pronto_intervento/.test(low)) tipo = "pronto_intervento";
+      else if (/landing-ristrutturazioni|soluzioni-business/.test(low)) tipo = "servizio";
+      else if (low.indexOf("/prezzi/") !== -1) tipo = "prezzo";
+    }
+
+    if (/elettric|salvavita|cortocircuito|manca-la-corrente/.test(low)) servizio = "elettrico";
+    else if (/idraul|perdit|autoclave|scarico/.test(low)) servizio = "idrico";
+    else if (/ristruttur|bagno|bnb|commerciale|appartament|uffici/.test(low)) servizio = "edilizia";
+    else if (/urgent|pronto-intervento|guasti/.test(low)) servizio = "h24";
+
+    return { page_type: tipo, comune: comune, zona: zona, servizio: servizio };
+  }
+
+  var CONTEXT = pageContext();
+
+  function ctaPosition(el) {
+    if (!el || !el.closest) return "inline";
+    if (el.closest("header")) return "header";
+    if (el.closest("#tempestivo-sticky-footer") || el.closest(".tempestivo-mobile-cta") ||
+        el.closest(".sticky-call-btn") || el.closest("[class*=sticky]")) return "sticky";
+    if (el.closest("footer")) return "footer";
+    if (el.closest(".hero")) return "hero";
+    return "inline";
+  }
+
+  function track(name, params) {
+    // Nessun invio senza consenso analytics e senza gtag caricato.
+    if (!window.__tplGaLoaded || typeof window.gtag !== "function") return;
+    var payload = {
+      page_type: CONTEXT.page_type,
+      comune: CONTEXT.comune || "non_assegnato",
+      zona: CONTEXT.zona || "non_assegnata",
+      servizio: CONTEXT.servizio
+    };
+    for (var k in params) {
+      if (Object.prototype.hasOwnProperty.call(params, k)) payload[k] = params[k];
+    }
+    payload.transport_type = "beacon";
+    window.gtag("event", name, payload);
+  }
+
+  function trackClicks() {
+    document.addEventListener("click", function (e) {
+      var a = e.target && e.target.closest ? e.target.closest("a[href]") : null;
+      if (!a) return;
+      var href = a.getAttribute("href") || "";
+      var pos = ctaPosition(a);
+
+      if (href.indexOf("tel:") === 0) {
+        track("tel_click", { cta_position: pos, link_text: (a.textContent || "").trim().slice(0, 60) });
+        return;
+      }
+
+      if (href.indexOf("wa.me") !== -1 || href.indexOf("whatsapp") !== -1) {
+        var text = "";
+        try {
+          text = new URL(href, location.href).searchParams.get("text") || "";
+        } catch (err) {}
+        track("wa_click", {
+          cta_position: pos,
+          wa_has_text: text ? "si" : "no",
+          wa_template: text ? text.toLowerCase().replace(/[^a-z ]+/g, " ").trim().slice(0, 80) : "generico"
+        });
+      }
+    }, true);
+
+    document.addEventListener("submit", function (e) {
+      var form = e.target;
+      if (!form || form.tagName !== "FORM") return;
+      track("form_submit", {
+        form_id: form.id || "formspree",
+        form_destination: (form.getAttribute("action") || "").indexOf("formspree") !== -1 ? "formspree" : "interno"
+      });
+    }, true);
+  }
+
   function loadAhrefs() {
     if (!wantsAhrefs || window.__tplAhrefsLoaded || !AHREFS_KEY) return;
     window.__tplAhrefsLoaded = true;
@@ -219,6 +370,7 @@
   function init() {
     applyConsent();
     addFooterLink();
+    trackClicks();
     if (!hasChoice()) openBanner(false);
   }
 
