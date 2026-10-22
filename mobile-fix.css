@@ -626,3 +626,94 @@ h1, h2, h3 {
     margin-top: 6px;
   }
 }
+
+/* ============================================================
+   8. HEADER + SUB-NAV ENTRO 56 PX E HERO SOPRA LA PIEGA
+   A 390 px l'header era già sceso a 56 px, ma la CTA telefonica
+   poteva spingerlo a 64 px e la sub-nav a 46 px: l'H1 finiva
+   sotto i 200 px di piega. Qui header e sub-nav hanno un tetto
+   rigido e il blocco urgenza dell'hero resta su una riga.
+   ============================================================ */
+@media (max-width: 480px) {
+  header.header .header-inner,
+  .header .header-inner {
+    height: 56px !important;
+    min-height: 56px !important;
+    max-height: 56px !important;
+    padding: 4px 12px !important;
+  }
+
+  header.header a.btn-emergenza,
+  .header a.btn-emergenza {
+    max-height: 40px !important;
+    padding: 8px 10px !important;
+    font-size: 0.8rem !important;
+    line-height: 1 !important;
+    white-space: nowrap !important;
+  }
+
+  .sub-nav-inner {
+    height: 38px !important;
+    max-height: 38px !important;
+    padding: 0 12px !important;
+  }
+
+  .hero {
+    padding-top: 18px !important;
+    padding-bottom: 24px !important;
+  }
+
+  .hero-content h1 {
+    font-size: 1.62rem !important;
+    line-height: 1.24 !important;
+    margin: 0 auto 10px auto !important;
+  }
+
+  .hero-content .subtitle {
+    font-size: 0.98rem !important;
+    line-height: 1.42 !important;
+    margin: 0 auto 12px auto !important;
+  }
+
+  /* Il blocco "uscita + arrivo" dell'hero: due pill compatte su una o due
+     righe, cosi la CTA telefonica resta sopra la piega anche a 667 px. */
+  [data-tempestivo="hero-urgent"] {
+    gap: 4px !important;
+    margin: 6px 0 0 !important;
+    font-size: 0.72rem !important;
+    line-height: 1.2 !important;
+  }
+
+  [data-tempestivo="hero-urgent"] > span {
+    padding: 3px 8px !important;
+  }
+
+  /* "Preventivo confermato prima" e gia ripetuto nella riga di trust
+     subito sotto: nasconderlo evita una terza riga di pill. */
+  [data-tempestivo="hero-urgent"] > span:last-child {
+    display: none !important;
+  }
+
+  .hero-content div[style*="Preventivo prima"] {
+    font-size: 0.78rem !important;
+    line-height: 1.25 !important;
+    margin-top: 8px !important;
+  }
+
+  /* Il box "Cosa fare nei primi 5 minuti" non deve mai superare la piega
+     con un muro di testo: su mobile diventa una lista compatta. */
+  [data-tempestivo="cosa-fare"] {
+    padding: 14px 16px !important;
+  }
+
+  [data-tempestivo="cosa-fare"] h3 {
+    font-size: 1.02rem !important;
+    margin: 0 0 8px !important;
+  }
+
+  [data-tempestivo="cosa-fare"] li {
+    font-size: 0.92rem !important;
+    line-height: 1.45 !important;
+    margin-bottom: 6px !important;
+  }
+}

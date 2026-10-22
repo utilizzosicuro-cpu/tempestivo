@@ -1499,3 +1499,37 @@ footer a:hover,
   font-size: 13px;
   font-weight: 600;
 }
+
+/* ============================================================
+   CASE STUDY CON FOTO (E-E-A-T)
+   Sezioni ancorabili, testo a misura di lettura e immagine
+   dimensionata per non generare scarto di layout.
+   ============================================================ */
+.case-study {
+  scroll-margin-top: 130px;
+}
+
+.case-study h2 {
+  line-height: 1.25;
+}
+
+.case-study p,
+.case-study h3 {
+  max-width: 900px;
+}
+
+.case-study figure img {
+  background: #f1f5f9;
+}
+
+@media (max-width: 480px) {
+  .case-study {
+    padding: 18px !important;
+    margin: 26px 0 !important;
+  }
+
+  .case-study p,
+  .case-study h3 {
+    max-width: 100%;
+  }
+}
