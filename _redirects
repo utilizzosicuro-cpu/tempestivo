@@ -1,3 +1,15 @@
+# Cluster Carini (P1): slug normalizzati e zone consolidate
+/carini/ristrutturazione-completa/  /carini/ristrutturazione-carini/  301
+/carini/pronto-intervento-elettrico-e-idraulico/  /carini/pronto-intervento-h24/  301
+/carini/bivio-zuccarello/elettricista/  /carini/elettricista-centro-e-stazione/  301
+/carini/bivio-zuccarello/idraulico/  /carini/idraulico-centro-e-stazione/  301
+/carini/carini-stazione/elettricista/  /carini/elettricista-centro-e-stazione/  301
+/carini/carini-stazione/idraulico/  /carini/idraulico-centro-e-stazione/  301
+/carini/fagiana/elettricista/  /carini/elettricista-contrade/  301
+/carini/fagiana/idraulico/  /carini/idraulico-contrade/  301
+/carini/piraineto/elettricista/  /carini/elettricista-contrade/  301
+/carini/piraineto/idraulico/  /carini/idraulico-contrade/  301
+
 # Torre Pozzillo e' nel comune di Cinisi (P2)
 /carini/torre-pozzillo/elettricista/  /cinisi/torre-pozzillo/elettricista/  301
 /carini/torre-pozzillo/idraulico/  /cinisi/torre-pozzillo/idraulico/  301

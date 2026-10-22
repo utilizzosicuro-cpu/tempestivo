@@ -1,3 +1,17 @@
+# Cluster Carini (P1): slug normalizzati e zone consolidate
+<IfModule mod_alias.c>
+  RedirectMatch 301 ^/carini/ristrutturazione\-completa/$ /carini/ristrutturazione-carini/
+  RedirectMatch 301 ^/carini/pronto\-intervento\-elettrico\-e\-idraulico/$ /carini/pronto-intervento-h24/
+  RedirectMatch 301 ^/carini/bivio\-zuccarello/elettricista/$ /carini/elettricista-centro-e-stazione/
+  RedirectMatch 301 ^/carini/bivio\-zuccarello/idraulico/$ /carini/idraulico-centro-e-stazione/
+  RedirectMatch 301 ^/carini/carini\-stazione/elettricista/$ /carini/elettricista-centro-e-stazione/
+  RedirectMatch 301 ^/carini/carini\-stazione/idraulico/$ /carini/idraulico-centro-e-stazione/
+  RedirectMatch 301 ^/carini/fagiana/elettricista/$ /carini/elettricista-contrade/
+  RedirectMatch 301 ^/carini/fagiana/idraulico/$ /carini/idraulico-contrade/
+  RedirectMatch 301 ^/carini/piraineto/elettricista/$ /carini/elettricista-contrade/
+  RedirectMatch 301 ^/carini/piraineto/idraulico/$ /carini/idraulico-contrade/
+</IfModule>
+
 # Torre Pozzillo e' nel comune di Cinisi (P2)
 <IfModule mod_alias.c>
   RedirectMatch 301 ^/carini/torre-pozzillo/elettricista/$ /cinisi/torre-pozzillo/elettricista/

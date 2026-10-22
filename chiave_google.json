@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "tempestivo-seo",
+  "private_key_id": "afdedeccdd49732a40d4ebaeb7186abf9937658e",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCq7GNFj3FMFHjb\nOW+j48b/DB3MAx4mEliiRnzS2VMC31xST1EzAm55Lcgz2FDu5jUPxFNoMc1x5npW\nK0hNvaKv7r8uxMg5mnbSt68lTbhx6TAeK650tyNVOuynYiCRfzQWG4lNLWbDuKuO\nzXJkSm6LnCD5VOddvmQ+zte38yyBvh6GbE9kSAkZLfJNlQCI313Ijx7gsNTOmT5V\nX9wWpfB1ZwBJ0sKW9FQ8b8RRLCApG4dmRAru8VrJ6O5uRUkh6se6oxGd9r4WVvWy\n7yw2kVnaOu6gqaf3s12ziYVMT1fjTWp20Y+v1AyoTDlaJSAfCUa0uJ7TUzY/vjUq\nJL1TYPwVAgMBAAECggEAGKqOBfkWKtpOeaafiZmCu4ZSW4F8rZZas6pz85K409KL\nlnZLW87nRfYZLQAz59IRiMG2nrQHN7+A2qQa5lsuWfDcpsFvur5jlPO8oyfE7S1v\ni/8WSVIvl2puQhabaBvhFqqpJRne+XJSUcSs1DPYoa2ppYm+7Oyft1+uymVdwChE\n3gYcqVQsCMy01MB+XqFVRQTvOZPgtof0VACzWFiYmigVYiiqfpQpnvEFCNBc04MW\nSnHT+KqG3nbfF7/hVYul4SGQMzwmahzE4slRqkcFbzD5E2uf+pxi37oyZLZA/B2R\nrJDnpwmg/vhXoQJ8vlKurYzslcjMN6vJ2jqevlrS6QKBgQDh7m04yjCLO74xRX4U\nA6kOKwE09JVATq6ZPprK2s4sOpnrVac+NgCLFSCQ6nGUdzK4lWQtEPE40AQwzQT4\nsfx15MxPy4r+ymZK381HT3PqsAr4gJwMMnZXmQLLRKwZvxBy1fi8tpyne1puemyO\nvRj7zARpZbM100dfQKwz36K4iQKBgQDBq9E+eWztjdZZzZgYPPnz35ErN1U/L0HF\n47Lt5ULvl5dRRIhlW/X3UJV54G2WmZIySEKlW03PN3yHQtN8blyKpJjyGk2oS6Tn\nmpbOzl65AbJOQrwrzhtRcZFF56cz7VD0rJzPGrf5DrpNCH7Rmx8LnI2GdOcTIpbi\nF43vSdcsLQKBgDBeynWBHDmC9eo4lZCVZAlLfbunrZiR/+GBPMS3abKgbTmsId04\n1I7yXAGKn/yINIy+Ny9K1Eo0huEn06um94UKEg/3ZO+9x366QYnF4exZ+k9PwZj+\n6MVCVg3MywfMFypu0w0cD5fv2eGTRlCc/Y9TE5K5GlAoxrwG7ZdBhuX5AoGABgpR\n0F0BJLeTw+FBqR/du9lxMaPcKMhUiNN9NSY9XDOiKIq2plKj7T66Kr7xLA1GHgNa\n8MVUO+5DGAThi7P1du2DR6nCWklhr0eHBJQzKBoBcadrLwKSn4unOELtWBVCvR7V\nFTCEJGRtMxHcwrTP1xDe6R6kRliB1DNf3eKzr1ECgYEA1iyuXji6DDkAObVVX+RW\nGZQrpXJCRxrtog730YARdQJFokPXxFZU4wVgqZQuQNgbfUnLNfU2EHhUK6NBYAW0\nSKBV59GdbtyRPiGfcPxGY6oIZiNSGAkEZJuxnkaXoSmE8I4RN1IQs1t6hTZ+lnxX\nYApVqK1GgJ3NCpiCFBQuQp0=\n-----END PRIVATE KEY-----\n",
+  "client_email": "generatore-sitemap@tempestivo-seo.iam.gserviceaccount.com",
+  "client_id": "103573771560405127081",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/generatore-sitemap%40tempestivo-seo.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
