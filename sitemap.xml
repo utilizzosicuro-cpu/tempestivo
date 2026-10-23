@@ -961,10 +961,22 @@
     <priority>0.8</priority>
   </url>
 <url>
+    <loc>https://tempestivo.it/palermo/caso-studio-ristrutturazione-appartamento-via-sciuti/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+<url>
     <loc>https://tempestivo.it/palermo/ristrutturazione-bagno/</loc>
     <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+  </url>
+<url>
+    <loc>https://tempestivo.it/palermo/caso-studio-ristrutturazione-bagno-baida/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 <url>
     <loc>https://tempestivo.it/palermo/ristrutturazione-bb-case-vacanza/</loc>
