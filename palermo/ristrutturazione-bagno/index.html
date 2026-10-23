@@ -16,7 +16,8 @@
 <meta content="Palermo, Sicilia" name="geo.placename"/>
 <meta content="38.1157, 13.3615" name="geo.position"/>
 <meta content="38.1157, 13.3615" name="ICBM"/>
-<script type="application/ld+json">{
+<script type="application/ld+json">
+{
  "@context": "https://schema.org",
  "@graph": [
   {
@@ -25,13 +26,24 @@
    "url": "https://tempestivo.it",
    "name": "Tempestivo",
    "description": "Impresa edile, impianti e ristrutturazioni chiavi in mano a Palermo e provincia",
-   "publisher": { "@id": "https://tempestivo.it/#business" }
+   "publisher": {
+    "@id": "https://tempestivo.it/#business"
+   }
   },
   {
-   "@type": ["LocalBusiness","HomeAndConstructionBusiness","ProfessionalService","GeneralContractor"],
+   "@type": [
+    "LocalBusiness",
+    "HomeAndConstructionBusiness",
+    "ProfessionalService",
+    "GeneralContractor"
+   ],
    "@id": "https://tempestivo.it/#business",
    "name": "Tempestivo",
-   "alternateName": ["Tempestivo by Officina Creativa","Tempestivo Ristrutturazioni","Tempestivo Pronto Intervento H24"],
+   "alternateName": [
+    "Tempestivo by Officina Creativa",
+    "Tempestivo Ristrutturazioni",
+    "Tempestivo Pronto Intervento H24"
+   ],
    "url": "https://tempestivo.it/palermo/ristrutturazione-bagno/",
    "telephone": "+393520258583",
    "email": "tempestivoweb@gmail.com",
@@ -40,7 +52,11 @@
    "image": "https://tempestivo.it/palermo/ristrutturazioni-chiavi-in-mano/images/bagno-ristrutturato-moderno-mondello-palermo-tempestivo.webp",
    "logo": "https://tempestivo.it/logo.png",
    "description": "Ristrutturazione bagno chiavi in mano a Palermo: demolizione, impermeabilizzazione, impianti a norma, rivestimenti e sanitari con Di.Co. DM 37/08.",
-   "parentOrganization": { "@type": "Organization", "name": "Officina Creativa", "taxID": "06772720824" },
+   "parentOrganization": {
+    "@type": "Organization",
+    "name": "Officina Creativa",
+    "taxID": "06772720824"
+   },
    "address": {
     "@type": "PostalAddress",
     "streetAddress": "Contrada Incastrona, snc",
@@ -49,16 +65,34 @@
     "postalCode": "90047",
     "addressCountry": "IT"
    },
-   "geo": { "@type": "GeoCoordinates", "latitude": 38.059554, "longitude": 13.110727 },
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 38.059554,
+    "longitude": 13.110727
+   },
    "openingHoursSpecification": {
     "@type": "OpeningHoursSpecification",
-    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "dayOfWeek": [
+     "Monday",
+     "Tuesday",
+     "Wednesday",
+     "Thursday",
+     "Friday",
+     "Saturday",
+     "Sunday"
+    ],
     "opens": "00:00",
     "closes": "23:59"
    },
    "areaServed": [
-    { "@type": "City", "name": "Palermo" },
-    { "@type": "AdministrativeArea", "name": "Città metropolitana di Palermo" }
+    {
+     "@type": "City",
+     "name": "Palermo"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Città metropolitana di Palermo"
+    }
    ],
    "sameAs": [
     "https://maps.app.goo.gl/osdw8bBFTeFUem1p8",
@@ -70,8 +104,13 @@
    "@id": "https://tempestivo.it/palermo/ristrutturazione-bagno/#service",
    "name": "Ristrutturazione bagno a Palermo",
    "serviceType": "Ristrutturazione bagno chiavi in mano",
-   "provider": { "@id": "https://tempestivo.it/#business" },
-   "areaServed": { "@type": "City", "name": "Palermo" },
+   "provider": {
+    "@id": "https://tempestivo.it/#business"
+   },
+   "areaServed": {
+    "@type": "City",
+    "name": "Palermo"
+   },
    "url": "https://tempestivo.it/palermo/ristrutturazione-bagno/",
    "description": "Rifacimento completo del bagno a Palermo: demolizione, impianto idrico e elettrico a norma, impermeabilizzazione, rivestimenti e posa sanitari in 7-10 giorni.",
    "offers": {
@@ -86,100 +125,114 @@
    "@type": "BreadcrumbList",
    "@id": "https://tempestivo.it/palermo/ristrutturazione-bagno/#breadcrumb",
    "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://tempestivo.it/" },
-    { "@type": "ListItem", "position": 2, "name": "Palermo", "item": "https://tempestivo.it/palermo/" },
-    { "@type": "ListItem", "position": 3, "name": "Ristrutturazione bagno", "item": "https://tempestivo.it/palermo/ristrutturazione-bagno/" }
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://tempestivo.it/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Palermo",
+     "item": "https://tempestivo.it/palermo/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Ristrutturazione bagno",
+     "item": "https://tempestivo.it/palermo/ristrutturazione-bagno/"
+    }
    ]
   },
   {
    "@type": "FAQPage",
    "mainEntity": [
-[
- {
-  "@type": "Question",
-  "name": "Quanto costa ristrutturare un bagno a Palermo?",
-  "acceptedAnswer": {
-   "@type": "Answer",
-   "text": "La fascia è 350-650 €/m²: 350-500 €/m² per un restyling senza spostare gli impianti, 500-650 €/m² per una ristrutturazione completa con demolizione. Un bagno di 5 m² si colloca tra 1.750 e 3.250 €."
-  }
- },
- {
-  "@type": "Question",
-  "name": "Quanto tempo serve per rifare un bagno?",
-  "acceptedAnswer": {
-   "@type": "Answer",
-   "text": "Da 7 a 10 giorni lavorativi per un bagno standard, dalla demolizione alla posa. Servono 2-3 giorni in più nei palazzi storici, dove le tracce su murature piene e i vincoli condominiali sugli orari allungano il programma."
-  }
- },
- {
-  "@type": "Question",
-  "name": "Posso spostare il bagno o cambiare la posizione di scarichi e sanitari?",
-  "acceptedAnswer": {
-   "@type": "Answer",
-   "text": "Spostamenti contenuti sono possibili, ma lo scarico deve mantenere pendenze corrette e restare collegato alla colonna condominiale. Ogni modifica va verificata con l’amministratore prima di demolire."
-  }
- },
- {
-  "@type": "Question",
-  "name": "Rilasciate la dichiarazione di conformità degli impianti del bagno?",
-  "acceptedAnswer": {
-   "@type": "Answer",
-   "text": "Sì: a fine lavori consegniamo la Di.Co. ai sensi del DM 37/08 per la parte idraulica ed elettrica, con lo schema dell’impianto e i verbali delle prove."
-  }
- },
- {
-  "@type": "Question",
-  "name": "Il bagno è utilizzabile durante i lavori?",
-  "acceptedAnswer": {
-   "@type": "Answer",
-   "text": "No, se si interviene su tutto l’ambiente. Se l’immobile ha un secondo bagno, organizziamo il cantiere per lasciarlo sempre agibile."
-  }
- },
- {
-  "@type": "Question",
-  "name": "Quali permessi servono per rifare un bagno a Palermo?",
-  "acceptedAnswer": {
-   "@type": "Answer",
-   "text": "Nella maggior parte dei casi nessun titolo abilitativo, perché si interviene su finiture e impianti. Serve la CILA se si modificano le planimetrie o si abbattono tramezzi; la SCIA se si toccano elementi strutturali."
-  }
- },
- {
-  "@type": "Question",
-  "name": "Quanto costa rifare un bagno di 3 m²?",
-  "acceptedAnswer": {
-   "@type": "Answer",
-   "text": "Tra 1.050 e 1.950 € per un restyling e tra 1.500 e 1.950 € per un intervento completo, secondo finiture e stato degli impianti. Sotto i 4 m² incidono soprattutto le ore di manodopera e lo smaltimento."
-  }
- },
- {
-  "@type": "Question",
-  "name": "Si può ristrutturare il bagno di un appartamento in affitto?",
-  "acceptedAnswer": {
-   "@type": "Answer",
-   "text": "Serve l’autorizzazione scritta del proprietario e, se l’immobile è condominiale, il rispetto del regolamento sugli orari. La pratica edilizia resta in capo al proprietario o a chi ha titolo sull’immobile."
-  }
- },
- {
-  "@type": "Question",
-  "name": "Cosa comprende la fascia da 650 €/m²?",
-  "acceptedAnswer": {
-   "@type": "Answer",
-   "text": "Demolizione totale, nuove canalizzazioni anche esterne, ripristino di murature e volti, impermeabilizzazione rinforzata e finiture di pregio. È la fascia dei bagni in palazzo storico o con vincoli."
-  }
- },
- {
-  "@type": "Question",
-  "name": "Come si gestiscono le colonne condominiali?",
-  "acceptedAnswer": {
-   "@type": "Answer",
-   "text": "Si verifica la proprietà della colonna e lo stato dei raccordi prima di intervenire. Se la colonna è condominiale, ogni modifica va concordata con l’amministratore e documentata."
-  }
- }
-]
-]
+    {
+     "@type": "Question",
+     "name": "Quanto costa ristrutturare un bagno a Palermo?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "La fascia è 350-650 €/m²: 350-500 €/m² per un restyling senza spostare gli impianti, 500-650 €/m² per una ristrutturazione completa con demolizione. Un bagno di 5 m² si colloca tra 1.750 e 3.250 €."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Quanto tempo serve per rifare un bagno?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Da 7 a 10 giorni lavorativi per un bagno standard, dalla demolizione alla posa. Servono 2-3 giorni in più nei palazzi storici, dove le tracce su murature piene e i vincoli condominiali sugli orari allungano il programma."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Posso spostare il bagno o cambiare la posizione di scarichi e sanitari?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Spostamenti contenuti sono possibili, ma lo scarico deve mantenere pendenze corrette e restare collegato alla colonna condominiale. Ogni modifica va verificata con l’amministratore prima di demolire."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Rilasciate la dichiarazione di conformità degli impianti del bagno?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Sì: a fine lavori consegniamo la Di.Co. ai sensi del DM 37/08 per la parte idraulica ed elettrica, con lo schema dell’impianto e i verbali delle prove."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Il bagno è utilizzabile durante i lavori?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No, se si interviene su tutto l’ambiente. Se l’immobile ha un secondo bagno, organizziamo il cantiere per lasciarlo sempre agibile."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Quali permessi servono per rifare un bagno a Palermo?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Nella maggior parte dei casi nessun titolo abilitativo, perché si interviene su finiture e impianti. Serve la CILA se si modificano le planimetrie o si abbattono tramezzi; la SCIA se si toccano elementi strutturali."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Quanto costa rifare un bagno di 3 m²?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Tra 1.050 e 1.950 € per un restyling e tra 1.500 e 1.950 € per un intervento completo, secondo finiture e stato degli impianti. Sotto i 4 m² incidono soprattutto le ore di manodopera e lo smaltimento."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Si può ristrutturare il bagno di un appartamento in affitto?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Serve l’autorizzazione scritta del proprietario e, se l’immobile è condominiale, il rispetto del regolamento sugli orari. La pratica edilizia resta in capo al proprietario o a chi ha titolo sull’immobile."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Cosa comprende la fascia da 650 €/m²?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Demolizione totale, nuove canalizzazioni anche esterne, ripristino di murature e volti, impermeabilizzazione rinforzata e finiture di pregio. È la fascia dei bagni in palazzo storico o con vincoli."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Come si gestiscono le colonne condominiali?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Si verifica la proprietà della colonna e lo stato dei raccordi prima di intervenire. Se la colonna è condominiale, ogni modifica va concordata con l’amministratore e documentata."
+     }
+    }
+   ]
   }
  ]
-}</script>
+}
+</script>
 <meta content="https://tempestivo.it/img/og/og-bagno.jpg" property="og:image"/>
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="https://tempestivo.it/img/og/og-bagno.jpg" name="twitter:image"/>
