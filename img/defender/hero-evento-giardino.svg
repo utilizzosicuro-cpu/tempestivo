@@ -1,0 +1,415 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" role="img" aria-labelledby="dfnHeroTitle dfnHeroDesc">
+  <title id="dfnHeroTitle">Matrimonio serale in un giardino siciliano con presidio Tempestivo Defender</title>
+  <desc id="dfnHeroDesc">Illustrazione di una cena all'aperto sotto un cielo blu notte: arco con luci, tavolo apparecchiato, ospiti, luci calde tra gli alberi e un modulo IoT con luce verde che diffonde una leggera nebbia protettiva sul prato.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#030913"/>
+      <stop offset="0.34" stop-color="#07162C"/>
+      <stop offset="0.62" stop-color="#0D2440"/>
+      <stop offset="0.84" stop-color="#20384A"/>
+      <stop offset="1" stop-color="#2A3A3A"/>
+    </linearGradient>
+    <radialGradient id="moonGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#FFF4D6" stop-opacity="0.42"/>
+      <stop offset="0.45" stop-color="#FFE9B8" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#FFE9B8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="warmGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#FFD79A" stop-opacity="0.6"/>
+      <stop offset="0.45" stop-color="#FFC262" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#FFC262" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="greenGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#53F0AF" stop-opacity="0.6"/>
+      <stop offset="0.45" stop-color="#2FD08A" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#2FD08A" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="lawn" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1C2E2A"/>
+      <stop offset="0.45" stop-color="#13241F"/>
+      <stop offset="1" stop-color="#081412"/>
+    </linearGradient>
+    <linearGradient id="cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F5EFDF"/>
+      <stop offset="0.55" stop-color="#E3DAC6"/>
+      <stop offset="1" stop-color="#BFB5A0"/>
+    </linearGradient>
+    <linearGradient id="clothFront" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#BCB19B"/>
+      <stop offset="1" stop-color="#756C5C"/>
+    </linearGradient>
+    <linearGradient id="runner" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3B5F4E"/>
+      <stop offset="1" stop-color="#274538"/>
+    </linearGradient>
+    <linearGradient id="vignette" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#03080F" stop-opacity="0.45"/>
+      <stop offset="0.45" stop-color="#03080F" stop-opacity="0"/>
+      <stop offset="1" stop-color="#03080F" stop-opacity="0.66"/>
+    </linearGradient>
+    <radialGradient id="edgeVignette" cx="50%" cy="47%" r="72%">
+      <stop offset="0.55" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.6"/>
+    </radialGradient>
+    <filter id="soft" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="12"/>
+    </filter>
+    <filter id="tiny" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+    <filter id="plume" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="16"/>
+    </filter>
+  </defs>
+
+  <!-- CIELO -->
+  <rect width="1600" height="900" fill="url(#sky)"/>
+
+  <g fill="#DCE9F7">
+    <circle cx="120" cy="88" r="1.6" opacity="0.7"/>
+    <circle cx="248" cy="52" r="1.1" opacity="0.5"/>
+    <circle cx="352" cy="130" r="1.4" opacity="0.6"/>
+    <circle cx="470" cy="70" r="1.2" opacity="0.55"/>
+    <circle cx="588" cy="118" r="1.8" opacity="0.75"/>
+    <circle cx="702" cy="44" r="1.1" opacity="0.45"/>
+    <circle cx="815" cy="96" r="1.5" opacity="0.6"/>
+    <circle cx="930" cy="58" r="1.2" opacity="0.5"/>
+    <circle cx="1048" cy="122" r="1.3" opacity="0.55"/>
+    <circle cx="1152" cy="66" r="1.1" opacity="0.45"/>
+    <circle cx="1428" cy="96" r="1.5" opacity="0.6"/>
+    <circle cx="1512" cy="52" r="1.2" opacity="0.5"/>
+    <circle cx="1540" cy="168" r="1.6" opacity="0.65"/>
+    <circle cx="320" cy="200" r="1" opacity="0.4"/>
+    <circle cx="1000" cy="190" r="1" opacity="0.4"/>
+    <circle cx="660" cy="170" r="1" opacity="0.35"/>
+    <circle cx="1240" cy="212" r="1" opacity="0.35"/>
+  </g>
+
+  <circle cx="1322" cy="120" r="120" fill="url(#moonGlow)"/>
+  <circle cx="1322" cy="120" r="27" fill="#F6EEDC" opacity="0.92"/>
+  <circle cx="1312" cy="112" r="5" fill="#E4D9C2" opacity="0.55"/>
+  <circle cx="1331" cy="130" r="3.6" fill="#E4D9C2" opacity="0.45"/>
+
+  <!-- PAESAGGIO -->
+  <ellipse cx="300" cy="520" rx="560" ry="150" fill="#0B1C27" opacity="0.9"/>
+  <ellipse cx="1370" cy="526" rx="520" ry="128" fill="#0A1A24" opacity="0.9"/>
+  <path d="M0 505 C 180 470 300 488 430 474 C 560 460 660 478 790 471 C 940 463 1040 481 1180 470 C 1320 459 1480 478 1600 464 L1600 570 L0 570 Z" fill="#091722" opacity="0.9"/>
+  <rect y="505" width="1600" height="70" fill="#0A1B22"/>
+
+  <!-- VILLA SULLO SFONDO -->
+  <g>
+    <path d="M22 512 L22 402 L120 366 L214 402 L214 512 Z" fill="#08141C"/>
+    <path d="M16 404 L120 360 L224 404 L214 414 L120 374 L26 414 Z" fill="#0C1A22"/>
+    <rect x="58" y="428" width="26" height="34" rx="2" fill="#FFC978" opacity="0.55"/>
+    <rect x="104" y="428" width="26" height="34" rx="2" fill="#FFC978" opacity="0.3"/>
+    <rect x="150" y="428" width="26" height="34" rx="2" fill="#FFC978" opacity="0.45"/>
+    <rect x="78" y="478" width="22" height="34" fill="#FFC978" opacity="0.18"/>
+    <rect x="132" y="478" width="22" height="34" fill="#FFC978" opacity="0.14"/>
+    <rect x="246" y="470" width="90" height="42" fill="#08141C"/>
+    <path d="M240 470 L300 452 L360 470 Z" fill="#0B1A22"/>
+    <rect x="264" y="482" width="14" height="18" fill="#FFC978" opacity="0.25"/>
+  </g>
+
+  <!-- CIPRESSI E ALBERI -->
+  <g fill="#07131A">
+    <path d="M96 560 C 70 470 84 380 112 302 C 140 380 154 474 128 560 Z"/>
+    <path d="M186 556 C 168 490 176 420 196 362 C 216 420 224 492 208 556 Z"/>
+    <path d="M1452 560 C 1428 472 1440 386 1466 312 C 1492 386 1506 476 1482 560 Z"/>
+    <path d="M1538 556 C 1522 496 1530 432 1550 378 C 1570 432 1576 498 1562 556 Z"/>
+    <path d="M0 560 C 34 508 76 500 118 516 C 154 530 170 560 176 584 L0 584 Z"/>
+    <path d="M1600 556 C 1562 502 1516 496 1472 512 C 1442 524 1428 552 1422 580 L1600 580 Z"/>
+  </g>
+  <g fill="#0A1A1E">
+    <path d="M256 584 C 230 538 242 488 268 460 C 298 494 310 546 288 584 Z"/>
+    <path d="M1348 584 C 1326 538 1336 492 1360 464 C 1388 498 1398 546 1378 584 Z"/>
+  </g>
+
+  <!-- PRATO -->
+  <path d="M0 556 L1600 550 L1600 900 L0 900 Z" fill="url(#lawn)"/>
+  <path d="M0 596 C 300 576 560 602 830 588 C 1090 574 1340 600 1600 582 L1600 616 C 1320 634 1080 610 820 624 C 560 638 300 610 0 632 Z" fill="#22382F" opacity="0.5"/>
+
+  <!-- LUCINE TRA GLI ALBERI -->
+  <g fill="none" stroke="#E7B87A" stroke-width="1.4" opacity="0.3">
+    <path d="M-20 178 Q 240 282 520 208 T 1030 232 T 1620 188"/>
+    <path d="M-20 278 Q 260 364 540 298 T 1050 322 T 1620 278"/>
+    <path d="M120 396 Q 380 466 640 404 T 1230 420"/>
+  </g>
+  <g fill="#FFD79A">
+    <circle cx="70" cy="206" r="4"/><circle cx="150" cy="230" r="4"/><circle cx="238" cy="250" r="4"/>
+    <circle cx="330" cy="246" r="4"/><circle cx="420" cy="230" r="4"/><circle cx="512" cy="210" r="4"/>
+    <circle cx="610" cy="214" r="4"/><circle cx="708" cy="226" r="4"/><circle cx="806" cy="230" r="4"/>
+    <circle cx="904" cy="228" r="4"/><circle cx="1002" cy="234" r="4"/><circle cx="1100" cy="230" r="4"/>
+    <circle cx="1198" cy="216" r="4"/><circle cx="1296" cy="204" r="4"/><circle cx="1394" cy="200" r="4"/>
+    <circle cx="1492" cy="196" r="4"/><circle cx="1570" cy="190" r="4"/>
+  </g>
+  <g fill="#FFD79A" opacity="0.85">
+    <circle cx="112" cy="312" r="3.6"/><circle cx="196" cy="332" r="3.6"/><circle cx="284" cy="340" r="3.6"/>
+    <circle cx="372" cy="330" r="3.6"/><circle cx="460" cy="314" r="3.6"/><circle cx="548" cy="300" r="3.6"/>
+    <circle cx="642" cy="306" r="3.6"/><circle cx="736" cy="316" r="3.6"/><circle cx="830" cy="320" r="3.6"/>
+    <circle cx="924" cy="318" r="3.6"/><circle cx="1018" cy="322" r="3.6"/><circle cx="1112" cy="318" r="3.6"/>
+    <circle cx="1206" cy="308" r="3.6"/><circle cx="1300" cy="296" r="3.6"/><circle cx="1394" cy="288" r="3.6"/>
+    <circle cx="1488" cy="284" r="3.6"/><circle cx="1560" cy="280" r="3.6"/>
+  </g>
+  <g fill="#FFCE86" filter="url(#soft)" opacity="0.5">
+    <circle cx="70" cy="206" r="13"/><circle cx="238" cy="250" r="13"/><circle cx="420" cy="230" r="13"/>
+    <circle cx="610" cy="214" r="13"/><circle cx="806" cy="230" r="13"/><circle cx="1002" cy="234" r="13"/>
+    <circle cx="1198" cy="216" r="13"/><circle cx="1394" cy="200" r="13"/><circle cx="1570" cy="190" r="13"/>
+    <circle cx="284" cy="340" r="11"/><circle cx="548" cy="300" r="11"/><circle cx="830" cy="320" r="11"/>
+    <circle cx="1112" cy="318" r="11"/><circle cx="1394" cy="288" r="11"/>
+  </g>
+
+  <!-- TAVOLI COCKTAIL SULLO SFONDO -->
+  <g opacity="0.9">
+    <ellipse cx="268" cy="548" rx="62" ry="17" fill="#22302A"/>
+    <rect x="262" y="552" width="12" height="56" fill="#111D19"/>
+    <ellipse cx="268" cy="542" rx="52" ry="13" fill="#DAD3C1" opacity="0.5"/>
+    <circle cx="268" cy="530" r="6" fill="#FFCF86" filter="url(#tiny)"/>
+    <path d="M170 606 q 6 -42 24 -50 q 18 8 22 50 Z" fill="#08141E"/>
+    <circle cx="191" cy="548" r="12" fill="#08141E"/>
+  </g>
+
+  <!-- ARCO DA CERIMONIA -->
+  <g>
+    <path d="M560 690 L560 336 Q 800 214 1040 336 L1040 690" fill="none" stroke="#101E1A" stroke-width="9" stroke-linecap="round"/>
+    <g fill="none" stroke="#E7B87A" stroke-width="1.2" opacity="0.55">
+      <path d="M560 336 Q 800 214 1040 336"/>
+    </g>
+    <g fill="#FFD79A">
+      <circle cx="590" cy="322" r="3.4"/><circle cx="646" cy="296" r="3.4"/><circle cx="706" cy="274" r="3.4"/>
+      <circle cx="770" cy="260" r="3.4"/><circle cx="834" cy="260" r="3.4"/><circle cx="898" cy="272" r="3.4"/>
+      <circle cx="958" cy="292" r="3.4"/><circle cx="1012" cy="318" r="3.4"/>
+      <circle cx="560" cy="386" r="3"/><circle cx="560" cy="446" r="3"/><circle cx="560" cy="506" r="3"/>
+      <circle cx="1040" cy="386" r="3"/><circle cx="1040" cy="446" r="3"/><circle cx="1040" cy="506" r="3"/>
+    </g>
+    <g fill="#FFCE86" filter="url(#soft)" opacity="0.7">
+      <circle cx="590" cy="322" r="11"/><circle cx="706" cy="274" r="11"/><circle cx="834" cy="260" r="11"/>
+      <circle cx="958" cy="292" r="11"/><circle cx="1012" cy="318" r="11"/>
+    </g>
+    <!-- vegetazione sull'arco -->
+    <g fill="#1F3A2E">
+      <circle cx="566" cy="334" r="20"/><circle cx="590" cy="316" r="15"/><circle cx="610" cy="330" r="12"/>
+      <circle cx="1034" cy="334" r="20"/><circle cx="1010" cy="316" r="15"/><circle cx="990" cy="330" r="12"/>
+      <circle cx="800" cy="246" r="13"/><circle cx="780" cy="258" r="10"/><circle cx="822" cy="256" r="10"/>
+    </g>
+    <g fill="#E9DFC8" opacity="0.75">
+      <circle cx="578" cy="328" r="3"/><circle cx="598" cy="322" r="2.4"/><circle cx="1022" cy="326" r="3"/>
+      <circle cx="1004" cy="320" r="2.4"/><circle cx="806" cy="246" r="2.4"/>
+    </g>
+    <ellipse cx="800" cy="640" rx="300" ry="120" fill="url(#warmGlow)" opacity="0.35"/>
+  </g>
+
+  <!-- OSPITI E SEDIE -->
+  <g>
+    <!-- spalle -->
+    <g fill="#0A1622">
+      <path d="M398 700 q 24 -32 48 0 Z"/>
+      <path d="M489 700 q 24 -34 49 0 Z"/>
+      <path d="M583 700 q 25 -36 51 0 Z"/>
+      <path d="M678 700 q 25 -34 52 0 Z"/>
+      <path d="M774 700 q 25 -38 53 0 Z"/>
+      <path d="M870 700 q 25 -35 53 0 Z"/>
+      <path d="M967 700 q 25 -34 51 0 Z"/>
+      <path d="M1063 700 q 24 -36 51 0 Z"/>
+      <path d="M1156 700 q 24 -32 49 0 Z"/>
+    </g>
+    <!-- teste -->
+    <g fill="#0A1420">
+      <circle cx="422" cy="645" r="12.5"/>
+      <circle cx="513" cy="640" r="13.5"/>
+      <circle cx="609" cy="634" r="14"/>
+      <circle cx="704" cy="642" r="13"/>
+      <circle cx="800" cy="630" r="14.5"/>
+      <circle cx="896" cy="640" r="13.5"/>
+      <circle cx="992" cy="634" r="14"/>
+      <circle cx="1089" cy="644" r="12.5"/>
+      <circle cx="1180" cy="638" r="13"/>
+    </g>
+    <!-- acconciature -->
+    <g fill="#0A1420">
+      <circle cx="513" cy="626" r="6"/>
+      <circle cx="992" cy="620" r="6"/>
+      <path d="M595 628 q -8 16 0 28 q 8 -12 4 -28 Z"/>
+      <path d="M1085 636 q -8 14 0 24 q 8 -10 4 -24 Z"/>
+    </g>
+    <!-- luce di rimbalzo sui profili -->
+    <g fill="none" stroke="#E0B074" stroke-width="1.6" opacity="0.42">
+      <path d="M411 640 a 12 12 0 0 1 6 -8"/>
+      <path d="M502 634 a 13 13 0 0 1 7 -8"/>
+      <path d="M597 628 a 13 13 0 0 1 7 -8"/>
+      <path d="M693 636 a 12 12 0 0 1 6 -8"/>
+      <path d="M788 623 a 13 13 0 0 1 8 -9"/>
+      <path d="M884 634 a 12 12 0 0 1 7 -8"/>
+      <path d="M980 628 a 13 13 0 0 1 7 -8"/>
+      <path d="M1078 638 a 12 12 0 0 1 6 -8"/>
+      <path d="M1169 632 a 12 12 0 0 1 7 -8"/>
+    </g>
+    <!-- schienali delle sedie -->
+    <g fill="#0B1723">
+      <rect x="390" y="700" width="60" height="9" rx="4"/>
+      <rect x="486" y="702" width="62" height="9" rx="4"/>
+      <rect x="584" y="704" width="64" height="9" rx="4"/>
+      <rect x="682" y="706" width="66" height="9" rx="4"/>
+      <rect x="780" y="706" width="66" height="9" rx="4"/>
+      <rect x="878" y="706" width="66" height="9" rx="4"/>
+      <rect x="976" y="704" width="64" height="9" rx="4"/>
+      <rect x="1074" y="702" width="62" height="9" rx="4"/>
+      <rect x="1170" y="700" width="60" height="9" rx="4"/>
+    </g>
+  </g>
+
+  <!-- TAVOLO PRINCIPALE -->
+  <g>
+    <path d="M366 700 L1236 700 L1336 848 L268 848 Z" fill="url(#cloth)"/>
+    <path d="M366 700 L1236 700 L1241 714 L361 714 Z" fill="#FBF6E9" opacity="0.92"/>
+    <path d="M268 848 L1336 848 L1336 878 L268 878 Z" fill="url(#clothFront)"/>
+    <path d="M268 848 L1336 848 L1336 856 L268 856 Z" fill="#F4EFE2" opacity="0.28"/>
+    <g stroke="#6E6555" stroke-width="2" opacity="0.22">
+      <path d="M372 856 q 10 12 4 22"/><path d="M536 856 q -8 12 0 22"/>
+      <path d="M700 856 q 10 12 4 22"/><path d="M864 856 q -8 12 0 22"/>
+      <path d="M1028 856 q 10 12 4 22"/><path d="M1192 856 q -8 12 0 22"/>
+    </g>
+    <rect x="268" y="872" width="1068" height="8" fill="#3A362D" opacity="0.35"/>
+    <g stroke="#A99F8B" stroke-width="1.5" opacity="0.24">
+      <path d="M470 716 L416 848"/>
+      <path d="M630 716 L592 848"/>
+      <path d="M800 716 L800 848"/>
+      <path d="M970 716 L1008 848"/>
+      <path d="M1130 716 L1184 848"/>
+    </g>
+
+    <!-- runner -->
+    <path d="M486 716 L1116 716 L1166 792 L436 792 Z" fill="url(#runner)" opacity="0.95"/>
+    <path d="M486 716 L1116 716 L1118 722 L484 722 Z" fill="#4C7360" opacity="0.7"/>
+
+    <!-- luce calda sul tavolo -->
+    <ellipse cx="800" cy="752" rx="380" ry="34" fill="#FFD08A" opacity="0.14" filter="url(#soft)"/>
+
+    <!-- piatti e posate -->
+    <g fill="#FCF8ED" stroke="#BDB3A0" stroke-width="1">
+      <ellipse cx="462" cy="736" rx="33" ry="10.5"/><ellipse cx="602" cy="740" rx="34" ry="11"/>
+      <ellipse cx="742" cy="742" rx="35" ry="11"/><ellipse cx="882" cy="742" rx="35" ry="11"/>
+      <ellipse cx="1022" cy="740" rx="34" ry="11"/><ellipse cx="1162" cy="736" rx="33" ry="10.5"/>
+      <ellipse cx="530" cy="784" rx="35" ry="11.5"/><ellipse cx="670" cy="788" rx="36" ry="12"/>
+      <ellipse cx="810" cy="790" rx="37" ry="12"/><ellipse cx="950" cy="788" rx="36" ry="12"/>
+      <ellipse cx="1090" cy="784" rx="35" ry="11.5"/>
+    </g>
+    <g fill="#DDD2BE">
+      <ellipse cx="462" cy="735" rx="19" ry="5.5"/><ellipse cx="602" cy="739" rx="20" ry="6"/>
+      <ellipse cx="742" cy="741" rx="21" ry="6"/><ellipse cx="882" cy="741" rx="21" ry="6"/>
+      <ellipse cx="1022" cy="739" rx="20" ry="6"/><ellipse cx="1162" cy="735" rx="19" ry="5.5"/>
+      <ellipse cx="670" cy="787" rx="21" ry="6.5"/><ellipse cx="810" cy="789" rx="22" ry="6.5"/>
+      <ellipse cx="950" cy="787" rx="21" ry="6.5"/>
+    </g>
+    <g stroke="#F2EADA" stroke-width="1.8" opacity="0.75">
+      <path d="M424 731 l-8 19"/><path d="M434 731 l0 19"/>
+      <path d="M640 736 l8 20"/><path d="M650 736 l0 20"/>
+      <path d="M912 738 l-8 20"/><path d="M922 738 l0 20"/>
+      <path d="M1128 731 l8 19"/><path d="M1138 731 l0 19"/>
+    </g>
+
+    <!-- calici -->
+    <g fill="#EAF2EC" opacity="0.65">
+      <ellipse cx="500" cy="727" rx="5" ry="2.4"/><rect x="498" y="713" width="4" height="13" rx="2"/>
+      <ellipse cx="704" cy="731" rx="5" ry="2.4"/><rect x="702" y="717" width="4" height="13" rx="2"/>
+      <ellipse cx="920" cy="731" rx="5" ry="2.4"/><rect x="918" y="717" width="4" height="13" rx="2"/>
+      <ellipse cx="1124" cy="727" rx="5" ry="2.4"/><rect x="1122" y="713" width="4" height="13" rx="2"/>
+    </g>
+
+    <!-- candele -->
+    <g>
+      <rect x="628" y="708" width="6" height="24" rx="2" fill="#F7EFDE"/>
+      <ellipse cx="631" cy="703" rx="4.2" ry="8" fill="#FFCE7E"/>
+      <circle cx="631" cy="705" r="18" fill="url(#warmGlow)"/>
+      <rect x="796" y="706" width="6" height="26" rx="2" fill="#F7EFDE"/>
+      <ellipse cx="799" cy="701" rx="4.2" ry="8" fill="#FFCE7E"/>
+      <circle cx="799" cy="703" r="19" fill="url(#warmGlow)"/>
+      <rect x="966" y="708" width="6" height="24" rx="2" fill="#F7EFDE"/>
+      <ellipse cx="969" cy="703" rx="4.2" ry="8" fill="#FFCE7E"/>
+      <circle cx="969" cy="705" r="18" fill="url(#warmGlow)"/>
+      <rect x="738" y="772" width="6" height="22" rx="2" fill="#F7EFDE"/>
+      <ellipse cx="741" cy="767" rx="4.2" ry="8" fill="#FFCE7E"/>
+      <circle cx="741" cy="769" r="18" fill="url(#warmGlow)"/>
+      <rect x="896" y="772" width="6" height="22" rx="2" fill="#F7EFDE"/>
+      <ellipse cx="899" cy="767" rx="4.2" ry="8" fill="#FFCE7E"/>
+      <circle cx="899" cy="769" r="18" fill="url(#warmGlow)"/>
+    </g>
+
+    <!-- composizioni floreali -->
+    <g>
+      <g fill="#31513F">
+        <path d="M700 716 q 16 -22 34 -25 q 18 3 34 25 q -18 7 -34 7 q -16 0 -34 -7 Z"/>
+        <path d="M860 718 q 16 -22 34 -25 q 18 3 34 25 q -18 7 -34 7 q -16 0 -34 -7 Z"/>
+        <path d="M790 776 q 18 -24 38 -27 q 20 3 38 27 q -20 8 -38 8 q -18 0 -38 -8 Z"/>
+      </g>
+      <g fill="#6E8F76">
+        <circle cx="716" cy="704" r="6"/><circle cx="734" cy="700" r="5"/><circle cx="750" cy="706" r="5"/>
+        <circle cx="876" cy="706" r="6"/><circle cx="894" cy="702" r="5"/><circle cx="910" cy="708" r="5"/>
+        <circle cx="808" cy="764" r="6"/><circle cx="828" cy="760" r="5"/><circle cx="848" cy="766" r="5"/>
+      </g>
+      <g fill="#F2E8D2" opacity="0.9">
+        <circle cx="722" cy="698" r="2.6"/><circle cx="742" cy="696" r="2.2"/><circle cx="758" cy="704" r="2.2"/>
+        <circle cx="882" cy="700" r="2.6"/><circle cx="902" cy="698" r="2.2"/><circle cx="916" cy="706" r="2.2"/>
+        <circle cx="814" cy="758" r="2.6"/><circle cx="836" cy="756" r="2.2"/><circle cx="854" cy="764" r="2.2"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- MODULO DEFENDER -->
+  <g>
+    <ellipse cx="1290" cy="500" rx="240" ry="120" fill="url(#greenGlow)" opacity="0.5" filter="url(#plume)"/>
+    <g fill="#9BEBC8" opacity="0.12" filter="url(#plume)">
+      <ellipse cx="1260" cy="492" rx="170" ry="56" transform="rotate(-7 1260 492)"/>
+      <ellipse cx="1160" cy="466" rx="200" ry="62" transform="rotate(-10 1160 466)"/>
+      <ellipse cx="1030" cy="448" rx="190" ry="52" transform="rotate(-9 1030 448)"/>
+    </g>
+    <g fill="none" stroke="#7CF0BC" stroke-width="1.1" opacity="0.15">
+      <ellipse cx="1190" cy="486" rx="180" ry="54" transform="rotate(-8 1190 486)"/>
+      <ellipse cx="1130" cy="464" rx="220" ry="62" transform="rotate(-10 1130 464)"/>
+    </g>
+    <rect x="1414" y="512" width="9" height="176" rx="4" fill="#08131B"/>
+    <rect x="1404" y="682" width="29" height="9" rx="4" fill="#0B1A24"/>
+    <rect x="1386" y="488" width="64" height="34" rx="10" fill="#0E2130" stroke="#2E4A55" stroke-width="1.5"/>
+    <rect x="1394" y="496" width="24" height="5" rx="2.5" fill="#3FE0A0" opacity="0.85"/>
+    <circle cx="1438" cy="505" r="4.5" fill="#5AF2B4"/>
+    <circle cx="1438" cy="505" r="13" fill="url(#greenGlow)"/>
+    <rect x="1390" y="562" width="56" height="64" rx="8" fill="#112836" stroke="#2A4652" stroke-width="1.5"/>
+    <rect x="1397" y="572" width="42" height="34" rx="4" fill="#1D5C45" opacity="0.55"/>
+    <rect x="1397" y="572" width="42" height="22" rx="4" fill="#2FD08A" opacity="0.35"/>
+  </g>
+
+  <!-- LANTERNE A TERRA -->
+  <g>
+    <circle cx="200" cy="724" r="26" fill="url(#warmGlow)"/>
+    <rect x="196" y="714" width="8" height="14" rx="2" fill="#FFD79A" opacity="0.9"/>
+    <circle cx="1396" cy="738" r="24" fill="url(#warmGlow)"/>
+    <rect x="1392" y="728" width="8" height="14" rx="2" fill="#FFD79A" opacity="0.9"/>
+  </g>
+
+  <!-- PIANTE IN PRIMO PIANO -->
+  <g fill="#06110F" opacity="0.96">
+    <path d="M0 900 L0 716 C 32 702 58 722 70 748 C 96 732 120 754 124 782 C 148 770 168 790 172 814 C 196 804 214 826 216 852 L220 900 Z"/>
+    <path d="M1600 900 L1600 702 C 1566 692 1540 712 1528 740 C 1500 726 1476 748 1470 776 C 1444 766 1422 788 1418 814 C 1398 806 1382 826 1380 852 L1376 900 Z"/>
+    <path d="M48 900 C 66 866 96 850 130 846 C 108 872 98 886 96 900 Z"/>
+    <path d="M1552 900 C 1534 866 1504 850 1470 846 C 1492 872 1502 886 1504 900 Z"/>
+  </g>
+
+  <!-- SEDIE IN PRIMO PIANO -->
+  <g fill="#06110F">
+    <path d="M132 900 L132 842 q 0 -18 18 -18 h 86 q 18 0 18 18 l 0 58 Z"/>
+    <path d="M1348 900 L1348 842 q 0 -18 18 -18 h 86 q 18 0 18 18 l 0 58 Z"/>
+  </g>
+
+  <!-- BOKEH -->
+  <g fill="#FFD79A" filter="url(#tiny)">
+    <circle cx="356" cy="372" r="4" opacity="0.32"/>
+    <circle cx="470" cy="320" r="3" opacity="0.28"/>
+    <circle cx="690" cy="360" r="3.4" opacity="0.3"/>
+    <circle cx="960" cy="352" r="3" opacity="0.26"/>
+    <circle cx="1150" cy="384" r="4" opacity="0.28"/>
+    <circle cx="1310" cy="400" r="3" opacity="0.22"/>
+  </g>
+
+  <!-- VIGNETTATURA -->
+  <rect width="1600" height="900" fill="url(#vignette)" opacity="0.5"/>
+  <rect width="1600" height="900" fill="url(#edgeVignette)"/>
+</svg>
