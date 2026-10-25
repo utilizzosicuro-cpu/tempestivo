@@ -977,6 +977,21 @@ html {
 .dfn-submit:hover {
   filter: brightness(1.04);
 }
+.dfn-submit[disabled] {
+  opacity: 0.7;
+  cursor: wait;
+  filter: none;
+}
+.dfn-form-error {
+  margin: 0 0 12px;
+  padding: 11px 13px;
+  border: 1px solid #E7B4B4;
+  border-radius: 8px;
+  background: #FFF5F5;
+  color: #8A1F1F;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
 
 .dfn-form-reassure {
   display: flex;
