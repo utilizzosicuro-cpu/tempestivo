@@ -665,6 +665,11 @@ WhatsApp Business
 <input type="hidden" name="_next" value="https://tempestivo.it/grazie.html"/>
 <input type="hidden" name="_subject" value="Richiesta sopralluogo Tempestivo Defender"/>
 <input type="hidden" name="linea" value="Tempestivo Defender"/>
+<input type="hidden" id="utm_source" name="utm_source" value=""/>
+<input type="hidden" id="utm_medium" name="utm_medium" value=""/>
+<input type="hidden" id="utm_campaign" name="utm_campaign" value=""/>
+<input type="hidden" id="utm_content" name="utm_content" value=""/>
+<input type="hidden" id="utm_term" name="utm_term" value=""/>
 <div class="dfn-field">
 <label for="dfn-location">Nome Location / Azienda <span class="dfn-req" aria-hidden="true">*</span></label>
 <input id="dfn-location" name="location" type="text" autocomplete="organization" required placeholder="Es. Villa dei Cipressi"/>
@@ -845,6 +850,42 @@ document.addEventListener('DOMContentLoaded', function () {
         target.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }
     });
+  });
+
+  // Attribuzione campagna: conserva i UTM nella sessione e li invia a Formspree.
+  var utmKeys = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'];
+  var utmStore = 'tempestivo_utm_v1';
+  var params = new URLSearchParams(window.location.search);
+  var stored = {};
+
+  try {
+    stored = JSON.parse(sessionStorage.getItem(utmStore) || '{}') || {};
+  } catch (e) {
+    stored = {};
+  }
+
+  var hasUtm = utmKeys.some(function (key) {
+    return params.has(key);
+  });
+
+  if (hasUtm) {
+    stored = {};
+    utmKeys.forEach(function (key) {
+      var value = params.get(key);
+      if (value) {
+        stored[key] = value.replace(/[^\w.\-~]/g, '').slice(0, 120);
+      }
+    });
+    try {
+      sessionStorage.setItem(utmStore, JSON.stringify(stored));
+    } catch (e) {}
+  }
+
+  utmKeys.forEach(function (key) {
+    var field = document.getElementById(key);
+    if (field && stored[key]) {
+      field.value = stored[key];
+    }
   });
 });
 </script>
