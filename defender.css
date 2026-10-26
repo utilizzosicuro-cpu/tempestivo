@@ -1988,3 +1988,8 @@ html {
     color: #000 !important;
   }
 }
+
+/* tabella confronto a due colonne: evita compressione su mobile */
+.dfn-compare--two {
+  min-width: 640px;
+}
