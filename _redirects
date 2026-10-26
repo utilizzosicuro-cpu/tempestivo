@@ -11,8 +11,8 @@
 /carini/piraineto/idraulico/  /carini/idraulico-contrade/  301
 
 # Torre Pozzillo e' nel comune di Cinisi (P2)
-/carini/torre-pozzillo/elettricista/  /cinisi/torre-pozzillo/elettricista/  301
-/carini/torre-pozzillo/idraulico/  /cinisi/torre-pozzillo/idraulico/  301
+/carini/torre-pozzillo/elettricista/  /cinisi/torre-pozzillo/elettricista-urgente/  301
+/carini/torre-pozzillo/idraulico/  /cinisi/torre-pozzillo/idraulico-urgente/  301
 # Redirect 301 degli slug normalizzati (P2)
 /terrasini/ristrutturazione_completa_terrasini/  /terrasini/ristrutturazione-terrasini/  301
 /alcamo/alcamo-marina/ristrutturazione-bagno/ristrutturazione-bagno-alcamo-marina.html  /alcamo/alcamo-marina/ristrutturazione-bagno/  301

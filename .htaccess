@@ -14,8 +14,8 @@
 
 # Torre Pozzillo e' nel comune di Cinisi (P2)
 <IfModule mod_alias.c>
-  RedirectMatch 301 ^/carini/torre-pozzillo/elettricista/$ /cinisi/torre-pozzillo/elettricista/
-  RedirectMatch 301 ^/carini/torre-pozzillo/idraulico/$ /cinisi/torre-pozzillo/idraulico/
+  RedirectMatch 301 ^/carini/torre-pozzillo/elettricista/$ /cinisi/torre-pozzillo/elettricista-urgente/
+  RedirectMatch 301 ^/carini/torre-pozzillo/idraulico/$ /cinisi/torre-pozzillo/idraulico-urgente/
 </IfModule>
 # Redirect 301 degli slug normalizzati (P2)
 <IfModule mod_alias.c>
