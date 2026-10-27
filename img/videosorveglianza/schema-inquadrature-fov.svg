@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 720" width="1600" height="720" role="img" aria-label="Tre tipi di inquadratura in un impianto di videosorveglianza: panoramica d'area, riconoscimento del volto, lettura targhe ANPR ai varchi">
+  <title>Panoramica, riconoscimento volto e lettura targhe: scegliere l'inquadratura</title>
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0B1B3B"/>
+      <stop offset="1" stop-color="#071429"/>
+    </linearGradient>
+    <linearGradient id="cone" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2FA8FF" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#2FA8FF" stop-opacity="0.03"/>
+    </linearGradient>
+    <linearGradient id="coneY" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFC857" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#FFC857" stop-opacity="0.03"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="720" fill="url(#bg2)"/>
+  <text x="60" y="70" fill="#FFFFFF" font-family="Montserrat, Arial, sans-serif" font-size="30" font-weight="800">Prima l'obiettivo, poi la telecamera</text>
+  <text x="60" y="106" fill="#9FB5D2" font-family="Roboto, Arial, sans-serif" font-size="20">Lo stesso impianto non può fare tutto con le stesse telecamere: il campo visivo decide cosa sarà davvero utilizzabile.</text>
+
+  <!-- Pannello 1: panoramica -->
+  <g>
+    <rect x="60" y="150" width="470" height="500" rx="18" fill="#0E1E3D" stroke="#2FA8FF" stroke-opacity="0.3"/>
+    <text x="88" y="192" fill="#2FA8FF" font-family="Montserrat, Arial, sans-serif" font-size="19" font-weight="700">1 · PANORAMICA D'AREA</text>
+    <path d="M100 300 L470 230 L470 470 L100 400 Z" fill="url(#cone)"/>
+    <rect x="100" y="300" width="46" height="30" rx="6" fill="#E7EEF7"/>
+    <circle cx="123" cy="336" r="7" fill="#0B1B3B"/><circle cx="123" cy="336" r="3.4" fill="#2FA8FF"/>
+    <g stroke="#FFC857" stroke-width="2.5" fill="none">
+      <circle cx="300" cy="368" r="12"/><circle cx="380" cy="352" r="12"/>
+    </g>
+    <text x="88" y="516" fill="#FFFFFF" font-family="Montserrat, Arial, sans-serif" font-size="17" font-weight="700">Serve a capire cosa succede</text>
+    <text x="88" y="546" fill="#9FB5D2" font-family="Roboto, Arial, sans-serif" font-size="16">Perimetri, cortili, piazzali, corsie.</text>
+    <text x="88" y="570" fill="#9FB5D2" font-family="Roboto, Arial, sans-serif" font-size="16">Obiettivo grandangolare, 4K/8 MP.</text>
+    <text x="88" y="594" fill="#9FB5D2" font-family="Roboto, Arial, sans-serif" font-size="16">Non identifica i volti a distanza.</text>
+    <text x="88" y="626" fill="#FFC857" font-family="Roboto, Arial, sans-serif" font-size="16">Tecnologia: sensore ampio + WDR per controluce.</text>
+  </g>
+
+  <!-- Pannello 2: volto -->
+  <g>
+    <rect x="565" y="150" width="470" height="500" rx="18" fill="#0E1E3D" stroke="#2FA8FF" stroke-opacity="0.3"/>
+    <text x="593" y="192" fill="#2FA8FF" font-family="Montserrat, Arial, sans-serif" font-size="19" font-weight="700">2 · RICONOSCIMENTO VOLTO</text>
+    <path d="M605 320 L930 296 L930 372 L605 348 Z" fill="url(#cone)"/>
+    <rect x="605" y="320" width="46" height="30" rx="6" fill="#E7EEF7"/>
+    <circle cx="628" cy="356" r="7" fill="#0B1B3B"/><circle cx="628" cy="356" r="3.4" fill="#2FA8FF"/>
+    <g stroke="#FFC857" stroke-width="2.5" fill="none">
+      <rect x="840" y="312" width="34" height="46" rx="6"/>
+      <circle cx="857" cy="334" r="11"/>
+    </g>
+    <text x="870" y="300" fill="#FFC857" font-family="Roboto, Arial, sans-serif" font-size="15">px/m elevati</text>
+    <text x="593" y="516" fill="#FFFFFF" font-family="Montserrat, Arial, sans-serif" font-size="17" font-weight="700">Serve a identificare</text>
+    <text x="593" y="546" fill="#9FB5D2" font-family="Roboto, Arial, sans-serif" font-size="16">Ingressi, varchi, percorsi obbligati.</text>
+    <text x="593" y="570" fill="#9FB5D2" font-family="Roboto, Arial, sans-serif" font-size="16">Ottica più chiusa e distanza calibrata.</text>
+    <text x="593" y="594" fill="#9FB5D2" font-family="Roboto, Arial, sans-serif" font-size="16">Va decisa in sopralluogo, misurando.</text>
+    <text x="593" y="626" fill="#FFC857" font-family="Roboto, Arial, sans-serif" font-size="16">Tecnologia: ottica adeguata + IR o luce dedicata.</text>
+  </g>
+
+  <!-- Pannello 3: ANPR -->
+  <g>
+    <rect x="1070" y="150" width="470" height="500" rx="18" fill="#0E1E3D" stroke="#FFC857" stroke-opacity="0.32"/>
+    <text x="1098" y="192" fill="#FFC857" font-family="Montserrat, Arial, sans-serif" font-size="19" font-weight="700">3 · LETTURA TARGHE (ANPR)</text>
+    <path d="M1110 340 L1440 316 L1440 388 L1110 364 Z" fill="url(#coneY)"/>
+    <rect x="1110" y="340" width="46" height="30" rx="6" fill="#E7EEF7"/>
+    <circle cx="1133" cy="376" r="7" fill="#0B1B3B"/><circle cx="1133" cy="376" r="3.4" fill="#FFC857"/>
+    <g>
+      <rect x="1310" y="338" width="104" height="40" rx="6" fill="#132849" stroke="#FFC857" stroke-opacity="0.6"/>
+      <text x="1362" y="365" fill="#FFC857" font-family="Montserrat, Arial, sans-serif" font-size="18" font-weight="700" text-anchor="middle">AB 123 CD</text>
+      <path d="M1310 300 h104" stroke="#FFC857" stroke-dasharray="6 6" stroke-width="2"/>
+      <text x="1362" y="290" fill="#FFC857" font-family="Roboto, Arial, sans-serif" font-size="15" text-anchor="middle">corsia dedicata</text>
+    </g>
+    <text x="1098" y="516" fill="#FFFFFF" font-family="Montserrat, Arial, sans-serif" font-size="17" font-weight="700">Serve ad aprire, contare, registrare</text>
+    <text x="1098" y="546" fill="#9FB5D2" font-family="Roboto, Arial, sans-serif" font-size="16">Cancelli, parcheggi, varchi aziendali.</text>
+    <text x="1098" y="570" fill="#9FB5D2" font-family="Roboto, Arial, sans-serif" font-size="16">Tracciato obbligato e illuminazione IR.</text>
+    <text x="1098" y="594" fill="#9FB5D2" font-family="Roboto, Arial, sans-serif" font-size="16">Si integra con il controllo accessi.</text>
+    <text x="1098" y="626" fill="#FFC857" font-family="Roboto, Arial, sans-serif" font-size="16">Tecnologia: telecamera ANPR + analitica dedicata.</text>
+  </g>
+</svg>

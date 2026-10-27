@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 780" width="1600" height="780" role="img" aria-label="Schema di cablaggio di un impianto di videosorveglianza IP su rete PoE: telecamere collegate con cavo Cat.6A entro 100 metri allo switch PoE e al registratore NVR, con soluzioni ePoE e fibra ottica oltre i 100 metri">
+  <title>Schema di cablaggio PoE di un impianto di videosorveglianza IP</title>
+  <defs>
+    <linearGradient id="bg1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0B1B3B"/>
+      <stop offset="1" stop-color="#071429"/>
+    </linearGradient>
+    <marker id="ar1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 10 5 0 10z" fill="#2FA8FF"/>
+    </marker>
+    <marker id="ar2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 10 5 0 10z" fill="#FFC857"/>
+    </marker>
+  </defs>
+
+  <rect width="1600" height="780" fill="url(#bg1)"/>
+  <g font-family="Montserrat, Arial, sans-serif">
+    <text x="60" y="72" fill="#FFFFFF" font-size="30" font-weight="800">Come si cabla un impianto IP PoE</text>
+    <text x="60" y="108" fill="#9FB5D2" font-family="Roboto, Arial, sans-serif" font-size="20">Un solo cavo porta dati e alimentazione. La distanza massima affidabile è 100 metri per tratta.</text>
+  </g>
+
+  <!-- RIGA SUPERIORE: entro 100 m -->
+  <g>
+    <rect x="60" y="150" width="1480" height="230" rx="18" fill="#0E1E3D" stroke="#2FA8FF" stroke-opacity="0.3"/>
+    <text x="88" y="190" fill="#2FA8FF" font-family="Montserrat, Arial, sans-serif" font-size="20" font-weight="700">TRATTA ENTRO 100 METRI — caso normale</text>
+
+    <!-- telecamera -->
+    <g>
+      <rect x="110" y="228" width="150" height="104" rx="12" fill="#132849" stroke="#2FA8FF" stroke-opacity="0.45"/>
+      <circle cx="185" cy="272" r="20" fill="#0A1730" stroke="#2FA8FF" stroke-width="2.5"/>
+      <circle cx="185" cy="272" r="8" fill="#2FA8FF"/>
+      <text x="185" y="322" fill="#D9EBFF" font-family="Roboto, Arial, sans-serif" font-size="17" text-anchor="middle">Telecamera 4K</text>
+    </g>
+
+    <!-- cavo -->
+    <path d="M270 280 H470" stroke="#2FA8FF" stroke-width="6" marker-end="url(#ar1)"/>
+    <text x="370" y="262" fill="#2FA8FF" font-family="Montserrat, Arial, sans-serif" font-size="18" font-weight="700" text-anchor="middle">Cat.6A S/FTP</text>
+    <text x="370" y="312" fill="#9FB5D2" font-family="Roboto, Arial, sans-serif" font-size="16" text-anchor="middle">1 Gbps + PoE+ ≤ 100 m</text>
+    <text x="370" y="336" fill="#9FB5D2" font-family="Roboto, Arial, sans-serif" font-size="16" text-anchor="middle">802.3at · nessun degrado</text>
+
+    <!-- switch -->
+    <g>
+      <rect x="480" y="228" width="170" height="104" rx="12" fill="#132849" stroke="#2FA8FF" stroke-opacity="0.45"/>
+      <g fill="#2FA8FF" fill-opacity="0.8">
+        <rect x="500" y="252" width="12" height="16" rx="2"/><rect x="520" y="252" width="12" height="16" rx="2"/>
+        <rect x="540" y="252" width="12" height="16" rx="2"/><rect x="560" y="252" width="12" height="16" rx="2"/>
+        <rect x="580" y="252" width="12" height="16" rx="2"/><rect x="600" y="252" width="12" height="16" rx="2"/>
+      </g>
+      <text x="565" y="322" fill="#D9EBFF" font-family="Roboto, Arial, sans-serif" font-size="17" text-anchor="middle">Switch PoE</text>
+    </g>
+
+    <path d="M660 280 H850" stroke="#2FA8FF" stroke-width="6" marker-end="url(#ar1)"/>
+    <text x="755" y="262" fill="#2FA8FF" font-family="Montserrat, Arial, sans-serif" font-size="18" font-weight="700" text-anchor="middle">Uplink</text>
+
+    <!-- NVR -->
+    <g>
+      <rect x="860" y="228" width="180" height="104" rx="12" fill="#132849" stroke="#2FA8FF" stroke-opacity="0.45"/>
+      <rect x="890" y="246" width="120" height="14" rx="4" fill="#2FA8FF" fill-opacity="0.5"/>
+      <rect x="890" y="264" width="120" height="14" rx="4" fill="#FFC857" fill-opacity="0.45"/>
+      <rect x="890" y="282" width="120" height="14" rx="4" fill="#2FA8FF" fill-opacity="0.3"/>
+      <text x="950" y="322" fill="#D9EBFF" font-family="Roboto, Arial, sans-serif" font-size="17" text-anchor="middle">NVR + dischi H24</text>
+    </g>
+
+    <path d="M1050 280 H1240" stroke="#2FA8FF" stroke-width="6" marker-end="url(#ar1)"/>
+
+    <!-- client -->
+    <g>
+      <rect x="1250" y="228" width="250" height="104" rx="12" fill="#132849" stroke="#2FA8FF" stroke-opacity="0.45"/>
+      <text x="1375" y="272" fill="#D9EBFF" font-family="Roboto, Arial, sans-serif" font-size="17" text-anchor="middle">Postazione di controllo</text>
+      <text x="1375" y="298" fill="#9FB5D2" font-family="Roboto, Arial, sans-serif" font-size="16" text-anchor="middle">e accesso remoto via VPN</text>
+    </g>
+  </g>
+
+  <!-- RIGA INFERIORE: oltre 100 m -->
+  <g>
+    <rect x="60" y="410" width="1480" height="310" rx="18" fill="#0E1E3D" stroke="#FFC857" stroke-opacity="0.32"/>
+    <text x="88" y="450" fill="#FFC857" font-family="Montserrat, Arial, sans-serif" font-size="20" font-weight="700">TRATTA OLTRE 100 METRI — due soluzioni, mai un cavo in più</text>
+
+    <!-- Opzione A -->
+    <rect x="110" y="478" width="680" height="212" rx="14" fill="#0A1730" stroke="#FFC857" stroke-opacity="0.28"/>
+    <text x="138" y="516" fill="#FFFFFF" font-family="Montserrat, Arial, sans-serif" font-size="20" font-weight="700">OPZIONE A — Switch di rilancio con ePoE</text>
+    <g>
+      <rect x="140" y="546" width="120" height="72" rx="10" fill="#132849"/>
+      <text x="200" y="588" fill="#9FB5D2" font-family="Roboto, Arial, sans-serif" font-size="15" text-anchor="middle">Switch PoE</text>
+      <path d="M270 582 H400" stroke="#FFC857" stroke-width="5" marker-end="url(#ar2)"/>
+      <text x="335" y="566" fill="#FFC857" font-family="Roboto, Arial, sans-serif" font-size="15" text-anchor="middle">ePoE / Extended</text>
+      <rect x="410" y="546" width="120" height="72" rx="10" fill="#132849"/>
+      <text x="470" y="588" fill="#9FB5D2" font-family="Roboto, Arial, sans-serif" font-size="15" text-anchor="middle">Switch PoE 2</text>
+      <path d="M540 582 H670" stroke="#FFC857" stroke-width="5" marker-end="url(#ar2)"/>
+      <text x="605" y="566" fill="#FFC857" font-family="Roboto, Arial, sans-serif" font-size="15" text-anchor="middle">fino a 300-800 m</text>
+      <rect x="680" y="546" width="86" height="72" rx="10" fill="#132849"/>
+      <text x="723" y="588" fill="#9FB5D2" font-family="Roboto, Arial, sans-serif" font-size="15" text-anchor="middle">Telec.</text>
+    </g>
+    <text x="140" y="662" fill="#9FB5D2" font-family="Roboto, Arial, sans-serif" font-size="16">Copre lunghe distanze su cavo Ethernet, riducendo la banda disponibile.</text>
+
+    <!-- Opzione B -->
+    <rect x="820" y="478" width="690" height="212" rx="14" fill="#0A1730" stroke="#2FA8FF" stroke-opacity="0.32"/>
+    <text x="848" y="516" fill="#FFFFFF" font-family="Montserrat, Arial, sans-serif" font-size="20" font-weight="700">OPZIONE B — Fibra ottica singolomodo</text>
+    <g>
+      <rect x="850" y="546" width="130" height="72" rx="10" fill="#132849"/>
+      <text x="915" y="588" fill="#9FB5D2" font-family="Roboto, Arial, sans-serif" font-size="15" text-anchor="middle">Rack + SFP</text>
+      <path d="M990 582 H1150" stroke="#2FA8FF" stroke-width="5" marker-end="url(#ar1)"/>
+      <text x="1070" y="566" fill="#2FA8FF" font-family="Roboto, Arial, sans-serif" font-size="15" text-anchor="middle">Fibra · chilometri</text>
+      <rect x="1160" y="546" width="150" height="72" rx="10" fill="#132849"/>
+      <text x="1235" y="580" fill="#9FB5D2" font-family="Roboto, Arial, sans-serif" font-size="15" text-anchor="middle">Switch periferico</text>
+      <text x="1235" y="602" fill="#9FB5D2" font-family="Roboto, Arial, sans-serif" font-size="15" text-anchor="middle">con moduli SFP</text>
+      <rect x="1330" y="546" width="86" height="72" rx="10" fill="#132849"/>
+      <text x="1373" y="588" fill="#9FB5D2" font-family="Roboto, Arial, sans-serif" font-size="15" text-anchor="middle">Telec.</text>
+    </g>
+    <text x="848" y="662" fill="#9FB5D2" font-family="Roboto, Arial, sans-serif" font-size="16">Nessuna perdita di segnale e immunità a interferenze e sovratensioni da fulmine.</text>
+  </g>
+</svg>

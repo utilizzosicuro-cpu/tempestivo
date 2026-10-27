@@ -1,0 +1,185 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-label="Impianto di videosorveglianza IP su rete PoE: telecamere 4K installate sul perimetro con campi visivi, armadio di rete con switch PoE e registratore NVR, e controllo da remoto su tablet">
+  <title>Impianto di videosorveglianza IP PoE con controllo remoto</title>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0" stop-color="#0B1B3B"/>
+      <stop offset="0.55" stop-color="#0A1730"/>
+      <stop offset="1" stop-color="#061024"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2FA8FF" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#2FA8FF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="fov" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2FA8FF" stop-opacity="0.42"/>
+      <stop offset="1" stop-color="#2FA8FF" stop-opacity="0.04"/>
+    </linearGradient>
+    <linearGradient id="fov2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFC857" stop-opacity="0.36"/>
+      <stop offset="1" stop-color="#FFC857" stop-opacity="0.03"/>
+    </linearGradient>
+    <linearGradient id="building" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#16294F"/>
+      <stop offset="1" stop-color="#0E1E3D"/>
+    </linearGradient>
+    <linearGradient id="bldg2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#122243"/>
+      <stop offset="1" stop-color="#0A1730"/>
+    </linearGradient>
+    <radialGradient id="lamp" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#FFC857" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#FFC857" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
+      <path d="M50 0H0V50" fill="none" stroke="#2FA8FF" stroke-opacity="0.07" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#sky)"/>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+  <ellipse cx="1120" cy="120" rx="520" ry="300" fill="url(#glow)"/>
+
+  <!-- piano di campagna -->
+  <path d="M0 764h1600v136H0z" fill="#08152E"/>
+  <path d="M0 764h1600" stroke="#2FA8FF" stroke-opacity="0.28" stroke-width="2"/>
+  <path d="M0 806h1600" stroke="#2FA8FF" stroke-opacity="0.10" stroke-width="1"/>
+
+  <!-- palazzi di fondo -->
+  <g opacity="0.55">
+    <path d="M40 470h190v294H40z" fill="url(#bldg2)"/>
+    <path d="M60 500h34v40H60zM118 500h34v40h-34zM176 500h34v40h-34zM60 570h34v40H60zM118 570h34v40h-34zM176 570h34v40h-34zM60 640h34v40H60zM118 640h34v40h-34zM176 640h34v40h-34z" fill="#2FA8FF" fill-opacity="0.20"/>
+  </g>
+
+  <!-- edificio protetto -->
+  <g>
+    <path d="M330 330h520v434H330z" fill="url(#building)"/>
+    <path d="M330 330h520v16H330z" fill="#1E3560"/>
+    <path d="M300 330h580l-30-26H330z" fill="#1B3057"/>
+    <!-- finestre accese e spente -->
+    <g>
+      <path d="M372 386h84v62h-84z" fill="#FFC857" fill-opacity="0.82"/>
+      <path d="M480 386h84v62h-84z" fill="#2FA8FF" fill-opacity="0.16"/>
+      <path d="M588 386h84v62h-84z" fill="#FFC857" fill-opacity="0.40"/>
+      <path d="M696 386h84v62h-84z" fill="#2FA8FF" fill-opacity="0.16"/>
+      <path d="M372 480h84v62h-84z" fill="#2FA8FF" fill-opacity="0.16"/>
+      <path d="M480 480h84v62h-84z" fill="#FFC857" fill-opacity="0.55"/>
+      <path d="M588 480h84v62h-84z" fill="#2FA8FF" fill-opacity="0.16"/>
+      <path d="M696 480h84v62h-84z" fill="#FFC857" fill-opacity="0.72"/>
+      <path d="M372 574h84v62h-84z" fill="#FFC857" fill-opacity="0.30"/>
+      <path d="M480 574h84v62h-84z" fill="#2FA8FF" fill-opacity="0.16"/>
+      <path d="M588 574h84v62h-84z" fill="#FFC857" fill-opacity="0.62"/>
+      <path d="M696 574h84v62h-84z" fill="#2FA8FF" fill-opacity="0.16"/>
+    </g>
+    <!-- ingresso -->
+    <path d="M556 668h64v96h-64z" fill="#071429"/>
+    <path d="M562 674h52v90h-52z" fill="#2FA8FF" fill-opacity="0.18"/>
+    <ellipse cx="588" cy="716" rx="120" ry="86" fill="url(#lamp)"/>
+  </g>
+
+  <!-- campi visivi -->
+  <path d="M348 352 L120 470 L120 700 L348 470 Z" fill="url(#fov2)"/>
+  <path d="M838 352 L1310 400 L1310 690 L838 470 Z" fill="url(#fov)"/>
+  <path d="M700 356 L980 200 L1310 300 L980 420 Z" fill="url(#fov)" opacity="0.75"/>
+
+  <!-- telecamere -->
+  <g>
+    <!-- telecamera sinistra -->
+    <path d="M352 330v34" stroke="#8FA7C6" stroke-width="5"/>
+    <path d="M330 364h44v22h-44z" fill="#E7EEF7"/>
+    <path d="M330 364h44v8h-44z" fill="#C3D2E4"/>
+    <circle cx="352" cy="386" r="7" fill="#0B1B3B"/>
+    <circle cx="352" cy="386" r="3.4" fill="#2FA8FF"/>
+    <!-- telecamera destra -->
+    <path d="M830 330v34" stroke="#8FA7C6" stroke-width="5"/>
+    <path d="M808 364h44v22h-44z" fill="#E7EEF7"/>
+    <circle cx="830" cy="386" r="7" fill="#0B1B3B"/>
+    <circle cx="830" cy="386" r="3.4" fill="#2FA8FF"/>
+    <!-- telecamera alta -->
+    <path d="M700 330v-8c0-16 12-28 28-28h58" stroke="#8FA7C6" stroke-width="5" fill="none"/>
+    <path d="M786 278h44v22h-44z" fill="#E7EEF7"/>
+    <circle cx="830" cy="300" r="7" fill="#0B1B3B"/>
+    <circle cx="830" cy="300" r="3.4" fill="#FFC857"/>
+    <text x="742" y="246" fill="#FFC857" font-family="Montserrat, Arial, sans-serif" font-size="21" font-weight="700">4K · IR notturno</text>
+  </g>
+
+  <!-- percorso di rete / cablaggio -->
+  <g stroke="#2FA8FF" stroke-opacity="0.55" stroke-width="3" fill="none" stroke-dasharray="10 8">
+    <path d="M352 408 L352 764"/>
+    <path d="M830 408 L830 764"/>
+    <path d="M352 700 L588 700"/>
+    <path d="M830 700 L588 700"/>
+  </g>
+
+  <!-- armadio di rete -->
+  <g>
+    <path d="M470 764h236v82H470z" fill="#0E1E3D" stroke="#2FA8FF" stroke-opacity="0.45" stroke-width="2"/>
+    <path d="M470 764h236v14H470z" fill="#1E3560"/>
+    <g fill="#2FA8FF" fill-opacity="0.75">
+      <circle cx="492" cy="800" r="5"/><circle cx="512" cy="800" r="5"/>
+      <circle cx="532" cy="800" r="5"/><circle cx="552" cy="800" r="5"/>
+    </g>
+    <path d="M578 796h108v8H578z" fill="#FFC857" fill-opacity="0.7"/>
+    <path d="M578 812h74v8h-74z" fill="#2FA8FF" fill-opacity="0.45"/>
+    <text x="470" y="880" fill="#9FB5D2" font-family="Roboto, Arial, sans-serif" font-size="20">Rack di rete · switch PoE → NVR · UPS</text>
+  </g>
+
+  <!-- dashboard di controllo remoto -->
+  <g>
+    <rect x="1140" y="176" width="410" height="392" rx="26" fill="#0A1730" stroke="#2FA8FF" stroke-opacity="0.42" stroke-width="2"/>
+    <rect x="1174" y="216" width="342" height="30" rx="8" fill="#132849"/>
+    <circle cx="1194" cy="231" r="7" fill="#0A7A4E"/>
+    <text x="1212" y="238" fill="#D9EBFF" font-family="Roboto, Arial, sans-serif" font-size="17">Registrazione attiva · 4 canali</text>
+    <text x="1470" y="238" fill="#FFC857" font-family="Roboto, Arial, sans-serif" font-size="16" text-anchor="end">H.265+</text>
+
+    <!-- quattro riquadri video -->
+    <g>
+      <rect x="1174" y="262" width="164" height="106" rx="10" fill="#0E1E3D"/>
+      <path d="M1196 344l30-34 22 24 18-22 32 32z" fill="#2FA8FF" fill-opacity="0.35"/>
+      <circle cx="1210" cy="288" r="8" fill="#FFC857" fill-opacity="0.6"/>
+      <path d="M1182 262h30v18h-30z" fill="#E32626" fill-opacity="0.85"/>
+      <circle cx="1190" cy="271" r="4" fill="#FFFFFF"/>
+
+      <rect x="1352" y="262" width="164" height="106" rx="10" fill="#0E1E3D"/>
+      <path d="M1374 344l30-34 22 24 18-22 32 32z" fill="#2FA8FF" fill-opacity="0.22"/>
+      <rect x="1400" y="292" width="66" height="42" rx="4" fill="#FFC857" fill-opacity="0.35"/>
+
+      <rect x="1174" y="382" width="164" height="106" rx="10" fill="#0E1E3D"/>
+      <path d="M1196 464l30-34 22 24 18-22 32 32z" fill="#2FA8FF" fill-opacity="0.22"/>
+      <g fill="#2FA8FF" fill-opacity="0.5">
+        <rect x="1240" y="410" width="10" height="38"/>
+        <rect x="1260" y="400" width="10" height="48"/>
+        <rect x="1280" y="418" width="10" height="30"/>
+      </g>
+
+      <rect x="1352" y="382" width="164" height="106" rx="10" fill="#0E1E3D"/>
+      <path d="M1374 464l30-34 22 24 18-22 32 32z" fill="#2FA8FF" fill-opacity="0.22"/>
+      <rect x="1420" y="412" width="52" height="30" rx="4" fill="#2FA8FF" fill-opacity="0.35"/>
+      <text x="1388" y="468" fill="#9FB5D2" font-family="Roboto, Arial, sans-serif" font-size="14">ANPR · targhe</text>
+    </g>
+
+    <!-- linea di tempo -->
+    <rect x="1174" y="506" width="342" height="14" rx="7" fill="#132849"/>
+    <rect x="1174" y="506" width="248" height="14" rx="7" fill="#2FA8FF" fill-opacity="0.75"/>
+    <text x="1174" y="548" fill="#9FB5D2" font-family="Roboto, Arial, sans-serif" font-size="16">Archivio su NVR + copia su MicroSD in telecamera</text>
+  </g>
+
+  <!-- collegamento remoto -->
+  <g>
+    <path d="M1090 470 C1040 470 1020 470 992 470" stroke="#2FA8FF" stroke-opacity="0.5" stroke-width="2.5" stroke-dasharray="8 8" fill="none"/>
+    <circle cx="1120" cy="470" r="30" fill="#0A1730" stroke="#2FA8FF" stroke-opacity="0.55" stroke-width="2"/>
+    <path d="M1104 470a16 16 0 0 1 32 0" fill="none" stroke="#2FA8FF" stroke-width="3"/>
+    <path d="M1111 470a9 9 0 0 1 18 0" fill="none" stroke="#FFC857" stroke-width="3"/>
+    <circle cx="1120" cy="478" r="3.6" fill="#FFC857"/>
+    <text x="1120" y="536" fill="#D9EBFF" font-family="Montserrat, Arial, sans-serif" font-size="19" font-weight="700" text-anchor="middle">Accesso remoto VPN</text>
+    <text x="1120" y="562" fill="#9FB5D2" font-family="Roboto, Arial, sans-serif" font-size="16" text-anchor="middle">nessuna porta aperta sul router</text>
+  </g>
+
+  <!-- etichette in basso -->
+  <g font-family="Montserrat, Arial, sans-serif" font-size="20" font-weight="700">
+    <rect x="40" y="120" width="470" height="52" rx="12" fill="#0A1730" fill-opacity="0.85" stroke="#2FA8FF" stroke-opacity="0.35"/>
+    <text x="66" y="153" fill="#FFC857">Cavo Cat.6A · dati e alimentazione PoE su un solo cavo</text>
+  </g>
+  <g font-family="Roboto, Arial, sans-serif" font-size="19" fill="#9FB5D2">
+    <text x="40" y="72">Impianto IP PoE · telecamere 4K · analitica AI su bordo telecamera</text>
+  </g>
+</svg>

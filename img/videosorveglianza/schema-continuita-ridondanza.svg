@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 760" width="1600" height="760" role="img" aria-label="Schema di continuità di un impianto di videosorveglianza: registrazione su NVR con dischi per uso continuo in RAID, copia sulla scheda microSD della telecamera, gruppo di continuità UPS e router con backup 4G o 5G">
+  <title>Continuità operativa: cosa continua a registrare quando qualcosa si guasta</title>
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0B1B3B"/>
+      <stop offset="1" stop-color="#071429"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="760" fill="url(#bg3)"/>
+  <text x="60" y="70" fill="#FFFFFF" font-family="Montserrat, Arial, sans-serif" font-size="30" font-weight="800">Quattro guasti, quattro risposte già previste</text>
+  <text x="60" y="106" fill="#9FB5D2" font-family="Roboto, Arial, sans-serif" font-size="20">Un impianto è utile quando registra anche nel giorno in cui qualcosa si rompe. Ogni livello ha un compito preciso.</text>
+
+  <!-- livello 1 -->
+  <g>
+    <rect x="60" y="150" width="1480" height="126" rx="16" fill="#0E1E3D" stroke="#2FA8FF" stroke-opacity="0.28"/>
+    <rect x="88" y="176" width="74" height="74" rx="14" fill="#132849"/>
+    <text x="125" y="224" fill="#2FA8FF" font-family="Montserrat, Arial, sans-serif" font-size="28" font-weight="800" text-anchor="middle">1</text>
+    <text x="190" y="204" fill="#FFFFFF" font-family="Montserrat, Arial, sans-serif" font-size="20" font-weight="700">Guasto o usura di un disco</text>
+    <text x="190" y="234" fill="#9FB5D2" font-family="Roboto, Arial, sans-serif" font-size="17">Registratore NVR con dischi specifici per registrazione continua (WD Purple / SkyHawk) in configurazione RAID 1 o RAID 5:</text>
+    <text x="190" y="258" fill="#9FB5D2" font-family="Roboto, Arial, sans-serif" font-size="17">un disco si sostituisce senza perdere l'archivio degli altri.</text>
+  </g>
+
+  <!-- livello 2 -->
+  <g>
+    <rect x="60" y="292" width="1480" height="126" rx="16" fill="#0E1E3D" stroke="#2FA8FF" stroke-opacity="0.28"/>
+    <rect x="88" y="318" width="74" height="74" rx="14" fill="#132849"/>
+    <text x="125" y="366" fill="#2FA8FF" font-family="Montserrat, Arial, sans-serif" font-size="28" font-weight="800" text-anchor="middle">2</text>
+    <text x="190" y="346" fill="#FFFFFF" font-family="Montserrat, Arial, sans-serif" font-size="20" font-weight="700">Taglio del cavo di rete o furto della telecamera</text>
+    <text x="190" y="376" fill="#9FB5D2" font-family="Roboto, Arial, sans-serif" font-size="17">Memoria MicroSD a bordo telecamera (edge storage): la telecamera continua a registrare in locale e, quando la linea rientra,</text>
+    <text x="190" y="400" fill="#9FB5D2" font-family="Roboto, Arial, sans-serif" font-size="17">risincronizza il girato con il registratore. È il livello che salva le immagini proprio durante il tentativo di intrusione.</text>
+  </g>
+
+  <!-- livello 3 -->
+  <g>
+    <rect x="60" y="434" width="1480" height="126" rx="16" fill="#0E1E3D" stroke="#FFC857" stroke-opacity="0.3"/>
+    <rect x="88" y="460" width="74" height="74" rx="14" fill="#132849"/>
+    <text x="125" y="508" fill="#FFC857" font-family="Montserrat, Arial, sans-serif" font-size="28" font-weight="800" text-anchor="middle">3</text>
+    <text x="190" y="488" fill="#FFFFFF" font-family="Montserrat, Arial, sans-serif" font-size="20" font-weight="700">Blackout e sbalzi di tensione</text>
+    <text x="190" y="518" fill="#9FB5D2" font-family="Roboto, Arial, sans-serif" font-size="17">Gruppo di continuità UPS a tecnologia online a doppia conversione: alimenta telecamere, switch e registratore, protegge dalle</text>
+    <text x="190" y="542" fill="#9FB5D2" font-family="Roboto, Arial, sans-serif" font-size="17">microinterruzioni che riavviano gli apparati e garantisce autonomia per la durata del blackout.</text>
+  </g>
+
+  <!-- livello 4 -->
+  <g>
+    <rect x="60" y="576" width="1480" height="126" rx="16" fill="#0E1E3D" stroke="#0A7A4E" stroke-opacity="0.5"/>
+    <rect x="88" y="602" width="74" height="74" rx="14" fill="#132849"/>
+    <text x="125" y="650" fill="#6EE7A8" font-family="Montserrat, Arial, sans-serif" font-size="28" font-weight="800" text-anchor="middle">4</text>
+    <text x="190" y="630" fill="#FFFFFF" font-family="Montserrat, Arial, sans-serif" font-size="20" font-weight="700">Caduta della linea internet</text>
+    <text x="190" y="660" fill="#9FB5D2" font-family="Roboto, Arial, sans-serif" font-size="17">Router con modulo di backup 4G/5G: le notifiche di allarme e l'accesso da remoto continuano a funzionare anche se la linea fissa</text>
+    <text x="190" y="684" fill="#9FB5D2" font-family="Roboto, Arial, sans-serif" font-size="17">è tagliata o il gestore è in manutenzione. La registrazione locale resta indipendente dalla rete.</text>
+  </g>
+</svg>

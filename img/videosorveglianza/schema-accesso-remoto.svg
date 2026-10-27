@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 700" width="1600" height="700" role="img" aria-label="Confronto tra accesso remoto insicuro con porte aperte sul router e accesso remoto sicuro tramite tunnel VPN o piattaforma P2P cifrata con autenticazione a due fattori">
+  <title>Accesso remoto: porte aperte oppure tunnel cifrato</title>
+  <defs>
+    <linearGradient id="bg4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0B1B3B"/>
+      <stop offset="1" stop-color="#071429"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="700" fill="url(#bg4)"/>
+  <text x="60" y="70" fill="#FFFFFF" font-family="Montserrat, Arial, sans-serif" font-size="30" font-weight="800">Vedere l'impianto dallo smartphone, senza aprire la porta di casa</text>
+  <text x="60" y="106" fill="#9FB5D2" font-family="Roboto, Arial, sans-serif" font-size="20">La differenza tra i due schemi non è tecnica: è la probabilità che qualcun altro entri nelle tue telecamere.</text>
+
+  <!-- PANNELLO NEGATIVO -->
+  <g>
+    <rect x="60" y="150" width="700" height="480" rx="18" fill="#1A1024" stroke="#E32626" stroke-opacity="0.6" stroke-width="2"/>
+    <rect x="60" y="150" width="700" height="62" rx="18" fill="#E32626" fill-opacity="0.16"/>
+    <text x="88" y="190" fill="#FF9B9B" font-family="Montserrat, Arial, sans-serif" font-size="21" font-weight="800">DA EVITARE · PORTE APERTE</text>
+
+    <g>
+      <rect x="100" y="252" width="150" height="96" rx="12" fill="#132849"/>
+      <text x="175" y="292" fill="#D9EBFF" font-family="Roboto, Arial, sans-serif" font-size="16" text-anchor="middle">Telecamera / NVR</text>
+      <text x="175" y="316" fill="#9FB5D2" font-family="Roboto, Arial, sans-serif" font-size="15" text-anchor="middle">indirizzo IP interno</text>
+
+      <path d="M262 300 H418" stroke="#E32626" stroke-width="5"/>
+      <text x="340" y="286" fill="#FF9B9B" font-family="Montserrat, Arial, sans-serif" font-size="16" font-weight="700" text-anchor="middle">porta 80 / 554 / 8000</text>
+      <text x="340" y="330" fill="#9FB5D2" font-family="Roboto, Arial, sans-serif" font-size="15" text-anchor="middle">aperta sul router</text>
+
+      <rect x="430" y="252" width="150" height="96" rx="12" fill="#132849"/>
+      <text x="505" y="292" fill="#D9EBFF" font-family="Roboto, Arial, sans-serif" font-size="16" text-anchor="middle">Router di casa</text>
+      <text x="505" y="316" fill="#9FB5D2" font-family="Roboto, Arial, sans-serif" font-size="15" text-anchor="middle">IP pubblico esposto</text>
+
+      <path d="M592 300 H648" stroke="#E32626" stroke-width="5"/>
+      <circle cx="668" cy="300" r="22" fill="#E32626" fill-opacity="0.2" stroke="#E32626" stroke-width="2.5"/>
+      <text x="668" y="308" fill="#FF9B9B" font-family="Montserrat, Arial, sans-serif" font-size="20" font-weight="800" text-anchor="middle">!</text>
+    </g>
+
+    <text x="100" y="404" fill="#FFD9D9" font-family="Montserrat, Arial, sans-serif" font-size="17" font-weight="700">Cosa può succedere</text>
+    <g font-family="Roboto, Arial, sans-serif" font-size="16" fill="#C9B7C0">
+      <text x="100" y="436">· Tentativi ripetuti di accesso con password deboli o di fabbrica.</text>
+      <text x="100" y="464">· Porte intercettate da scansioni automatiche su tutta la rete internet.</text>
+      <text x="100" y="492">· Firmware non aggiornati che restano raggiungibili dall'esterno.</text>
+      <text x="100" y="520">· Nessun tracciamento di chi ha visto le immagini e quando.</text>
+      <text x="100" y="548">· In caso di incidente, il titolare del trattamento risponde.</text>
+    </g>
+    <rect x="100" y="572" width="620" height="40" rx="10" fill="#E32626" fill-opacity="0.14"/>
+    <text x="116" y="598" fill="#FF9B9B" font-family="Roboto, Arial, sans-serif" font-size="16">È lo schema più diffuso negli impianti economici e nei kit fai-da-te.</text>
+  </g>
+
+  <!-- PANNELLO POSITIVO -->
+  <g>
+    <rect x="810" y="150" width="730" height="480" rx="18" fill="#0A1F1A" stroke="#0A7A4E" stroke-opacity="0.75" stroke-width="2"/>
+    <rect x="810" y="150" width="730" height="62" rx="18" fill="#0A7A4E" fill-opacity="0.22"/>
+    <text x="838" y="190" fill="#6EE7A8" font-family="Montserrat, Arial, sans-serif" font-size="21" font-weight="800">DA ADOTTARE · TUNNEL CIFRATO</text>
+
+    <g>
+      <rect x="850" y="252" width="150" height="96" rx="12" fill="#132849"/>
+      <text x="925" y="292" fill="#D9EBFF" font-family="Roboto, Arial, sans-serif" font-size="16" text-anchor="middle">Telecamera / NVR</text>
+      <text x="925" y="316" fill="#9FB5D2" font-family="Roboto, Arial, sans-serif" font-size="15" text-anchor="middle">rete locale chiusa</text>
+
+      <path d="M1012 300 H1188" stroke="#0A7A4E" stroke-width="5" stroke-dasharray="12 8"/>
+      <text x="1100" y="286" fill="#6EE7A8" font-family="Montserrat, Arial, sans-serif" font-size="16" font-weight="700" text-anchor="middle">tunnel VPN cifrato</text>
+      <text x="1100" y="330" fill="#9FB5D2" font-family="Roboto, Arial, sans-serif" font-size="15" text-anchor="middle">WireGuard / OpenVPN</text>
+
+      <rect x="1200" y="252" width="150" height="96" rx="12" fill="#132849"/>
+      <text x="1275" y="292" fill="#D9EBFF" font-family="Roboto, Arial, sans-serif" font-size="16" text-anchor="middle">Firewall / router</text>
+      <text x="1275" y="316" fill="#9FB5D2" font-family="Roboto, Arial, sans-serif" font-size="15" text-anchor="middle">nessuna porta aperta</text>
+
+      <path d="M1362 300 H1420" stroke="#0A7A4E" stroke-width="5"/>
+      <rect x="1428" y="272" width="86" height="56" rx="10" fill="#132849" stroke="#6EE7A8" stroke-opacity="0.5"/>
+      <text x="1471" y="306" fill="#6EE7A8" font-family="Roboto, Arial, sans-serif" font-size="15" text-anchor="middle">utente</text>
+    </g>
+
+    <text x="850" y="404" fill="#D8F6E6" font-family="Montserrat, Arial, sans-serif" font-size="17" font-weight="700">In alternativa: piattaforme P2P certificate</text>
+    <g font-family="Roboto, Arial, sans-serif" font-size="16" fill="#B4CFC2">
+      <text x="850" y="436">· Crittografia end-to-end (AES-256) e accesso con autenticazione a due fattori.</text>
+      <text x="850" y="464">· L'utente si autentica prima alla rete, poi vede le telecamere come se fosse sul posto.</text>
+      <text x="850" y="492">· Aggiornamenti di sicurezza e profili di accesso distinti per ruolo.</text>
+      <text x="850" y="520">· Registro degli accessi: chi ha visto le immagini e quando.</text>
+      <text x="850" y="548">· Revoca immediata dell'accesso quando cambia un fornitore o un dipendente.</text>
+    </g>
+    <rect x="850" y="572" width="650" height="40" rx="10" fill="#0A7A4E" fill-opacity="0.2"/>
+    <text x="866" y="598" fill="#6EE7A8" font-family="Roboto, Arial, sans-serif" font-size="16">È lo schema che adottiamo su ogni impianto, anche su quelli piccoli.</text>
+  </g>
+</svg>
