@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" role="img" aria-labelledby="t d">
+<title id="t">Detergenti in fogli ultraconcentrati per lavanderia professionale</title>
+<desc id="d">Illustrazione di una confezione di fogli detergenti accanto a una tanica da cinque litri, per confrontare ingombro e peso.</desc>
+<defs>
+  <linearGradient id="bgf" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#F8FBF6"/>
+    <stop offset="1" stop-color="#E9F1E7"/>
+  </linearGradient>
+  <linearGradient id="navyf" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#16305C"/>
+    <stop offset="1" stop-color="#0B1B3B"/>
+  </linearGradient>
+  <linearGradient id="sheet" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#FFFFFF"/>
+    <stop offset="1" stop-color="#E7EFEA"/>
+  </linearGradient>
+</defs>
+<rect width="1200" height="800" fill="url(#bgf)"/>
+<circle cx="870" cy="230" r="230" fill="#DAE8D5"/>
+<path d="M0 660h1200v140H0z" fill="#EFF5EC"/>
+<ellipse cx="600" cy="676" rx="420" ry="26" fill="#0B1B3B" opacity=".07"/>
+
+<g>
+  <ellipse cx="330" cy="672" rx="170" ry="20" fill="#0B1B3B" opacity=".08"/>
+  <path d="M212 300h236v342a26 26 0 0 1-26 26H238a26 26 0 0 1-26-26z" fill="url(#navyf)"/>
+  <rect x="246" y="330" width="168" height="190" rx="10" fill="#F1F8EF"/>
+  <rect x="264" y="352" width="132" height="16" rx="8" fill="#2F8F5B"/>
+  <rect x="264" y="382" width="96" height="10" rx="5" fill="#9BBFA3"/>
+  <rect x="264" y="402" width="116" height="10" rx="5" fill="#9BBFA3"/>
+  <rect x="264" y="438" width="70" height="28" rx="6" fill="#FFC857"/>
+  <text x="299" y="458" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#0B1B3B">5 L</text>
+  <rect x="264" y="486" width="132" height="10" rx="5" fill="#C7D9C9"/>
+  <rect x="246" y="560" width="168" height="92" rx="10" fill="#1C3A66"/>
+  <text x="330" y="600" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#FFFFFF" opacity=".9">LIQUIDO</text>
+  <text x="330" y="628" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#A9C6B3">≈ 5,3 kg</text>
+</g>
+
+<g>
+  <ellipse cx="700" cy="672" rx="120" ry="18" fill="#0B1B3B" opacity=".08"/>
+  <rect x="600" y="420" width="210" height="250" rx="14" fill="#2F8F5B"/>
+  <rect x="600" y="420" width="210" height="56" rx="14" fill="#26794D"/>
+  <text x="705" y="458" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#FFFFFF">FOGLI</text>
+  <rect x="622" y="496" width="166" height="104" rx="8" fill="#EFF6EE"/>
+  <g fill="#FFFFFF" stroke="#B9CDBB" stroke-width="2">
+    <rect x="636" y="510" width="64" height="76" rx="5"/>
+    <rect x="710" y="510" width="64" height="76" rx="5"/>
+  </g>
+  <g stroke="#9BBFA3" stroke-width="3">
+    <path d="M648 556h40M722 556h40"/>
+  </g>
+  <text x="705" y="636" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#FFFFFF" opacity=".92">60 fogli</text>
+</g>
+
+<g>
+  <g transform="translate(860 380) rotate(6)">
+    <rect width="150" height="104" rx="8" fill="url(#sheet)" stroke="#B9CDBB" stroke-width="3"/>
+    <path d="M24 34h78M24 52h96M24 70h60" stroke="#9BBFA3" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="118" cy="70" r="9" fill="#2F8F5B" opacity=".55"/>
+  </g>
+  <g transform="translate(880 470) rotate(-4)">
+    <rect width="150" height="104" rx="8" fill="url(#sheet)" stroke="#B9CDBB" stroke-width="3" opacity=".92"/>
+    <path d="M24 34h70M24 52h90M24 70h54" stroke="#9BBFA3" stroke-width="5" stroke-linecap="round"/>
+  </g>
+</g>
+
+<g>
+  <path d="M556 268c0 26 22 44 48 44s48-18 48-44-48-52-48-52-48 26-48 52z" fill="#2F8F5B" opacity=".16"/>
+  <path d="M604 216v96" stroke="#2F8F5B" stroke-width="4" stroke-linecap="round" opacity=".5"/>
+  <path d="M604 262c14-6 24-18 26-32-16 0-26 12-26 32z" fill="#3E9E67"/>
+</g>
+</svg>

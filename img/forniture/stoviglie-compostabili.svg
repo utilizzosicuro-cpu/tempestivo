@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" role="img" aria-labelledby="t d">
+<title id="t">Stoviglie compostabili in polpa di canna e PLA</title>
+<desc id="d">Illustrazione di piatti in bagassa impilati, ciotola, vassoio a scomparti, posate e bicchiere compostabile.</desc>
+<defs>
+  <linearGradient id="bgs" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#F7FAF5"/>
+    <stop offset="1" stop-color="#E9F1E7"/>
+  </linearGradient>
+  <linearGradient id="pulp" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#F4E8D2"/>
+    <stop offset="1" stop-color="#DEC9A6"/>
+  </linearGradient>
+  <linearGradient id="pulp2" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#FBF3E4"/>
+    <stop offset="1" stop-color="#EBDCC2"/>
+  </linearGradient>
+</defs>
+<rect width="1200" height="800" fill="url(#bgs)"/>
+<circle cx="905" cy="205" r="215" fill="#D9E8D4"/>
+<path d="M0 640h1200v160H0z" fill="#EFF5EC"/>
+<ellipse cx="600" cy="660" rx="445" ry="30" fill="#0B1B3B" opacity=".07"/>
+
+<g>
+  <ellipse cx="330" cy="632" rx="140" ry="26" fill="#0B1B3B" opacity=".09"/>
+  <ellipse cx="330" cy="608" rx="140" ry="34" fill="url(#pulp)" stroke="#C9B18B" stroke-width="2"/>
+  <ellipse cx="330" cy="588" rx="140" ry="34" fill="url(#pulp2)" stroke="#C9B18B" stroke-width="2"/>
+  <ellipse cx="330" cy="568" rx="140" ry="34" fill="url(#pulp)" stroke="#C9B18B" stroke-width="2"/>
+  <ellipse cx="330" cy="548" rx="140" ry="34" fill="url(#pulp2)" stroke="#C9B18B" stroke-width="2"/>
+  <ellipse cx="330" cy="528" rx="104" ry="25" fill="#E6D3B4"/>
+  <path d="M226 528c24 26 184 26 208 0" fill="none" stroke="#C9B18B" stroke-width="2"/>
+</g>
+
+<g>
+  <ellipse cx="600" cy="632" rx="112" ry="20" fill="#0B1B3B" opacity=".09"/>
+  <path d="M510 520c0 66 28 100 90 100s90-34 90-100z" fill="url(#pulp2)" stroke="#C9B18B" stroke-width="3"/>
+  <ellipse cx="600" cy="520" rx="90" ry="26" fill="#FFFBF2" stroke="#C9B18B" stroke-width="3"/>
+  <path d="M522 534c30 18 126 18 156 0" fill="none" stroke="#DCC9A8" stroke-width="2"/>
+  <g fill="#3E8F5C">
+    <circle cx="566" cy="506" r="10"/>
+    <circle cx="596" cy="498" r="9"/>
+    <circle cx="624" cy="508" r="8"/>
+  </g>
+</g>
+
+<g>
+  <ellipse cx="870" cy="634" rx="140" ry="22" fill="#0B1B3B" opacity=".09"/>
+  <path d="M760 502h220v112a18 18 0 0 1-18 18H778a18 18 0 0 1-18-18z" fill="url(#pulp)" stroke="#C9B18B" stroke-width="3"/>
+  <path d="M760 502h220l-12-22H772z" fill="#F7EBD7" stroke="#C9B18B" stroke-width="3"/>
+  <rect x="778" y="520" width="60" height="92" rx="6" fill="#FBF3E4"/>
+  <rect x="848" y="520" width="54" height="92" rx="6" fill="#FBF3E4"/>
+  <rect x="912" y="520" width="52" height="92" rx="6" fill="#FBF3E4"/>
+  <path d="M778 566h186" stroke="#E2D0B2" stroke-width="2"/>
+</g>
+
+<g stroke="#8A6E4A" stroke-width="7" stroke-linecap="round">
+  <path d="M200 700v-58"/>
+  <path d="M186 642v-14M200 642v-16M214 642v-14"/>
+  <path d="M252 700v-52c0-14 16-14 16 0v52"/>
+</g>
+<g>
+  <rect x="404" y="648" width="120" height="46" rx="8" fill="#E7EFE5" stroke="#BFCEC2" stroke-width="2"/>
+  <text x="464" y="677" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#2F8F5B">EN 13432</text>
+</g>
+<g fill="#3E8F5C" opacity=".85">
+  <path d="M1010 470c30-46 78-46 78-46s-2 50-36 68c-22 12-42-2-42-2z"/>
+  <path d="M1030 512c0-32 26-56 58-58 0 36-24 60-58 58z" opacity=".5"/>
+</g>
+</svg>
