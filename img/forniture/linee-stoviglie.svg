@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" width="1200" height="600" role="img" aria-labelledby="t d">
+<title id="t">Tre linee di stoviglie compostabili: bagassa, Charta FSC e cartoncino bio-coated</title>
+<desc id="d">Confronto illustrato tra un piatto in bagassa color avana, un piatto Charta bianco in carta certificata FSC e un piatto in cartoncino con rivestimento biopolimero, con le rispettive temperature massime d'uso.</desc>
+<defs>
+  <linearGradient id="bgs" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#F7FAF5"/>
+    <stop offset="1" stop-color="#E9F1E7"/>
+  </linearGradient>
+  <linearGradient id="pulp" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#F4E8D2"/>
+    <stop offset="1" stop-color="#DEC9A6"/>
+  </linearGradient>
+  <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#FFFFFF"/>
+    <stop offset="1" stop-color="#EDF1EE"/>
+  </linearGradient>
+  <linearGradient id="board" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#FBF6EC"/>
+    <stop offset="1" stop-color="#E7DCC8"/>
+  </linearGradient>
+</defs>
+<rect width="1200" height="600" fill="url(#bgs)"/>
+<circle cx="1050" cy="110" r="150" fill="#D9E8D4" opacity=".7"/>
+<path d="M0 500h1200v100H0z" fill="#EFF5EC"/>
+
+<g>
+  <ellipse cx="220" cy="452" rx="150" ry="22" fill="#0B1B3B" opacity=".08"/>
+  <ellipse cx="220" cy="404" rx="146" ry="40" fill="url(#pulp)" stroke="#C9B18B" stroke-width="3"/>
+  <ellipse cx="220" cy="396" rx="122" ry="31" fill="#FBF3E4"/>
+  <path d="M100 396c22 24 218 24 240 0" fill="none" stroke="#C9B18B" stroke-width="3"/>
+  <text x="220" y="404" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#8A6E4A">BAGASSA</text>
+
+  <ellipse cx="600" cy="452" rx="150" ry="22" fill="#0B1B3B" opacity=".08"/>
+  <ellipse cx="600" cy="404" rx="146" ry="40" fill="url(#paper)" stroke="#C9CFC9" stroke-width="3"/>
+  <ellipse cx="600" cy="396" rx="122" ry="31" fill="#FFFFFF"/>
+  <path d="M480 396c22 24 218 24 240 0" fill="none" stroke="#D5DAD5" stroke-width="3"/>
+  <text x="600" y="404" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#6B7280">CHARTA FSC</text>
+
+  <ellipse cx="980" cy="452" rx="150" ry="22" fill="#0B1B3B" opacity=".08"/>
+  <ellipse cx="980" cy="404" rx="146" ry="40" fill="url(#board)" stroke="#C9B18B" stroke-width="3"/>
+  <ellipse cx="980" cy="396" rx="122" ry="31" fill="#FCF8F0"/>
+  <path d="M860 396c22 24 218 24 240 0" fill="none" stroke="#DCC9A8" stroke-width="3"/>
+  <text x="980" y="404" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#8A6E4A">CARTONCINO</text>
+</g>
+
+<g font-family="Arial, Helvetica, sans-serif" text-anchor="middle">
+  <text x="220" y="512" font-size="20" font-weight="700" fill="#0B1B3B">Polpa di canna</text>
+  <text x="220" y="540" font-size="17" fill="#475569">Caldo, microonde, forno</text>
+  <rect x="140" y="556" width="160" height="30" rx="15" fill="#2F8F5B"/>
+  <text x="220" y="577" font-size="16" font-weight="700" fill="#FFFFFF">EN 13432 · MOCA</text>
+
+  <text x="600" y="512" font-size="20" font-weight="700" fill="#0B1B3B">Carta FSC</text>
+  <text x="600" y="540" font-size="17" fill="#475569">Presentazione, alimenti secchi</text>
+  <rect x="520" y="556" width="160" height="30" rx="15" fill="#2F8F5B"/>
+  <text x="600" y="577" font-size="16" font-weight="700" fill="#FFFFFF">FSC-C169099</text>
+
+  <text x="980" y="512" font-size="20" font-weight="700" fill="#0B1B3B">Cartoncino bio-coated</text>
+  <text x="980" y="540" font-size="17" fill="#475569">Fino a 70 °C</text>
+  <rect x="900" y="556" width="160" height="30" rx="15" fill="#2F8F5B"/>
+  <text x="980" y="577" font-size="16" font-weight="700" fill="#FFFFFF">Compostabile</text>
+</g>
+
+<g font-family="Arial, Helvetica, sans-serif" text-anchor="middle">
+  <rect x="430" y="66" width="340" height="62" rx="12" fill="#0B1B3B"/>
+  <text x="600" y="94" font-size="17" font-weight="700" fill="#FFFFFF">Dal produttore Ecozema</text>
+  <text x="600" y="116" font-size="14" fill="#CBD8E6">Linee certificate, formati professionali</text>
+</g>
+</svg>
