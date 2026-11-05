@@ -87,3 +87,10 @@
   Redirect 301 /terrasini/san-cataldo/elettricista/ /terrasini/elettricista-centro-e-paese/
   Redirect 301 /terrasini/san-cataldo/idraulico/ /terrasini/idraulico-centro-e-paese/
 </IfModule>
+
+# Redirect 301 degli stub residui (aggiunti dall'audit)
+<IfModule mod_alias.c>
+  Redirect 301 /alcamo/alcamo-marina/ristrutturazione-bagno/ristrutturazione-bagno-alcamo-marina.html /alcamo/alcamo-marina/ristrutturazione-bagno/
+  Redirect 301 /cinisi/torre-pozzillo/elettricista/ /cinisi/torre-pozzillo/elettricista-urgente/
+  Redirect 301 /cinisi/torre-pozzillo/idraulico/ /cinisi/torre-pozzillo/idraulico-urgente/
+</IfModule>
